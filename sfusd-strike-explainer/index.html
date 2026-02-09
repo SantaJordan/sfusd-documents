@@ -2239,6 +2239,13 @@
     .stats-row { flex-direction: column; }
     .section { padding: 20px; }
     table { font-size: 0.8em; }
+    /* Vendor table: hide # and Category columns on mobile */
+    #vendorTable tr > *:nth-child(1) { display: none; }
+    #vendorTable tr > *:nth-child(4) { display: none; }
+    #vendorTable .vendor-detail td { display: table-cell; }
+    #vendorSearch { font-size: 16px; }
+    .vendor-detail-inner { padding: 12px 16px; }
+    .savings-badge { font-size: 0.55em; padding: 1px 5px; margin-left: 4px; }
   }
 
   /* ============================================================
