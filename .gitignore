@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 download_errors.log
 download_round2_errors.log
+.env
+*.env
+analysis/contracts/

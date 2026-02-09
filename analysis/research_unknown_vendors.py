@@ -14,7 +14,15 @@ from pathlib import Path
 import urllib.request
 import urllib.error
 
-EXA_API_KEY = os.environ.get("EXA_API_KEY", "0f37cf34-ada9-4406-9997-74f7b06215c0")
+# Load .env file if present
+_env_path = Path(__file__).parent.parent / ".env"
+if _env_path.exists():
+    for line in _env_path.read_text().splitlines():
+        if "=" in line and not line.startswith("#"):
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip())
+
+EXA_API_KEY = os.environ.get("EXA_API_KEY", "")
 EXA_BASE = "https://api.exa.ai"
 
 DATA_DIR = Path(__file__).parent / "data"
