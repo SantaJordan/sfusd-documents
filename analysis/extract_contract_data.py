@@ -10,6 +10,7 @@ import asyncio
 import base64
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -71,6 +72,117 @@ IMPORTANT:
 - total_value should be a number (not a string), 0 if unknown
 - not_to_exceed should be a number, 0 if not specified
 - Be precise with district names - use full official names"""
+
+
+def parse_json_response(response_text):
+    """Robustly extract JSON from model response, handling common issues."""
+    text = response_text.strip()
+
+    # Strip markdown code fences
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1] if "\n" in text else text[3:]
+        if text.endswith("```"):
+            text = text[:-3]
+        text = text.strip()
+
+    # 1. Try direct parse
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # 2. Use raw_decode to find first valid JSON object (handles trailing text)
+    decoder = json.JSONDecoder()
+    # Find first '{' and try raw_decode from there
+    for match in re.finditer(r'\{', text):
+        try:
+            result, end_idx = decoder.raw_decode(text, match.start())
+            if isinstance(result, dict):
+                return result
+        except json.JSONDecodeError:
+            continue
+
+    # 3. Try to repair truncated JSON (unterminated strings from max_tokens cutoff)
+    # Find the last { that starts a JSON object
+    for match in re.finditer(r'\{', text):
+        candidate = text[match.start():]
+        # Close any unterminated strings and objects
+        repaired = _repair_truncated_json(candidate)
+        if repaired:
+            try:
+                result = json.loads(repaired)
+                if isinstance(result, dict):
+                    result["_json_repaired"] = True
+                    return result
+            except json.JSONDecodeError:
+                continue
+
+    raise json.JSONDecodeError("Could not extract valid JSON from response", text, 0)
+
+
+def _repair_truncated_json(text):
+    """Attempt to repair JSON truncated by max_tokens limit."""
+    # If already valid, return as-is
+    try:
+        json.loads(text)
+        return text
+    except json.JSONDecodeError:
+        pass
+
+    # Strategy: find the last well-formed point and close everything
+    # First, try closing open strings, arrays, objects
+    repaired = text.rstrip()
+
+    # Remove trailing comma
+    repaired = repaired.rstrip(',')
+
+    # If we're in the middle of a string value, close it
+    # Count unescaped quotes to see if we're inside a string
+    in_string = False
+    i = 0
+    while i < len(repaired):
+        c = repaired[i]
+        if c == '\\' and in_string:
+            i += 2  # skip escaped char
+            continue
+        if c == '"':
+            in_string = not in_string
+        i += 1
+
+    if in_string:
+        repaired += '"'
+
+    # Count open braces/brackets
+    open_braces = 0
+    open_brackets = 0
+    in_str = False
+    i = 0
+    while i < len(repaired):
+        c = repaired[i]
+        if c == '\\' and in_str:
+            i += 2
+            continue
+        if c == '"':
+            in_str = not in_str
+        elif not in_str:
+            if c == '{':
+                open_braces += 1
+            elif c == '}':
+                open_braces -= 1
+            elif c == '[':
+                open_brackets += 1
+            elif c == ']':
+                open_brackets -= 1
+        i += 1
+
+    # Remove trailing comma before closing
+    repaired = repaired.rstrip().rstrip(',')
+
+    # Close open brackets then braces
+    repaired += ']' * open_brackets
+    repaired += '}' * open_braces
+
+    return repaired
 
 
 CONTRACT_KEYWORDS = [
@@ -190,7 +302,7 @@ def extract_from_pdf_sync(pdf_path, vendor_hint, district_hint):
 
             message = client.messages.create(
                 model=MODEL,
-                max_tokens=4096,
+                max_tokens=8192,
                 messages=[{
                     "role": "user",
                     "content": f"{context}\n\nThe following is text extracted from a PDF document:\n\n{extracted_text}\n\n{EXTRACTION_PROMPT}"
@@ -201,7 +313,7 @@ def extract_from_pdf_sync(pdf_path, vendor_hint, district_hint):
             pdf_b64 = base64.standard_b64encode(pdf_bytes).decode("utf-8")
             message = client.messages.create(
                 model=MODEL,
-                max_tokens=4096,
+                max_tokens=8192,
                 messages=[{
                     "role": "user",
                     "content": [
@@ -222,29 +334,7 @@ def extract_from_pdf_sync(pdf_path, vendor_hint, district_hint):
             )
 
         response_text = message.content[0].text.strip()
-        if response_text.startswith("```"):
-            response_text = response_text.split("\n", 1)[1]
-            if response_text.endswith("```"):
-                response_text = response_text[:-3]
-            response_text = response_text.strip()
-
-        # Handle cases where model returns multiple JSON objects or extra text
-        try:
-            result = json.loads(response_text)
-        except json.JSONDecodeError:
-            # Try to find the first complete JSON object
-            depth = 0
-            start = response_text.index('{')
-            for i, c in enumerate(response_text[start:], start):
-                if c == '{':
-                    depth += 1
-                elif c == '}':
-                    depth -= 1
-                    if depth == 0:
-                        result = json.loads(response_text[start:i+1])
-                        break
-            else:
-                raise json.JSONDecodeError("Could not find complete JSON", response_text, 0)
+        result = parse_json_response(response_text)
         result["_source_file"] = str(pdf_path)
         result["_file_size"] = file_size
         result["_tokens_used"] = {
@@ -256,31 +346,57 @@ def extract_from_pdf_sync(pdf_path, vendor_hint, district_hint):
     except json.JSONDecodeError as e:
         return {
             "error": f"JSON parse error: {e}",
-            "raw_response": response_text[:500] if 'response_text' in dir() else "",
+            "raw_response": response_text[:500] if 'response_text' in locals() else "",
             "_source_file": str(pdf_path),
             "has_contract_data": False,
         }
     except anthropic.APIError as e:
         # Retry with text fallback if native PDF failed (400 = too many pages, etc.)
-        if not use_text_fallback and ("400" in str(e) or "invalid" in str(e).lower()):
+        err_str = str(e)
+        # Rate limit: wait and retry once
+        if "429" in err_str:
+            import random
+            time.sleep(5 + random.random() * 5)
+            try:
+                if use_text_fallback:
+                    extracted_text = extract_text_from_pdf(path)
+                    if extracted_text and len(extracted_text) >= 100:
+                        message = client.messages.create(
+                            model=MODEL, max_tokens=8192,
+                            messages=[{"role": "user",
+                                       "content": f"{context}\n\nText extracted from a PDF:\n\n{extracted_text}\n\n{EXTRACTION_PROMPT}"}]
+                        )
+                else:
+                    pdf_b64 = base64.standard_b64encode(pdf_bytes).decode("utf-8")
+                    message = client.messages.create(
+                        model=MODEL, max_tokens=8192,
+                        messages=[{"role": "user",
+                                   "content": [{"type": "document", "source": {"type": "base64", "media_type": "application/pdf", "data": pdf_b64}},
+                                               {"type": "text", "text": f"{context}\n\n{EXTRACTION_PROMPT}"}]}]
+                    )
+                response_text = message.content[0].text.strip()
+                result = parse_json_response(response_text)
+                result["_source_file"] = str(pdf_path)
+                result["_file_size"] = file_size
+                result["_method"] = "retry_after_429"
+                result["_tokens_used"] = {"input": message.usage.input_tokens, "output": message.usage.output_tokens}
+                return result
+            except Exception:
+                pass  # Fall through to original error
+        if not use_text_fallback and ("400" in err_str or "invalid" in err_str.lower()):
             try:
                 extracted_text = extract_text_from_pdf(path)
                 if extracted_text and len(extracted_text) >= 100:
                     message = client.messages.create(
                         model=MODEL,
-                        max_tokens=4096,
+                        max_tokens=8192,
                         messages=[{
                             "role": "user",
                             "content": f"{context}\n\nText extracted from a PDF:\n\n{extracted_text}\n\n{EXTRACTION_PROMPT}"
                         }]
                     )
                     response_text = message.content[0].text.strip()
-                    if response_text.startswith("```"):
-                        response_text = response_text.split("\n", 1)[1]
-                        if response_text.endswith("```"):
-                            response_text = response_text[:-3]
-                        response_text = response_text.strip()
-                    result = json.loads(response_text)
+                    result = parse_json_response(response_text)
                     result["_source_file"] = str(pdf_path)
                     result["_file_size"] = file_size
                     result["_method"] = "text_fallback_after_api_error"
@@ -309,6 +425,8 @@ def main():
         print("ERROR: ANTHROPIC_API_KEY not set", file=sys.stderr)
         sys.exit(1)
 
+    retry_errors = "--retry-errors" in sys.argv
+
     manifest = load_manifest()
     print(f"Found {len(manifest)} downloaded PDFs", flush=True)
 
@@ -318,6 +436,18 @@ def main():
         with open(OUTPUT_PATH) as f:
             extractions = json.load(f)
         print(f"Resuming: {len(extractions)} PDFs already extracted", flush=True)
+
+    if retry_errors:
+        # Count and clear previous errors so they get reprocessed
+        error_count = 0
+        for url in list(extractions.keys()):
+            if extractions[url].get("error"):
+                del extractions[url]
+                error_count += 1
+        print(f"Retrying {error_count} previously failed extractions", flush=True)
+        # Save cleaned version
+        with open(OUTPUT_PATH, 'w') as f:
+            json.dump(extractions, f, indent=2)
 
     # Filter and sort by relevance
     to_process = []
