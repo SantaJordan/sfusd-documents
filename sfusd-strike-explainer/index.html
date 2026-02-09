@@ -25,6 +25,7 @@
     --gray-500: #78756d;
     --gray-700: #44413b;
     --gray-900: #1c1b18;
+    --red: #c53030;
     --red-accent: #c53030;
     --red-bg: #fff5f5;
     --green: #27ae60;
@@ -5903,21 +5904,24 @@ function filterVendors(category) {
 }
 
 // === Toggle all hidden vendors ===
+var vendorsExpanded = false;
 function toggleAllVendors() {
-  var hidden = document.querySelectorAll('.vendor-hidden');
+  var rows = document.querySelectorAll('#vendorTable .vendor-row');
   var btn = document.getElementById('vendorToggleBtn');
-  var showing = hidden.length > 0 && hidden[0].style.display !== 'none';
-  hidden.forEach(function(el) {
-    el.style.display = showing ? 'none' : (el.classList.contains('vendor-row') ? '' : 'none');
+  vendorsExpanded = !vendorsExpanded;
+  rows.forEach(function(row, i) {
+    if (i >= 10) {
+      row.style.display = vendorsExpanded ? '' : 'none';
+      var detail = row.nextElementSibling;
+      if (detail && detail.classList.contains('vendor-detail')) {
+        detail.style.display = 'none';
+        var icon = row.querySelector('.expand-icon');
+        if (icon) icon.innerHTML = '&#9660;';
+      }
+    }
   });
   if (btn) {
-    btn.textContent = showing ? 'Show all 72 vendors \u25BC' : 'Hide extra vendors \u25B2';
-  }
-  if (!showing) {
-    hidden.forEach(function(el) {
-      if (el.classList.contains('vendor-row')) el.style.display = '';
-      if (el.classList.contains('vendor-detail')) el.style.display = 'none';
-    });
+    btn.textContent = vendorsExpanded ? 'Hide extra vendors \u25B2' : 'Show all 72 vendors \u25BC';
   }
 }
 
