@@ -46,14 +46,14 @@ COVER_LETTER_TOTALS = {
     "December": 59059990.47,
 }
 
-# Cover letter check counts
+# Check counts from PDF fund recap summary pages (first "Total Number of Checks" line = gross)
 COVER_LETTER_COUNTS = {
     "July": {"gross": 1088, "cancels": 22, "reissues": 2, "net": 1066},
     "August": {"gross": 457, "cancels": 27, "reissues": 0, "net": 430},
-    "September": {"gross": 1242, "cancels": 14, "reissues": 0, "net": 1228},
-    "October": {"gross": 1122, "cancels": 11, "reissues": 0, "net": 1111},
-    "November": {"gross": 1123, "cancels": 31, "reissues": 0, "net": 1092},
-    "December": {"gross": 1296, "cancels": 20, "reissues": 0, "net": 1276},
+    "September": {"gross": 1243, "cancels": 42, "reissues": 1, "net": 1201},
+    "October": {"gross": 1305, "cancels": 64, "reissues": 1, "net": 1241},
+    "November": {"gross": 1331, "cancels": 8, "reissues": 0, "net": 1323},
+    "December": {"gross": 1816, "cancels": 118, "reissues": 1, "net": 1698},
 }
 
 DPI = 300
@@ -67,8 +67,8 @@ COL_FD_OBJT = (1600, 1810)      # Fd-Objt: x ~ 1665
 COL_EXP_AMT = (1810, 2100)      # Expensed Amount: x ~ 1866-1948
 COL_CHECK_AMT = (2100, 2400)    # Check Amount: x ~ 2138-2323
 
-# Patterns
-RE_CHECK_NUM = re.compile(r'^(020\d{7}|120\d{7}|DDP-\d{8})$')
+# Patterns — allow 9 or 10 digit check numbers (Tesseract sometimes drops a leading zero)
+RE_CHECK_NUM = re.compile(r'^(0?20\d{6,7}|1?20\d{6,7}|DDP-\d{5,8}|ACH-\d{5,8})$')
 RE_DATE = re.compile(r'\d{2}/\d{2}/\d{4}')
 RE_FD_OBJT = re.compile(r'^\d{2}-\d{4}$')
 RE_AMOUNT = re.compile(r'^[\d,]+\.\d{2}$')
@@ -144,6 +144,18 @@ def group_into_rows(words, y_tolerance=20):
     return rows
 
 
+def normalize_check_num(cn):
+    """Normalize check numbers to standard length (10 digits for numeric, padded for DDP/ACH)."""
+    if cn.startswith(('DDP-', 'ACH-')):
+        prefix, num = cn.split('-', 1)
+        return f"{prefix}-{num.zfill(8)}"
+    # Numeric check numbers should be 10 digits
+    # Tesseract sometimes drops a leading zero: 020000720 (9 digits) -> 0200000720 (10 digits)
+    if cn.isdigit() and len(cn) == 9:
+        return '0' + cn
+    return cn
+
+
 def clean_text(text):
     """Remove zebra stripe artifacts from text."""
     # Strip leading noise characters from dates: "=07/15/2025" -> "07/15/2025"
@@ -160,10 +172,46 @@ def parse_amount(text):
     text = text.replace(',', '').replace('$', '').strip()
     # Remove any trailing asterisk
     text = text.rstrip('*').strip()
+    # Handle trailing minus sign (e.g., "108.63-" means -108.63)
+    negative = False
+    if text.endswith('-'):
+        negative = True
+        text = text[:-1].strip()
     try:
-        return float(text)
+        val = float(text)
+        return -val if negative else val
     except ValueError:
         return None
+
+
+def _parse_amount_words(texts):
+    """Parse an amount from a list of OCR words in an amount column.
+
+    Tesseract sometimes splits large amounts across words:
+      ['4,837', ',463.77'] should be 4837463.77
+      ['29,492', '.23-'] should be -29492.23
+      ['48,', '848.83-'] should be -48848.83
+
+    Strategy: first try joining all words, then try each individually.
+    """
+    if not texts:
+        return None
+    # Filter out non-amount noise (Page numbers, ERP, dates, etc.)
+    amt_texts = [t for t in texts if not any(c.isalpha() for c in t.replace(',', '').replace('.', '').replace('-', '').replace('*', ''))]
+    if not amt_texts:
+        return None
+    # Try joining all words together (handles splits like ['4,837', ',463.77'])
+    if len(amt_texts) > 1:
+        joined = ''.join(amt_texts)
+        amt = parse_amount(joined)
+        if amt is not None:
+            return amt
+    # Try each word individually
+    for t in amt_texts:
+        amt = parse_amount(t)
+        if amt is not None:
+            return amt
+    return None
 
 
 def extract_row_fields(row_words):
@@ -191,15 +239,12 @@ def extract_row_fields(row_words):
     cn_texts = [clean_text(w['text']) for w in fields['check_num']]
     cn_joined = ' '.join(cn_texts).strip()
     if cn_joined:
-        # Try to extract a valid check number
-        # Handle "DDP-00000046" which may come as one token or "DDP" + "-" + "00000046"
         cn_clean = cn_joined.replace(' ', '')
         if RE_CHECK_NUM.match(cn_clean):
-            result['check_num'] = cn_clean
-        elif cn_clean.startswith('DDP') and '-' in cn_clean:
-            # Try padding: DDP-1234 -> DDP-00001234
+            result['check_num'] = normalize_check_num(cn_clean)
+        elif cn_clean.startswith(('DDP', 'ACH')) and '-' in cn_clean:
             parts = cn_clean.split('-', 1)
-            padded = f"DDP-{parts[1].zfill(8)}"
+            padded = f"{parts[0]}-{parts[1].zfill(8)}"
             if RE_CHECK_NUM.match(padded):
                 result['check_num'] = padded
 
@@ -227,7 +272,7 @@ def extract_row_fields(row_words):
     cancelled = False
     fd_objt = None
     for ft in fd_texts:
-        if 'cancel' in ft.lower() or 'void' in ft.lower():
+        if 'cancel' in ft.lower() or 'void' in ft.lower() or 'reissue' in ft.lower():
             cancelled = True
         elif RE_FD_OBJT.match(ft):
             fd_objt = ft
@@ -236,21 +281,17 @@ def extract_row_fields(row_words):
     if cancelled:
         result['cancelled'] = True
 
-    # Expensed Amount
+    # Expensed Amount — try joined first (Tesseract sometimes splits large amounts)
     exp_texts = [w['text'] for w in fields['exp_amt']]
-    for et in exp_texts:
-        amt = parse_amount(et)
-        if amt is not None:
-            result['exp_amt'] = amt
-            break
+    exp_parsed = _parse_amount_words(exp_texts)
+    if exp_parsed is not None:
+        result['exp_amt'] = exp_parsed
 
-    # Check Amount
+    # Check Amount — same join-first strategy
     chk_texts = [w['text'] for w in fields['check_amt']]
-    for ct in chk_texts:
-        amt = parse_amount(ct)
-        if amt is not None:
-            result['check_amt'] = amt
-            break
+    chk_parsed = _parse_amount_words(chk_texts)
+    if chk_parsed is not None:
+        result['check_amt'] = chk_parsed
 
     return result
 
@@ -309,7 +350,7 @@ def parse_page(img_path, page_num):
         if vendor.startswith('Page ') and 'of' in vendor:
             continue
         # Skip generated-by footer
-        if 'Generated for' in vendor or 'San Francisco Unified' in vendor:
+        if 'Generated for' in vendor:
             continue
 
         has_check_num = 'check_num' in rf
@@ -359,12 +400,12 @@ def parse_page(img_path, page_num):
 
         elif current_check and (has_fd_objt or rf.get('exp_amt') or rf.get('check_amt')):
             # Could be continuation OR a new check with zebra-eaten check number.
-            # Heuristic: if this row has a vendor name that differs from current check,
-            # and has fd-objt + amount, it's likely a new check whose number was lost.
+            # Heuristic: if this row has a DIFFERENT vendor + fd-objt + amount, it's a new check.
+            # We DON'T trigger on same-vendor rows (those are multi-line continuations).
             is_new_check = False
             if vendor and has_fd_objt and (rf.get('exp_amt') or rf.get('check_amt')):
-                # Different vendor from current check = new check
                 cur_vendor = current_check.get('vendor_name', '')
+                # Different vendor = new check
                 if vendor and cur_vendor and not vendor.startswith(cur_vendor.split()[0]) and not cur_vendor.startswith(vendor.split()[0]):
                     is_new_check = True
 
@@ -395,7 +436,7 @@ def parse_page(img_path, page_num):
                         'fund_object': rf['fd_objt'],
                         'exp_amount': rf['exp_amt'],
                     })
-                # Check Amount on continuation means total for this check
+                # Check Amount on continuation = total for this check
                 if rf.get('check_amt'):
                     current_check['amount'] = rf['check_amt']
 
@@ -450,12 +491,12 @@ def reconcile_amounts(checks):
 
         sub_lines = check.get('sub_lines', [])
         if len(sub_lines) > 1:
-            # Multi-line: amount should already be the check_amt from the last sub-line
-            # But verify: if amount is 0 or missing, sum the sub-lines
+            # Multi-line: amount should be the check_amt from the last sub-line (the total)
+            # If amount is 0 or missing, sum the sub-lines as fallback
             if not check['amount'] or check['amount'] == 0:
                 check['amount'] = round(sum(sl.get('exp_amount', 0) for sl in sub_lines), 2)
         elif len(sub_lines) == 1:
-            # Single-line: if amount is missing, use exp_amount
+            # Single sub-line: if amount is missing, use exp_amount
             if not check['amount'] or check['amount'] == 0:
                 check['amount'] = sub_lines[0].get('exp_amount', 0)
 
