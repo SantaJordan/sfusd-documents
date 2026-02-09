@@ -317,7 +317,7 @@ If you're building an agent to find misspending, start here:
 
 These are the deliverables produced from the document library:
 
-- **[`sfusd-strike-explainer/index.html`](https://github.com/santajordan/sfusd-strike-explainer)** — Interactive explainer for UESF members covering SFUSD's financial position, the district's proposals, strike tactics, press analysis, and rebuttals. Published as a standalone GitHub Pages site in the `sfusd-strike-explainer/` repo (sibling to this directory).
+- **[`sfusd-strike-explainer/index.html`](https://santajordan.github.io/sfusd-documents/sfusd-strike-explainer/)** — Interactive explainer for UESF members covering SFUSD's financial position, the district's proposals, strike tactics, press analysis, and rebuttals. Published via GitHub Pages.
 
 - **`analysis/sfusd_forensic_report_v2.html`** — Forensic financial analysis of SFUSD spending, with vendor payment breakdowns and warrant register data. Self-contained HTML file.
 

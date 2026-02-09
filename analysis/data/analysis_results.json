@@ -1,0 +1,633 @@
+{
+  "admin_spending": {
+    "FY2020-21": {
+      "admin_total": 160661954.42,
+      "total_expenditures": 923852560.41,
+      "admin_pct": 17.39
+    },
+    "FY2021-22": {
+      "admin_total": 159460650.58,
+      "total_expenditures": 1162113762.53,
+      "admin_pct": 13.72
+    }
+  },
+  "function_breakdown": [
+    {
+      "function_code": "1000",
+      "function_name": "Instruction",
+      "amount": 552955664.3
+    },
+    {
+      "function_code": "2100",
+      "function_name": "Instructional Supervision & Administration",
+      "amount": 86852048.94
+    },
+    {
+      "function_code": "2700",
+      "function_name": "School Administration",
+      "amount": 64600473.08
+    },
+    {
+      "function_code": "8200",
+      "function_name": "Operations",
+      "amount": 42563045.1
+    },
+    {
+      "function_code": "1120",
+      "function_name": "SpEd: Resource Specialist",
+      "amount": 38103952.51
+    },
+    {
+      "function_code": "7700",
+      "function_name": "Centralized Data Processing",
+      "amount": 32984089.9
+    },
+    {
+      "function_code": "1110",
+      "function_name": "SpEd: Separate Classes",
+      "amount": 31373086.83
+    },
+    {
+      "function_code": "3130",
+      "function_name": "Attendance and Social Work",
+      "amount": 29969852.88
+    },
+    {
+      "function_code": "1180",
+      "function_name": "SpEd: Nonpublic Agencies/Schools",
+      "amount": 26999588.61
+    },
+    {
+      "function_code": "3600",
+      "function_name": "Pupil Transportation",
+      "amount": 25301645.57
+    },
+    {
+      "function_code": "1190",
+      "function_name": "SpEd: Other Specialized",
+      "amount": 23498149.58
+    },
+    {
+      "function_code": "3110",
+      "function_name": "Guidance and Counseling",
+      "amount": 23339199.87
+    },
+    {
+      "function_code": "3140",
+      "function_name": "Health Services",
+      "amount": 17804532.33
+    },
+    {
+      "function_code": "9300",
+      "function_name": "Interfund Transfers",
+      "amount": 15768609.06
+    },
+    {
+      "function_code": "3120",
+      "function_name": "Psychological Services",
+      "amount": 15302729.56
+    },
+    {
+      "function_code": "1130",
+      "function_name": "SpEd: Supplemental in Regular",
+      "amount": 15227260.75
+    },
+    {
+      "function_code": "3150",
+      "function_name": "Speech Pathology and Audiology",
+      "amount": 12367870.7
+    },
+    {
+      "function_code": "7150",
+      "function_name": "Superintendent",
+      "amount": 11525354.84
+    },
+    {
+      "function_code": "8500",
+      "function_name": "Facilities Acquisition and Construction",
+      "amount": 10107495.71
+    },
+    {
+      "function_code": "8400",
+      "function_name": "Other Plant Maintenance & Operations",
+      "amount": 9799436.41
+    },
+    {
+      "function_code": "9200",
+      "function_name": "Transfers Between Agencies",
+      "amount": 9723323.59
+    },
+    {
+      "function_code": "8110",
+      "function_name": "Maintenance",
+      "amount": 9716045.25
+    },
+    {
+      "function_code": "7400",
+      "function_name": "Personnel/Human Resources",
+      "amount": 7630141.8
+    },
+    {
+      "function_code": "8300",
+      "function_name": "Security",
+      "amount": 7236377.36
+    },
+    {
+      "function_code": "4200",
+      "function_name": "School-Sponsored Athletics",
+      "amount": 5019569.18
+    },
+    {
+      "function_code": "2420",
+      "function_name": "Instructional Library, Media & Technology",
+      "amount": 4818481.94
+    },
+    {
+      "function_code": "7200",
+      "function_name": "Other General Administration",
+      "amount": 4532149.76
+    },
+    {
+      "function_code": "7110",
+      "function_name": "Board",
+      "amount": 4152851.31
+    },
+    {
+      "function_code": "3160",
+      "function_name": "Pupil Testing Services",
+      "amount": 3766970.31
+    },
+    {
+      "function_code": "3900",
+      "function_name": "Other Pupil Services",
+      "amount": 3208842.45
+    },
+    {
+      "function_code": "3700",
+      "function_name": "Food Services",
+      "amount": 2978529.79
+    },
+    {
+      "function_code": "7300",
+      "function_name": "Fiscal Services",
+      "amount": 2514952.58
+    },
+    {
+      "function_code": "7350",
+      "function_name": "Financial Accounting",
+      "amount": 2327677.48
+    },
+    {
+      "function_code": "7340",
+      "function_name": "Payroll",
+      "amount": 2323021.16
+    },
+    {
+      "function_code": "7210",
+      "function_name": "Indirect Cost Transfers",
+      "amount": -1984433.93
+    },
+    {
+      "function_code": "7310",
+      "function_name": "Budgeting",
+      "amount": 1519578.48
+    },
+    {
+      "function_code": "7180",
+      "function_name": "Public Information",
+      "amount": 1110323.83
+    },
+    {
+      "function_code": "9100",
+      "function_name": "Debt Service",
+      "amount": 989965.55
+    },
+    {
+      "function_code": "7510",
+      "function_name": "Planning, Research, Development & Eval",
+      "amount": 944951.44
+    },
+    {
+      "function_code": "7540",
+      "function_name": "Warehousing and Distribution",
+      "amount": 940419.42
+    },
+    {
+      "function_code": "7530",
+      "function_name": "Purchasing",
+      "amount": 882048.79
+    },
+    {
+      "function_code": "7550",
+      "function_name": "Printing, Publishing, Duplicating",
+      "amount": 486350.85
+    },
+    {
+      "function_code": "2130",
+      "function_name": "Curriculum Development",
+      "amount": 219131.57
+    },
+    {
+      "function_code": "7190",
+      "function_name": "External Financial Audit - Single",
+      "amount": 210000.0
+    },
+    {
+      "function_code": "2140",
+      "function_name": "In-house Staff Development",
+      "amount": 137134.36
+    },
+    {
+      "function_code": "7600",
+      "function_name": "All Other General Administration",
+      "amount": 125494.83
+    },
+    {
+      "function_code": "4900",
+      "function_name": "Other Ancillary Services",
+      "amount": 72450.0
+    },
+    {
+      "function_code": "6000",
+      "function_name": "Enterprise",
+      "amount": 27879.11
+    },
+    {
+      "function_code": "7120",
+      "function_name": "Staff Relations and Negotiations",
+      "amount": 19802.66
+    },
+    {
+      "function_code": "2490",
+      "function_name": "Other Instructional Resources",
+      "amount": 12084.57
+    },
+    {
+      "function_code": "2110",
+      "function_name": "Instructional Supervision",
+      "amount": 6646.63
+    },
+    {
+      "function_code": "7390",
+      "function_name": "Other Fiscal Services",
+      "amount": 913.88
+    }
+  ],
+  "services_spending": {
+    "FY2020-21": {
+      "total": 72125795.03,
+      "by_function": {
+        "Instructional Supervision & Administration": 32399191.21,
+        "Instructional Library, Media & Technology": 336803.22,
+        "Parent Participation": 4747.93,
+        "School Administration": 617368.16,
+        "Guidance and Counseling": 141008.32,
+        "Attendance and Social Work": 379420.99,
+        "Health Services": 589492.3,
+        "Pupil Testing Services": 286520.29,
+        "Pupil Transportation": 5316285.58,
+        "Food Services": 59201.82,
+        "Other Pupil Services": 2194826.01,
+        "Board": 1348767.4,
+        "Superintendent": 862681.14,
+        "Public Information": 257924.26,
+        "External Financial Audit - Single": 215424.0,
+        "Other General Administration": 23359.71,
+        "Fiscal Services": 205946.03,
+        "Budgeting": 11993.44,
+        "Payroll": 66214.87,
+        "Financial Accounting": 388042.03,
+        "Other Fiscal Services": 844.31,
+        "Personnel/Human Resources": 365735.97,
+        "Purchasing": 312590.04,
+        "Printing, Publishing, Duplicating": 140160.74,
+        "Centralized Data Processing": 14743555.36,
+        "Maintenance": 955985.5,
+        "Operations": 1871998.46,
+        "Security": 199564.56,
+        "Other Plant Maintenance & Operations": 4383195.69,
+        "Facilities Acquisition and Construction": 934062.52,
+        "Debt Service": 820430.45,
+        "Instruction": 1166777.18,
+        "Other Ancillary Services": 544.1,
+        "Psychological Services": 2307.36,
+        "Other Instructional Resources": 431471.15,
+        "School-Sponsored Athletics": 91352.93
+      }
+    },
+    "FY2021-22": {
+      "total": 160609994.07,
+      "by_function": {
+        "Instructional Supervision & Administration": 38796330.2,
+        "Instructional Library, Media & Technology": 80054.24,
+        "School Administration": 754268.39,
+        "Guidance and Counseling": 142443.89,
+        "Health Services": 3646521.15,
+        "Pupil Testing Services": 520266.98,
+        "Pupil Transportation": 24350599.86,
+        "Food Services": 186096.57,
+        "Other Pupil Services": 2756558.3,
+        "Board": 710376.2,
+        "Superintendent": 523924.61,
+        "Public Information": 79079.3,
+        "Other General Administration": 79508.02,
+        "Fiscal Services": 1657479.43,
+        "Financial Accounting": 9502.92,
+        "Personnel/Human Resources": 516646.94,
+        "Planning, Research, Development & Eval": 24991.78,
+        "Printing, Publishing, Duplicating": 145169.26,
+        "Centralized Data Processing": 17045729.07,
+        "Maintenance": 877510.59,
+        "Operations": 3232895.84,
+        "Other Plant Maintenance & Operations": 8843322.32,
+        "Facilities Acquisition and Construction": 3093585.73,
+        "Debt Service": 989965.55,
+        "Instruction": 19555608.06,
+        "School-Sponsored Athletics": 1488953.54,
+        "SpEd: Other Specialized": 73126.46,
+        "External Financial Audit - Single": 210000.0,
+        "Budgeting": 19913.9,
+        "Payroll": 4840.56,
+        "Other Fiscal Services": 913.88,
+        "Purchasing": 269362.07,
+        "Speech Pathology and Audiology": 9500.0,
+        "SpEd: Nonpublic Agencies/Schools": 26999588.61,
+        "Other Instructional Resources": 12084.57,
+        "In-house Staff Development": 2406.9,
+        "Psychological Services": 2603891.67,
+        "Attendance and Social Work": 296534.65,
+        "Security": 442.06
+      }
+    }
+  },
+  "revenue": {
+    "FY2020-21": {
+      "total": 988792488.57,
+      "categories": {
+        "LCFF Sources": 531948013.82,
+        "Federal Revenue": 70800944.26,
+        "Other State Revenue": 114800590.29,
+        "Other Local Revenue": 271242940.2,
+        "Interfund Transfers In": 0.0
+      }
+    },
+    "FY2021-22": {
+      "total": 1310593254.48,
+      "categories": {
+        "LCFF Sources": 609083507.75,
+        "Federal Revenue": 131805585.13,
+        "Other State Revenue": 143438030.48,
+        "Other Local Revenue": 426262352.11,
+        "Interfund Transfers In": 3779.01
+      }
+    }
+  },
+  "fund_balance": {
+    "FY2020-21": {
+      "9110": 47721904.58,
+      "9111": 16869.96,
+      "9120": 513824.49,
+      "9130": 500.0,
+      "9150": 9000000.0,
+      "9200": -342.98,
+      "9290": 13475419.98,
+      "9320": 1373096.92,
+      "9330": 154652.47,
+      "9500": 4963775.68,
+      "9590": 20080.93,
+      "9640": 100620581.65,
+      "9650": 184790.51,
+      "9711": 500.0,
+      "9712": 1373096.92,
+      "9713": 154652.47,
+      "9789": 18477051.0,
+      "9790": 0.0,
+      "9791": 43324415.52,
+      "979Z": 56559371.89,
+      "9740": 56559371.89
+    },
+    "FY2021-22": {
+      "9110": 68754463.29,
+      "9111": -1216601.1,
+      "9120": 513824.49,
+      "9130": 500.0,
+      "9150": 3500000.0,
+      "9200": -342.98,
+      "9290": 9180039.4,
+      "9320": 1876150.06,
+      "9330": 154652.47,
+      "9500": 6712414.72,
+      "9590": 20080.93,
+      "9650": 152053.77,
+      "9711": 500.0,
+      "9712": 1876150.06,
+      "9713": 154652.47,
+      "9750": 65000000.0,
+      "9760": 40000000.0,
+      "9789": 23242275.0,
+      "9790": 0.0,
+      "9791": 56559371.89,
+      "9793": -1500000.0,
+      "979Z": 70347176.66,
+      "9740": 70347176.66
+    }
+  },
+  "peer_admin_comparison": {
+    "San Francisco Unified": {
+      "admin_total": 402773539.35,
+      "total_expenditures": 2660983950.69,
+      "admin_pct": 15.14
+    },
+    "Oakland Unified": {
+      "admin_total": 140298313.8,
+      "total_expenditures": 1794317316.93,
+      "admin_pct": 7.82
+    },
+    "Fresno Unified": {
+      "admin_total": 293561014.0,
+      "total_expenditures": 3438276847.0,
+      "admin_pct": 8.54
+    },
+    "Long Beach Unified": {
+      "admin_total": 287623468.0,
+      "total_expenditures": 2600230978.0,
+      "admin_pct": 11.06
+    },
+    "Los Angeles Unified": {
+      "admin_total": 2842183110.11,
+      "total_expenditures": 21560589648.97,
+      "admin_pct": 13.18
+    },
+    "Sacramento City Unified": {
+      "admin_total": 178323083.49,
+      "total_expenditures": 1632315209.95,
+      "admin_pct": 10.92
+    },
+    "San Diego Unified": {
+      "admin_total": 317079423.0,
+      "total_expenditures": 3947567242.0,
+      "admin_pct": 8.03
+    },
+    "San Jose Unified": {
+      "admin_total": 116440702.88,
+      "total_expenditures": 990240313.82,
+      "admin_pct": 11.76
+    }
+  },
+  "peer_services_comparison": {
+    "San Francisco Unified": {
+      "services_total": 432874189.38,
+      "total_expenditures": 2660983950.69,
+      "services_pct": 16.27
+    },
+    "Oakland Unified": {
+      "services_total": 358402042.85,
+      "total_expenditures": 1794317316.93,
+      "services_pct": 19.97
+    },
+    "Fresno Unified": {
+      "services_total": 454413627.0,
+      "total_expenditures": 3438276847.0,
+      "services_pct": 13.22
+    },
+    "Long Beach Unified": {
+      "services_total": 397539967.0,
+      "total_expenditures": 2600230978.0,
+      "services_pct": 15.29
+    },
+    "Los Angeles Unified": {
+      "services_total": 2459022948.88,
+      "total_expenditures": 21560589648.97,
+      "services_pct": 11.41
+    },
+    "Sacramento City Unified": {
+      "services_total": 249793040.94,
+      "total_expenditures": 1632315209.95,
+      "services_pct": 15.3
+    },
+    "San Diego Unified": {
+      "services_total": 345363338.0,
+      "total_expenditures": 3947567242.0,
+      "services_pct": 8.75
+    },
+    "San Jose Unified": {
+      "services_total": 167159837.97,
+      "total_expenditures": 990240313.82,
+      "services_pct": 16.88
+    }
+  },
+  "peer_salary_comparison": {
+    "San Francisco Unified": {
+      "certificated": 975782934.42,
+      "classified": 442806028.56,
+      "total_salary": 1418588962.98,
+      "total_expenditures": 2660983950.69,
+      "salary_pct": 53.31
+    },
+    "Oakland Unified": {
+      "certificated": 545576924.98,
+      "classified": 263695118.59,
+      "total_salary": 809272043.57,
+      "total_expenditures": 1794317316.93,
+      "salary_pct": 45.1
+    },
+    "Fresno Unified": {
+      "certificated": 1185631327.0,
+      "classified": 448043199.0,
+      "total_salary": 1633674526.0,
+      "total_expenditures": 3438276847.0,
+      "salary_pct": 47.51
+    },
+    "Long Beach Unified": {
+      "certificated": 1022543203.0,
+      "classified": 288765871.0,
+      "total_salary": 1311309074.0,
+      "total_expenditures": 2600230978.0,
+      "salary_pct": 50.43
+    },
+    "Los Angeles Unified": {
+      "certificated": 8036588617.88,
+      "classified": 3051893861.0,
+      "total_salary": 11088482478.88,
+      "total_expenditures": 21560589648.97,
+      "salary_pct": 51.43
+    },
+    "Sacramento City Unified": {
+      "certificated": 616902301.98,
+      "classified": 183017642.03,
+      "total_salary": 799919944.01,
+      "total_expenditures": 1632315209.95,
+      "salary_pct": 49.01
+    },
+    "San Diego Unified": {
+      "certificated": 1585805439.0,
+      "classified": 615918607.0,
+      "total_salary": 2201724046.0,
+      "total_expenditures": 3947567242.0,
+      "salary_pct": 55.77
+    },
+    "San Jose Unified": {
+      "certificated": 371928197.64,
+      "classified": 124377355.26,
+      "total_salary": 496305552.9,
+      "total_expenditures": 990240313.82,
+      "salary_pct": 50.12
+    }
+  },
+  "sfusd_statewide_function_breakdown": {
+    "1000": 1202385074.49,
+    "2100": 172770683.28,
+    "2700": 122015753.48,
+    "8200": 95830822.15,
+    "3130": 89795093.17,
+    "1120": 81770666.68,
+    "3600": 81486792.16,
+    "1110": 80271847.31,
+    "7400": 75694687.52,
+    "1190": 65485822.32,
+    "7700": 58225212.02,
+    "3110": 49753979.26,
+    "1180": 48012304.87,
+    "1130": 44994034.4,
+    "3140": 39044308.24,
+    "3120": 38559275.84,
+    "3150": 34119737.78,
+    "8400": 30233980.56,
+    "2420": 29656157.29,
+    "7150": 29197778.52,
+    "8110": 20939245.21,
+    "8300": 20434451.46,
+    "7300": 19799150.11,
+    "3900": 18789421.1,
+    "8500": 14667538.45,
+    "3700": 12901012.22,
+    "4200": 12522884.71,
+    "2140": 11013064.13,
+    "9200": 8186739.01,
+    "7200": 7575253.31,
+    "3160": 6714540.71,
+    "7340": 5920652.07,
+    "7350": 5434851.69,
+    "9300": 4664000.73,
+    "4000": 4344000.0,
+    "7210": -4211496.9,
+    "7310": 3371169.52,
+    "7510": 3100052.6,
+    "7120": 3055840.41,
+    "7530": 2958572.79,
+    "7110": 2782306.4,
+    "7180": 1709201.96,
+    "7540": 1572905.46,
+    "7550": 1496728.64,
+    "2110": 423700.65,
+    "2120": 391468.32,
+    "2130": 347639.47,
+    "2490": 337974.9,
+    "7600": 134800.08,
+    "5000": 115000.0,
+    "2495": 92635.23,
+    "8100": 50860.31,
+    "6000": 34457.3,
+    "7410": 9317.3
+  }
+}

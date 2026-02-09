@@ -1,0 +1,128 @@
+{
+  "sunk_costs": [
+    {
+      "item": "EMPowerSF total cost ($33.7M)",
+      "amount": 33700000,
+      "note": "Already spent. Cannot recover. But ongoing Frontline costs (~$2.7M/yr) are still actionable."
+    },
+    {
+      "item": "Past budget projection misses",
+      "amount": null,
+      "note": "Can't recover past surpluses, but establishes that current 'we're broke' projections are unreliable."
+    }
+  ],
+  "actionable": [
+    {
+      "source": "Reduce healthcare staffing agencies by 50% (hire permanent)",
+      "annual_savings": 8435283.0,
+      "confidence": "HIGH",
+      "timeframe": "1-2 years",
+      "what_it_takes": "Hiring + onboarding permanent speech pathologists, nurses, therapists",
+      "detail": "Total healthcare staffing contractor spend: $16,870,566. Vendors: THE SPEECH PATHOLOGY GROUP ($$5.8M), RO HEALTH, INC. ($$4.3M), AEQUOR ($$2.0M), AMERGIS HEALTHCARE STAFFING , INC. ($$1.5M), MAXIM HEALTHCARE SERVICES HOLDINGS, INC ($$926K), BMR HEALTH SERVICES INC ($$900K). At $150K fully-loaded cost per FTE, this buys ~112 permanent staff.",
+      "recommended_by": "PERB Fact-Finding Panel (Feb 2026)"
+    },
+    {
+      "source": "Reduce IT consulting by 60% (post-EMPowerSF stabilization)",
+      "annual_savings": 11545341.0,
+      "confidence": "MEDIUM",
+      "timeframe": "1 year",
+      "what_it_takes": "Internal IT capacity building, completing Frontline transition",
+      "detail": "Total cuttable IT consulting: $19,242,236. Vendors: GALAXY SOLUTIONS INC. ($$7.1M), INFOSYS ($$5.7M), FILIPPINI CONSULTING LLC ($$876K), AREY-JONES EDUCATIONAL SOLUTIONS ($$758K), EDUPOINT EDUCATIONAL SYSTEMS ($$755K). BLA already flagged excessive IT consulting spending.",
+      "recommended_by": "BLA Central Admin Staffing Report (Jan 2023)"
+    },
+    {
+      "source": "Shift after-school programs to restricted funds where eligible",
+      "annual_savings": 9422334.0,
+      "confidence": "MEDIUM",
+      "timeframe": "1 year",
+      "what_it_takes": "Grant writing + fund coding review. Many programs eligible for ASES, 21st CCLC, Title I funds.",
+      "detail": "Total after-school contractor spend: $37,689,336. Conservative estimate: 25% could shift from General Fund to restricted sources."
+    },
+    {
+      "source": "Renegotiate transportation contract",
+      "annual_savings": 5756101.0,
+      "confidence": "MEDIUM",
+      "timeframe": "Next RFP cycle",
+      "what_it_takes": "Competitive bidding, route optimization, potential in-house fleet",
+      "detail": "Zum Services: $38,374,008. Competitive rebid could yield 15-25% savings."
+    },
+    {
+      "source": "Use fund balance surplus (documented recurring pattern)",
+      "annual_savings": 20000000,
+      "confidence": "HIGH",
+      "timeframe": "Immediate",
+      "what_it_takes": "Political will. District consistently ends with $80-170M more than projected.",
+      "detail": "FY2022-23: projected $307M, actual $413M (+$106M). FY2023-24: projected $383M, actual $468M (+$85M). Conservative: use $20M of the recurring surplus for ongoing raises."
+    }
+  ],
+  "structural": [
+    {
+      "source": "Cut admin FTEs to peer median (phased, ~200 positions)",
+      "annual_savings": 56097046.0,
+      "confidence": "HIGH",
+      "timeframe": "2-3 years",
+      "what_it_takes": "Attrition + reorganization. BLA found 220 central FTEs/10K students vs 138 median.",
+      "detail": "Admin spending gap: $112,194,092 (15.1% vs 10.9% peer median). Closing half = $56,097,046. At $150K/FTE, that's ~373 positions.",
+      "recommended_by": "BLA Central Admin Staffing Report (Jan 2023)"
+    }
+  ],
+  "fund_the_raises": {
+    "items": [
+      {
+        "source": "Reduce healthcare staffing agencies by 50% (hire permanent)",
+        "annual_savings": 8435283.0,
+        "confidence": "HIGH",
+        "timeframe": "1-2 years",
+        "what_it_takes": "Hiring + onboarding permanent speech pathologists, nurses, therapists",
+        "detail": "Total healthcare staffing contractor spend: $16,870,566. Vendors: THE SPEECH PATHOLOGY GROUP ($$5.8M), RO HEALTH, INC. ($$4.3M), AEQUOR ($$2.0M), AMERGIS HEALTHCARE STAFFING , INC. ($$1.5M), MAXIM HEALTHCARE SERVICES HOLDINGS, INC ($$926K), BMR HEALTH SERVICES INC ($$900K). At $150K fully-loaded cost per FTE, this buys ~112 permanent staff.",
+        "recommended_by": "PERB Fact-Finding Panel (Feb 2026)"
+      },
+      {
+        "source": "Reduce IT consulting by 60% (post-EMPowerSF stabilization)",
+        "annual_savings": 11545341.0,
+        "confidence": "MEDIUM",
+        "timeframe": "1 year",
+        "what_it_takes": "Internal IT capacity building, completing Frontline transition",
+        "detail": "Total cuttable IT consulting: $19,242,236. Vendors: GALAXY SOLUTIONS INC. ($$7.1M), INFOSYS ($$5.7M), FILIPPINI CONSULTING LLC ($$876K), AREY-JONES EDUCATIONAL SOLUTIONS ($$758K), EDUPOINT EDUCATIONAL SYSTEMS ($$755K). BLA already flagged excessive IT consulting spending.",
+        "recommended_by": "BLA Central Admin Staffing Report (Jan 2023)"
+      },
+      {
+        "source": "Shift after-school programs to restricted funds where eligible",
+        "annual_savings": 9422334.0,
+        "confidence": "MEDIUM",
+        "timeframe": "1 year",
+        "what_it_takes": "Grant writing + fund coding review. Many programs eligible for ASES, 21st CCLC, Title I funds.",
+        "detail": "Total after-school contractor spend: $37,689,336. Conservative estimate: 25% could shift from General Fund to restricted sources."
+      },
+      {
+        "source": "Renegotiate transportation contract",
+        "annual_savings": 5756101.0,
+        "confidence": "MEDIUM",
+        "timeframe": "Next RFP cycle",
+        "what_it_takes": "Competitive bidding, route optimization, potential in-house fleet",
+        "detail": "Zum Services: $38,374,008. Competitive rebid could yield 15-25% savings."
+      },
+      {
+        "source": "Use fund balance surplus (documented recurring pattern)",
+        "annual_savings": 20000000,
+        "confidence": "HIGH",
+        "timeframe": "Immediate",
+        "what_it_takes": "Political will. District consistently ends with $80-170M more than projected.",
+        "detail": "FY2022-23: projected $307M, actual $413M (+$106M). FY2023-24: projected $383M, actual $468M (+$85M). Conservative: use $20M of the recurring surplus for ongoing raises."
+      },
+      {
+        "source": "Cut admin FTEs to peer median (phased, ~200 positions)",
+        "annual_savings": 56097046.0,
+        "confidence": "HIGH",
+        "timeframe": "2-3 years",
+        "what_it_takes": "Attrition + reorganization. BLA found 220 central FTEs/10K students vs 138 median.",
+        "detail": "Admin spending gap: $112,194,092 (15.1% vs 10.9% peer median). Closing half = $56,097,046. At $150K/FTE, that's ~373 positions.",
+        "recommended_by": "BLA Central Admin Staffing Report (Jan 2023)"
+      }
+    ],
+    "conservative_total": 111256105.0,
+    "optimistic_total": 144632936.0,
+    "raises_funded_conservative": 10.9,
+    "raises_funded_optimistic": 14.2
+  }
+}

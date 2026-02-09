@@ -1,0 +1,4064 @@
+{
+  "primary_total": 226028737.01,
+  "primary_count": 676,
+  "secondary_total": 53240773.15,
+  "secondary_count": 176,
+  "vendors": [
+    {
+      "name": "ZUM SERVICES, INC.",
+      "amount": 38374008.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REVOLUTION FOODS, PBC",
+      "amount": 16100137.86,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "YMCA OF SAN FRANCISCO",
+      "amount": 14369546.58,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA COMMUNITY RESOURCES",
+      "amount": 10472532.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GALAXY SOLUTIONS INC.",
+      "amount": 7056413.02,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MISSION GRADUATES",
+      "amount": 5924049.19,
+      "source": "boarddocs_summary",
+      "secondary_amount": 4523422.0
+    },
+    {
+      "name": "THE SPEECH PATHOLOGY GROUP",
+      "amount": 5850000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INFOSYS",
+      "amount": 5747095.49,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PROTIVITI GOVERNMENT SERVICES, INC.",
+      "amount": 5550000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "RO HEALTH, INC.",
+      "amount": 4349783.27,
+      "source": "boarddocs_summary",
+      "secondary_amount": 1000000.0
+    },
+    {
+      "name": "JAMESTOWN COMMUNITY CENTER",
+      "amount": 3361914.6,
+      "source": "boarddocs_summary",
+      "secondary_amount": 2993469.0
+    },
+    {
+      "name": "THE EDUCATION EXPERTS, LLC",
+      "amount": 3100000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 3100000.0
+    },
+    {
+      "name": "SUNSET SCAVENGER COMPANY",
+      "amount": 3053377.01,
+      "source": "boarddocs_summary",
+      "secondary_amount": 2316263.01
+    },
+    {
+      "name": "RICHMOND DIST. NEIGHBORHOOD CTR.",
+      "amount": 2871010.31,
+      "source": "boarddocs_summary",
+      "secondary_amount": 2611236.0
+    },
+    {
+      "name": "FRONTLINE EDUCATION",
+      "amount": 2660449.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SPECIAL SERVICE FOR GROUPS, INC.",
+      "amount": 2567369.54,
+      "source": "boarddocs_summary",
+      "secondary_amount": 520520.0
+    },
+    {
+      "name": "GOLD STAR FOODS INC.",
+      "amount": 2530170.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 2530170.0
+    },
+    {
+      "name": "RCM TECHNOLOGIES (USA), INC.",
+      "amount": 2500539.82,
+      "source": "boarddocs_summary",
+      "secondary_amount": 300000.0
+    },
+    {
+      "name": "SOURCE TO TARGET TRANSLATIONS",
+      "amount": 2430000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 2600000.0
+    },
+    {
+      "name": "COMMUNITY YOUTH CENTER OF SAN FRANCISCO",
+      "amount": 2130344.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 1900344.0
+    },
+    {
+      "name": "AEQUOR",
+      "amount": 2003500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REAL OPTIONS FOR CITY KIDS",
+      "amount": 1986066.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 1531516.0
+    },
+    {
+      "name": "CDW GOVERNMENT",
+      "amount": 1715566.81,
+      "source": "boarddocs_summary",
+      "secondary_amount": 38309.59
+    },
+    {
+      "name": "PIONEER HEALTHCARE SERVICES LLC",
+      "amount": 1570000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AMERGIS HEALTHCARE STAFFING , INC.",
+      "amount": 1544333.33,
+      "source": "boarddocs_summary",
+      "secondary_amount": 1400000.0
+    },
+    {
+      "name": "THE STEPPING STONES GROUP LLC",
+      "amount": 1500000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WAXIE SANITARY SUPPLY",
+      "amount": 1291219.48,
+      "source": "boarddocs_summary",
+      "secondary_amount": 572109.48
+    },
+    {
+      "name": "CRYSTAL CREAMERY, INC.",
+      "amount": 1225000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DIGITAL SCEPTER CORPORATION",
+      "amount": 1149478.39,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BOYS & GIRLS CLUBS OF SAN FRANCISCO",
+      "amount": 1148374.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 1098374.0
+    },
+    {
+      "name": "SENECA FAMILY OF AGENCIES",
+      "amount": 1131259.44,
+      "source": "boarddocs_summary",
+      "secondary_amount": 22500.0
+    },
+    {
+      "name": "BAY AREA COMMUNICATION ACCESS",
+      "amount": 1102197.29,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITY AND COUNTY OF SAN FRANCISCO",
+      "amount": 1100000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BROADWAY TYPEWRITER COMPANY INC.",
+      "amount": 1090136.97,
+      "source": "boarddocs_summary",
+      "secondary_amount": 95000.0
+    },
+    {
+      "name": "RICHMOND AREA MULTI-SERVICES, INC.",
+      "amount": 1060507.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 980516.0
+    },
+    {
+      "name": "SAP PUBLIC SERVICES, INC.",
+      "amount": 1053637.88,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ATHENS ADMINISTRATORS",
+      "amount": 948583.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MAXIM HEALTHCARE SERVICES HOLDINGS, INC",
+      "amount": 925509.83,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BMR HEALTH SERVICES INC",
+      "amount": 900000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FILIPPINI CONSULTING LLC",
+      "amount": 876152.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 841652.0
+    },
+    {
+      "name": "PACIFIC RIM PRODUCE",
+      "amount": 850000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "A1 PROTECTIVE SERVICES, INC.",
+      "amount": 848707.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 402867.08
+    },
+    {
+      "name": "GOTO COMMUNICATIONS, INC.",
+      "amount": 827649.9,
+      "source": "boarddocs_summary",
+      "secondary_amount": 827649.9
+    },
+    {
+      "name": "RENAISSANCE LEARNING, INC.",
+      "amount": 808380.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 777967.0
+    },
+    {
+      "name": "VICTOR TREATMENT CENTERS, INC.",
+      "amount": 800000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AMPLIFY EDUCATION, INC.",
+      "amount": 799460.26,
+      "source": "boarddocs_summary",
+      "secondary_amount": 730082.7
+    },
+    {
+      "name": "LEARNUP CENTERS",
+      "amount": 794900.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AREY-JONES EDUCATIONAL SOLUTIONS",
+      "amount": 757870.05,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EDUPOINT EDUCATIONAL SYSTEMS",
+      "amount": 755168.69,
+      "source": "boarddocs_summary",
+      "secondary_amount": 769093.0
+    },
+    {
+      "name": "POSITIVE BEHAVIOR SUPPORTS CORP",
+      "amount": 750000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SUNBELT STAFFING, LLC",
+      "amount": 750000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TELEGRAPH HILL NEIGHBORHOOD CENTER",
+      "amount": 745850.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 625850.0
+    },
+    {
+      "name": "AFTER SCHOOL ENRICHMENT PROGRAM",
+      "amount": 711901.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 643361.0
+    },
+    {
+      "name": "ARISE EDUCATIONAL CENTER",
+      "amount": 700721.44,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AGURTO CORPORATION DBA PESTEC",
+      "amount": 700128.32,
+      "source": "boarddocs_summary",
+      "secondary_amount": 378727.32
+    },
+    {
+      "name": "METRO ELEVATOR",
+      "amount": 700000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 400000.0
+    },
+    {
+      "name": "LANGUAGE CIRCLE OF CALIFORNIA, INC.",
+      "amount": 689450.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 660000.0
+    },
+    {
+      "name": "COMMITTEE FOR CHILDREN",
+      "amount": 676659.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 676659.0
+    },
+    {
+      "name": "SYNTEX GLOBAL INC.",
+      "amount": 660000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 660000.0
+    },
+    {
+      "name": "CENTER FOR SOCIAL DYNAMICS. LLC",
+      "amount": 650000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA",
+      "amount": 592430.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SYSCO FOOD SERVICES NORTHERN CA REGION",
+      "amount": 567000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 567000.0
+    },
+    {
+      "name": "DISCOVERY EDUCATION, INC.",
+      "amount": 566546.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 566546.0
+    },
+    {
+      "name": "JOHNSON CONTROLS FIRE PROTECTION LP",
+      "amount": 560066.39,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FLOW TRANSLATIONS",
+      "amount": 557682.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 407682.0
+    },
+    {
+      "name": "BEHAVIORAL INTERVENTION SPECIALIST OF LA",
+      "amount": 550000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SF ARTS EDUCATION PROJECT",
+      "amount": 548986.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 488986.0
+    },
+    {
+      "name": "IXL LEARNING, INC.",
+      "amount": 544350.43,
+      "source": "boarddocs_summary",
+      "secondary_amount": 281135.0
+    },
+    {
+      "name": "CONVERGE TECHNOLOGY SOLUTIONS US, LLC",
+      "amount": 542313.64,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STRATEGIC ENERGY INNOVATIONS",
+      "amount": 540750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 260000.0
+    },
+    {
+      "name": "CPM EDUCATIONAL PROGRAM",
+      "amount": 520000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 520000.0
+    },
+    {
+      "name": "CHRISTY WHITE, INC.",
+      "amount": 517508.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 198754.0
+    },
+    {
+      "name": "CONSOLIDATED PRINTERS, INC",
+      "amount": 490178.85,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TNTP, INC.",
+      "amount": 486719.18,
+      "source": "boarddocs_summary",
+      "secondary_amount": 277448.0
+    },
+    {
+      "name": "CONVERGE TECHNOLOGY SOLUTIONS",
+      "amount": 473886.67,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FAGEN FRIEDMAN & FULFROST, LLP",
+      "amount": 457435.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITY MECHANICAL, INC.",
+      "amount": 456220.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EDTHEORY LLC",
+      "amount": 442007.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COUGHLAN COMPANIES LLC",
+      "amount": 420000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GOOD SAMARITAN FAMILY RESOURCE CENTER",
+      "amount": 407991.06,
+      "source": "boarddocs_summary",
+      "secondary_amount": 329817.8
+    },
+    {
+      "name": "TELBON COMMUNICATIONS, INC",
+      "amount": 407934.2,
+      "source": "boarddocs_summary",
+      "secondary_amount": 407934.2
+    },
+    {
+      "name": "DLT SOLUTIONS, LLC",
+      "amount": 405522.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FOOD CONNECT CO",
+      "amount": 400000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ENTERPRISE FOR YOUTH",
+      "amount": 380000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITY & COUNTY OF S.F.",
+      "amount": 378666.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ORACLE AMERICA, INC.",
+      "amount": 350250.74,
+      "source": "boarddocs_summary",
+      "secondary_amount": 350250.74
+    },
+    {
+      "name": "A BETTER CHANCE SCHOOL",
+      "amount": 350000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "IMAGINE LEARNING, LLC",
+      "amount": 342800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 80250.0
+    },
+    {
+      "name": "PLAYWORKS EDUCATION ENERGIZED",
+      "amount": 337062.66,
+      "source": "boarddocs_summary",
+      "secondary_amount": 36000.0
+    },
+    {
+      "name": "Community Fire Protection",
+      "amount": 337000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN FRANCISCO ARTS EDUCATION PROJECT",
+      "amount": 335360.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CUMMING MANAGEMENT GROUP INC",
+      "amount": 333825.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHILDREN'S AFTER SCHOOL ARTS",
+      "amount": 327481.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 247481.0
+    },
+    {
+      "name": "AYA HEALTHCARE INC.",
+      "amount": 325000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "RED ROVER TECHNOLOGIES LLC",
+      "amount": 319518.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LINDAMOOD-BELL LEARNING PROCESSES",
+      "amount": 304560.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 304560.0
+    },
+    {
+      "name": "IRENE M HUNT SCHOOL OF MARIN",
+      "amount": 300000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EL EDUCATION, INC.",
+      "amount": 277000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 187000.0
+    },
+    {
+      "name": "COVELO GROUP, INC.",
+      "amount": 275000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 200000.0
+    },
+    {
+      "name": "INQUIRED",
+      "amount": 270212.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LAN DO & ASSOCIATES, LLC",
+      "amount": 270000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 270000.0
+    },
+    {
+      "name": "P&R PAPER SUPPLY COMPANY, INC.",
+      "amount": 250000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 250000.0
+    },
+    {
+      "name": "PROFESSIONAL TUTORS OF AMERICA, INC.",
+      "amount": 250000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WAH MEI SCHOOL",
+      "amount": 249915.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 231465.0
+    },
+    {
+      "name": "AMN ALLIED SERVICES LLC",
+      "amount": 249069.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "D HARRIS TOURS, INC.",
+      "amount": 247303.16,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COMMUNITY YOUTH CENTER",
+      "amount": 247000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 247000.0
+    },
+    {
+      "name": "CLARENDON BEFORE & AFTER SCHOOL",
+      "amount": 235230.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 235230.0
+    },
+    {
+      "name": "PERFORMING ARTS WORKSHOP",
+      "amount": 233037.9,
+      "source": "boarddocs_summary",
+      "secondary_amount": 113998.0
+    },
+    {
+      "name": "AMERICA SCORES BAY AREA",
+      "amount": 225058.57,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NORTHERN CA. BASKETBALL OFFICIALS ASSOC.",
+      "amount": 220000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 110000.0
+    },
+    {
+      "name": "NAGATA DANCE COMPANY",
+      "amount": 215894.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 49170.0
+    },
+    {
+      "name": "OPEN UP RESOURCES",
+      "amount": 210630.05,
+      "source": "boarddocs_summary",
+      "secondary_amount": 210630.05
+    },
+    {
+      "name": "SOCCER WITHOUT BORDERS",
+      "amount": 209640.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PROGRESSUS THERAPY LLC",
+      "amount": 209016.33,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TERRA LANDSCAPE",
+      "amount": 205947.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 45000.0
+    },
+    {
+      "name": "FOLLETT SCHOOL SOLUTIONS, LLC",
+      "amount": 203314.18,
+      "source": "boarddocs_summary",
+      "secondary_amount": 203314.18
+    },
+    {
+      "name": "HALL, RAYMOND D.",
+      "amount": 200001.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 200000.0
+    },
+    {
+      "name": "A & B Mechanical, Inc.",
+      "amount": 200000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHILDREN'S HEALTH COUNCIL, INC.",
+      "amount": 200000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KALAMUNA, INC.",
+      "amount": 200000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 200000.0
+    },
+    {
+      "name": "PRIME MECHANICAL SERVICE INC.",
+      "amount": 200000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STAR ACADEMY",
+      "amount": 200000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SEESAW LEARNING, INC.",
+      "amount": 198720.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 198720.0
+    },
+    {
+      "name": "WESTERN INSTITUTE FOR SOCIAL RESEARCH",
+      "amount": 198000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 198000.0
+    },
+    {
+      "name": "LIVE BIG COMMUNITY",
+      "amount": 197400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INSTITUTO FAMILIAR DE LA RAZA, INC.",
+      "amount": 197000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NIROGA INSTITUTE",
+      "amount": 193400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SOFTCHOICE CORPORATION",
+      "amount": 189115.52,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GRATTAN AFTER SCHOOL PROGRAM",
+      "amount": 188013.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 128013.0
+    },
+    {
+      "name": "CALIFORNIA SCHOOL INSPECTIONS, LLC",
+      "amount": 184000.01,
+      "source": "boarddocs_summary",
+      "secondary_amount": 184000.01
+    },
+    {
+      "name": "THE AVALON ACADEMY",
+      "amount": 180000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ENOME, INC.",
+      "amount": 175525.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 175255.0
+    },
+    {
+      "name": "LA EUROPA ACADEMY",
+      "amount": 175000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PRISTINE REHAB CARE, LLC",
+      "amount": 175000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CARAHSOFT TECHNOLOGY CORPORATION",
+      "amount": 174209.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 114889.5
+    },
+    {
+      "name": "MINDFUL LIFE PROJECT",
+      "amount": 166422.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GREATER GOOD STUDENT SUPPORT SERVICES",
+      "amount": 165000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EPI-USE LABS, LLC",
+      "amount": 157739.41,
+      "source": "boarddocs_summary",
+      "secondary_amount": 139140.0
+    },
+    {
+      "name": "CYBERSOFT TECHNOLOGIES, INC.",
+      "amount": 156595.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ASSIST TEAM LLC",
+      "amount": 154960.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AIM HIGH FOR HIGH SCHOOL",
+      "amount": 150000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BUEHLER TRAPANI LLP",
+      "amount": 150000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ELVIN DANIEL NIEVES RIVERA",
+      "amount": 150000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SANTA CLARA COUNTY OFFICE OF EDUCATION",
+      "amount": 150000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DUDEK",
+      "amount": 149613.75,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EMERGENT, LLC",
+      "amount": 146880.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 146880.0
+    },
+    {
+      "name": "EDUCATION, TRAINING & RESEARCH ASSOCIATE",
+      "amount": 146135.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 25640.0
+    },
+    {
+      "name": "FELTON INSTITUTE",
+      "amount": 145378.87,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AWAKEN EDUCATION CONSULTING LLC",
+      "amount": 143950.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EDGEWOOD CENTER FOR CHILDREN & FAMILIES",
+      "amount": 143006.18,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE ARC SAN FRANCISCO",
+      "amount": 140974.56,
+      "source": "boarddocs_summary",
+      "secondary_amount": 140974.56
+    },
+    {
+      "name": "LANGUAGE LINE SERVICES, INC.",
+      "amount": 140000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 140000.0
+    },
+    {
+      "name": "INTERNATIONALS NETWORK FOR PUBLIC SCHOOL",
+      "amount": 139995.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 120395.0
+    },
+    {
+      "name": "COMMUNITY MUSIC CENTER",
+      "amount": 138714.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 103944.0
+    },
+    {
+      "name": "NEWSELA INC.",
+      "amount": 136075.8,
+      "source": "boarddocs_summary",
+      "secondary_amount": 92000.0
+    },
+    {
+      "name": "THE REGENTS OF THE UNIVERSITY OF CA",
+      "amount": 132920.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NCS PEARSON, INC.",
+      "amount": 132579.16,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STEAMHEAD LLC",
+      "amount": 132240.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 62240.0
+    },
+    {
+      "name": "GER LAB, INC.",
+      "amount": 131100.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NEW TECH NETWORK, INC.",
+      "amount": 131084.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NEW TECHNOLOGY NETWORK LLC",
+      "amount": 131084.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 131084.0
+    },
+    {
+      "name": "KINGMAKERS OF OAKLAND",
+      "amount": 130500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CREATING LANGUAGE",
+      "amount": 130250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAFEGUARD, INC.",
+      "amount": 130000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 65000.0
+    },
+    {
+      "name": "NCUA BASEBALL",
+      "amount": 125000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 25000.0
+    },
+    {
+      "name": "TULIPS SPEECH THERAPY INC.",
+      "amount": 125000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WINGS LEARNING CENTER INC",
+      "amount": 125000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PARTNERS IN SCHOOL INNOVATION",
+      "amount": 123000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PARTNERS IN PUBLIC INNOVATION",
+      "amount": 121375.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA EDUCATIONAL INSTITUTE",
+      "amount": 121000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TRIUMPH ACADEMY, INC",
+      "amount": 120000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KEEP INC",
+      "amount": 119783.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 119783.0
+    },
+    {
+      "name": "WEST RIDGE ACADEMY",
+      "amount": 115726.28,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "POWERSCHOOL GROUP LLC",
+      "amount": 115209.99,
+      "source": "boarddocs_summary",
+      "secondary_amount": 115209.99
+    },
+    {
+      "name": "ACCO ENGINEERED SYSTEMS, INC.",
+      "amount": 115167.37,
+      "source": "boarddocs_summary",
+      "secondary_amount": 20000.0
+    },
+    {
+      "name": "SAN JOAQUIN COUNTY OFFICE OF EDUCATION",
+      "amount": 114797.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 114797.0
+    },
+    {
+      "name": "VISION LEARN",
+      "amount": 114499.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CATAPULT LEARNING WEST, LLC",
+      "amount": 114456.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 102956.0
+    },
+    {
+      "name": "COMPASS FAMILY SERVICES",
+      "amount": 114310.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SILVERBACK PACIFIC, LLC",
+      "amount": 114013.7,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LASCANO, ROSEANNE",
+      "amount": 114000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COOLRITE REFRIGERATION INC",
+      "amount": 113500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE ACHIEVEMENT NETWORK, LTD. (ANET)",
+      "amount": 112000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CONVERGEONE, INC",
+      "amount": 111300.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 32130.0
+    },
+    {
+      "name": "HEAT OF THE KITCHEN",
+      "amount": 110500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 110500.0
+    },
+    {
+      "name": "BAY AREA DISCOVERY MUSEUM",
+      "amount": 110000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DANNIS WOLIVER KELLEY, ESQ.",
+      "amount": 110000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PIONEER LIQUID TRANSPORT, INC.",
+      "amount": 110000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 110000.0
+    },
+    {
+      "name": "TANDEM, PARTNERS IN EARLY LEARNING",
+      "amount": 109000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SCALEUP PARTNERS, LLC",
+      "amount": 104375.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CREATE PEACE PROJECT",
+      "amount": 102980.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ROCKMAN ET AL",
+      "amount": 102705.06,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BURKE WILLIAMS & SORENSEN LLP",
+      "amount": 102000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FISHER & PHILLIPS LLP",
+      "amount": 101800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SECURLY INC.",
+      "amount": 101639.85,
+      "source": "boarddocs_summary",
+      "secondary_amount": 101639.85
+    },
+    {
+      "name": "BUCHALTER, A PROFESSIONAL CORPORATION",
+      "amount": 100000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GARCIA HERNANDEZ SAWHNEY, LLP",
+      "amount": 100000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LOZANO SMITH, LLP",
+      "amount": 100000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SUPER SOCCER STARS",
+      "amount": 98000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TROPE, SASHA",
+      "amount": 94600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 94600.0
+    },
+    {
+      "name": "JOSTENS, INC.",
+      "amount": 93212.79,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ARTHUR J. GALLAGHER & CO.",
+      "amount": 90000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 90000.0
+    },
+    {
+      "name": "BAYVIEW HUNTERS POINT YMCA/BEACON",
+      "amount": 90000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DISTRICT 1 SF SOCCER REFEREES ASSOC",
+      "amount": 90000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NOOR ASSOCIATES, INC",
+      "amount": 90000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NATURE BRIDGE",
+      "amount": 88944.08,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITY & COUNTY OF SF-DEPT OF TECHNOLOGY",
+      "amount": 88125.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "READING PARTNERS",
+      "amount": 86500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 25000.0
+    },
+    {
+      "name": "INSIGHT GLOBAL, LLC",
+      "amount": 86000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TUTOR CORPS",
+      "amount": 86000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MOVING BEYOND PRODUCTIONS",
+      "amount": 85500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "YOUTH CARE OF UTAH",
+      "amount": 85500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BLACK BEAR SECURITY SERVICES, INC.",
+      "amount": 85000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "YOUTH PASSAGEWAYS",
+      "amount": 84280.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AVID CENTER",
+      "amount": 84139.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REFUGEE & IMMIGRANT TRANSITIONS",
+      "amount": 84126.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INTERMOUNTAIN LOCK & SECURITY SUPPLY",
+      "amount": 83777.42,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CAPITOL ADVISORS GROUP, LLC",
+      "amount": 83200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HOUGHTON MIFFLIN HARCOURT PUBLISHING CO.",
+      "amount": 82740.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 78540.0
+    },
+    {
+      "name": "INTERSECTION FOR THE ARTS",
+      "amount": 82280.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 59500.0
+    },
+    {
+      "name": "FIX, JACQUELINE",
+      "amount": 82245.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LEAP ARTS IN EDUCATION",
+      "amount": 82105.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NATIONAL EQUITY PROJECT",
+      "amount": 80800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "READING & WRITING PROJECT NETWORK, LLC",
+      "amount": 79768.06,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ARBITERPAY TRUST ACCOUNT",
+      "amount": 79261.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 79261.0
+    },
+    {
+      "name": "HERNANDEZ, JESUS ALBERTO CORTES",
+      "amount": 78850.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LEXIA LEARNING SYSTEMS LLC",
+      "amount": 78410.67,
+      "source": "boarddocs_summary",
+      "secondary_amount": 62752.0
+    },
+    {
+      "name": "GALLAGHER BENEFIT SERVICES, INC.",
+      "amount": 78000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 78000.0
+    },
+    {
+      "name": "REBECCA MURRAYMETZGER PSYCHOLOGIST INC.",
+      "amount": 78000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BLUE BEAR SCHOOL OF MUSIC",
+      "amount": 76760.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 76760.0
+    },
+    {
+      "name": "LAKEFARM LEARNING",
+      "amount": 76000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HARRIS, EMILY KATHERINE",
+      "amount": 75600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 75600.0
+    },
+    {
+      "name": "TUTOR ME EDUCATION",
+      "amount": 75042.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DYNAMIC EDUCATION SERVICES, INC.",
+      "amount": 75000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INSIGHT CONSULTING & THERAPY LLC",
+      "amount": 75000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WEST BAY PILIPINO MULTI SERVICE CORP",
+      "amount": 75000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PARADIGM HEALTHCARE SERVICES, LLC",
+      "amount": 72945.84,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BRAINPOP LLC",
+      "amount": 71921.19,
+      "source": "boarddocs_summary",
+      "secondary_amount": 29761.78
+    },
+    {
+      "name": "KAHLON FAMILY SCHOOL",
+      "amount": 70228.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MARIA BARRIOS FILIPINO LANG. CONSULTING",
+      "amount": 70000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 70000.0
+    },
+    {
+      "name": "PUDOFF, ANN B.",
+      "amount": 70000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "RYLAND STRATEGIC BUSINESS CONSULTING",
+      "amount": 70000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LYDDAN, YURI MIYAMOTO",
+      "amount": 69120.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 69120.0
+    },
+    {
+      "name": "HMH EDUCATION COMPANY",
+      "amount": 69015.55,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE NEW CONSERVATORY THEATRE CENTER",
+      "amount": 68030.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CSM CONSULTING, INC.",
+      "amount": 67700.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 67700.0
+    },
+    {
+      "name": "WHOLE TECH SOLUTIONS LLC",
+      "amount": 67600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 67600.0
+    },
+    {
+      "name": "CHANDLER, KELSEY",
+      "amount": 67000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JK SOUND INC.",
+      "amount": 66304.26,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "URBAN SPROUTS",
+      "amount": 66120.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MAIN, MARY",
+      "amount": 64000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 64000.0
+    },
+    {
+      "name": "HEART CORE CONSULTING, LLC",
+      "amount": 63800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PUBLIC HEALTH INSTITUTE",
+      "amount": 63500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CORE DISTRICTS",
+      "amount": 63055.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DUDE SOLUTIONS, INC",
+      "amount": 63000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHIU, ANGELA",
+      "amount": 62000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 62000.0
+    },
+    {
+      "name": "OCCUPATIONAL HEALTH CTR OF CALIFORNIA",
+      "amount": 61500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MARJAVI, NOAH",
+      "amount": 60000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PROPELLER DEVELOPMENT, INC.",
+      "amount": 60000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 50000.0
+    },
+    {
+      "name": "THE TEACHING WELL",
+      "amount": 59400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CENTER FOR INTERNET SECURITY, INC.",
+      "amount": 58500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 58500.0
+    },
+    {
+      "name": "CLASSLINK, INC.",
+      "amount": 58500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 58500.0
+    },
+    {
+      "name": "ANDREW SKEWES-COX",
+      "amount": 58334.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LEBIAVANT, MARC",
+      "amount": 55710.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 23310.0
+    },
+    {
+      "name": "TAHTINEN, ANNE",
+      "amount": 53000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 53000.0
+    },
+    {
+      "name": "COMMUNITY INITIATIVES",
+      "amount": 52530.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CARTY WEB STRATEGIES, INC.",
+      "amount": 52389.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 52389.0
+    },
+    {
+      "name": "SFUSD - DEPARTMENT OF TECHNOLOGY",
+      "amount": 52000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE BYLUND CLINIC",
+      "amount": 52000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ROSENTHAL, ELLYN",
+      "amount": 51840.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DR BUSINESS SERVICES CONSULTING, INC.",
+      "amount": 51700.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STREET SOCCER USA, INC.",
+      "amount": 51480.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 46080.0
+    },
+    {
+      "name": "TALK MORE LLC",
+      "amount": 50600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MISSION LANGUAGE & VOCATIONAL SCHOOL",
+      "amount": 50580.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "APERTURE MEDIA & DESIGN LLC",
+      "amount": 50140.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ASCENDANCY SOLUTIONS INC.",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CANTICLE FARM",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHICK THERAPY",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITYSPAN TECHNOLOGIES, INC.",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 50000.0
+    },
+    {
+      "name": "HARBOTTLE LAW GROUP",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LESHNICK, SAMUEL",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MESEPA, KAULAVE",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NORTHERN CALIF UMPIRES ASSOC",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAHELI7 EDUCATIONAL CONSULTING",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SENSIBLE ENVIRON. SOLUTIONS",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WILMES, LLC",
+      "amount": 50000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MCGRAW HILL LLC",
+      "amount": 49555.3,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EPS OPERATIONS, LLC",
+      "amount": 49370.06,
+      "source": "boarddocs_summary",
+      "secondary_amount": 49370.06
+    },
+    {
+      "name": "SAN FRANCISCO STATE UNIVERSITY",
+      "amount": 49099.84,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "QBS LLC",
+      "amount": 49040.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PJS CONSULTANTS LLC",
+      "amount": 49000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE MARSH",
+      "amount": 48102.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 48102.0
+    },
+    {
+      "name": "SAN FRANCISCO CHILDREN'S ART CENTER",
+      "amount": 48000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE BAR ASSOCIATION OF SAN FRANCISCO",
+      "amount": 47800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EDCLUB, INC. DBA TYPINGCLUB",
+      "amount": 47752.88,
+      "source": "boarddocs_summary",
+      "secondary_amount": 47400.0
+    },
+    {
+      "name": "DUMAS, BENJAMIN OWINGS",
+      "amount": 47438.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CONSORTIUM ON REACHING EXCELLENCE IN ED.",
+      "amount": 47400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 47400.0
+    },
+    {
+      "name": "SUPERSTAR HEALTH EDUCATION",
+      "amount": 47385.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SILICON VALLEY MATHEMATICS INITIATIVE",
+      "amount": 46515.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 46515.0
+    },
+    {
+      "name": "TIDES CENTER",
+      "amount": 46390.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ICF MACRO, INC.",
+      "amount": 46313.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ALTRUSPHERE LLC",
+      "amount": 45825.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LOWELL HIGH SCHOOL PTSA",
+      "amount": 45000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NORTHERN CALIFORNIA FOOTBALL OFFICIALS",
+      "amount": 45000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TUVA LABS INC.",
+      "amount": 45000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 45000.0
+    },
+    {
+      "name": "ARCINA RISK GROUP, LLC",
+      "amount": 43872.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SCALA, MURIEL ELIZABETH",
+      "amount": 43200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 43200.0
+    },
+    {
+      "name": "PACIFIC NORTHWEST ENTERPRISE",
+      "amount": 43050.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 17000.0
+    },
+    {
+      "name": "NORTHERN CALIFORNIA NURSING ACADEMY",
+      "amount": 42500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EXECUTIVE FUNCTION, INC",
+      "amount": 42159.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CULTURA ARTE NATIVA DE LAS AMERICAS",
+      "amount": 41700.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DEMING, NANCY",
+      "amount": 41580.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 41580.0
+    },
+    {
+      "name": "SAN FRANCISCO ACHIEVERS",
+      "amount": 41550.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ERVIN, STEPHANIE",
+      "amount": 40950.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JENKINS, HEIDI",
+      "amount": 40128.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ESM SOLUTIONS, INC.",
+      "amount": 40000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 40000.0
+    },
+    {
+      "name": "KRELL, SHARON",
+      "amount": 40000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MCNEIL & SONS FIRE SAFETY",
+      "amount": 40000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STORER SAN FRANCISCO",
+      "amount": 40000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THOMPSON LAW",
+      "amount": 40000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ACAD BEHAVIOR CONSULTANTS PSYCH GROUP",
+      "amount": 39000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BOBINO COUNSELING & ASSESSMENTS LLC",
+      "amount": 39000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JMR BILINGUAL PSYCHOLOGICAL SERV., INC.",
+      "amount": 39000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COIT SERVICES, INC.",
+      "amount": 38000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PACIFIC COAST TRANE SERVICE & CONTROLS",
+      "amount": 38000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SMITH, JEFFREY",
+      "amount": 38000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GEORGE HILLS COMPANY",
+      "amount": 37800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PANTHEON SYSTEMS, INC.",
+      "amount": 36400.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 36400.5
+    },
+    {
+      "name": "SAN FRANCISCO BALLET ASSOCIATION",
+      "amount": 36000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SOUNDTRAP US INC",
+      "amount": 35910.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 35910.0
+    },
+    {
+      "name": "YOUNG AUDIENCES OF NORTHERN CALIFORNIA",
+      "amount": 35824.68,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA BIOSCIENCE EDUCATION COMMUNITY",
+      "amount": 35250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KAULAVE, TIANA",
+      "amount": 35000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MY SCHOOL RD INC",
+      "amount": 35000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 35000.0
+    },
+    {
+      "name": "AMIRA LEARNING, INC",
+      "amount": 34475.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ESPIRITU, AIMEE",
+      "amount": 34375.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 25000.0
+    },
+    {
+      "name": "NORMAN S. WRIGHT",
+      "amount": 34000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN FRANCISCO YOUTH THEATRE",
+      "amount": 33900.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "Madden, Judith",
+      "amount": 33600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "APOLLO PIANO",
+      "amount": 33545.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 20000.0
+    },
+    {
+      "name": "LEARNING A-Z, LLC",
+      "amount": 33534.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 8640.0
+    },
+    {
+      "name": "WORLD OF OT, LLC",
+      "amount": 33215.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TORRES, EDUARDO GARCIA",
+      "amount": 32766.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CARNEGIE LEARNING, INC.",
+      "amount": 31939.66,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ARMSTRONG, ROBERT",
+      "amount": 31749.6,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHAPTER ONE NFP",
+      "amount": 30977.11,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CODECAMPUS LLC",
+      "amount": 30600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ELEVO",
+      "amount": 30490.24,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CORWIN PRESS INC.",
+      "amount": 30417.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 30417.0
+    },
+    {
+      "name": "ALLIED UNIVERSAL TECHNOLOGY SERVICES",
+      "amount": 30001.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 10000.0
+    },
+    {
+      "name": "CINTAS CORPORATION #464",
+      "amount": 30000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 15000.0
+    },
+    {
+      "name": "DESHMUKH NANDA, VRINDA",
+      "amount": 30000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ELIZABETH GENDY-SHAKER",
+      "amount": 30000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LIGHTHOUSE FOR THE BLIND",
+      "amount": 30000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NEW HORIZON SCHOOL",
+      "amount": 30000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "QIAO JI MANDARIN",
+      "amount": 30000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE BREAKFAST PROJECT",
+      "amount": 29970.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CONVECTUS SOLUTIONS, LLC",
+      "amount": 29500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 29500.0
+    },
+    {
+      "name": "CHILD MIND MEDICAL PRACTICE, PC",
+      "amount": 29445.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KYO AUTISM THERAPY, LLC",
+      "amount": 29383.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MUSEUM OF DANCE",
+      "amount": 28770.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 4750.0
+    },
+    {
+      "name": "ICHINESEEDU",
+      "amount": 28728.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 28728.0
+    },
+    {
+      "name": "BOOTSTRAP, LLC",
+      "amount": 28700.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN JOSE STATE UNIV. RESEARCH FOUNDATION",
+      "amount": 28105.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITY GRAZING",
+      "amount": 28000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 28000.0
+    },
+    {
+      "name": "DAVIDSON GARAGE AUTO REPAIR",
+      "amount": 28000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "UNIVERSITY CORPORATION, S.F. STATE",
+      "amount": 28000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE SMOG SHOP",
+      "amount": 27905.83,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GOULD, REBECCA",
+      "amount": 27750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LIMINEX, INC. DBA GOGUARDIAN",
+      "amount": 27464.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ZAPANTA, VERMA SORIA",
+      "amount": 27110.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 8450.0
+    },
+    {
+      "name": "NEARPOD LLC",
+      "amount": 26813.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 14163.0
+    },
+    {
+      "name": "PATHWAYS TO LEARNING",
+      "amount": 26100.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MARTINEZ, WILLIAM",
+      "amount": 26000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NORMAN & ASSOCIATES, INC.",
+      "amount": 26000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SHELLEY SINCLAIR LEP LLC",
+      "amount": 26000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NORTHEASTERN UNIVERSITY",
+      "amount": 25800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FIRST GRADUATE",
+      "amount": 25103.7,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ARBOR BAY SCHOOL",
+      "amount": 25000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BRADLEY, LEE",
+      "amount": 25000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 25000.0
+    },
+    {
+      "name": "HUMAN SERVICES AGENCY",
+      "amount": 25000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LEVERAGE TO LEAD LLC",
+      "amount": 25000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 25000.0
+    },
+    {
+      "name": "SANGER, NIDA",
+      "amount": 25000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TEACH FOR AMERICA",
+      "amount": 25000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WORLDSTRIDES",
+      "amount": 24985.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NORA KILSHAW VAN DEN BERG",
+      "amount": 24960.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "QUAVERED, INC.",
+      "amount": 24150.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 24150.0
+    },
+    {
+      "name": "LUNCHASSIST, INC.",
+      "amount": 24000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BHASIN, BELA",
+      "amount": 22950.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ZAVALA, MARIA R",
+      "amount": 22800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ANTS AFTER SCHOOL LLC",
+      "amount": 22603.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NETWORK FOR TEACHING ENTREPRENEURSHIP",
+      "amount": 22500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ROLLING STOCK INC",
+      "amount": 22500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 22500.0
+    },
+    {
+      "name": "SRP PSYCHOLOGICAL SERVICES, INC.",
+      "amount": 22500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MOSHOFSKY, JEAN",
+      "amount": 22231.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CODEHS, INC.",
+      "amount": 22000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COMMUNITY RESPONSIVE ED. CORP (CRE)",
+      "amount": 22000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ENGLISH LANGUAGE INSTITUTE",
+      "amount": 21750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "VRLJICAK, YOSHIKO KURIMOTO",
+      "amount": 21600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PROJECT COMMOTION",
+      "amount": 21504.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "UNION DOOR",
+      "amount": 21172.14,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SMOKE GUARD CALIFORNIA",
+      "amount": 21126.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COUNTY SCHOOLS SERVICE FUND",
+      "amount": 21000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SCIENCE FROM SCIENTISTS, INC",
+      "amount": 21000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LUNA, MARTHA",
+      "amount": 20997.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SWELL-SCHOOLS WELL LLC",
+      "amount": 20600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MURPHY, MARIE",
+      "amount": 20250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BIOMETRICS4ALL, INC.",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 20000.0
+    },
+    {
+      "name": "COMMUNITY BOARDS",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CURCI, RICHARD",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JOSEPH COLMENARES",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NEW YORK UNIVERSITY",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "OFFICE PUZZLE, INC",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN FRANCISCO YOUTH SOCCER",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TSAI, KANG-YUN JOYCE",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "VERIZON WIRELESS",
+      "amount": 20000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 20000.0
+    },
+    {
+      "name": "MCNAMEE, LEAH",
+      "amount": 19921.84,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GENCARELLA, CAROLYN",
+      "amount": 19920.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 19920.0
+    },
+    {
+      "name": "PASTREICH, MAYA",
+      "amount": 19250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EKC ENTERPRISE INC",
+      "amount": 19037.94,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DR. LORI ELLIOTT EDUCATIONAL CONSULTING",
+      "amount": 18600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 18600.0
+    },
+    {
+      "name": "HER IDEA",
+      "amount": 18400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ROUND STAR WEST, LLC",
+      "amount": 18000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAGE EDUCATIONAL PSYCHOLOGY INC",
+      "amount": 18000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NETWORKS BY DESIGN, INC.",
+      "amount": 17400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 17400.0
+    },
+    {
+      "name": "GRASSHOPPER KIDS",
+      "amount": 17325.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE ART OF EDUCATION UNIVERSITY, LLC",
+      "amount": 17183.9,
+      "source": "boarddocs_summary",
+      "secondary_amount": 8928.7
+    },
+    {
+      "name": "SF TONGANS RISE UP",
+      "amount": 17000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MESSY ART LAB INC",
+      "amount": 16800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SWERDLOW, JENI",
+      "amount": 16683.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BRAVA! FOR WOMEN IN THE ARTS",
+      "amount": 16560.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NEARPOD INC.",
+      "amount": 16500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 16500.0
+    },
+    {
+      "name": "PROCTOR, MORGAN LEFAY",
+      "amount": 16200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE MOSAIC PROJECT",
+      "amount": 15675.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GROSS, KRISTIN",
+      "amount": 15400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SPARK TIDY",
+      "amount": 15300.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITY SURF PROJECT, INC",
+      "amount": 15100.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AERC RECYCLYNG SOLUTIONS",
+      "amount": 15001.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BLINKTAG, INC.",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CENTER FOR ACCESSIBLE TECH.",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HUANG, JESSICA",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INDIGENOUS JUSTICE",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INSPIRE MUSIC",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JENKINS, KRYSTA",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PURPLE SILK MUSIC EDUCATION FOUNDATION",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SUPPORT FOR FAM. OF CHILDREN WITH DIS.",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TESS HENDERSON CONSULTING",
+      "amount": 15000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TOBII DYNAVOX LLC",
+      "amount": 14905.1,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FIFTH ASSET, INC",
+      "amount": 14750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MUSIC FIRST",
+      "amount": 14197.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SALESIAN ACADEMY, LLC",
+      "amount": 14100.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LEXIA LEARNING SYSTEMS INC",
+      "amount": 13800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PHILLIPS, JARREL",
+      "amount": 13781.25,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EMERALD CITY AUTO BODY",
+      "amount": 13729.3,
+      "source": "boarddocs_summary",
+      "secondary_amount": 21800.0
+    },
+    {
+      "name": "TEACHERS' CURRICULUM INSTITUTE LLC",
+      "amount": 13583.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COMARTIN, KEVIN",
+      "amount": 13500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FLOURISH AGENDA, INC.",
+      "amount": 13188.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA URBAN DEBATE LEAGUE",
+      "amount": 13000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EDUCATIONAL PROF OF CENTRAL CALIF LLC",
+      "amount": 13000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LOS GATOS PSYCHOLOGICAL ASSESSMENT",
+      "amount": 13000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TRUTH",
+      "amount": 13000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 13000.0
+    },
+    {
+      "name": "CHRISTINA LONERGAN",
+      "amount": 12925.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CIVIC EDGE CONSULTING, LLC",
+      "amount": 12915.28,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAVANT, ROBERT",
+      "amount": 12750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CUBE PYSHCOLOGICAL SERVICES, PC",
+      "amount": 12500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SEQUOIA LIVING EXPERIENCE CORP BAY AREA",
+      "amount": 12449.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 3150.0
+    },
+    {
+      "name": "EDUCATION PIONEERS, INC.",
+      "amount": 12427.93,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DU-ALL SAFETY, LLC",
+      "amount": 12083.33,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA SPORTS OFFICIALS (BASO)",
+      "amount": 12000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KENDALL HUNT PUBLISHING COMPANY",
+      "amount": 12000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 12000.0
+    },
+    {
+      "name": "LYNCH, DEREK",
+      "amount": 12000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PATHWAY TO LEARNING",
+      "amount": 12000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 12000.0
+    },
+    {
+      "name": "YAMAMOTO, MICHELLE",
+      "amount": 11850.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "UNITED SAFE INC.",
+      "amount": 11779.71,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TEXTHELP INC.",
+      "amount": 11700.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "QUEST THERAPUTIC CAMPS, INC",
+      "amount": 11400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "VECTOR SOLUTIONS",
+      "amount": 11340.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 11340.0
+    },
+    {
+      "name": "CARNEGIE FOUNDATION",
+      "amount": 11083.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HANSEN, CATHY",
+      "amount": 11050.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "POPE, MOLLY",
+      "amount": 10710.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "US GAMES",
+      "amount": 10350.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "VELOCITY SPORTS GROUP",
+      "amount": 10150.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ALUK, SHAWN",
+      "amount": 10000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BE THE CHANGE CONSULTING, LLC",
+      "amount": 10000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KIDS IN NEED OF DEFENCE",
+      "amount": 10000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TURN TO TURN PRODUCTIONS LLC",
+      "amount": 9955.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ARC DOCUMENT SOLUTIONS, LLC",
+      "amount": 9925.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REGALLIUM CONSULTING, LLC",
+      "amount": 9900.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DUARTE, SAMANTHA",
+      "amount": 9801.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NINYO & MOORE",
+      "amount": 9800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HARMON, ANITA",
+      "amount": 9680.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHEN, IVY",
+      "amount": 9640.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SOUL SHOPPE PROGRAMS",
+      "amount": 9525.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CLAY PEOPLE",
+      "amount": 9500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SMITH, LASHANTE",
+      "amount": 9500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ENCE, WHITNEY",
+      "amount": 9300.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GENRYU ARTS",
+      "amount": 9077.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ARROWHEAD EVALUATION SERVICES",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 9000.0
+    },
+    {
+      "name": "BRUNETTI, IVAN",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHAN, COREY",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DIFFENBAUGH, POLLY",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INABA, SOPHIA HIROMI",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ORBACH HUFF & HENDERSON LLP",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ROGERS, GALEN",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN FRANCISCO BAY AREA THEATRE COMPANY",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WOOLPERT INC.",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "Z SPACE STUDIO",
+      "amount": 9000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CUICACALLI LLC",
+      "amount": 8800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ROTH, ROBERT",
+      "amount": 8750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MIURA, RURIKO",
+      "amount": 8582.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN DIEGO COUNTY SUPT. OF SCHOOLS",
+      "amount": 8500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 8500.0
+    },
+    {
+      "name": "SCHOOL SERVICES OF CALIFORNIA, INC.",
+      "amount": 8280.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LADIES IN POWER",
+      "amount": 8250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN MATEO COUNTY OFFICE OF EDUCATION",
+      "amount": 8250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ABADA CAPOEIRA SAN FRANCISCO",
+      "amount": 8100.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FRIENDS OF SCRAP, INC.",
+      "amount": 8000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PARENT INSTITUTE FOR QUALITY EDUCATION",
+      "amount": 8000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STARSHIP CHINESE SCHOOL",
+      "amount": 8000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CRICK SOFTWARE, INC.",
+      "amount": 7980.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LENORE, KENNY",
+      "amount": 7700.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ELECTUDE USA",
+      "amount": 7621.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CELTX INC.",
+      "amount": 7600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "3P LEARNING INC.",
+      "amount": 7527.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REPP LAW FIRM",
+      "amount": 7516.6,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "RACHEL HOLOWICKI",
+      "amount": 7500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "RISING STARS LLC",
+      "amount": 7500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COMMUNITY INITIATIVE FOR MISSION SCIENCE",
+      "amount": 7466.44,
+      "source": "boarddocs_summary",
+      "secondary_amount": 5666.44
+    },
+    {
+      "name": "CARTAGENA, TARA",
+      "amount": 7406.25,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MUSSON THEATRICAL INC.",
+      "amount": 7319.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WEVIDEO, INC.",
+      "amount": 7317.06,
+      "source": "boarddocs_summary",
+      "secondary_amount": 6881.71
+    },
+    {
+      "name": "AFY PARENTS ASSOCIATION",
+      "amount": 7252.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KIDSWORK, INC. (DBA KIDSPACE)",
+      "amount": 7200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JONES, KEN",
+      "amount": 7000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ORNELAS, KARLA",
+      "amount": 7000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAFETY TRAINING SEMINARS",
+      "amount": 7000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "B.T MANCINI CO, INC",
+      "amount": 6950.08,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA VIDEO COALITION",
+      "amount": 6851.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SPECIALNEEDSWARE, INC.",
+      "amount": 6800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FISK, SARA T.",
+      "amount": 6739.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JULIE A. WELSH MEDIATION SERVICES",
+      "amount": 6625.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "OUTWARD BOUND CALIFORNIA",
+      "amount": 6616.22,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CROWN WORLDWIDE MOVING AND STORAGE, LLC",
+      "amount": 6500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PSYCHED SERVICES",
+      "amount": 6500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MORALES, MARIELLA",
+      "amount": 6480.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DE SENA, FRANCISCO",
+      "amount": 6400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "APRIL JOURDAN BYRNE",
+      "amount": 6362.5,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PRICE, SAMUEL",
+      "amount": 6354.38,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN FRANCISCO OPERA GUILD",
+      "amount": 6200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EXPLORELEARNING, LLC",
+      "amount": 6055.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ARACELI CORDOVA PSYCHOTHERAPY",
+      "amount": 6000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DOWLING, JANELLE",
+      "amount": 6000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 6000.0
+    },
+    {
+      "name": "JASON NIOUS",
+      "amount": 6000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN FRANCISCO FILM SOCIETY",
+      "amount": 6000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE BRILLIANCE PROJECT",
+      "amount": 6000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WINEBURG, SAMUEL",
+      "amount": 6000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HORIZON UNLIMITED OF SAN FRANCISCO, INC.",
+      "amount": 5600.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FEIFER, STEVEN GARY",
+      "amount": 5500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SILICON VALLEY SPORTS OFFICIALS ASSOC.",
+      "amount": 5500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SCHOOL TIME MUSIC LLC",
+      "amount": 5300.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SHRED CITY",
+      "amount": 5280.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 5280.0
+    },
+    {
+      "name": "N2Y, LLC",
+      "amount": 5249.7,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LIEBERT CASSIDY WHITMORE",
+      "amount": 5063.38,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TOTAL COMPENSATION SYSTEM, INC.",
+      "amount": 5040.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "YAP, CHRISTINE WONG",
+      "amount": 5025.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 5025.0
+    },
+    {
+      "name": "AFRICAN AMERICAN SHAKESPEARE COMPANY",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BUTLER, WENDY R",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CALIFORNIA CLIMATE ACTION NOW!",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 5000.0
+    },
+    {
+      "name": "ECLECTIC ELECTRICAL CONTRACTOR INC.",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HERO LEADERSHIP GROUP LLC",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HIP HOP FOR CHANGE",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INDEPENDENT ARTS AND MEDIA",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MISSION CULTURAL CENTER FOR LATINO ARTS",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NORTHERN CA CHAMBER MUSIC ACADEMY",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WELL BEYOND ACADEMICS, INC.",
+      "amount": 5000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SCHOLASTIC INC.",
+      "amount": 4998.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ELLSWORTH, CHELSEA",
+      "amount": 4950.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SAN FRANCISCO CONSERVATORY OF MUSIC",
+      "amount": 4920.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HCI SYSTEMS, INC.",
+      "amount": 4800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SANDRIA MORTEN, LLC",
+      "amount": 4800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NOODLETOOLS, INC.",
+      "amount": 4608.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 4608.0
+    },
+    {
+      "name": "GRM INFO. MGT. SERVICES OF S.F., LLC",
+      "amount": 4592.72,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FIVE KEYS SCHOOLS AND PROGRAMS",
+      "amount": 4539.7,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NEARPOD, INC.",
+      "amount": 4500.6,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CITY STUDIO",
+      "amount": 4500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DAKTRONICS, INC",
+      "amount": 4500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GIRLS LEADERSHIP",
+      "amount": 4500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KIRBY STUDIOS",
+      "amount": 4500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LAURA GAO LLC",
+      "amount": 4500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PULSEHIVE LLC",
+      "amount": 4500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SACRAMENTO COUNTY OFFICE OF EDUCATION",
+      "amount": 4500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 4500.0
+    },
+    {
+      "name": "DANCE BRIGADE",
+      "amount": 4290.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BMI IMAGING SYSTEMS, INC.",
+      "amount": 4200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 4200.0
+    },
+    {
+      "name": "WALLEN, RUDYARD",
+      "amount": 4200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EMPOWER EDUCATIONAL CONSULTING, LLC",
+      "amount": 4143.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FEATHERSHIP COACHING AND CONSULTING",
+      "amount": 4050.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LOILO USA, INC.",
+      "amount": 4050.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SENSATIONAL KIDZ OCCUPATIONAL TERAPY",
+      "amount": 4040.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "DIMARTINI, DYLAN A.",
+      "amount": 4000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FEYLING, DORIS",
+      "amount": 4000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HAMMOND LYNN, JENNIFER",
+      "amount": 4000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LISA MISHIMA DESIGN, LLC",
+      "amount": 4000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ROOT DIVISION",
+      "amount": 4000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WANG, CAILING",
+      "amount": 4000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TOVAR, JACQUELINE",
+      "amount": 3950.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "VERABEE LLC",
+      "amount": 3900.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WATANABE, TADANOBU",
+      "amount": 3900.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PRECITA EYES MURAL ASSOCIATION, INC.",
+      "amount": 3800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GONZALEZ, RAUL",
+      "amount": 3750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NATIONAL EDUCATION EQUITY LAB",
+      "amount": 3750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "TRINKLE, MARY",
+      "amount": 3750.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CRITICAL MENTION, INC.",
+      "amount": 3725.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "IT'S YOGA KIDS LLC",
+      "amount": 3652.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHAVEZ, JORELL",
+      "amount": 3500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "POIRIER, JULIEN",
+      "amount": 3360.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MY DIGITAL TAT2, INC.",
+      "amount": 3250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SWAZO-CATON, AVA",
+      "amount": 3225.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EDMENTUM, INC.",
+      "amount": 3200.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 3200.0
+    },
+    {
+      "name": "DEMPSEY FAMILY & COMMUNITY COUNSELING",
+      "amount": 3000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 3000.0
+    },
+    {
+      "name": "DIAO, SOPHIE",
+      "amount": 3000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ERIC SHED",
+      "amount": 3000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GARCIA, SALVADOR",
+      "amount": 3000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PHAM, THIEN",
+      "amount": 3000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "JADE-LEN IULIO",
+      "amount": 2831.25,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SUPPORTIVE STEPS SERVICES, INC.",
+      "amount": 2775.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "THE HELIX SCHOOL",
+      "amount": 2764.45,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "UNIVERSITY OF NOTRE DAME",
+      "amount": 2700.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CICLO SUSTAINABLE FASHION",
+      "amount": 2680.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BOX OUT PRODUCTIONS, LLC",
+      "amount": 2500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "ELIZABETH B. ISONO, MS OTR",
+      "amount": 2500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EVERYDAY LOVE ART, INC.",
+      "amount": 2500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PHAEDA BAKER - JOHNSON",
+      "amount": 2500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REDNISS, LAUREN",
+      "amount": 2500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 2500.0
+    },
+    {
+      "name": "VINCENT, EMILY",
+      "amount": 2500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CHUCK, JOSHUA",
+      "amount": 2400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "INNEREXPLORER",
+      "amount": 2400.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LANGUAGE TREE ONLINE, INC",
+      "amount": 2298.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STREET SOUNDS",
+      "amount": 2295.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "GOLDEN GATE GLASS & MIRROR CO.",
+      "amount": 2293.38,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SUCCESSFUL PRACTICES NETWORK",
+      "amount": 2250.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LION DANCE ME",
+      "amount": 2240.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "OUTDOOR TOMORROW FOUNDATION",
+      "amount": 2199.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "18 REASONS",
+      "amount": 2000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BARUTI, TERRY G.",
+      "amount": 2000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA CREATIVE BAC",
+      "amount": 2000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COMMUNITY PARTNERS",
+      "amount": 2000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LIERAS, MANUEL",
+      "amount": 2000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LITTLE HANDS OCCUPATIONAL THERAPY, INC.",
+      "amount": 2000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "AMERICAN DEBRIS BOX SERVICE INC",
+      "amount": 1970.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "Julia Harris & Lora Harris DBA OT Studio",
+      "amount": 1800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NICHOLS, TUCKER",
+      "amount": 1800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KILBY, WILLIAM CLAY",
+      "amount": 1650.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "EDUCATIONAL IDEAS, INC.",
+      "amount": 1510.53,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KAJITANI, MEGAN PINCUS",
+      "amount": 1500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KYLE CASEY CHU LLC",
+      "amount": 1500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "LANGUAGE LINK",
+      "amount": 1500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 1500.0
+    },
+    {
+      "name": "MCCLOSKEY, KEVIN",
+      "amount": 1500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PACIFIC LEARNING INC.",
+      "amount": 1500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SIRRON NORRIS INC.",
+      "amount": 1500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "STEELE, K-FAI",
+      "amount": 1500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HERNANDEZ, CELINA",
+      "amount": 1440.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "MILLER, LISA",
+      "amount": 1440.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "PLATINUM TELETHERAPY LLC",
+      "amount": 1264.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CLAUDE GOLDENBERG",
+      "amount": 1000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "CRAIG'S AUTO REPAIR",
+      "amount": 1000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "NATIVE SISTERS CIRCLE, INC.",
+      "amount": 1000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "REBECCA POLSON",
+      "amount": 1000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "WARMAN SECURITY",
+      "amount": 1000.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "HEAGERTY, MAT",
+      "amount": 950.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "KG MEDIA SERVICES LLC",
+      "amount": 950.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "COLLINS, CATHERINE",
+      "amount": 810.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "SOCIAL AND ENVIRONMENTAL ENTERPRENEURS",
+      "amount": 800.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "FRONT PORCH, INC.",
+      "amount": 540.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 540.0
+    },
+    {
+      "name": "PLASENCIA, VALERIA S.",
+      "amount": 500.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 500.0
+    },
+    {
+      "name": "MONASTERIO, ERICA",
+      "amount": 450.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    },
+    {
+      "name": "BAY AREA OUTREACH AND REC. PROGRAM, INC",
+      "amount": 350.0,
+      "source": "boarddocs_summary",
+      "secondary_amount": 0
+    }
+  ]
+}

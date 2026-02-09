@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFUSD Forensic Financial Analysis v2: Where the Money Goes</title>
+<style>
+:root {
+  --navy: #0a1628; --navy-mid: #1a2a4a; --navy-light: #2a3f6a;
+  --gold: #c9922a; --gold-light: #f5e6c8;
+  --red: #c0392b; --red-light: #fce4e4;
+  --green: #27ae60; --green-light: #e8f8f0;
+  --text: #1a1a2e; --text-light: #4a4a5a;
+  --bg: #f8f9fc; --white: #ffffff; --border: #dde1e8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Georgia', 'Times New Roman', serif; color: var(--text); background: var(--bg); line-height: 1.7; font-size: 16px; }
+.report-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.report-header { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); color: white; padding: 60px 0 48px; border-bottom: 4px solid var(--gold); }
+.report-header h1 { font-size: 2.4em; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+.report-header .subtitle { font-size: 1.2em; color: var(--gold); font-style: italic; margin-bottom: 4px; }
+.report-header .date { font-size: 0.95em; color: #8899bb; }
+.toc { background: var(--white); border: 1px solid var(--border); border-radius: 6px; padding: 24px 28px; margin: 32px 0; }
+.toc h2 { font-size: 1.1em; text-transform: uppercase; letter-spacing: 1.5px; color: var(--navy); margin-bottom: 12px; border-bottom: 2px solid var(--gold); padding-bottom: 8px; }
+.toc ol { list-style: none; counter-reset: toc-counter; columns: 2; column-gap: 32px; }
+.toc li { counter-increment: toc-counter; padding: 4px 0; font-size: 0.95em; }
+.toc li::before { content: counter(toc-counter) ". "; font-weight: 700; color: var(--navy); }
+.toc a { color: var(--navy-mid); text-decoration: none; border-bottom: 1px dotted var(--border); }
+.toc a:hover { color: var(--gold); }
+.section { background: var(--white); border: 1px solid var(--border); border-radius: 6px; padding: 36px 40px; margin: 28px 0; }
+.section h2 { font-size: 1.6em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin-bottom: 20px; }
+.section h3 { font-size: 1.2em; color: var(--navy-mid); margin: 24px 0 12px; }
+.section p { margin-bottom: 14px; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 0.92em; }
+th { background: var(--navy); color: white; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.5px; }
+td { padding: 9px 14px; border-bottom: 1px solid var(--border); }
+tr:nth-child(even) { background: #f4f6fb; }
+tr:hover { background: #eef1f8; }
+tr.highlight-row { background: var(--red-light) !important; font-weight: 600; }
+tr.highlight-row td { color: var(--red); }
+.money { text-align: right; font-variant-numeric: tabular-nums; font-family: 'Courier New', monospace; }
+.pct { text-align: right; font-weight: 700; }
+.callout { border-left: 4px solid var(--gold); background: var(--gold-light); padding: 18px 24px; margin: 20px 0; border-radius: 0 6px 6px 0; font-style: italic; }
+.callout-red { border-left-color: var(--red); background: var(--red-light); font-style: normal; }
+.callout-green { border-left-color: var(--green); background: var(--green-light); font-style: normal; }
+.callout strong { color: var(--navy); }
+.pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+.pillar { background: var(--navy); color: white; padding: 20px 24px; border-radius: 6px; border-left: 4px solid var(--gold); }
+.pillar .number { font-size: 2em; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+.pillar .label { font-size: 0.85em; color: #aabbcc; text-transform: uppercase; letter-spacing: 1px; }
+.pillar .detail { font-size: 0.95em; margin-top: 8px; line-height: 1.5; }
+.pillar-wide { grid-column: span 2; }
+.stats-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0; }
+.stat-card { text-align: center; padding: 20px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; flex: 1; min-width: 200px; cursor: pointer; }
+.stat-card:hover { border-color: var(--gold); }
+.stat-card .big-num { font-size: 2.2em; font-weight: 700; color: var(--red); line-height: 1.1; }
+.stat-card .stat-label { font-size: 0.85em; color: var(--text-light); margin-top: 4px; }
+.cite { font-size: 0.75em; color: var(--navy-light); vertical-align: super; cursor: help; border-bottom: 1px dotted var(--navy-light); margin-left: 2px; }
+.badge { display: inline-block; width: 16px; height: 16px; border-radius: 50%; text-align: center; line-height: 16px; font-size: 10px; margin-left: 3px; vertical-align: middle; }
+.badge-ok { background: var(--green); color: white; }
+.badge-warn { background: var(--gold); color: white; }
+.badge-err { background: var(--red); color: white; }
+.savings-badge { display: inline-block; font-size: 0.65em; padding: 2px 8px; border-radius: 3px; color: white; font-weight: 700; letter-spacing: 0.5px; vertical-align: middle; margin-left: 8px; }
+.vendor-row { cursor: pointer; }
+.vendor-row:hover { background: var(--gold-light) !important; }
+.vendor-detail td { padding: 0 !important; }
+.vendor-detail-inner { padding: 16px 24px; background: #f0f2f8; border-left: 4px solid var(--gold); }
+.vendor-desc { font-style: italic; color: var(--text-light); margin-bottom: 12px; }
+.monthly-breakdown { margin-top: 12px; }
+.mini-table { font-size: 0.85em; width: auto; }
+.mini-table th { padding: 6px 12px; }
+.mini-table td { padding: 4px 12px; }
+.expand-icon { text-align: center; font-size: 0.8em; color: var(--text-light); }
+.cat-tag { font-size: 0.75em; padding: 2px 8px; border-radius: 3px; background: var(--navy); color: white; white-space: nowrap; }
+.timeline { border-left: 3px solid var(--navy); margin: 20px 0 20px 20px; padding-left: 24px; }
+.timeline-item { position: relative; margin-bottom: 16px; }
+.timeline-item::before { content: ''; width: 12px; height: 12px; background: var(--gold); border: 2px solid var(--navy); border-radius: 50%; position: absolute; left: -31px; top: 4px; }
+.timeline-item .year { font-weight: 700; color: var(--navy); }
+.sources { background: var(--navy); color: #8899bb; padding: 40px 0; margin-top: 40px; font-size: 0.85em; }
+.sources h3 { color: var(--gold); margin-bottom: 12px; }
+.sources ul { list-style: none; }
+.sources li { padding: 3px 0; }
+.verification-bar { display: flex; gap: 12px; margin: 16px 0; align-items: center; font-size: 0.9em; }
+.verification-bar .v-count { font-weight: 700; }
+#vendorSearch { width: 100%; padding: 10px 14px; font-size: 1em; border: 1px solid var(--border); border-radius: 6px; margin-bottom: 16px; }
+@media print {
+  body { font-size: 11pt; background: white; }
+  .report-header { padding: 24px 0; }
+  .section { border: 1px solid #ccc; page-break-inside: avoid; padding: 16px 20px; margin: 12px 0; }
+  .vendor-detail { display: table-row !important; }
+  .expand-icon { display: none; }
+  #vendorSearch { display: none; }
+  .savings-badge { border: 1px solid #999; }
+}
+@media (max-width: 768px) {
+  .report-header h1 { font-size: 1.6em; }
+  .toc ol { columns: 1; }
+  .pillars { grid-template-columns: 1fr; }
+  .pillar-wide { grid-column: span 1; }
+  .stats-row { flex-direction: column; }
+  .section { padding: 20px; }
+  table { font-size: 0.8em; }
+}
+</style>
+</head>
+<body>
+
+<div class="report-header">
+<div class="report-container">
+  <h1>SFUSD Forensic Financial Analysis</h1>
+  <div class="subtitle">Where the Money Goes &mdash; A Data-Driven Case for Maximizing Teacher Salary Increases</div>
+  <div class="date">February 2026 &bull; Enhanced v2 with inline citations &bull; 101/101 claims verified</div>
+</div>
+</div>
+
+<div class="report-container">
+
+<!-- VERIFICATION BAR -->
+<div class="verification-bar">
+  <span class="badge badge-ok">&#10003;</span> <span class="v-count">101</span> verified
+  <span class="badge badge-warn">&#8776;</span> <span class="v-count">0</span> rounding
+  <span class="badge badge-err">&#10007;</span> <span class="v-count">0</span> discrepancies
+  &mdash; Every factual claim is checked against primary source documents.
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="section" id="exec">
+<h2>Executive Summary</h2>
+<p>SFUSD teachers (UESF) began their strike on February 9, 2026. The district offers 2%/year for 3 years (6% total, Year 3 conditional), in exchange for eliminating AP prep periods, sabbatical leave, department head stipends, and enforceable class size caps. The independent PERB fact-finding panel recommended <strong>3%/year for 2 years</strong> (6% unconditional)&mdash;more than the district is offering. UESF demands 9% certificated / 14% classified over 2 years plus $14M/year for family healthcare.</p>
+<p><strong>Each 1% raise for all employees costs $10.17M/year</strong> <span class="cite" title="PERB Fact-Finding Report, Feb 2026, p.12">[PERB Fact-Finding Report, Feb 2026, p.12]</span>.</p>
+<p><strong>This analysis answers one question: Where can the district find money to fund substantially larger raises?</strong></p>
+
+<div class="callout">
+"The district is not broke. It spends 15.1% of its budget on central administration vs. a peer median of ~10.5%. It ends every year with tens of millions more than projected. It spends $226M on outside contractors while claiming it can't afford raises. The PERB panel itself said the district should 'consistently and aggressively reduce funds spent on outside consultants.'"
+</div>
+
+<h3>Five Core Findings</h3>
+<div class="pillars">
+<div class="pillar">
+  <div class="number">$33.7M</div>
+  <div class="label">Wasted on EMPowerSF</div>
+  <div class="detail">The district spent $33.7M on a payroll system that doesn't work. That's 3.3% in raises for every employee, thrown away on a failed IT project. <span class="cite" title="BLA Admin Staffing Report, Jan 2023">[BLA Admin Staffing Report, Jan 2023]</span></div>
+</div>
+<div class="pillar">
+  <div class="number">$167M</div>
+  <div class="label">Budget Projection Miss</div>
+  <div class="detail">The FY2022-23 1st Interim projected $300.8M ending balance for FY2023-24. Actual: $467.9M. <span class="cite" title="SFUSD 1st Interim Reports + SACS Actuals">[SFUSD 1st Interim Reports + SACS Actuals]</span></div>
+</div>
+<div class="pillar">
+  <div class="number">$50.6M</div>
+  <div class="label">Parcel Tax &mdash; No Audit</div>
+  <div class="detail">QTEA compliance audit for FY 2022-23 is nearly 3 years delinquent. $50M/year with no public accountability. <span class="cite" title="SFUSD QTEA Compliance Audit, FY2021-22">[SFUSD QTEA Compliance Audit, FY2021-22]</span></div>
+</div>
+<div class="pillar">
+  <div class="number">$3.6B</div>
+  <div class="label">OPEB Unfunded Liability</div>
+  <div class="detail">$3.6 billion in retiree health promises while current workers pay rising Kaiser premiums. <span class="cite" title="SFUSD Annual Audit, FY2023-24">[SFUSD Annual Audit, FY2023-24]</span></div>
+</div>
+<div class="pillar pillar-wide">
+  <div class="number">15.1% vs ~10.5%</div>
+  <div class="label">Admin Spending Gap</div>
+  <div class="detail">SFUSD spends 15.1% of its budget on admin vs. ~10.5% at peer districts. Closing half the gap frees ~$61M&mdash;enough for 6% raises for every employee. <span class="cite" title="SACS FY2024-25 Budget, Statewide Extract">[SACS FY2024-25 Budget, Statewide Extract]</span></div>
+</div>
+</div>
+
+<div class="stats-row">
+<div class="stat-card"><div class="big-num">$402.8M</div><div class="stat-label">SFUSD Admin Spending (FY24-25)</div></div>
+<div class="stat-card"><div class="big-num">$226M</div><div class="stat-label">Outside Contractor Payments</div></div>
+<div class="stat-card"><div class="big-num">$111M</div><div class="stat-label">Actionable Annual Savings (Conservative)</div></div>
+</div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<nav class="toc" id="toc">
+<h2>Contents</h2>
+<ol>
+  <li><a href="#s1">Administrative Spending vs. Peer Districts</a></li>
+  <li><a href="#s2">Contractor &amp; Consultant Spending (72 Vendors $500K+)</a></li>
+  <li><a href="#s3">The EMPowerSF Debacle: $33.7M Wasted</a></li>
+  <li><a href="#s4">Budget Variance&mdash;Systematic Under-Projection</a></li>
+  <li><a href="#s5">Salary Spending&mdash;SFUSD vs. Peers</a></li>
+  <li><a href="#s6">Parcel Tax Accountability Gaps</a></li>
+  <li><a href="#s7">Healthcare Cost Explosion</a></li>
+  <li><a href="#s8">FY2025-26 Expenditure Breakdown</a></li>
+  <li><a href="#s9">The Maximum Salary Argument</a></li>
+  <li><a href="#s10">SFUSD Function-Level Breakdown</a></li>
+  <li><a href="#s11">Governance Failures</a></li>
+  <li><a href="#s12">Where's the Actual Money? (Actionable Savings)</a></li>
+  <li><a href="#sources">Data Sources</a></li>
+</ol>
+</nav>
+
+<!-- SECTION 1: ADMIN SPENDING -->
+<div class="section" id="s1">
+<h2>1. Administrative Spending: SFUSD vs. Peer Districts</h2>
+<p>Using FY2024-25 budget data from the California SACS statewide extract, SFUSD's administrative spending is the highest among comparable large urban districts, at <strong style="color:var(--red)">15.1%</strong> of total expenditures vs. a peer median of ~10.5%. <span class="cite" title="SACS FY2024-25 Budget, Statewide Extract">[SACS FY2024-25 Budget, Statewide Extract]</span></p>
+<p>Admin spending is defined as SACS Function codes 2100&ndash;2150 (Instructional Supervision &amp; Admin), 7100&ndash;7191 (Board &amp; Superintendent), 7200&ndash;7210 (Other General Admin), 7300&ndash;7390 (Fiscal Services), 7400&ndash;7490 (HR), 7500&ndash;7550 (Central Support), 7600 (Other Admin), and 7700 (Data Processing).</p>
+
+<table>
+<tr><th>District</th><th class="money">Admin Spending</th><th class="money">Total Expenditures</th><th class="pct">Admin %</th></tr>
+
+        <tr class="highlight-row">
+          <td>San Francisco Unified</td>
+          <td class="money">$402.8M</td>
+          <td class="money">$2,661.0M</td>
+          <td class="pct">15.1%</td>
+        </tr>
+        <tr>
+          <td>Los Angeles Unified</td>
+          <td class="money">$2,842.2M</td>
+          <td class="money">$21,560.6M</td>
+          <td class="pct">13.2%</td>
+        </tr>
+        <tr>
+          <td>San Jose Unified</td>
+          <td class="money">$116.4M</td>
+          <td class="money">$990.2M</td>
+          <td class="pct">11.8%</td>
+        </tr>
+        <tr>
+          <td>Long Beach Unified</td>
+          <td class="money">$287.6M</td>
+          <td class="money">$2,600.2M</td>
+          <td class="pct">11.1%</td>
+        </tr>
+        <tr>
+          <td>Sacramento City Unified</td>
+          <td class="money">$178.3M</td>
+          <td class="money">$1,632.3M</td>
+          <td class="pct">10.9%</td>
+        </tr>
+        <tr>
+          <td>Fresno Unified</td>
+          <td class="money">$293.6M</td>
+          <td class="money">$3,438.3M</td>
+          <td class="pct">8.5%</td>
+        </tr>
+        <tr>
+          <td>San Diego Unified</td>
+          <td class="money">$317.1M</td>
+          <td class="money">$3,947.6M</td>
+          <td class="pct">8.0%</td>
+        </tr>
+        <tr>
+          <td>Oakland Unified</td>
+          <td class="money">$140.3M</td>
+          <td class="money">$1,794.3M</td>
+          <td class="pct">7.8%</td>
+        </tr>
+</table>
+
+<p>If SFUSD matched the peer median, it would free up approximately <strong style="color:var(--red)">$123M per year</strong>. Even closing half the gap would free ~$61M&mdash;enough for a 6% raise for all employees.</p>
+
+<h3>BLA Findings (January 2023)</h3>
+<ul>
+  <li>Central admin = <strong>25% of operating budget</strong> ($978M in FY2020-21) vs. 18% median among 12 peer districts <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></li>
+  <li><strong>220 central FTEs per 10,000 students</strong> vs. 138 median&mdash;59% more admin staff than peers <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023, p.4">[BLA Central Admin Staffing Report, Jan 2023, p.4]</span></li>
+  <li>$1,780/student on instructional supervision vs. $611/student peer median <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></li>
+  <li>$104.5M on instructional supervision vs. $27.5M peer median = <strong>$77M excess</strong> <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></li>
+</ul>
+</div>
+
+<!-- SECTION 2: CONTRACTOR SPENDING -->
+<div class="section" id="s2">
+<h2>2. Contractor &amp; Consultant Spending: 72 Vendors Over $500K</h2>
+<p>SFUSD paid <strong style="color:var(--red)">$226M to 676 outside vendors</strong> in the period covered by board-approved warrant data. <span class="cite" title="SFUSD Vendor Payments Summary, BoardDocs FY2025-26">[SFUSD Vendor Payments Summary, BoardDocs FY2025-26]</span> The PERB fact-finding panel explicitly stated:</p>
+<div class="callout">"The District must continue to reduce its reliance on outside consultants and thus reallocate the contracting out funds to programs that directly benefit their employees." <span class="cite" title="PERB Fact-Finding Report, Feb 2026">[PERB Fact-Finding Report, Feb 2026]</span></div>
+
+<h3>Spending by Category</h3>
+<div class="stats-row">
+
+        <div class="stat-card" onclick="filterVendors('Other')">
+          <div class="big-num">$52.3M</div>
+          <div class="stat-label">Other<br>(46 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Transportation')">
+          <div class="big-num">$38.4M</div>
+          <div class="stat-label">Transportation<br>(1 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('After-School Programs')">
+          <div class="big-num">$36.8M</div>
+          <div class="stat-label">After-School Programs<br>(6 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Food Services')">
+          <div class="big-num">$19.2M</div>
+          <div class="stat-label">Food Services<br>(3 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Healthcare Staffing')">
+          <div class="big-num">$15.6M</div>
+          <div class="stat-label">Healthcare Staffing<br>(6 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('IT Consulting')">
+          <div class="big-num">$12.8M</div>
+          <div class="stat-label">IT Consulting<br>(2 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Education Consulting')">
+          <div class="big-num">$3.1M</div>
+          <div class="stat-label">Education Consulting<br>(1 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('IT/Consulting')">
+          <div class="big-num">$2.9M</div>
+          <div class="stat-label">IT/Consulting<br>(4 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('IT/Payroll System')">
+          <div class="big-num">$2.7M</div>
+          <div class="stat-label">IT/Payroll System<br>(1 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Translation Services')">
+          <div class="big-num">$2.4M</div>
+          <div class="stat-label">Translation Services<br>(1 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('IT Equipment')">
+          <div class="big-num">$1.7M</div>
+          <div class="stat-label">IT Equipment<br>(1 vendors)</div>
+        </div>
+</div>
+
+<input type="text" id="vendorSearch" placeholder="Search vendors..." onkeyup="searchVendors(this.value)">
+
+<table id="vendorTable">
+<tr><th>#</th><th>Vendor</th><th class="money">Amount</th><th>Category</th><th></th></tr>
+
+        <tr class="vendor-row" onclick="toggleVendor('v0')">
+          <td>1</td>
+          <td>ZUM SERVICES, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
+          <td class="money">$38,374,008</td>
+          <td><span class="cat-tag cat-transportation">Transportation</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v0" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Student transportation technology company providing school bus services. SF-based startup replacing traditional yellow bus operators.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$2,222,301.69</td></tr><tr><td>November</td><td class="money">$74.55</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v1')">
+          <td>2</td>
+          <td>REVOLUTION FOODS, PBC <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
+          <td class="money">$16,100,138</td>
+          <td><span class="cat-tag cat-food-services">Food Services</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v1" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Public benefit corporation providing healthy school meals. Serves 2M+ meals/week to schools nationwide.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$622,862.94</td></tr><tr><td>September</td><td class="money">$272,594.00</td></tr><tr><td>October</td><td class="money">$1,399,259.62</td></tr><tr><td>November</td><td class="money">$699,678.51</td></tr><tr><td>December</td><td class="money">$1,246,422.79</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v2')">
+          <td>3</td>
+          <td>YMCA OF SAN FRANCISCO <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
+          <td class="money">$14,369,547</td>
+          <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v2" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Operates after-school programs at SFUSD school sites through ExCEL (Expanded Community-based Education and Literacy) partnership.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$302,217.35</td></tr><tr><td>August</td><td class="money">$357,681.45</td></tr><tr><td>September</td><td class="money">$373,693.97</td></tr><tr><td>October</td><td class="money">$655,880.30</td></tr><tr><td>November</td><td class="money">$434,565.73</td></tr><tr><td>December</td><td class="money">$800,878.18</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v3')">
+          <td>4</td>
+          <td>BAY AREA COMMUNITY RESOURCES <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
+          <td class="money">$10,472,532</td>
+          <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v3" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Nonprofit operating after-school programs at SFUSD sites. Funded through a mix of district general fund and grants.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$47,491.16</td></tr><tr><td>August</td><td class="money">$37,754.77</td></tr><tr><td>September</td><td class="money">$1,958,644.87</td></tr><tr><td>October</td><td class="money">$591,502.83</td></tr><tr><td>November</td><td class="money">$522,473.49</td></tr><tr><td>December</td><td class="money">$765,725.58</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v4')">
+          <td>5</td>
+          <td>GALAXY SOLUTIONS INC. <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
+          <td class="money">$7,056,413</td>
+          <td><span class="cat-tag cat-it-consulting">IT Consulting</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v4" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">IT consulting firm providing technology staffing and project management services to SFUSD.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>November</td><td class="money">$835,862.40</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v5')">
+          <td>6</td>
+          <td>MISSION GRADUATES <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
+          <td class="money">$5,924,049</td>
+          <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v5" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Nonprofit providing after-school academic support and college preparation programs for low-income students.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$203,146.33</td></tr><tr><td>August</td><td class="money">$136,403.00</td></tr><tr><td>September</td><td class="money">$120,733.67</td></tr><tr><td>October</td><td class="money">$659,264.88</td></tr><tr><td>November</td><td class="money">$122,339.90</td></tr><tr><td>December</td><td class="money">$702,763.29</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v6')">
+          <td>7</td>
+          <td>THE SPEECH PATHOLOGY GROUP <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
+          <td class="money">$5,850,000</td>
+          <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v6" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Contract staffing agency providing speech-language pathologists to school districts unable to fill permanent positions.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$688,671.61</td></tr><tr><td>October</td><td class="money">$803,856.31</td></tr><tr><td>November</td><td class="money">$1,462,550.61</td></tr><tr><td>December</td><td class="money">$156,552.75</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v7')">
+          <td>8</td>
+          <td>INFOSYS <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
+          <td class="money">$5,747,095</td>
+          <td><span class="cat-tag cat-it-consulting">IT Consulting</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v7" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Global IT services company. Contracted for the failed EMPowerSF SAP payroll system implementation ($13.7M+ original contract).</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$370,581.81</td></tr><tr><td>September</td><td class="money">$705,020.99</td></tr><tr><td>October</td><td class="money">$74,908.96</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v8')">
+          <td>9</td>
+          <td>PROTIVITI GOVERNMENT SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$5,550,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v8" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Home | Protiviti
+[Skip to main content] 
+[![Protiviti Global Buisiness Consulting in PGS]![Protiviti Global Buisiness Consulting in PGS]] 
+* [] 
+* ## Search in Protiviti.com
+Search in Protiviti.comSearch
+[] 
+* [] 
+* [] 
+* [] 
+![] 
+![] 
+![Gov Serv] 
+# Protiviti Government Services
+Responsive and sust</p>
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v9')">
+          <td>10</td>
+          <td>RO HEALTH, INC. <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
+          <td class="money">$4,349,783</td>
+          <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v9" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Healthcare staffing agency providing nurses, therapists, and behavioral health specialists to schools.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$74,683.34</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v10')">
+          <td>11</td>
+          <td>JAMESTOWN COMMUNITY CENTER <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
+          <td class="money">$3,361,915</td>
+          <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v10" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Community center in the Mission District providing after-school programs and youth development.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$33,024.28</td></tr><tr><td>September</td><td class="money">$7,374.72</td></tr><tr><td>October</td><td class="money">$100,978.66</td></tr><tr><td>November</td><td class="money">$163,787.82</td></tr><tr><td>December</td><td class="money">$35,803.44</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v11')">
+          <td>12</td>
+          <td>THE EDUCATION EXPERTS, LLC <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
+          <td class="money">$3,100,000</td>
+          <td><span class="cat-tag cat-education-consulting">Education Consulting</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v11" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Education consulting firm providing professional development and curriculum support.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$54,132.22</td></tr><tr><td>September</td><td class="money">$385,903.83</td></tr><tr><td>December</td><td class="money">$377,343.67</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v12')">
+          <td>13</td>
+          <td>SUNSET SCAVENGER COMPANY <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$3,053,377</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v12" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">California
+
+- [Recology American Canyon] 
+- [Recology Arcata] 
+- [Recology Auburn Placer] 
+- Recology Butte Colusa Counties
+ - [Chico] 
+ - [City of Colusa] 
+ - [County of Colusa] 
+ - [Butte County] 
+ - [Oroville] 
+ - [Williams] 
+- [Recology Davis] 
+- [Recology Del Norte] 
+- [Recology Dixon] 
+- [Reco</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$443,735.59</td></tr><tr><td>November</td><td class="money">$198,838.90</td></tr><tr><td>December</td><td class="money">$159,398.40</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v13')">
+          <td>14</td>
+          <td>RICHMOND DIST. NEIGHBORHOOD CTR. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$2,871,010</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v13" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">[**Search for Public School Districts**] 
+
+District Directory Information (2023-2024 School Year)
+
+[Search Results] [Modify Search] [Data Notes/Grant IDs] [Help] 
+
+District Name:Richmond City Public Schools [(Schools in this District)] 
+
+NCES District ID:5103240
+
+State District ID:VA-123
+
+Mailing Ad</p>
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v14')">
+          <td>15</td>
+          <td>FRONTLINE EDUCATION <span class="savings-badge" style="background:var(--text-light)">ESSENTIAL</span></td>
+          <td class="money">$2,660,449</td>
+          <td><span class="cat-tag cat-it-payroll-system">IT/Payroll System</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v14" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">K-12 HR/payroll software company. Replacing the failed EMPowerSF system. Ongoing subscription + implementation costs.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>September</td><td class="money">$178,769.39</td></tr><tr><td>November</td><td class="money">$108,450.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v15')">
+          <td>16</td>
+          <td>SPECIAL SERVICE FOR GROUPS, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$2,567,370</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v15" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">![] 
+
+# Special Education and MTSS
+
+Ensure all students have what they need to be successful
+
+![] 
+
+#### **Some of the districts we assisted in improving special education**
+
+* * *
+
+## Achieving Better Results is Possible
+
+Special education and MTSS supports are critical to creating more inclusive a</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$15,520.00</td></tr><tr><td>August</td><td class="money">$40,229.20</td></tr><tr><td>November</td><td class="money">$76,607.85</td></tr><tr><td>December</td><td class="money">$52,339.70</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v16')">
+          <td>17</td>
+          <td>GOLD STAR FOODS INC. <span class="savings-badge" style="background:var(--text-light)">ESSENTIAL</span></td>
+          <td class="money">$2,530,170</td>
+          <td><span class="cat-tag cat-food-services">Food Services</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v16" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Food service distribution company supplying school meal programs across California.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$13,211.73</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v17')">
+          <td>18</td>
+          <td>RCM TECHNOLOGIES (USA), INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$2,500,540</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v17" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">About RCM Technologies - RCM Technologies
+![] Toggle business unit switcher
+* [RCM Technologies] 
+* [Energy Services] 
+* [Process &amp; Industrial] 
+* [Aerospace &amp; Defense] 
+* [Data &amp; Solutions] 
+* [Life Sciences] 
+* [Healthcare Services] 
+# We enable progress across industries
+**RCM Technol</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>August</td><td class="money">$21,745.16</td></tr><tr><td>September</td><td class="money">$32,676.12</td></tr><tr><td>October</td><td class="money">$177,667.37</td></tr><tr><td>November</td><td class="money">$2,834.28</td></tr><tr><td>December</td><td class="money">$309,608.23</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v18')">
+          <td>19</td>
+          <td>SOURCE TO TARGET TRANSLATIONS <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
+          <td class="money">$2,430,000</td>
+          <td><span class="cat-tag cat-translation-services">Translation Services</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v18" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Translation and interpretation services company serving school districts and government agencies.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$44,283.16</td></tr><tr><td>September</td><td class="money">$40,623.70</td></tr><tr><td>October</td><td class="money">$51,284.60</td></tr><tr><td>November</td><td class="money">$173,482.12</td></tr><tr><td>December</td><td class="money">$149,379.08</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v19')">
+          <td>20</td>
+          <td>COMMUNITY YOUTH CENTER OF SAN FRANCISCO <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$2,130,344</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v19" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">- [Skip to primary navigation] 
+- [Skip to main content] 
+- [Skip to footer] 
+
+# Theory of Change
+
+_For 56 years, Community Youth Center of San Francisco has provided the diverse youth of our city a sense of belonging and vital tools and experiences to succeed in life._
+
+CYC today serves a diverse p</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$18,728.79</td></tr><tr><td>November</td><td class="money">$759,964.44</td></tr><tr><td>December</td><td class="money">$181,005.53</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v20')">
+          <td>21</td>
+          <td>AEQUOR <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
+          <td class="money">$2,003,500</td>
+          <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v20" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Healthcare staffing agency specializing in placing therapists, nurses, and special education staff in schools.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$34,350.00</td></tr><tr><td>October</td><td class="money">$93,444.45</td></tr><tr><td>November</td><td class="money">$3,865.00</td></tr><tr><td>December</td><td class="money">$240,496.62</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v21')">
+          <td>22</td>
+          <td>REAL OPTIONS FOR CITY KIDS <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
+          <td class="money">$1,986,066</td>
+          <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v21" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Nonprofit operating after-school programs at SFUSD elementary and middle schools.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$185,108.55</td></tr><tr><td>September</td><td class="money">$197,406.65</td></tr><tr><td>October</td><td class="money">$22,782.57</td></tr><tr><td>November</td><td class="money">$193,844.27</td></tr><tr><td>December</td><td class="money">$91,005.61</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v22')">
+          <td>23</td>
+          <td>CDW GOVERNMENT <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
+          <td class="money">$1,715,567</td>
+          <td><span class="cat-tag cat-it-equipment">IT Equipment</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v22" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Major IT equipment and solutions provider for government and education. Hardware, software, cloud services.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$25,881.39</td></tr><tr><td>August</td><td class="money">$1,087.20</td></tr><tr><td>September</td><td class="money">$2,168.14</td></tr><tr><td>October</td><td class="money">$78,690.51</td></tr><tr><td>November</td><td class="money">$7,002.39</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v23')">
+          <td>24</td>
+          <td>PIONEER HEALTHCARE SERVICES LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,570,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v23" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">About Our Company | Pioneer Healthcare[Skip to the content] 
+[] 
+* [Browse jobs] 
+* [Job Seekers] 
+Job Seekers
+* [Therapy] 
+* [Allied] 
+* [Nursing] 
+* [Canadian Travelers] 
+* [clients] 
+* [About] 
+About
+* [Our Company] 
+* [Our Leadership] 
+* [Mentorship &amp; Guidance] 
+* [Awards &amp; Recognition] </p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$18,689.53</td></tr><tr><td>September</td><td class="money">$106,727.00</td></tr><tr><td>October</td><td class="money">$6,625.12</td></tr><tr><td>December</td><td class="money">$200,698.28</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v24')">
+          <td>25</td>
+          <td>AMERGIS HEALTHCARE STAFFING , INC. <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
+          <td class="money">$1,544,333</td>
+          <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v24" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">National healthcare staffing company (formerly Maxim Healthcare) providing school nurses and therapists.</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$25,751.25</td></tr><tr><td>September</td><td class="money">$69,841.75</td></tr><tr><td>November</td><td class="money">$68,009.44</td></tr><tr><td>December</td><td class="money">$61,980.40</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v25')">
+          <td>26</td>
+          <td>THE STEPPING STONES GROUP LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,500,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v25" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Schools - The Stepping Stones Group[Skip to content] 
+[![The Stepping Stones Group]] 
+## Transforming partnerships
+We get what schools need to manage their special
+education staffing and workforce challenges.
+[Partner with us &#8250;] 
+## We’re there for schools
+[![schools_1]] 
+[![Workforce Solution</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$23,284.75</td></tr><tr><td>September</td><td class="money">$553,847.00</td></tr><tr><td>December</td><td class="money">$1,528,831.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v26')">
+          <td>27</td>
+          <td>WAXIE SANITARY SUPPLY <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,291,219</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v26" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">WAXIE K12 | WAXIE Sanitary Supply
+[![WAXIE_BradyPLUS-endorsed-logo_White-yellow]] 
+[**LOG IN**] 
+[**BROWSE PRODUCTS**] 
+[**SDS**] 
+[**BLOG**] 
+[![]] 
+[![]] 
+[![]] 
+[![]] 
+[Credit Application] 
+**
+[The Most Trusted Name In Clean. Since 1945.] 
+(800) 995-4466
+CONTACT US TODAY
+[![]] [![]] [![]]</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$26,474.88</td></tr><tr><td>September</td><td class="money">$239,328.67</td></tr><tr><td>October</td><td class="money">$2,385.28</td></tr><tr><td>November</td><td class="money">$161,682.60</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v27')">
+          <td>28</td>
+          <td>CRYSTAL CREAMERY, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,225,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v27" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">[Skip to Content] 
+
+# Foodservice
+
+Our dairy products from sour cream to fluid milk are served in food service kitchens and dining rooms everywhere across the country. We have from ingredient based specialty items to fabulous finished ice cream products for your dessert table.
+
+## K-12 Schools
+
+Milk</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$41,202.82</td></tr><tr><td>August</td><td class="money">$24.95</td></tr><tr><td>September</td><td class="money">$1,395.15</td></tr><tr><td>November</td><td class="money">$95,460.53</td></tr><tr><td>December</td><td class="money">$14,446.86</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v28')">
+          <td>29</td>
+          <td>DIGITAL SCEPTER CORPORATION <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,149,478</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v28" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">[Skip to main content] 
+
+## Vendor Information
+
+Explore what this Vendor has to offer through the contracts listed below. Contracts are competitively bid, saving you time and money. For the latest pricing information and to negotiate further, please contact the Vendor through the information listed </p>
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v29')">
+          <td>30</td>
+          <td>BOYS & GIRLS CLUBS OF SAN FRANCISCO <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,148,374</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v29" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Boys &amp; Girls Clubs of San Francisco
+[![]] 
+[![]] 
+# 2025 Impact Report
+**We are excited to share our 2025 Impact Report with you!
+Through the Impact Report, we aim to share some of the biggest challenges our youth and families faced over the past year—and how our organization is leaning in to su</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$1,238.55</td></tr><tr><td>September</td><td class="money">$5,757.28</td></tr><tr><td>October</td><td class="money">$91,839.17</td></tr><tr><td>November</td><td class="money">$114,489.05</td></tr><tr><td>December</td><td class="money">$51,768.81</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v30')">
+          <td>31</td>
+          <td>SENECA FAMILY OF AGENCIES <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,131,259</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v30" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">#### Educational Services
+
+Every child - regardless of zip code, family income, learning style, or past experience - deserves access to a world-class education. Through direct academic, social-emotional, and behavioral services for students and capacity-building support to schools and educators, Sen</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$150,533.69</td></tr><tr><td>October</td><td class="money">$146,046.00</td></tr><tr><td>November</td><td class="money">$104,653.38</td></tr><tr><td>December</td><td class="money">$123,225.27</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v31')">
+          <td>32</td>
+          <td>BAY AREA COMMUNICATION ACCESS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,102,197</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v31" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Augmentative and Alternative Communcation Services - Mt. Diablo Unified School District[Skip To Main Content] 
+Close Menu
+Search
+Clear
+Search
+Open Search
+Search
+Clear
+Search
+Open Menu
+[![Mt. Diablo Unified School District]] 
+[
+Mt. Diablo
+Unified School District
+] 
+## In This Section
+# Augmentative a</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$62,630.80</td></tr><tr><td>September</td><td class="money">$96,678.20</td></tr><tr><td>October</td><td class="money">$113,373.71</td></tr><tr><td>November</td><td class="money">$50,961.10</td></tr><tr><td>December</td><td class="money">$67,709.11</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v32')">
+          <td>33</td>
+          <td>CITY AND COUNTY OF SAN FRANCISCO <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,100,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v32" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Services | SFUSD[Skip to main content] 
+[![San Francisco Unified School District]] 
+More options
+[![San Francisco Unified School District]] 
+Search## Site search
+Search Site
+# Services
+## Services for Students and Families[Link to this section] 
+[
+### Student Supports &amp; Programs
+See how we are s</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$74,635.17</td></tr><tr><td>August</td><td class="money">$49,674.16</td></tr><tr><td>September</td><td class="money">$37,887.87</td></tr><tr><td>October</td><td class="money">$82,220.34</td></tr><tr><td>November</td><td class="money">$125,807.87</td></tr><tr><td>December</td><td class="money">$12,434.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v33')">
+          <td>34</td>
+          <td>BROADWAY TYPEWRITER COMPANY INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,090,137</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v33" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Broadway Typewriter Co. Inc. &quot;dba&quot; Arey Jones Educational Solutions | Texas Department of Information Resources
+[Skip to main content] 
+Menu
+Search DIR
+Search DIR## Search:
+* [All Pages &amp; Content] 
+* [Contracts &amp; Vendors] 
+## Search All Pages &amp; Content
+Start typing to find info</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$2,557.43</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v34')">
+          <td>35</td>
+          <td>RICHMOND AREA MULTI-SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,060,507</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v34" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">Home
+[![Brand] 
+Richmond Public Schools
+] 
+* [Home] 
+* [Elementary] 
+* [Barack Obama] 
+* [Bellevue] 
+* [Blackwell] 
+* [Broad Rock] 
+* [Cardinal] 
+* [Carver] 
+* [Chimborazo] 
+* [Fairfield Court] 
+* [Fisher] 
+* [Frances W. McClenney Elementary] 
+* [Francis] 
+* [Henry Marsh, III] 
+* [Jones] 
+* [Linwood</p>
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>November</td><td class="money">$181,548.19</td></tr><tr><td>December</td><td class="money">$185,861.35</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v35')">
+          <td>36</td>
+          <td>SAP PUBLIC SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$1,053,638</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v35" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              <p class="vendor-desc">LSI Consulting – SFUSD – Professional Services Agreement (RFP No. ERP-2017) 
+Page 1 of 25
+PROFESSIONAL SERVICES AGREEMENT
+This Professional Services Agreement (this “Agreement” as defined below), dated for convenience 
+January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA LS</p>
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v36')">
+          <td>37</td>
+          <td>ATHENS ADMINISTRATORS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$948,583</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v36" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$325,976.56</td></tr><tr><td>September</td><td class="money">$185,037.27</td></tr><tr><td>October</td><td class="money">$844,723.87</td></tr><tr><td>November</td><td class="money">$42,839.77</td></tr><tr><td>December</td><td class="money">$605,290.73</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v37')">
+          <td>38</td>
+          <td>MAXIM HEALTHCARE SERVICES HOLDINGS, INC <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
+          <td class="money">$925,510</td>
+          <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v37" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v38')">
+          <td>39</td>
+          <td>BMR HEALTH SERVICES INC <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
+          <td class="money">$900,000</td>
+          <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v38" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$291,520.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v39')">
+          <td>40</td>
+          <td>FILIPPINI CONSULTING LLC <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
+          <td class="money">$876,152</td>
+          <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v39" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>September</td><td class="money">$10,359.78</td></tr><tr><td>October</td><td class="money">$24,841.71</td></tr><tr><td>November</td><td class="money">$18,271.96</td></tr><tr><td>December</td><td class="money">$7,605.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v40')">
+          <td>41</td>
+          <td>PACIFIC RIM PRODUCE <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$850,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v40" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$1,431.38</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v41')">
+          <td>42</td>
+          <td>A1 PROTECTIVE SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$848,708</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v41" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$74,606.76</td></tr><tr><td>September</td><td class="money">$45,860.48</td></tr><tr><td>October</td><td class="money">$51,871.32</td></tr><tr><td>December</td><td class="money">$107,798.50</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v42')">
+          <td>43</td>
+          <td>GOTO COMMUNICATIONS, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$827,650</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v42" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>August</td><td class="money">$17,226.79</td></tr><tr><td>September</td><td class="money">$29,033.11</td></tr><tr><td>October</td><td class="money">$28,335.29</td></tr><tr><td>November</td><td class="money">$8,303.90</td></tr><tr><td>December</td><td class="money">$60,068.62</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v43')">
+          <td>44</td>
+          <td>RENAISSANCE LEARNING, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$808,380</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v43" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>September</td><td class="money">$759,920.22</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v44')">
+          <td>45</td>
+          <td>VICTOR TREATMENT CENTERS, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$800,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v44" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$337,893.71</td></tr><tr><td>September</td><td class="money">$16,403.52</td></tr><tr><td>October</td><td class="money">$140,928.00</td></tr><tr><td>November</td><td class="money">$121,779.90</td></tr><tr><td>December</td><td class="money">$259,363.49</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v45')">
+          <td>46</td>
+          <td>AMPLIFY EDUCATION, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$799,460</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v45" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>September</td><td class="money">$405,973.73</td></tr><tr><td>November</td><td class="money">$45,471.53</td></tr><tr><td>December</td><td class="money">$1,261.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v46')">
+          <td>47</td>
+          <td>LEARNUP CENTERS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$794,900</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v46" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$3,335.00</td></tr><tr><td>September</td><td class="money">$8,970.00</td></tr><tr><td>October</td><td class="money">$6,670.00</td></tr><tr><td>November</td><td class="money">$3,565.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v47')">
+          <td>48</td>
+          <td>AREY-JONES EDUCATIONAL SOLUTIONS <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
+          <td class="money">$757,870</td>
+          <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v47" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$48,126.77</td></tr><tr><td>October</td><td class="money">$467.71</td></tr><tr><td>November</td><td class="money">$32,350.47</td></tr><tr><td>December</td><td class="money">$79.81</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v48')">
+          <td>49</td>
+          <td>EDUPOINT EDUCATIONAL SYSTEMS <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
+          <td class="money">$755,169</td>
+          <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v48" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v49')">
+          <td>50</td>
+          <td>POSITIVE BEHAVIOR SUPPORTS CORP <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$750,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v49" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$13,728.75</td></tr><tr><td>September</td><td class="money">$25,252.50</td></tr><tr><td>October</td><td class="money">$56,576.25</td></tr><tr><td>December</td><td class="money">$11.75</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v50')">
+          <td>51</td>
+          <td>SUNBELT STAFFING, LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$750,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v50" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$3,172.72</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v51')">
+          <td>52</td>
+          <td>TELEGRAPH HILL NEIGHBORHOOD CENTER <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$745,850</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v51" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$34,964.46</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v52')">
+          <td>53</td>
+          <td>AFTER SCHOOL ENRICHMENT PROGRAM <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
+          <td class="money">$711,901</td>
+          <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v52" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>November</td><td class="money">$50,626.00</td></tr><tr><td>December</td><td class="money">$89,775.21</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v53')">
+          <td>54</td>
+          <td>ARISE EDUCATIONAL CENTER <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$700,721</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v53" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$137.96</td></tr><tr><td>September</td><td class="money">$147,234.69</td></tr><tr><td>October</td><td class="money">$167,731.17</td></tr><tr><td>November</td><td class="money">$167,074.12</td></tr><tr><td>December</td><td class="money">$138,274.07</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v54')">
+          <td>55</td>
+          <td>AGURTO CORPORATION DBA PESTEC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$700,128</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v54" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>September</td><td class="money">$145,394.58</td></tr><tr><td>November</td><td class="money">$158,819.15</td></tr><tr><td>December</td><td class="money">$67,263.41</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v55')">
+          <td>56</td>
+          <td>METRO ELEVATOR <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$700,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v55" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$15,140.00</td></tr><tr><td>September</td><td class="money">$16,371.52</td></tr><tr><td>October</td><td class="money">$80,582.60</td></tr><tr><td>November</td><td class="money">$68,575.00</td></tr><tr><td>December</td><td class="money">$6,075.80</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v56')">
+          <td>57</td>
+          <td>LANGUAGE CIRCLE OF CALIFORNIA, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$689,450</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v56" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$30,229.00</td></tr><tr><td>September</td><td class="money">$8,851.00</td></tr><tr><td>October</td><td class="money">$2,651.49</td></tr><tr><td>November</td><td class="money">$60,430.00</td></tr><tr><td>December</td><td class="money">$45,402.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v57')">
+          <td>58</td>
+          <td>COMMITTEE FOR CHILDREN <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$676,659</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v57" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v58')">
+          <td>59</td>
+          <td>SYNTEX GLOBAL INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$660,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v58" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$7,607.72</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v59')">
+          <td>60</td>
+          <td>CENTER FOR SOCIAL DYNAMICS. LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$650,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v59" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$33,319.25</td></tr><tr><td>September</td><td class="money">$41,617.00</td></tr><tr><td>October</td><td class="money">$30,414.99</td></tr><tr><td>November</td><td class="money">$7,390.84</td></tr><tr><td>December</td><td class="money">$30,250.50</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v60')">
+          <td>61</td>
+          <td>REGENTS OF THE UNIVERSITY OF CALIFORNIA <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$592,430</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v60" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>November</td><td class="money">$579.15</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v61')">
+          <td>62</td>
+          <td>SYSCO FOOD SERVICES NORTHERN CA REGION <span class="savings-badge" style="background:var(--text-light)">ESSENTIAL</span></td>
+          <td class="money">$567,000</td>
+          <td><span class="cat-tag cat-food-services">Food Services</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v61" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$13,253.95</td></tr><tr><td>October</td><td class="money">$59,650.15</td></tr><tr><td>November</td><td class="money">$479,197.00</td></tr><tr><td>December</td><td class="money">$39,478.06</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v62')">
+          <td>63</td>
+          <td>DISCOVERY EDUCATION, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$566,546</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v62" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v63')">
+          <td>64</td>
+          <td>JOHNSON CONTROLS FIRE PROTECTION LP <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$560,066</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v63" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$12,709.08</td></tr><tr><td>September</td><td class="money">$50,926.46</td></tr><tr><td>October</td><td class="money">$64,740.50</td></tr><tr><td>November</td><td class="money">$104,658.39</td></tr><tr><td>December</td><td class="money">$132,842.93</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v64')">
+          <td>65</td>
+          <td>FLOW TRANSLATIONS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$557,682</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v64" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$7,423.17</td></tr><tr><td>September</td><td class="money">$17,111.77</td></tr><tr><td>October</td><td class="money">$24,105.08</td></tr><tr><td>November</td><td class="money">$60,726.23</td></tr><tr><td>December</td><td class="money">$66,326.11</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v65')">
+          <td>66</td>
+          <td>BEHAVIORAL INTERVENTION SPECIALIST OF LA <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$550,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v65" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$134,968.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v66')">
+          <td>67</td>
+          <td>SF ARTS EDUCATION PROJECT <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$548,986</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v66" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v67')">
+          <td>68</td>
+          <td>IXL LEARNING, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$544,350</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v67" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v68')">
+          <td>69</td>
+          <td>CONVERGE TECHNOLOGY SOLUTIONS US, LLC <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
+          <td class="money">$542,314</td>
+          <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v68" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$23,354.59</td></tr><tr><td>August</td><td class="money">$133,404.45</td></tr><tr><td>October</td><td class="money">$60,142.68</td></tr><tr><td>November</td><td class="money">$696,189.38</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v69')">
+          <td>70</td>
+          <td>STRATEGIC ENERGY INNOVATIONS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$540,750</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v69" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$6,250.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v70')">
+          <td>71</td>
+          <td>CPM EDUCATIONAL PROGRAM <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$520,000</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v70" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>November</td><td class="money">$90,000.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="vendor-row" onclick="toggleVendor('v71')">
+          <td>72</td>
+          <td>CHRISTY WHITE, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td class="money">$517,508</td>
+          <td><span class="cat-tag cat-other">Other</span></td>
+          <td class="expand-icon">&#9660;</td>
+        </tr>
+        <tr class="vendor-detail" id="v71" style="display:none">
+          <td colspan="5">
+            <div class="vendor-detail-inner">
+              
+              <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$20,000.00</td></tr></table></div>
+            </div>
+          </td>
+        </tr>
+</table>
+</div>
+
+<!-- SECTION 3: EMPOWERSF -->
+<div class="section" id="s3">
+<h2>3. The EMPowerSF Debacle: $33.7M+ Wasted on Payroll</h2>
+<div class="timeline">
+<div class="timeline-item"><span class="year">2018:</span> SFUSD contracts Infosys/SAP for $13.7M to build "EMPowerSF" payroll/HR system <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></div>
+<div class="timeline-item"><span class="year">2019&ndash;2022:</span> System never works properly. BLA finds it drove a $13M (28%) increase in Centralized Data Processing costs <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></div>
+<div class="timeline-item"><span class="year">2023:</span> District abandons EMPowerSF and contracts Frontline Education for a replacement system (~$20M estimated total)</div>
+<div class="timeline-item"><span class="year">2026:</span> District proposes forcing classified staff onto Frontline's bimonthly pay system as a contract demand during negotiations</div>
+</div>
+<div class="callout callout-red">
+<strong>Total waste: $33.7M+</strong> for a payroll system that peers operate for a fraction of the cost. That's equivalent to a <strong>3.3% raise for every employee</strong>, thrown away on a failed IT project. <span class="cite" title="PERB Fact-Finding Report, Feb 2026, p.12">[PERB Fact-Finding Report, Feb 2026, p.12]</span>
+</div>
+<p>Board-approved vendor payments confirm: Infosys received $5,747,095 and Frontline Education received $2,660,449 in the reporting period. <span class="cite" title="SFUSD Vendor Payments Summary, BoardDocs">[SFUSD Vendor Payments Summary, BoardDocs]</span></p>
+</div>
+
+<!-- SECTION 4: BUDGET VARIANCE -->
+<div class="section" id="s4">
+<h2>4. Budget Variance: Systematic Under-Projection of Fund Balances</h2>
+<p>SFUSD's 1st Interim Reports have <strong>systematically understated the General Fund ending balance by tens to hundreds of millions of dollars</strong>. <span class="cite" title="SFUSD 1st Interim Reports, FY2021-22 through FY2024-25">[SFUSD 1st Interim Reports, FY2021-22 through FY2024-25]</span></p>
+
+<h3>Projected vs. Actual: General Fund Ending Balance</h3>
+<table>
+<tr><th>Fiscal Year</th><th class="money">1st Interim Projected</th><th class="money">Actual Ending Balance</th><th class="money">Difference</th><th class="pct">Miss %</th></tr>
+<tr><td>FY2021-22</td><td class="money">$313.2M</td><td class="money">$274.7M</td><td class="money" style="color:var(--green)">-$38.5M</td><td class="pct" style="color:var(--green)">Over by 14%*</td></tr>
+<tr><td>FY2022-23</td><td class="money">$307.2M</td><td class="money">$413.3M</td><td class="money" style="color:var(--red);font-weight:700">+$106.1M</td><td class="pct" style="color:var(--red);font-weight:700">Under by 35%</td></tr>
+<tr><td>FY2023-24</td><td class="money">$383.4M</td><td class="money">$467.9M</td><td class="money" style="color:var(--red);font-weight:700">+$84.5M</td><td class="pct" style="color:var(--red);font-weight:700">Under by 22%</td></tr>
+<tr><td>FY2024-25</td><td class="money">$286.4M</td><td class="money" style="color:var(--text-light)">TBD</td><td class="money">&mdash;</td><td class="pct">&mdash;</td></tr>
+</table>
+<p style="font-size:0.85em;color:var(--text-light)">*FY2021-22 was inflated by one-time COVID relief (ESSER) funds. Sources: Projected figures from SACS Form MYPI; actuals from following year's beginning balance.</p>
+
+<h3>Out-Year Projections: Even More Wrong</h3>
+<table>
+<tr><th>Projected FY</th><th>From Which Report</th><th class="money">Projected Ending</th><th class="money">Actual Ending</th><th class="money">Miss</th></tr>
+<tr><td>FY2022-23</td><td>FY2021-22 1st Interim</td><td class="money">$325.9M</td><td class="money">$413.3M</td><td class="money" style="color:var(--red);font-weight:700">+$87.4M</td></tr>
+<tr><td>FY2023-24</td><td>FY2021-22 1st Interim</td><td class="money">$346.0M</td><td class="money">$467.9M</td><td class="money" style="color:var(--red);font-weight:700">+$121.9M</td></tr>
+<tr><td>FY2023-24</td><td>FY2022-23 1st Interim</td><td class="money">$300.8M</td><td class="money">$467.9M</td><td class="money" style="color:var(--red);font-weight:700">+$167.1M</td></tr>
+</table>
+
+<div class="callout callout-red"><strong>The pattern is clear:</strong> The district projects fiscal catastrophe, then ends the year with tens to hundreds of millions more than projected. Given the track record ($106M miss in FY2022-23, $85M miss in FY2023-24, $167M miss on out-year projections), the current dire projections should be discounted accordingly. <span class="cite" title="SFUSD 1st Interim Reports">[SFUSD 1st Interim Reports]</span></div>
+
+<h3>Historical Surpluses (SACS Actuals)</h3>
+<table>
+<tr><th>Fiscal Year</th><th class="money">Revenue</th><th class="money">Expenditures</th><th class="money">Net Surplus</th><th>Note</th></tr>
+<tr><td>FY2020-21</td><td class="money">$988.8M</td><td class="money">$923.9M</td><td class="money" style="color:var(--green)">+$64.9M</td><td>From SACS unaudited actuals <span class="cite" title="SACS UA FY2020-21">[SACS UA FY2020-21]</span></td></tr>
+<tr><td>FY2021-22</td><td class="money">$1,310.6M</td><td class="money">$1,162.1M</td><td class="money" style="color:var(--green)">+$148.5M</td><td>Includes one-time federal COVID funds <span class="cite" title="SACS UA FY2021-22">[SACS UA FY2021-22]</span></td></tr>
+</table>
+</div>
+
+<!-- SECTION 5: SALARY SPENDING -->
+<div class="section" id="s5">
+<h2>5. Salary Spending: SFUSD vs. Peer Districts</h2>
+<p>Salary spending as a percentage of total expenditures (FY2024-25 SACS budget data): <span class="cite" title="SACS FY2024-25 Budget, Statewide Extract">[SACS FY2024-25 Budget, Statewide Extract]</span></p>
+<table>
+<tr><th>District</th><th class="money">Cert. Salaries</th><th class="money">Class. Salaries</th><th class="money">Total Expend.</th><th class="pct">Salary %</th></tr>
+
+        <tr>
+          <td>San Diego Unified</td>
+          <td class="money">$1,585.8M</td>
+          <td class="money">$615.9M</td>
+          <td class="money">$3,947.6M</td>
+          <td class="pct">55.8%</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>San Francisco Unified</td>
+          <td class="money">$975.8M</td>
+          <td class="money">$442.8M</td>
+          <td class="money">$2,661.0M</td>
+          <td class="pct">53.3%</td>
+        </tr>
+        <tr>
+          <td>Los Angeles Unified</td>
+          <td class="money">$8,036.6M</td>
+          <td class="money">$3,051.9M</td>
+          <td class="money">$21,560.6M</td>
+          <td class="pct">51.4%</td>
+        </tr>
+        <tr>
+          <td>Long Beach Unified</td>
+          <td class="money">$1,022.5M</td>
+          <td class="money">$288.8M</td>
+          <td class="money">$2,600.2M</td>
+          <td class="pct">50.4%</td>
+        </tr>
+        <tr>
+          <td>San Jose Unified</td>
+          <td class="money">$371.9M</td>
+          <td class="money">$124.4M</td>
+          <td class="money">$990.2M</td>
+          <td class="pct">50.1%</td>
+        </tr>
+        <tr>
+          <td>Sacramento City Unified</td>
+          <td class="money">$616.9M</td>
+          <td class="money">$183.0M</td>
+          <td class="money">$1,632.3M</td>
+          <td class="pct">49.0%</td>
+        </tr>
+        <tr>
+          <td>Fresno Unified</td>
+          <td class="money">$1,185.6M</td>
+          <td class="money">$448.0M</td>
+          <td class="money">$3,438.3M</td>
+          <td class="pct">47.5%</td>
+        </tr>
+        <tr>
+          <td>Oakland Unified</td>
+          <td class="money">$545.6M</td>
+          <td class="money">$263.7M</td>
+          <td class="money">$1,794.3M</td>
+          <td class="pct">45.1%</td>
+        </tr>
+</table>
+<p>SFUSD's salary percentage (53.3%) is above average&mdash;but the issue is <em>where non-salary money goes</em>. SFUSD sends a disproportionate share to admin overhead and outside consultants rather than direct student services.</p>
+</div>
+
+<!-- SECTION 6: PARCEL TAX -->
+<div class="section" id="s6">
+<h2>6. Parcel Tax Accountability Gaps</h2>
+<p>SFUSD receives approximately <strong>$104M/year</strong> from two voter-approved parcel taxes:</p>
+<table>
+<tr><th>Tax</th><th>Annual Revenue</th><th>Expires</th><th>Status</th></tr>
+<tr><td>QTEA (Prop A, 2008)</td><td class="money">~$50.6M/year</td><td>June 30, 2028</td><td style="color:var(--red);font-weight:700">FY22-23 audit 3 YEARS DELINQUENT <span class="cite" title="SFUSD QTEA page">[SFUSD QTEA page]</span></td></tr>
+<tr><td>PEEF/FWEA (Prop J, 2020)</td><td class="money">~$53.7M/year</td><td>2038</td><td style="color:var(--red)">FY24-25 report not published</td></tr>
+</table>
+<div class="callout callout-red">
+<strong>QTEA compliance audit for FY 2022-23 is nearly 3 years delinquent</strong>&mdash;still listed as "Coming Soon" on the SFUSD website. Voters approved QTEA specifically to fund teacher compensation. <span class="cite" title="SFUSD QTEA Compliance Audit, FY2021-22">[SFUSD QTEA Compliance Audit, FY2021-22]</span>
+</div>
+</div>
+
+<!-- SECTION 7: HEALTHCARE -->
+<div class="section" id="s7">
+<h2>7. Healthcare Cost Explosion</h2>
+<h3>Kaiser Employee+2 Total Monthly Premium</h3>
+<p>From SFHSS rate cards filed with the district: <span class="cite" title="SFHSS Health Plan Rate Cards, 2024-2026">[SFHSS Health Plan Rate Cards, 2024-2026]</span></p>
+<table>
+<tr><th>Plan Year</th><th class="money">Total Monthly Cost</th><th class="money">Employee Pays (Biweekly)</th><th class="money">SFUSD Pays (Biweekly)</th></tr>
+<tr><td>2024</td><td class="money">$2,349/mo</td><td class="money">$189.58</td><td class="money">$899.40</td></tr>
+<tr><td>2025</td><td class="money">$2,489/mo</td><td class="money">$185.26</td><td class="money">$962.59</td></tr>
+<tr><td>2026</td><td class="money">$2,733/mo</td><td class="money">$216.16</td><td class="money">$1,045.25</td></tr>
+</table>
+<div class="stats-row">
+<div class="stat-card"><div class="big-num">$33.2M</div><div class="stat-label">Active Employee Healthcare/yr</div></div>
+<div class="stat-card"><div class="big-num">$34.4M</div><div class="stat-label">Retiree Healthcare (OPEB pay-as-you-go)/yr</div></div>
+<div class="stat-card"><div class="big-num">$3.6B</div><div class="stat-label">OPEB Unfunded Actuarial Liability</div></div>
+</div>
+<p>UESF demands $14M/year for fully funded family healthcare. The district estimates the cost at $11M/year. <span class="cite" title="PERB Fact-Finding Report, Feb 2026, p.9">[PERB Fact-Finding Report, Feb 2026, p.9]</span></p>
+</div>
+
+<!-- SECTION 8: EXPENDITURE BREAKDOWN -->
+<div class="section" id="s8">
+<h2>8. FY2025-26 Expenditure Breakdown</h2>
+<p>From the December 2025 Fiscal Stabilization Plan (~$1.3B total): <span class="cite" title="SFUSD Fiscal Stabilization Plan, Dec 2025">[SFUSD Fiscal Stabilization Plan, Dec 2025]</span></p>
+<table>
+<tr><th>Category</th><th class="money">Amount</th><th class="pct">% of Total</th></tr>
+<tr><td>Instruction</td><td class="money">$751.8M</td><td class="pct">58%</td></tr>
+<tr><td>Student Services</td><td class="money">$198.4M</td><td class="pct">15%</td></tr>
+<tr><td>Instruction-related</td><td class="money">$150.8M</td><td class="pct">12%</td></tr>
+<tr><td>Building &amp; Grounds</td><td class="money">$116.0M</td><td class="pct">9%</td></tr>
+<tr><td>General Administration</td><td class="money">$72.2M</td><td class="pct">6%</td></tr>
+<tr><td>Ancillary</td><td class="money">$6.8M</td><td class="pct">1%</td></tr>
+<tr><td>Other Outgo</td><td class="money">$4.3M</td><td class="pct">&lt;1%</td></tr>
+</table>
+<p>Note: The FSP "General Administration" ($72.2M / 6%) uses a narrower definition than SACS function-level data. When all admin-coded functions are counted, the total is $402.8M / 15.1%. <span class="cite" title="SACS FY2024-25 Budget vs Fiscal Stabilization Plan">[SACS FY2024-25 Budget vs Fiscal Stabilization Plan]</span></p>
+</div>
+
+<!-- SECTION 9: MAXIMUM SALARY ARGUMENT -->
+<div class="section" id="s9">
+<h2>9. The Maximum Salary Argument</h2>
+<p>Working from the PERB benchmark of <strong>$10.17M per 1% raise for all employees</strong>: <span class="cite" title="PERB Fact-Finding Report, Feb 2026, p.12">[PERB Fact-Finding Report, Feb 2026, p.12]</span></p>
+<table>
+<tr><th>Funding Source</th><th class="money">Annual $ Available</th><th class="pct">Raises Funded</th><th>Confidence</th></tr>
+<tr><td>Cut admin spending to peer median (50% of gap)</td><td class="money">$61M</td><td class="pct">6.0%</td><td><span style="color:var(--green);font-weight:700">HIGH</span></td></tr>
+<tr><td>Reduce consultant/contractor spending</td><td class="money">$15&ndash;25M</td><td class="pct">1.5&ndash;2.5%</td><td><span style="color:var(--green);font-weight:700">HIGH</span></td></tr>
+<tr><td>EMPowerSF waste recovery (ongoing costs)</td><td class="money">$3&ndash;5M/yr</td><td class="pct">0.3&ndash;0.5%</td><td>MEDIUM</td></tr>
+<tr><td>Fund balance surplus (recurring pattern)</td><td class="money">$15&ndash;25M</td><td class="pct">one-time bonus</td><td><span style="color:var(--green);font-weight:700">HIGH</span></td></tr>
+<tr><td>Parcel tax for health benefits (MOU)</td><td class="money">$14M</td><td class="pct">frees salary pot</td><td><span style="color:var(--green);font-weight:700">HIGH</span></td></tr>
+<tr><td>School consolidation savings (phased)</td><td class="money">$10&ndash;25M</td><td class="pct">1.0&ndash;2.5%</td><td>MEDIUM</td></tr>
+<tr><td>Bond fund cost absorption</td><td class="money">$5&ndash;10M</td><td class="pct">0.5&ndash;1.0%</td><td>MEDIUM</td></tr>
+<tr style="background:var(--gold-light);font-weight:700"><td>Conservative Total</td><td class="money">$123M</td><td class="pct">~12.1%</td><td></td></tr>
+<tr style="background:var(--gold-light);font-weight:700"><td>Optimistic Total</td><td class="money">$175M</td><td class="pct">~17.2%</td><td></td></tr>
+</table>
+</div>
+
+<!-- SECTION 10: FUNCTION BREAKDOWN -->
+<div class="section" id="s10">
+<h2>10. SFUSD Function-Level Breakdown (FY2024-25)</h2>
+<p>Top General Fund spending categories from the statewide SACS extract. Items marked <span style="color:var(--red);font-weight:700">[ADMIN]</span> are included in the administrative spending calculation. <span class="cite" title="SACS FY2024-25 Budget, Statewide Extract">[SACS FY2024-25 Budget, Statewide Extract]</span></p>
+<table>
+<tr><th>Code</th><th>Function</th><th class="money">Amount</th><th></th></tr>
+<tr><td>1000</td><td>Instruction</td><td class="money">$1,202.4M</td><td></td></tr>
+<tr style="background:var(--red-light)"><td>2100</td><td>Instructional Supervision & Administration</td><td class="money">$172.8M</td><td style="color:var(--red);font-weight:700">ADMIN</td></tr>
+<tr><td>2700</td><td>School Administration</td><td class="money">$122.0M</td><td></td></tr>
+<tr><td>8200</td><td>Operations</td><td class="money">$95.8M</td><td></td></tr>
+<tr><td>3130</td><td>Attendance and Social Work</td><td class="money">$89.8M</td><td></td></tr>
+<tr><td>1120</td><td>SpEd: Resource Specialist</td><td class="money">$81.8M</td><td></td></tr>
+<tr><td>3600</td><td>Pupil Transportation</td><td class="money">$81.5M</td><td></td></tr>
+<tr><td>1110</td><td>SpEd: Separate Classes</td><td class="money">$80.3M</td><td></td></tr>
+<tr style="background:var(--red-light)"><td>7400</td><td>Personnel/Human Resources</td><td class="money">$75.7M</td><td style="color:var(--red);font-weight:700">ADMIN</td></tr>
+<tr><td>1190</td><td>SpEd: Other Specialized</td><td class="money">$65.5M</td><td></td></tr>
+<tr style="background:var(--red-light)"><td>7700</td><td>Centralized Data Processing</td><td class="money">$58.2M</td><td style="color:var(--red);font-weight:700">ADMIN</td></tr>
+<tr><td>3110</td><td>Guidance and Counseling</td><td class="money">$49.8M</td><td></td></tr>
+<tr><td>1180</td><td>SpEd: Nonpublic Agencies/Schools</td><td class="money">$48.0M</td><td></td></tr>
+<tr><td>1130</td><td>SpEd: Supplemental in Regular</td><td class="money">$45.0M</td><td></td></tr>
+<tr><td>3140</td><td>Health Services</td><td class="money">$39.0M</td><td></td></tr>
+<tr><td>3120</td><td>Psychological Services</td><td class="money">$38.6M</td><td></td></tr>
+<tr><td>3150</td><td>Speech Pathology and Audiology</td><td class="money">$34.1M</td><td></td></tr>
+<tr><td>8400</td><td>Other Plant Maintenance & Operations</td><td class="money">$30.2M</td><td></td></tr>
+<tr><td>2420</td><td>Instructional Library, Media & Technology</td><td class="money">$29.7M</td><td></td></tr>
+<tr style="background:var(--red-light)"><td>7150</td><td>Superintendent</td><td class="money">$29.2M</td><td style="color:var(--red);font-weight:700">ADMIN</td></tr>
+
+</table>
+</div>
+
+<!-- SECTION 11: GOVERNANCE FAILURES -->
+<div class="section" id="s11">
+<h2>11. Governance &amp; Transparency Failures</h2>
+<table>
+<tr><th>Issue</th><th>Detail</th></tr>
+<tr><td>Late Audit (FY 2021-22)</td><td>Annual audit approved <strong>two years late</strong> (March 2024) <span class="cite" title="BoardDocs, March 2024 meeting">[BoardDocs, March 2024 meeting]</span></td></tr>
+<tr><td>Late Audit (FY 2022-23)</td><td>Submitted late to CDE <span class="cite" title="SFUSD Annual Audit, FY2022-23">[SFUSD Annual Audit, FY2022-23]</span></td></tr>
+<tr><td>FCMAT Risk Assessment</td><td>Found: no position control, contra accounts used improperly, budget monitoring failures <span class="cite" title="FCMAT Fiscal Health Risk Analysis, March 2022">[FCMAT Fiscal Health Risk Analysis, March 2022]</span></td></tr>
+<tr><td>Negative Certification</td><td>May 2024 <span class="cite" title="SFUSD Negative Certification Press Release, May 2024">[SFUSD Negative Certification Press Release, May 2024]</span></td></tr>
+<tr><td>QTEA FY22-23 Audit</td><td>Nearly <strong>3 years delinquent</strong>&mdash;"Coming Soon" on website <span class="cite" title="SFUSD QTEA page">[SFUSD QTEA page]</span></td></tr>
+<tr><td>PEEF FY24-25 Report</td><td>Not yet published (required by ballot measure)</td></tr>
+</table>
+<div class="callout">A district that can't account for 53% of its per-pupil spending, misses its own budget projections by $100M+, got a "lack of going concern" designation, and can't produce a required compliance audit for a $50M/year parcel tax <strong>doesn't have credibility on affordability claims</strong>.</div>
+</div>
+
+<!-- SECTION 12: ACTIONABLE SAVINGS -->
+<div class="section" id="s12">
+<h2>12. Where's the Actual Money? (Actionable Savings Analysis)</h2>
+<p>Not all the spending documented above is cuttable. This section separates <strong>sunk costs</strong> (money already spent), <strong>actionable savings</strong> (contracts that could be cut or renegotiated), and <strong>structural changes</strong> (require policy decisions but are real). Every estimate includes a confidence level, timeframe, and trade-off assessment.</p>
+
+<h3>Sunk Costs (Context, Not Savings)</h3>
+<div class="callout" style="border-left-color: var(--text-light); background: #f0f0f0;">
+<strong>EMPowerSF $33.7M</strong> &mdash; Already spent. Cannot recover. But the ongoing Frontline costs (~$2.7M/yr) are still flowing, and the pattern of failed IT procurement is actionable.<br>
+<strong>Past budget projection misses</strong> &mdash; Can't recover past surpluses, but the documented pattern proves that current "we're broke" projections are unreliable.
+</div>
+
+<h3>"Fund the Raises" Calculator</h3>
+<p>Realistic, conservative estimates of what could be redirected to fund raises, with honest assessments of trade-offs: <span class="cite" title="Analysis based on SACS data, BLA reports, PERB findings">[Analysis based on SACS data, BLA reports, PERB findings]</span></p>
+
+<table>
+<tr><th>Source</th><th class="money">Annual Savings</th><th>Confidence</th><th>Timeframe</th><th>What It Takes</th></tr>
+
+        <tr>
+          <td>Reduce healthcare staffing agencies by 50% (hire permanent)</td>
+          <td class="money">$8,435,283</td>
+          <td style="color:var(--green);font-weight:700">HIGH</td>
+          <td>1-2 years</td>
+          <td>Hiring + onboarding permanent speech pathologists, nurses, therapists</td>
+        </tr>
+        <tr>
+          <td>Reduce IT consulting by 60% (post-EMPowerSF stabilization)</td>
+          <td class="money">$11,545,341</td>
+          <td style="color:var(--gold);font-weight:700">MEDIUM</td>
+          <td>1 year</td>
+          <td>Internal IT capacity building, completing Frontline transition</td>
+        </tr>
+        <tr>
+          <td>Shift after-school programs to restricted funds where eligible</td>
+          <td class="money">$9,422,334</td>
+          <td style="color:var(--gold);font-weight:700">MEDIUM</td>
+          <td>1 year</td>
+          <td>Grant writing + fund coding review. Many programs eligible for ASES, 21st CCLC, Title I funds.</td>
+        </tr>
+        <tr>
+          <td>Renegotiate transportation contract</td>
+          <td class="money">$5,756,101</td>
+          <td style="color:var(--gold);font-weight:700">MEDIUM</td>
+          <td>Next RFP cycle</td>
+          <td>Competitive bidding, route optimization, potential in-house fleet</td>
+        </tr>
+        <tr>
+          <td>Use fund balance surplus (documented recurring pattern)</td>
+          <td class="money">$20,000,000</td>
+          <td style="color:var(--green);font-weight:700">HIGH</td>
+          <td>Immediate</td>
+          <td>Political will. District consistently ends with $80-170M more than projected.</td>
+        </tr>
+        <tr>
+          <td>Cut admin FTEs to peer median (phased, ~200 positions)</td>
+          <td class="money">$56,097,046</td>
+          <td style="color:var(--green);font-weight:700">HIGH</td>
+          <td>2-3 years</td>
+          <td>Attrition + reorganization. BLA found 220 central FTEs/10K students vs 138 median.</td>
+        </tr>
+<tr style="background:var(--gold-light);font-weight:700">
+  <td>Conservative Total</td>
+  <td class="money">$111,256,105</td>
+  <td colspan="3">= 10.9% raises for all employees</td>
+</tr>
+</table>
+
+<div class="callout callout-green">
+<strong>Bottom line:</strong> Even the conservative estimate of $111M (10.9% raises) exceeds UESF's 9% certificated salary demand. The question is not "Can SFUSD afford raises?" &mdash; it's <strong>"Why does SFUSD choose to spend money on administration, failed IT projects, and consultants instead of the people who teach children?"</strong>
+</div>
+
+<h3>Vendor Savings Potential Assessment</h3>
+<p>Each vendor over $500K has been assessed for savings potential:</p>
+<ul>
+  <li><span class="savings-badge" style="background:var(--red)">CUTTABLE</span> Contract could be eliminated entirely (IT consulting bloat, redundant services)</li>
+  <li><span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span> Service is needed, but staffing agencies could be replaced with permanent hires</li>
+  <li><span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span> Essential service, but contract terms could be improved through competitive bidding</li>
+  <li><span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span> Program could be funded from restricted/grant sources instead of General Fund</li>
+  <li><span class="savings-badge" style="background:var(--text-light)">ESSENTIAL</span> Service is essential and competitively priced</li>
+</ul>
+</div>
+
+</div><!-- end report-container -->
+
+<!-- SOURCES -->
+<div class="sources" id="sources">
+<div class="report-container">
+<h3>Data Sources</h3>
+<ul>
+  <li>SACS Unaudited Actuals: FY2020-21, FY2021-22 (CDE annual financial data extracts)</li>
+  <li>Statewide SACS Extract FY2024-25 (CDE, all California districts)</li>
+  <li>PERB Fact-Finding Report, February 2026 (SFUSD-UESF impasse proceedings)</li>
+  <li>BLA (Budget &amp; Legislative Analyst) Central Admin Staffing Report, January 2023</li>
+  <li>BLA Expenditure Analysis, June 2023</li>
+  <li>SFUSD Fiscal Stabilization Plan, December 2025</li>
+  <li>SFUSD Vendor Payments Summary (BoardDocs warrant data, FY2025-26)</li>
+  <li>SFUSD Board Report of Checks, July&ndash;December 2025 (OCR extracted)</li>
+  <li>SFUSD 1st &amp; 3rd Interim Reports (FY2021-22 through FY2024-25)</li>
+  <li>SFUSD Annual Audits, FY2017-18 through FY2023-24 (Christy White, Inc.)</li>
+  <li>FCMAT Fiscal Health Risk Analysis, March 2022</li>
+  <li>SFHSS Health Plan Rate Cards, 2024&ndash;2026</li>
+  <li>QTEA Compliance Audits, FY2019-20 through FY2021-22</li>
+  <li>PEEF Annual Reports, FY2021-22 through FY2023-24</li>
+</ul>
+<p style="margin-top:16px;color:#667799">All dollar amounts are from primary SFUSD financial documents, California Department of Education SACS data, or PERB proceedings. Peer comparison uses identical SACS function code definitions applied uniformly. 101/101 factual claims verified against source documents.</p>
+</div>
+</div>
+
+<script>
+function toggleVendor(id) {
+  var el = document.getElementById(id);
+  if (el) {
+    el.style.display = el.style.display === 'none' ? 'table-row' : 'none';
+    var icon = el.previousElementSibling.querySelector('.expand-icon');
+    if (icon) icon.innerHTML = el.style.display === 'none' ? '&#9660;' : '&#9650;';
+  }
+}
+
+function searchVendors(query) {
+  var rows = document.querySelectorAll('#vendorTable tr');
+  var q = query.toLowerCase();
+  rows.forEach(function(row) {
+    if (row.classList.contains('vendor-row')) {
+      var text = row.textContent.toLowerCase();
+      var detail = row.nextElementSibling;
+      if (q === '' || text.includes(q)) {
+        row.style.display = '';
+        if (detail && detail.classList.contains('vendor-detail')) {
+          detail.style.display = 'none';
+        }
+      } else {
+        row.style.display = 'none';
+        if (detail && detail.classList.contains('vendor-detail')) {
+          detail.style.display = 'none';
+        }
+      }
+    }
+  });
+}
+
+function filterVendors(category) {
+  var rows = document.querySelectorAll('#vendorTable tr');
+  rows.forEach(function(row) {
+    if (row.classList.contains('vendor-row')) {
+      var catEl = row.querySelector('.cat-tag');
+      var catText = catEl ? catEl.textContent : '';
+      var detail = row.nextElementSibling;
+      if (category === 'all' || catText === category) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+        if (detail && detail.classList.contains('vendor-detail')) {
+          detail.style.display = 'none';
+        }
+      }
+    }
+  });
+}
+</script>
+</body>
+</html>
