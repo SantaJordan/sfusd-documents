@@ -1621,6 +1621,143 @@
   }
 
   /* ============================================================
+     SOURCE LINKS & CONFIDENCE BADGES
+     ============================================================ */
+  .source-link {
+    font-size: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--navy);
+    color: white;
+    padding: 1px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-left: 4px;
+    vertical-align: super;
+    letter-spacing: 0.02em;
+  }
+  .source-link:hover { opacity: 0.8; }
+
+  .source-badge {
+    font-size: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+  .source-badge-official { background: #e8f5e9; color: #2e7d32; }
+  .source-badge-analysis { background: #fff3e0; color: #e65100; }
+
+  /* ============================================================
+     AT THE TABLE: NEGOTIATION ARGUMENT CARDS
+     ============================================================ */
+  .argument-cards {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .argument-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-top: 4px solid var(--navy);
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .argument-card-header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .argument-card-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .argument-card-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  .argument-card-body {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .argument-card-evidence {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+  }
+
+  .argument-card-evidence strong {
+    color: var(--gray-900);
+  }
+
+  .argument-card-sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .argument-card-sources a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    background: var(--navy);
+    color: var(--white);
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .argument-card-sources a:hover { opacity: 0.8; }
+
+  .argument-card-rebuttal {
+    background: var(--gray-100);
+    border-left: 3px solid var(--gold);
+    padding: 0.75rem 1rem;
+    margin-top: 0.75rem;
+  }
+
+  .argument-card-rebuttal-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .argument-card-rebuttal p {
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: var(--gray-700);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .argument-card-header { padding: 0.75rem 1rem; }
+    .argument-card-body { padding: 1rem; }
+    .argument-card-num { font-size: 1.2rem; }
+    .argument-card-title { font-size: 0.95rem; }
+  }
+
+  /* ============================================================
      FORENSIC REPORT: VENDOR ROWS
      ============================================================ */
   .vendor-row {
@@ -1698,6 +1835,80 @@
   .cat-tag.cat-transportation { background: #e0e7ff; color: #3730a3; }
   .cat-tag.cat-education-consulting { background: #fce7f3; color: #9d174d; }
   .cat-tag.cat-it-payroll { background: #fee2e2; color: #991b1b; }
+
+  /* ============================================================
+     PEER COMPARISON (inside vendor detail rows)
+     ============================================================ */
+  .peer-comparison {
+    margin-top: 16px;
+    border-top: 2px solid var(--gold);
+    padding-top: 12px;
+  }
+  .peer-comparison h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .peer-comparison .peer-table {
+    font-size: 0.85em;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .peer-comparison .peer-table th {
+    background: var(--navy);
+    color: var(--white);
+    padding: 6px 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85em;
+  }
+  .peer-comparison .peer-table td {
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--gray-200);
+    vertical-align: top;
+  }
+  .peer-comparison .peer-table tr:nth-child(even) {
+    background: var(--white);
+  }
+  .peer-comparison .peer-table .sfusd-row {
+    background: var(--gold-pale);
+    font-weight: 600;
+  }
+  .peer-comparison .peer-scope {
+    font-size: 0.8em;
+    color: var(--gray-500);
+    max-width: 300px;
+  }
+  .peer-comparison .peer-delta {
+    font-weight: 700;
+    font-size: 0.85em;
+  }
+  .peer-comparison .peer-delta.higher { color: var(--red); }
+  .peer-comparison .peer-delta.lower { color: var(--green); }
+  .peer-red-flags {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: var(--red-bg);
+    border-left: 3px solid var(--red);
+    font-size: 0.85em;
+  }
+  .peer-red-flags strong { color: var(--red); }
+  .peer-summary-callout {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+    border: 1px solid var(--navy-light);
+    border-left: 4px solid var(--navy);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+  .peer-summary-callout strong { color: var(--navy); }
+  .peer-summary-callout .peer-districts {
+    font-size: 0.85em;
+    color: var(--gray-500);
+    margin-top: 4px;
+  }
 
   /* ============================================================
      FORENSIC REPORT: TIMELINE
@@ -2500,7 +2711,7 @@
         <span class="nav-group-label">THE PLAYBOOK</span>
         <a href="#precedents">Precedents</a>
         <a href="#leverage">Leverage</a>
-        <a href="#contract-comparison">Contracts</a>
+        <a href="#at-the-table">At the Table</a>
         <a href="#legal-tools">Legal Tools</a>
         <a href="#know-opponent">Opponent</a>
         <a href="#winning-public">Public Fight</a>
@@ -2523,7 +2734,7 @@
     <span class="nav-group-label">THE PLAYBOOK</span>
     <a href="#precedents">Precedents</a>
     <a href="#leverage">Leverage</a>
-    <a href="#contract-comparison">Contracts</a>
+    <a href="#at-the-table">At the Table</a>
     <a href="#legal-tools">Legal Tools</a>
     <a href="#know-opponent">Opponent</a>
     <a href="#winning-public">Public Fight</a>
@@ -2867,7 +3078,7 @@
 
   <!-- 3a: Admin Spending vs Peers -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Administrative Spending vs. Peer Districts</h3>
-  <p>Using FY2024-25 budget data from the California SACS statewide extract, SFUSD's administrative spending is the highest among comparable large urban districts, at <strong style="color:var(--red)">15.1%</strong> of total expenditures vs. a peer median of ~10.5%. <span class="cite" title="SACS FY2024-25 Budget, Statewide Extract">[SACS FY2024-25 Budget, Statewide Extract]</span></p>
+  <p>Using FY2024-25 budget data from the California SACS statewide extract, SFUSD's administrative spending is the highest among comparable large urban districts, at <strong style="color:var(--red)">15.1%</strong> of total expenditures vs. a peer median of ~10.5%. <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></p>
 <p>Admin spending is defined as SACS Function codes 2100&ndash;2150 (Instructional Supervision &amp; Admin), 7100&ndash;7191 (Board &amp; Superintendent), 7200&ndash;7210 (Other General Admin), 7300&ndash;7390 (Fiscal Services), 7400&ndash;7490 (HR), 7500&ndash;7550 (Central Support), 7600 (Other Admin), and 7700 (Data Processing).</p>
 
 <table>
@@ -2925,17 +3136,17 @@
 
 <p>If SFUSD matched the peer median, it would free up approximately <strong style="color:var(--red)">$123M per year</strong>. Even closing half the gap would free ~$61M&mdash;enough for a 6% raise for all employees.</p>
 
-<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">BLA Findings (January 2023)</h3>
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">BLA Findings (January 2023) <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">PDF</a></h3>
 <ul>
-  <li>Central admin = <strong>25% of operating budget</strong> ($978M in FY2020-21) vs. 18% median among 12 peer districts <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></li>
-  <li><strong>220 central FTEs per 10,000 students</strong> vs. 138 median&mdash;59% more admin staff than peers <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023, p.4">[BLA Central Admin Staffing Report, Jan 2023, p.4]</span></li>
-  <li>$1,780/student on instructional supervision vs. $611/student peer median <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></li>
-  <li>$104.5M on instructional supervision vs. $27.5M peer median = <strong>$77M excess</strong> <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></li>
+  <li>Central admin = <strong>25% of operating budget</strong> ($978M in FY2020-21) vs. 18% median among 12 peer districts</li>
+  <li><strong>220 central FTEs per 10,000 students</strong> vs. 138 median&mdash;59% more admin staff than peers</li>
+  <li>$1,780/student on instructional supervision vs. $611/student peer median</li>
+  <li>$104.5M on instructional supervision vs. $27.5M peer median = <strong>$77M excess</strong></li>
 </ul>
 
   <!-- 3b: Budget Variance -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Budget Variance: Projections vs. Reality</h3>
-  <p>SFUSD's 1st Interim Reports have <strong>systematically understated the General Fund ending balance by tens to hundreds of millions of dollars</strong>. <span class="cite" title="SFUSD 1st Interim Reports, FY2021-22 through FY2024-25">[SFUSD 1st Interim Reports, FY2021-22 through FY2024-25]</span></p>
+  <p>SFUSD's 1st Interim Reports have <strong>systematically understated the General Fund ending balance by tens to hundreds of millions of dollars</strong>. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2024-06.pdf" target="_blank" rel="noopener">PDF</a></p>
 
 <h3>Projected vs. Actual: General Fund Ending Balance</h3>
 <table>
@@ -2960,27 +3171,27 @@
 <h3>Historical Surpluses (SACS Actuals)</h3>
 <table>
 <tr><th>Fiscal Year</th><th class="money">Revenue</th><th class="money">Expenditures</th><th class="money">Net Surplus</th><th>Note</th></tr>
-<tr><td>FY2020-21</td><td class="money">$988.8M</td><td class="money">$923.9M</td><td class="money" style="color:var(--green)">+$64.9M</td><td>From SACS unaudited actuals <span class="cite" title="SACS UA FY2020-21">[SACS UA FY2020-21]</span></td></tr>
-<tr><td>FY2021-22</td><td class="money">$1,310.6M</td><td class="money">$1,162.1M</td><td class="money" style="color:var(--green)">+$148.5M</td><td>Includes one-time federal COVID funds <span class="cite" title="SACS UA FY2021-22">[SACS UA FY2021-22]</span></td></tr>
+<tr><td>FY2020-21</td><td class="money">$988.8M</td><td class="money">$923.9M</td><td class="money" style="color:var(--green)">+$64.9M</td><td>From SACS unaudited actuals <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></td></tr>
+<tr><td>FY2021-22</td><td class="money">$1,310.6M</td><td class="money">$1,162.1M</td><td class="money" style="color:var(--green)">+$148.5M</td><td>Includes one-time federal COVID funds <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></td></tr>
 </table>
 
   <!-- 3c: EMPowerSF -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">The EMPowerSF Debacle: $33.7 Million</h3>
   <div class="timeline">
-<div class="timeline-item"><span class="year">2018:</span> SFUSD contracts Infosys/SAP for $13.7M to build "EMPowerSF" payroll/HR system <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></div>
-<div class="timeline-item"><span class="year">2019&ndash;2022:</span> System never works properly. BLA finds it drove a $13M (28%) increase in Centralized Data Processing costs <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></div>
+<div class="timeline-item"><span class="year">2018:</span> SFUSD contracts Infosys/SAP for $13.7M to build "EMPowerSF" payroll/HR system <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">PDF</a></div>
+<div class="timeline-item"><span class="year">2019&ndash;2022:</span> System never works properly. BLA finds it drove a $13M (28%) increase in Centralized Data Processing costs <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">PDF</a></div>
 <div class="timeline-item"><span class="year">2023:</span> District abandons EMPowerSF and contracts Frontline Education for a replacement system (~$20M estimated total)</div>
 <div class="timeline-item"><span class="year">2026:</span> District proposes forcing classified staff onto Frontline's bimonthly pay system as a contract demand during negotiations</div>
 </div>
 <div class="callout callout-red">
-<strong>Total waste: $33.7M+</strong> for a payroll system that peers operate for a fraction of the cost. That's equivalent to a <strong>3.3% raise for every employee</strong>, thrown away on a failed IT project. <span class="cite" title="PERB Fact-Finding Report, Feb 2026, p.12">[PERB Fact-Finding Report, Feb 2026, p.12]</span>
+<strong>Total waste: $33.7M+</strong> for a payroll system that peers operate for a fraction of the cost. That's equivalent to a <strong>3.3% raise for every employee</strong>, thrown away on a failed IT project. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PDF</a>
 </div>
-<p>Board-approved vendor payments confirm: Infosys received $5,747,095 and Frontline Education received $2,660,449 in the reporting period. <span class="cite" title="SFUSD Vendor Payments Summary, BoardDocs">[SFUSD Vendor Payments Summary, BoardDocs]</span></p>
+<p>Board-approved vendor payments confirm: Infosys received $5,747,095 and Frontline Education received $2,660,449 in the reporting period. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Board Check Registers (Jul–Dec 2025)</a></p>
 
   <!-- 3d: Contractor Spending -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Contractor &amp; Vendor Spending</h3>
-  <p>SFUSD paid <strong style="color:var(--red)">$226M to 676 outside vendors</strong> in the period covered by board-approved warrant data. <span class="cite" title="SFUSD Vendor Payments Summary, BoardDocs FY2025-26">[SFUSD Vendor Payments Summary, BoardDocs FY2025-26]</span> The PERB fact-finding panel explicitly stated:</p>
-<div class="callout">"The District must continue to reduce its reliance on outside consultants and thus reallocate the contracting out funds to programs that directly benefit their employees." <span class="cite" title="PERB Fact-Finding Report, Feb 2026">[PERB Fact-Finding Report, Feb 2026]</span></div>
+  <p>SFUSD paid <strong style="color:var(--red)">$226M to 676 outside vendors</strong> in the period covered by board-approved warrant data. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Board Check Registers (Jul–Dec 2025)</a> The PERB fact-finding panel explicitly stated:</p>
+<div class="callout">"The District must continue to reduce its reliance on outside consultants and thus reallocate the contracting out funds to programs that directly benefit their employees." <a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PDF</a></div>
 
 <h3>Spending by Category</h3>
 <div class="stats-row" style="flex-wrap:wrap">
@@ -3002,7 +3213,7 @@
         </div>
         <div class="stat-card" onclick="filterVendors('Healthcare Staffing')">
           <div class="big-num">$21.7M</div>
-          <div class="stat-label">Healthcare Staffing<br>(24 vendors)</div>
+          <div class="stat-label">Healthcare Staffing<br>(26 vendors)</div>
         </div>
         <div class="stat-card" onclick="filterVendors('Food Services')">
           <div class="big-num">$21.7M</div>
@@ -3068,6 +3279,12 @@
           <div class="big-num">$518K</div>
           <div class="stat-label">Auditing<br>(1 vendor)</div>
         </div>
+</div>
+
+<div class="peer-summary-callout">
+  <strong>Peer district comparisons available.</strong> Click any vendor row to see what other K-12 districts pay for the same service.
+  Peer data sourced from contract records of comparable districts including Seattle, Dallas ISD, Palo Alto USD, Howard County, Baltimore County, Fulton County, Oakland USD, and 170+ others.
+  <div class="peer-districts">Comparisons shown for IT consulting, healthcare staffing, software, food services, transportation, and other location-independent or service-comparable categories.</div>
 </div>
 
 <input type="text" id="vendorSearch" placeholder="Search vendors..." onkeyup="searchVendors(this.value)">
@@ -4186,17 +4403,17 @@
   <p>SFUSD receives approximately <strong>$104M/year</strong> from two voter-approved parcel taxes:</p>
 <table>
 <tr><th>Tax</th><th>Annual Revenue</th><th>Expires</th><th>Status</th></tr>
-<tr><td>QTEA (Prop A, 2008)</td><td class="money">~$50.6M/year</td><td>June 30, 2028</td><td style="color:var(--red);font-weight:700">FY22-23 audit 3 YEARS DELINQUENT <span class="cite" title="SFUSD QTEA page">[SFUSD QTEA page]</span></td></tr>
+<tr><td>QTEA (Prop A, 2008)</td><td class="money">~$50.6M/year</td><td>June 30, 2028</td><td style="color:var(--red);font-weight:700">FY22-23 audit 3 YEARS DELINQUENT <a class="source-link" href="https://www.sfusd.edu/about-sfusd/budget-and-lcap/quality-teacher-education-act-qtea" target="_blank" rel="noopener">SFUSD QTEA page</a></td></tr>
 <tr><td>PEEF/FWEA (Prop J, 2020)</td><td class="money">~$53.7M/year</td><td>2038</td><td style="color:var(--red)">FY24-25 report not published</td></tr>
 </table>
 <div class="callout callout-red">
-<strong>QTEA compliance audit for FY 2022-23 is nearly 3 years delinquent</strong>&mdash;still listed as "Coming Soon" on the SFUSD website. Voters approved QTEA specifically to fund teacher compensation. <span class="cite" title="SFUSD QTEA Compliance Audit, FY2021-22">[SFUSD QTEA Compliance Audit, FY2021-22]</span>
+<strong>QTEA compliance audit for FY 2022-23 is nearly 3 years delinquent</strong>&mdash;still listed as "Coming Soon" on the SFUSD website. Voters approved QTEA specifically to fund teacher compensation. <a class="source-link" href="https://www.sfusd.edu/about-sfusd/budget-and-lcap/quality-teacher-education-act-qtea" target="_blank" rel="noopener">SFUSD QTEA page (audit listed as "Coming Soon")</a>
 </div>
 
   <!-- 3f: Healthcare -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Healthcare Cost Reality</h3>
   <h3>Kaiser Employee+2 Total Monthly Premium</h3>
-<p>From SFHSS rate cards filed with the district: <span class="cite" title="SFHSS Health Plan Rate Cards, 2024-2026">[SFHSS Health Plan Rate Cards, 2024-2026]</span></p>
+<p>From SFHSS rate cards filed with the district: <a class="source-link" href="https://santajordan.github.io/sfusd-documents/comparable-data/sfhss_sfusd-health-plan-rates_2024.pdf" target="_blank" rel="noopener">2024</a> <a class="source-link" href="https://santajordan.github.io/sfusd-documents/comparable-data/sfhss_sfusd-health-plan-rates_2025.pdf" target="_blank" rel="noopener">2025</a> <a class="source-link" href="https://santajordan.github.io/sfusd-documents/comparable-data/sfhss_sfusd-health-plan-rates_2026.pdf" target="_blank" rel="noopener">2026</a></p>
 <table>
 <tr><th>Plan Year</th><th class="money">Total Monthly Cost</th><th class="money">Employee Pays (Biweekly)</th><th class="money">SFUSD Pays (Biweekly)</th></tr>
 <tr><td>2024</td><td class="money">$2,349/mo</td><td class="money">$189.58</td><td class="money">$899.40</td></tr>
@@ -4208,9 +4425,15 @@
 <div class="stat-card"><div class="big-num">$34.4M</div><div class="stat-label">Retiree Healthcare (OPEB pay-as-you-go)/yr</div></div>
 <div class="stat-card"><div class="big-num">$3.6B</div><div class="stat-label">OPEB Unfunded Actuarial Liability</div></div>
 </div>
-<p>UESF demands $14M/year for fully funded family healthcare. The district estimates the cost at $11M/year. <span class="cite" title="PERB Fact-Finding Report, Feb 2026, p.9">[PERB Fact-Finding Report, Feb 2026, p.9]</span></p>
+<p>UESF demands $14M/year for fully funded family healthcare. The district estimates the cost at $11M/year. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PDF</a></p>
 
 </section>
+
+<!-- WARRANT DATA TRANSPARENCY BRIDGE -->
+<div class="callout" style="margin: 2rem auto; max-width: 960px; border-left-color: var(--red);">
+  <strong>About this vendor data:</strong> The spending figures above come from 196 pages of district check registers &mdash; the first vendor payment data SFUSD has ever published, despite <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=42643.&lawCode=EDC" target="_blank" rel="noopener" style="color:var(--navy);font-weight:600">California Education Code &sect;42643</a> requiring a public warrant register. Other districts (Redwood City, Newark) publish theirs routinely on BoardDocs. SFUSD chose not to until July 2025.
+  <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Source PDFs</a>
+</div>
 
 <!-- SECTION 4: WHERE THE MONEY IS -->
 <section id="where-money-is">
@@ -4221,7 +4444,7 @@
 
   <!-- Funding Calculator -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">The Maximum Salary Argument</h3>
-  <p>Working from the PERB benchmark of <strong>$10.17M per 1% raise for all employees</strong>: <span class="cite" title="PERB Fact-Finding Report, Feb 2026, p.12">[PERB Fact-Finding Report, Feb 2026, p.12]</span></p>
+  <p>Working from the PERB benchmark of <strong>$10.17M per 1% raise for all employees</strong>: <a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PDF</a></p>
 <table>
 <tr><th>Funding Source</th><th class="money">Annual $ Available</th><th class="pct">Raises Funded</th><th>Confidence</th></tr>
 <tr><td>Cut admin spending to peer median (50% of gap)</td><td class="money">$61M</td><td class="pct">6.0%</td><td><span style="color:var(--green);font-weight:700">HIGH</span></td></tr>
@@ -4246,7 +4469,10 @@
 </div>
 
 <h3>"Fund the Raises" Calculator</h3>
-<p>Realistic, conservative estimates of what could be redirected to fund raises, with honest assessments of trade-offs: <span class="cite" title="Analysis based on SACS data, BLA reports, PERB findings">[Analysis based on SACS data, BLA reports, PERB findings]</span></p>
+<p>Realistic, conservative estimates of what could be redirected to fund raises, with honest assessments of trade-offs:
+<a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PERB</a>
+<a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">BLA</a>
+<a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Warrants</a></p>
 
 <table>
 <tr><th>Source</th><th class="money">Annual Savings</th><th>Confidence</th><th>Timeframe</th><th>What It Takes</th></tr>
@@ -4254,42 +4480,42 @@
         <tr>
           <td>Reduce healthcare staffing agencies by 50% (hire permanent)</td>
           <td class="money">$8,435,283</td>
-          <td style="color:var(--green);font-weight:700">HIGH</td>
+          <td><span class="source-badge source-badge-official">PERB recommended</span></td>
           <td>1-2 years</td>
           <td>Hiring + onboarding permanent speech pathologists, nurses, therapists</td>
         </tr>
         <tr>
           <td>Reduce IT consulting by 60% (post-EMPowerSF stabilization)</td>
           <td class="money">$11,545,341</td>
-          <td style="color:var(--gold);font-weight:700">MEDIUM</td>
+          <td><span class="source-badge source-badge-official">BLA flagged 2023</span></td>
           <td>1 year</td>
           <td>Internal IT capacity building, completing Frontline transition</td>
         </tr>
         <tr>
           <td>Shift after-school programs to restricted funds where eligible</td>
           <td class="money">$9,422,334</td>
-          <td style="color:var(--gold);font-weight:700">MEDIUM</td>
+          <td><span class="source-badge source-badge-analysis">Staff analysis</span></td>
           <td>1 year</td>
           <td>Grant writing + fund coding review. Many programs eligible for ASES, 21st CCLC, Title I funds.</td>
         </tr>
         <tr>
           <td>Renegotiate transportation contract</td>
           <td class="money">$5,756,101</td>
-          <td style="color:var(--gold);font-weight:700">MEDIUM</td>
+          <td><span class="source-badge source-badge-analysis">Staff analysis</span></td>
           <td>Next RFP cycle</td>
           <td>Competitive bidding, route optimization, potential in-house fleet</td>
         </tr>
         <tr>
           <td>Use fund balance surplus (documented recurring pattern)</td>
           <td class="money">$20,000,000</td>
-          <td style="color:var(--green);font-weight:700">HIGH</td>
+          <td><span class="source-badge source-badge-analysis">Staff analysis</span></td>
           <td>Immediate</td>
           <td>Political will. District consistently ends with $80-170M more than projected.</td>
         </tr>
         <tr>
           <td>Cut admin FTEs to peer median (phased, ~200 positions)</td>
           <td class="money">$56,097,046</td>
-          <td style="color:var(--green);font-weight:700">HIGH</td>
+          <td><span class="source-badge source-badge-official">BLA documented</span></td>
           <td>2-3 years</td>
           <td>Attrition + reorganization. BLA found 220 central FTEs/10K students vs 138 median.</td>
         </tr>
@@ -4373,7 +4599,7 @@
   <div class="collapsible-content">
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Salary Comparison</h3>
-    <p>Salary spending as a percentage of total expenditures (FY2024-25 SACS budget data): <span class="cite" title="SACS FY2024-25 Budget, Statewide Extract">[SACS FY2024-25 Budget, Statewide Extract]</span></p>
+    <p>Salary spending as a percentage of total expenditures (FY2024-25 SACS budget data): <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></p>
 <table>
 <tr><th>District</th><th class="money">Cert. Salaries</th><th class="money">Class. Salaries</th><th class="money">Total Expend.</th><th class="pct">Salary %</th></tr>
 
@@ -4437,7 +4663,7 @@
 <p>SFUSD's salary percentage (53.3%) is above average&mdash;but the issue is <em>where non-salary money goes</em>. SFUSD sends a disproportionate share to admin overhead and outside consultants rather than direct student services.</p>
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">FY2025-26 Expenditure Breakdown</h3>
-    <p>From the December 2025 Fiscal Stabilization Plan (~$1.3B total): <span class="cite" title="SFUSD Fiscal Stabilization Plan, Dec 2025">[SFUSD Fiscal Stabilization Plan, Dec 2025]</span></p>
+    <p>From the December 2025 Fiscal Stabilization Plan (~$1.3B total): <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2025-12.pdf" target="_blank" rel="noopener">PDF</a></p>
 <table>
 <tr><th>Category</th><th class="money">Amount</th><th class="pct">% of Total</th></tr>
 <tr><td>Instruction</td><td class="money">$751.8M</td><td class="pct">58%</td></tr>
@@ -4448,10 +4674,10 @@
 <tr><td>Ancillary</td><td class="money">$6.8M</td><td class="pct">1%</td></tr>
 <tr><td>Other Outgo</td><td class="money">$4.3M</td><td class="pct">&lt;1%</td></tr>
 </table>
-<p>Note: The FSP "General Administration" ($72.2M / 6%) uses a narrower definition than SACS function-level data. When all admin-coded functions are counted, the total is $402.8M / 15.1%. <span class="cite" title="SACS FY2024-25 Budget vs Fiscal Stabilization Plan">[SACS FY2024-25 Budget vs Fiscal Stabilization Plan]</span></p>
+<p>Note: The FSP "General Administration" ($72.2M / 6%) uses a narrower definition than SACS function-level data. When all admin-coded functions are counted, the total is $402.8M / 15.1%. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2024-12.pdf" target="_blank" rel="noopener">Fiscal Stabilization Plan</a></p>
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Function-Level Breakdown</h3>
-    <p>Top General Fund spending categories from the statewide SACS extract. Items marked <span style="color:var(--red);font-weight:700">[ADMIN]</span> are included in the administrative spending calculation. <span class="cite" title="SACS FY2024-25 Budget, Statewide Extract">[SACS FY2024-25 Budget, Statewide Extract]</span></p>
+    <p>Top General Fund spending categories from the statewide SACS extract. Items marked <span style="color:var(--red);font-weight:700">[ADMIN]</span> are included in the administrative spending calculation. <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></p>
 <table>
 <tr><th>Code</th><th>Function</th><th class="money">Amount</th><th></th></tr>
 <tr><td>1000</td><td>Instruction</td><td class="money">$1,202.4M</td><td></td></tr>
@@ -4480,11 +4706,11 @@
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Governance &amp; Transparency Failures</h3>
     <table>
 <tr><th>Issue</th><th>Detail</th></tr>
-<tr><td>Late Audit (FY 2021-22)</td><td>Annual audit approved <strong>two years late</strong> (March 2024) <span class="cite" title="BoardDocs, March 2024 meeting">[BoardDocs, March 2024 meeting]</span></td></tr>
-<tr><td>Late Audit (FY 2022-23)</td><td>Submitted late to CDE <span class="cite" title="SFUSD Annual Audit, FY2022-23">[SFUSD Annual Audit, FY2022-23]</span></td></tr>
-<tr><td>FCMAT Risk Assessment</td><td>Found: no position control, contra accounts used improperly, budget monitoring failures <span class="cite" title="FCMAT Fiscal Health Risk Analysis, March 2022">[FCMAT Fiscal Health Risk Analysis, March 2022]</span></td></tr>
-<tr><td>Negative Certification</td><td>May 2024 <span class="cite" title="SFUSD Negative Certification Press Release, May 2024">[SFUSD Negative Certification Press Release, May 2024]</span></td></tr>
-<tr><td>QTEA FY22-23 Audit</td><td>Nearly <strong>3 years delinquent</strong>&mdash;"Coming Soon" on website <span class="cite" title="SFUSD QTEA page">[SFUSD QTEA page]</span></td></tr>
+<tr><td>Late Audit (FY 2021-22)</td><td>Annual audit approved <strong>two years late</strong> (March 2024) <a class="source-link" href="https://santajordan.github.io/sfusd-documents/audits/sfusd_annual-audit_fy2021-22.pdf" target="_blank" rel="noopener">PDF</a></td></tr>
+<tr><td>Late Audit (FY 2022-23)</td><td>Submitted late to CDE <a class="source-link" href="https://santajordan.github.io/sfusd-documents/audits/sfusd_annual-audit_fy2022-23.pdf" target="_blank" rel="noopener">PDF</a></td></tr>
+<tr><td>FCMAT Risk Assessment</td><td>Found: no position control, contra accounts used improperly, budget monitoring failures <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/fcmat_fiscal-health-risk-analysis_2022-03.pdf" target="_blank" rel="noopener">PDF</a></td></tr>
+<tr><td>Negative Certification</td><td>May 2024 <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_negative-certification-press-release_2024-05.txt" target="_blank" rel="noopener">Source</a></td></tr>
+<tr><td>QTEA FY22-23 Audit</td><td>Nearly <strong>3 years delinquent</strong>&mdash;"Coming Soon" on website <a class="source-link" href="https://www.sfusd.edu/about-sfusd/budget-and-lcap/quality-teacher-education-act-qtea" target="_blank" rel="noopener">SFUSD QTEA page</a></td></tr>
 <tr><td>PEEF FY24-25 Report</td><td>Not yet published (required by ballot measure)</td></tr>
 </table>
 <div class="callout">A district that can't account for 53% of its per-pupil spending, misses its own budget projections by $100M+, got a "lack of going concern" designation, and can't produce a required compliance audit for a $50M/year parcel tax <strong>doesn't have credibility on affordability claims</strong>.</div>
@@ -5650,194 +5876,153 @@
 </section>
 
 
-<!-- CONTRACT_COMPARISON_SECTION -->
+<!-- AT THE TABLE: NEGOTIATION ARGUMENT CARDS -->
+<section id="at-the-table" class="content" style="padding-top: 2rem;">
+  <div class="section-header">
+    <div class="section-number" style="background: var(--red-accent);">&#9733;</div>
+    <h2 class="section-title">At the Table &mdash; 5 Arguments You Can Defend</h2>
+  </div>
 
-    <section id="contract-comparison" class="section" style="padding:3rem 0">
-      <div class="container">
-        <h2 style="text-align:center;margin-bottom:.5rem">Cross-District Contract Analysis</h2>
-        <p style="text-align:center;font-size:1.1rem;opacity:.8;margin-bottom:2rem">
-          We analyzed 625 SFUSD vendor contracts using AI-powered extraction from 164+ public board documents,
-          comparing against 85 peer school districts.
-        </p>
+  <p style="font-size: 0.9rem; color: var(--gray-700); line-height: 1.65; margin-bottom: 0.5rem;">
+    Every claim below is backed by an official document we have on disk. Click <a class="source-link" href="#">PDF</a> links to verify the source yourself. These are not estimates, projections, or news reports &mdash; they are board-approved records, independent audits, and the neutral fact-finder's own words.
+  </p>
 
-        <!-- Summary Cards -->
-        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem">
-          <div style="flex:1;min-width:200px;background:var(--red-pale,#fbe9e7);border-left:4px solid var(--red,#c62828);padding:1.2rem;border-radius:4px;text-align:center">
-            <div style="font-size:2rem;font-weight:800;color:var(--red,#c62828)">20%</div>
-            <div style="font-size:.9rem;margin-top:.3rem">Competitively bid</div>
-            <div style="font-size:.75rem;opacity:.7">of 148 contracts with data</div>
-          </div>
-          <div style="flex:1;min-width:200px;background:#e3f2fd;border-left:4px solid #1565c0;padding:1.2rem;border-radius:4px;text-align:center">
-            <div style="font-size:2rem;font-weight:800;color:#1565c0">46</div>
-            <div style="font-size:.9rem;margin-top:.3rem">Contracts with amendments</div>
-            <div style="font-size:.75rem;opacity:.7">scope/cost changes post-award</div>
-          </div>
-          <div style="flex:1;min-width:200px;background:#fff3e0;border-left:4px solid #e65100;padding:1.2rem;border-radius:4px;text-align:center">
-            <div style="font-size:2rem;font-weight:800;color:#e65100">17</div>
-            <div style="font-size:.9rem;margin-top:.3rem">Vendors with hourly rates</div>
-            <div style="font-size:.75rem;opacity:.7">rate card transparency</div>
-          </div>
+  <div class="argument-cards">
+
+    <!-- Card 1: IT Consultants -->
+    <div class="argument-card">
+      <div class="argument-card-header">
+        <div class="argument-card-num">1</div>
+        <div class="argument-card-title">&ldquo;$20M/year on IT consultants for a failed system&rdquo;</div>
+      </div>
+      <div class="argument-card-body">
+        <div class="argument-card-evidence">
+          <strong>The numbers:</strong> Galaxy Solutions received $7,056,413. Infosys received $5,747,095. Protiviti received $5,550,000. All confirmed in board-approved check registers.
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Board Check Registers (Jul–Dec 2025)</a>
+          <br><br>
+          <strong>The official finding:</strong> The Budget &amp; Legislative Analyst found in January 2023 that the EMPowerSF system drove a <strong>$13M (28%) increase</strong> in Centralized Data Processing costs &mdash; and the system was ultimately abandoned.
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">PDF</a>
         </div>
-
-        <!-- Competitive Bidding Section -->
-        <h3>Competitive Bidding Analysis</h3>
-        <p style="font-size:.95rem;margin-bottom:.5rem">
-          Of 148 SFUSD contracts where bidding information was extractable,
-          only <strong style="color:var(--red,#c62828)">29</strong> (20%) were competitively bid.
-          17 were identified as sole-source, and 102 lacked bidding documentation.
-        </p>
-        <p style="font-size:.9rem;opacity:.7;margin-bottom:1rem">
-          Best practice: The Government Finance Officers Association recommends competitive procurement for all contracts above $50,000.
-          Competitive bidding ensures taxpayers receive market-rate pricing and reduces the risk of favoritism.
-        </p>
-        <h4>Sole-Source Contracts</h4>
-        <div style="overflow-x:auto">
-          <table class="data-table" style="width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem">
-            <thead>
-              <tr style="background:var(--navy,#1a2744);color:#fff">
-                <th style="padding:.6rem;text-align:left">Vendor</th>
-                <th style="padding:.6rem;text-align:right">Contract Amount</th>
-                <th style="padding:.6rem;text-align:left">Scope</th>
-              </tr>
-            </thead>
-            <tbody><tr>
-          <td><strong>Regents of the University of California </strong></td>
-          <td style="text-align:right">$17,480,417</td>
-          <td>Behavioral health case management for formerly homeless individuals in Housing F</td>
-        </tr><tr>
-          <td><strong>SPECIAL SERVICE FOR GROUPS, INC.</strong></td>
-          <td style="text-align:right">$9,972,713</td>
-          <td>Behavioral Health Services including Occupational Therapy Training Program (OTTP</td>
-        </tr><tr>
-          <td><strong>Regents of the University of California/</strong></td>
-          <td style="text-align:right">$8,400,000</td>
-          <td>Tertiary Care services including comprehensive cardiac care and other highly spe</td>
-        </tr><tr>
-          <td><strong>Regents of the University of California </strong></td>
-          <td style="text-align:right">$7,358,299</td>
-          <td>Outpatient substance use services for clients with stimulant use disorders (STOP</td>
-        </tr><tr>
-          <td><strong>Regents of University of California/UCSF</strong></td>
-          <td style="text-align:right">$5,353,407</td>
-          <td>Specialty medical services to Laguna Honda Hospital residents including Patholog</td>
-        </tr></tbody>
-          </table>
+        <div class="argument-card-sources">
+          <a href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Board Check Registers (Jul–Dec 2025)</a>
+          <a href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">BLA Admin Staffing Report</a>
         </div>
-
-        <!-- Amendment Patterns -->
-        <h3>Contract Amendments</h3><p style="font-size:.95rem;margin-bottom:1rem">These contracts were modified after initial board approval, often increasing scope or cost:</p>
-        <div style="overflow-x:auto">
-          <table class="data-table" style="width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem">
-            <thead>
-              <tr style="background:var(--navy,#1a2744);color:#fff">
-                <th style="padding:.6rem;text-align:left">Vendor</th>
-                <th style="padding:.6rem;text-align:right">Total Value</th>
-                <th style="padding:.6rem;text-align:center">Amendments</th>
-                <th style="padding:.6rem;text-align:left">Details</th>
-              </tr>
-            </thead>
-            <tbody><tr>
-          <td><strong>Rudolph And Slattern Inc.</strong></td>
-          <td style="text-align:right">$152,236,167</td>
-          <td style="text-align:center">2</td>
-          <td style="font-size:.85rem">2/13/25 CM30: Increase by $303,825.00 New contract amount $1; 2/26/25 CM31: Increase by $620,875.00 New contract amount </td>
-        </tr><tr>
-          <td><strong>XL Construction Corporation</strong></td>
-          <td style="text-align:right">$119,130,502</td>
-          <td style="text-align:center">2</td>
-          <td style="font-size:.85rem">2/3/25 CM20: $3,522,101.00 New Contract Amount: $117,396,021; 2/13/25 CM21: $1,734,479.62 New Contract Amount: $119,130,</td>
-        </tr><tr>
-          <td><strong>Golden Gate Petroleum</strong></td>
-          <td style="text-align:right">$108,589,000</td>
-          <td style="text-align:center">2</td>
-          <td style="font-size:.85rem">Contract Amendment No. 4 (File No. 240864) - increases contr; Authorization to further amend up to maximum not to exceed</td>
-        </tr><tr>
-          <td><strong>Alliant Insurance Services, Inc.</strong></td>
-          <td style="text-align:right">$74,000,000</td>
-          <td style="text-align:center">1</td>
-          <td style="font-size:.85rem">First Amendment to increase agreement amount by $39,500,000 </td>
-        </tr><tr>
-          <td><strong>Sunset Scavenger Company dba Recology Su</strong></td>
-          <td style="text-align:right">$48,000,000</td>
-          <td style="text-align:center">1</td>
-          <td style="font-size:.85rem">First Amendment to increase total not to exceed amount from </td>
-        </tr></tbody>
-          </table>
-        </div>
-
-        <!-- Rate Transparency -->
-        <h3>SFUSD Vendor Rate Cards</h3><p style="font-size:.95rem;margin-bottom:1rem">What SFUSD pays per hour for contracted services. These rates can be benchmarked against industry standards and peer district contracts:</p>
-        <div style="overflow-x:auto">
-          <table class="data-table" style="width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem">
-            <thead>
-              <tr style="background:var(--navy,#1a2744);color:#fff">
-                <th style="padding:.6rem;text-align:left">Vendor</th>
-                <th style="padding:.6rem;text-align:right">Contract Value</th>
-                <th style="padding:.6rem;text-align:left">Key Rates</th>
-                <th style="padding:.6rem;text-align:left">Services</th>
-              </tr>
-            </thead>
-            <tbody><tr>
-              <td><strong>Regents of the University of Califo</strong></td>
-              <td style="text-align:right">$17,480,417</td>
-              <td>Citywide Roving Team Hourly ..: $517/hr; Citywide Minna Project Hourl..: $603/hr</td>
-              <td style="font-size:.85rem">Behavioral health case management for formerly homeless indi</td>
-            </tr><tr>
-              <td><strong>Cross Country Staffing (RN)</strong></td>
-              <td style="text-align:right">$9,900,000</td>
-              <td>Registered Nurse Specialty: $102/hr; Registered Nurse Specialty O..: $153/hr; Registered Nurse Non-Specialty: $88/hr</td>
-              <td style="font-size:.85rem">As-needed, temporary Registered Nurse Registry Staff for SFH</td>
-            </tr><tr>
-              <td><strong>Cross Country Staffing (Ancillary)</strong></td>
-              <td style="text-align:right">$9,900,000</td>
-              <td>Licensed Vocational Nurse (L..: $58/hr; Lvn Overtime: $78/hr; Certified Nursing Assistant ..: $38/hr</td>
-              <td style="font-size:.85rem">As-needed, temporary nursing ancillary (Non-RN) and clinical</td>
-            </tr><tr>
-              <td><strong>Regents of the University of Califo</strong></td>
-              <td style="text-align:right">$7,358,299</td>
-              <td>Citywide Stop Hourly Rate: $460/hr; Citywide Icm Sud Hourly Rate: $373/hr</td>
-              <td style="font-size:.85rem">Outpatient substance use services for clients with stimulant</td>
-            </tr><tr>
-              <td><strong>Triage, LLC (RN)</strong></td>
-              <td style="text-align:right">$3,100,000</td>
-              <td>Registered Nurse Specialty: $102/hr; Registered Nurse Specialty O..: $153/hr; Registered Nurse Non-Specialty: $88/hr</td>
-              <td style="font-size:.85rem">As-needed, temporary Registered Nurse Registry Staff for SFH</td>
-            </tr><tr>
-              <td><strong>Tryfacta Inc. (Ancillary)</strong></td>
-              <td style="text-align:right">$2,600,000</td>
-              <td>Licensed Vocational Nurse (L..: $57/hr; Lvn Overtime: $86/hr; Certified Nursing Assistant ..: $46/hr</td>
-              <td style="font-size:.85rem">As-needed, temporary nursing ancillary (Non-RN) and clinical</td>
-            </tr><tr>
-              <td><strong>Ninyo & Moore</strong></td>
-              <td style="text-align:right">$302,189</td>
-              <td>Principal Engineer/Geologist..: $210/hr; Senior Engineer/Geologist/En..: $200/hr; Senior Project Engineer/Geol..: $195/hr</td>
-              <td style="font-size:.85rem">Supplemental Phase II Environmental Site Assessment includin</td>
-            </tr><tr>
-              <td><strong>YMCA of San Francisco</strong></td>
-              <td style="text-align:right">$167,367</td>
-              <td>Program Director: $43/hr; Site Coordinator: $27/hr; Program Leaders: $22/hr</td>
-              <td style="font-size:.85rem">Provide afterschool and summer programming services at West </td>
-            </tr></tbody>
-          </table>
-        </div>
-
-        <!-- Methodology -->
-        <div style="background:#f5f5f5;border-radius:6px;padding:1rem;margin:2rem 0">
-          <h5 style="margin:0 0 .5rem">Methodology & Limitations</h5>
-          <p style="margin:0;font-size:.85rem;line-height:1.5;opacity:.8">
-            Contract data extracted using AI from 164+ public board documents, BoardDocs portals, and
-            competitive RFP responses across 85 school districts.
-            <strong>Important limitations:</strong> SFUSD vendor payment amounts are cumulative totals from warrant registers
-            (potentially spanning multiple years), while peer district amounts are from individual board-approved contracts.
-            Direct price comparisons across districts are unreliable due to differences in contract scope, duration, and
-            local cost-of-living factors. This analysis focuses on contract <em>process</em> (bidding, amendments, transparency)
-            rather than claiming specific dollar savings, which would require line-item auditing.
-            Generated February 09, 2026.
-          </p>
+        <div class="argument-card-rebuttal">
+          <div class="argument-card-rebuttal-label">When they say &ldquo;modernization&rdquo;</div>
+          <p>The BLA already called it bloat. The system was abandoned after $33.7M spent. The replacement (Frontline, $2.7M/yr) is still flowing. A &ldquo;modernization&rdquo; that costs $33.7M and doesn't work is not an investment &mdash; it's a sunk cost that proves the district cannot manage IT procurement.</p>
         </div>
       </div>
-    </section>
-<!-- END_CONTRACT_COMPARISON_SECTION -->
+    </div>
+
+    <!-- Card 2: Healthcare Staffing -->
+    <div class="argument-card">
+      <div class="argument-card-header">
+        <div class="argument-card-num">2</div>
+        <div class="argument-card-title">&ldquo;Replace healthcare staffing agencies with permanent hires&rdquo;</div>
+      </div>
+      <div class="argument-card-body">
+        <div class="argument-card-evidence">
+          <strong>The numbers:</strong> SFUSD paid <strong>$21.7M to 26 healthcare staffing vendors</strong> in the check register period. That includes speech pathologists, nurses, occupational therapists, and behavioral health specialists.
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Board Check Registers (Jul–Dec 2025)</a>
+          <br><br>
+          <strong>The official finding:</strong> The PERB fact-finding panel explicitly stated: &ldquo;The District must continue to reduce its reliance on outside consultants and thus reallocate the contracting out funds to programs that directly benefit their employees.&rdquo;
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
+        <div class="argument-card-sources">
+          <a href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Board Check Registers (Jul–Dec 2025)</a>
+          <a href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PERB Fact-Finding Report</a>
+        </div>
+        <div class="argument-card-rebuttal">
+          <div class="argument-card-rebuttal-label">When they say &ldquo;we can't find staff&rdquo;</div>
+          <p>At agency markup rates, permanent positions are cheaper. If the district paid $21.7M to staffing agencies, that's equivalent to ~145 permanent positions at $150K/year (salary + benefits). The agencies are finding people to fill these roles &mdash; the district just isn't hiring them directly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Admin Spending -->
+    <div class="argument-card">
+      <div class="argument-card-header">
+        <div class="argument-card-num">3</div>
+        <div class="argument-card-title">&ldquo;Admin spending 39% above peer median&rdquo;</div>
+      </div>
+      <div class="argument-card-body">
+        <div class="argument-card-evidence">
+          <strong>The numbers:</strong> SFUSD spends <strong>15.1%</strong> of its General Fund on administrative functions vs. a <strong>~10.9% peer median</strong>. That's $402.8M in admin-coded SACS functions. The BLA found 220 central admin FTEs per 10,000 students vs. a peer median of 138.
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">PDF</a>
+          <br><br>
+          <strong>Source:</strong> CDE SACS FY2024-25 statewide extract (budget data) and BLA Central Admin Staffing Report, January 2023.
+        </div>
+        <div class="argument-card-sources">
+          <a href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">BLA Admin Staffing Report</a>
+        </div>
+        <div class="argument-card-rebuttal">
+          <div class="argument-card-rebuttal-label">When they say &ldquo;SF cost of living&rdquo;</div>
+          <p>Oakland spends 7.8% on admin. San Jose: 11.8%. San Diego: 8.0%. All high cost-of-living districts. The cost-of-living argument explains higher <em>salaries</em>, not higher admin <em>headcount</em>. SFUSD has 60% more admin FTEs per student than the median &mdash; that's a staffing choice, not a cost-of-living effect.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Budget Projections -->
+    <div class="argument-card">
+      <div class="argument-card-header">
+        <div class="argument-card-num">4</div>
+        <div class="argument-card-title">&ldquo;Budget projections are systematically wrong&rdquo;</div>
+      </div>
+      <div class="argument-card-body">
+        <div class="argument-card-evidence">
+          <strong>The numbers:</strong> In FY2022-23, SFUSD projected an ending fund balance of $307M. The actual was $413M &mdash; a <strong>$106M miss</strong>. This pattern of underestimating revenue and overestimating costs repeats across fiscal years, creating $80&ndash;170M &ldquo;surprise&rdquo; surpluses.
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2024-06.pdf" target="_blank" rel="noopener">PDF</a>
+          <br><br>
+          <strong>The official finding:</strong> SFUSD received a <strong>negative fiscal certification</strong> in May 2024 &mdash; the state's determination that the district may not meet its financial obligations. A district that can't project its own finances doesn't have credibility on affordability claims.
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_negative-certification-press-release_2024-05.txt" target="_blank" rel="noopener">Source</a>
+        </div>
+        <div class="argument-card-sources">
+          <a href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2024-06.pdf" target="_blank" rel="noopener">Fiscal Stabilization Plan</a>
+          <a href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_negative-certification-press-release_2024-05.txt" target="_blank" rel="noopener">Negative Certification</a>
+        </div>
+        <div class="argument-card-rebuttal">
+          <div class="argument-card-rebuttal-label">When they say &ldquo;conservative by design&rdquo;</div>
+          <p>$80&ndash;170M misses are not &ldquo;conservative&rdquo; &mdash; they're unreliable. Combined with the negative certification, late audits (FY2021-22 approved two years late), and FCMAT findings of no position control and improper contra accounts, the pattern is clear: the district's financial projections should not be taken at face value.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: PERB Recommendation -->
+    <div class="argument-card">
+      <div class="argument-card-header">
+        <div class="argument-card-num">5</div>
+        <div class="argument-card-title">&ldquo;The neutral fact-finder says you can afford more&rdquo;</div>
+      </div>
+      <div class="argument-card-body">
+        <div class="argument-card-evidence">
+          <strong>The recommendation:</strong> The PERB fact-finding panel recommended <strong>3% + 3%</strong> raises over two years, vs. the district's offer of 2% + 2% over three years. At the PERB benchmark of <strong>$10.17M per 1% raise</strong> for all employees, the difference is $10.17M/year.
+          <a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PDF</a>
+          <br><br>
+          <strong>Why it matters:</strong> This is not the union's analysis. It's the conclusion of a neutral, state-appointed panel that reviewed the same financial data the district uses to claim it can't afford more. The panel found the money exists.
+        </div>
+        <div class="argument-card-sources">
+          <a href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PERB Fact-Finding Report</a>
+        </div>
+        <div class="argument-card-rebuttal">
+          <div class="argument-card-rebuttal-label">When they say &ldquo;non-binding&rdquo;</div>
+          <p>True &mdash; but the fact-finding report establishes the public record of what a neutral party considers reasonable. If the district rejects a neutral recommendation for higher raises, they carry the burden of explaining why their own numbers are more credible than the state-appointed panel's analysis.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Methodology note -->
+  <div style="background:var(--gray-100);border-radius:6px;padding:1rem;margin:1.5rem 0">
+    <p style="margin:0;font-size:.82rem;line-height:1.5;color:var(--gray-500)">
+      <strong>Source verification:</strong> Every claim above links to its source document, hosted at
+      <a href="https://santajordan.github.io/sfusd-documents/" target="_blank" rel="noopener">santajordan.github.io/sfusd-documents</a>.
+      Source documents include board-approved check registers (OCR verified, 0.29% error rate), the PERB Fact-Finding Report (Feb 2026),
+      BLA Central Admin Staffing Report (Jan 2023), CDE SACS statewide data, and SFUSD fiscal stabilization plans.
+      No claim uses news articles, estimates, or third-party analysis as its primary source.
+    </p>
+  </div>
+</section>
 </main>
 
 <!-- ============================================================
@@ -5983,7 +6168,158 @@ function toggleVendor(id) {
     el.style.display = el.style.display === 'none' ? 'table-row' : 'none';
     var icon = el.previousElementSibling.querySelector('.expand-icon');
     if (icon) icon.innerHTML = el.style.display === 'none' ? '&#9660;' : '&#9650;';
+    // Inject peer comparison on first expand
+    if (el.style.display === 'table-row' && !el.dataset.peerLoaded) {
+      injectPeerComparison(el);
+      el.dataset.peerLoaded = '1';
+    }
   }
+}
+
+// === Peer Comparison Rendering ===
+// Categories where cross-district comparison is meaningful
+var COMPARABLE_CATEGORIES = [
+  'IT Consulting', 'IT/Consulting', 'IT/Payroll System', 'IT Equipment',
+  'Healthcare Staffing', 'Healthcare', 'Ed-Tech',
+  'Food Services', 'Transportation', 'Education Consulting',
+  'Special Education', 'Translation Services', 'Social Services',
+  'After-School Programs', 'Arts Education', 'Security',
+  'Claims Administration', 'Auditing'
+];
+// Skip these vendors — geographic cost differences make comparison misleading
+var SKIP_PEER_VENDORS = [
+  'GOLDEN GATE PETROLEUM', 'SF WATER', 'SFMTA', 'SAN FRANCISCO FIRE',
+  'CITY AND COUNTY OF SAN FRANCISCO', 'SAN FRANCISCO WATER'
+];
+
+function normalizeVendorName(name) {
+  return name.replace(/[.,\s]+/g, ' ').trim().toUpperCase();
+}
+
+function findComparisonData(vendorName) {
+  if (!window.CONTRACT_COMPARISON_DATA) return null;
+  var normalized = normalizeVendorName(vendorName);
+  // Check skip list
+  for (var i = 0; i < SKIP_PEER_VENDORS.length; i++) {
+    if (normalized.indexOf(SKIP_PEER_VENDORS[i]) !== -1) return null;
+  }
+  // Try exact key match first, then normalized
+  if (window.CONTRACT_COMPARISON_DATA[vendorName]) {
+    return window.CONTRACT_COMPARISON_DATA[vendorName];
+  }
+  var keys = Object.keys(window.CONTRACT_COMPARISON_DATA);
+  for (var j = 0; j < keys.length; j++) {
+    if (normalizeVendorName(keys[j]) === normalized) {
+      return window.CONTRACT_COMPARISON_DATA[keys[j]];
+    }
+  }
+  return null;
+}
+
+function formatMoney(n) {
+  if (n == null || isNaN(n)) return '—';
+  if (n >= 1000000) return '$' + (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return '$' + (n / 1000).toFixed(0) + 'K';
+  return '$' + n.toLocaleString();
+}
+
+function injectPeerComparison(detailRow) {
+  var vendorRow = detailRow.previousElementSibling;
+  if (!vendorRow) return;
+  // Extract vendor name (2nd td, text only — strip badge spans)
+  var nameCell = vendorRow.querySelectorAll('td')[1];
+  if (!nameCell) return;
+  var vendorName = '';
+  nameCell.childNodes.forEach(function(node) {
+    if (node.nodeType === 3) vendorName += node.textContent;
+  });
+  vendorName = vendorName.trim();
+
+  var data = findComparisonData(vendorName);
+  if (!data || !data.peers || data.peers.length === 0) return;
+
+  // Filter out peers with no useful data
+  var validPeers = data.peers.filter(function(p) {
+    return p.district && p.district.length > 3 &&
+      !p.district.match(/^(other|unknown|school district|we provide|our clubhouse)$/i) &&
+      (p.amount > 0 || p.per_student > 0 || (p.scope && p.scope.length > 5));
+  });
+  if (validPeers.length === 0) return;
+
+  var inner = detailRow.querySelector('.vendor-detail-inner');
+  if (!inner) return;
+
+  var html = '<div class="peer-comparison">';
+  html += '<h4>Peer District Comparison (' + validPeers.length + ' district' + (validPeers.length > 1 ? 's' : '') + ')</h4>';
+  html += '<table class="peer-table">';
+  html += '<tr><th>District</th><th>Contract Amount</th><th>Per Student</th><th>Scope</th></tr>';
+
+  // SFUSD row first
+  html += '<tr class="sfusd-row">';
+  html += '<td>SFUSD (San Francisco)</td>';
+  html += '<td>' + formatMoney(data.sfusd_amount) + '</td>';
+  html += '<td>' + (data.sfusd_per_student ? '$' + data.sfusd_per_student.toFixed(2) : '—') + '</td>';
+  html += '<td class="peer-scope">' + (data.scope || '—') + '</td>';
+  html += '</tr>';
+
+  // Peer rows
+  validPeers.forEach(function(peer) {
+    var delta = '';
+    if (peer.per_student > 0 && data.sfusd_per_student > 0) {
+      var diff = data.sfusd_per_student - peer.per_student;
+      var pct = ((diff / peer.per_student) * 100).toFixed(0);
+      if (diff > 0) {
+        delta = '<span class="peer-delta higher">SFUSD +' + pct + '% higher</span>';
+      } else if (diff < 0) {
+        delta = '<span class="peer-delta lower">SFUSD ' + pct + '% lower</span>';
+      }
+    }
+    html += '<tr>';
+    html += '<td>' + peer.district + '</td>';
+    html += '<td>' + formatMoney(peer.amount) + '</td>';
+    html += '<td>' + (peer.per_student > 0 ? '$' + peer.per_student.toFixed(2) : '—');
+    if (delta) html += '<br>' + delta;
+    html += '</td>';
+    html += '<td class="peer-scope">' + (peer.scope || '—') + '</td>';
+    html += '</tr>';
+
+    // Show rate comparisons if available
+    if (peer.rates && Object.keys(peer.rates).length > 0) {
+      var rateKeys = Object.keys(peer.rates);
+      rateKeys.forEach(function(rk) {
+        var label = rk.replace(/_/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+        html += '<tr><td></td><td colspan="3" style="font-size:0.8em;color:var(--gray-500);">';
+        html += label + ': $' + peer.rates[rk].toLocaleString();
+        // Compare with SFUSD rate if available
+        if (data.sfusd_rates && data.sfusd_rates[rk]) {
+          var rdiff = data.sfusd_rates[rk] - peer.rates[rk];
+          if (rdiff > 0) {
+            html += ' <span class="peer-delta higher">(SFUSD pays $' + rdiff.toLocaleString() + ' more)</span>';
+          }
+        }
+        html += '</td></tr>';
+      });
+    }
+  });
+
+  html += '</table>';
+
+  // Red flags
+  if (data.red_flags && data.red_flags.length > 0) {
+    html += '<div class="peer-red-flags"><strong>Red Flags:</strong> ';
+    html += data.red_flags.join('; ');
+    html += '</div>';
+  }
+
+  // Sole source / competitive bid info
+  if (data.sole_source === true) {
+    html += '<div class="peer-red-flags"><strong>Sole Source:</strong> This contract was awarded without competitive bidding.</div>';
+  } else if (data.competitive_bid === true) {
+    html += '<p style="font-size:0.8em;color:var(--green);margin-top:6px;">Competitively bid contract.</p>';
+  }
+
+  html += '</div>';
+  inner.insertAdjacentHTML('beforeend', html);
 }
 
 function searchVendors(query) {

@@ -505,7 +505,7 @@ def classify_vendor(vendor_name, research_data):
 
 def main():
     print(f"Starting vendor research for {len(UNKNOWN_VENDORS)} unknown vendors...")
-    print(f"Using Exa API key: {EXA_API_KEY[:8]}...")
+    print("Exa API key: loaded from environment")
 
     # Load existing research if any (for resuming)
     existing = {}
