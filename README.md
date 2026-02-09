@@ -313,6 +313,22 @@ If you're building an agent to find misspending, start here:
 
 ---
 
+## Analysis Outputs
+
+These are the deliverables produced from the document library:
+
+- **[`sfusd-strike-explainer/index.html`](https://github.com/santajordan/sfusd-strike-explainer)** — Interactive explainer for UESF members covering SFUSD's financial position, the district's proposals, strike tactics, press analysis, and rebuttals. Published as a standalone GitHub Pages site in the `sfusd-strike-explainer/` repo (sibling to this directory).
+
+- **`analysis/sfusd_forensic_report_v2.html`** — Forensic financial analysis of SFUSD spending, with vendor payment breakdowns and warrant register data. Self-contained HTML file.
+
+- **`analysis/`** — Scripts and data used to generate the forensic report:
+  - `sfusd_spending_analysis.py` — Initial spending analysis
+  - `build_enhanced_report.py` — Generates the v2 forensic report HTML
+  - `parse_check_register.py` / `reocr_check_register.py` — Warrant/check register parsing and OCR
+  - `data/` — Extracted JSON datasets (vendor profiles, check register, claim verification, savings analysis)
+
+---
+
 ## What's Still Missing
 
 See **`STILL_NEEDED.md`** for specific items with exact URLs, instructions, and research notes.
