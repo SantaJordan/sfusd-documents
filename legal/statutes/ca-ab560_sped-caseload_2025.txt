@@ -1,0 +1,92 @@
+Source: https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB560
+Saved: 2026-02-08 13:38
+Description: AB 560 (Special Education Caseload)
+================================================================================
+
+SHARE THIS:
+Date Published: 10/13/2025 02:00 PM
+AB560:v93#DOCUMENT
+Bill Start
+Assembly Bill
+              
+                        No. 560
+CHAPTER 560
+An act to amend Section 56362 of, and to add Section 56364.3 to, the Education Code, relating to special education.
+[
+Approved  by
+Governor
+October 10, 2025.
+Filed with
+Secretary of State
+October 10, 2025.
+]
+LEGISLATIVE COUNSEL'S DIGEST
+AB 560, Addis.
+                          Special education: resource specialists: special classes.
+(1) Existing law requires local educational agencies, as defined, to identify, locate, and assess individuals with exceptional needs and to provide those pupils with a free appropriate public education in the least restrictive environment, with special education and related services as reflected in an individualized education program. Existing law requires each special education local plan area to ensure that a continuum of program options is available to meet the needs of individuals with exceptional needs for special education and related services, as required by federal law. Existing law requires the continuum of program options to include, among other options, a resource specialist program, designated instruction and services, and special classes, as provided.
+Existing law requires the resource specialist program to
+			 provide, among other things, monitoring of pupil progress on a regular basis, participation in the review and revision of individualized education programs, as appropriate, and referral of pupils who do not demonstrate appropriate progress to the individualized education program team. Existing law requires caseloads for resource specialists to be stated in specified local policies and in accordance with regulations established by the State Board of Education, and prohibits a resource specialist from having a caseload that exceeds 28 pupils.
+This bill would require local educational agencies to take all reasonable steps to distribute the workload associated with initial assessments across all resource specialists employed by the local educational agency in an equal manner, unless otherwise collectively bargained. By imposing additional duties on local officials, the bill would impose a state-mandated local program.
+(2) Existing law requires special classes that serve pupils with similar and more intensive educational needs to be available, and authorizes special classes to enroll pupils only when the nature or severity of the disability of the individual with exceptional needs is such that education in the regular classes with the use of supplementary aids and services, including curriculum modification and behavioral support, cannot be achieved satisfactorily.
+This bill would require the Superintendent of Public Instruction, on or before July 1, 2027, to recommend a maximum adult-to-pupil staffing ratio for those special classes, as provided, and to post the
+			 recommendation on the department’s internet website. The bill would require the Superintendent to report their recommendations to the appropriate policy and fiscal committees of the Legislature and the state board on or before April 1, 2027, as specified.
+(3) The California Constitution requires the state to reimburse local agencies and school districts for certain costs mandated by the state. Statutory provisions establish procedures for making that reimbursement.
+This bill would provide that, if the Commission on State Mandates determines that the bill contains costs mandated by the state, reimbursement for those costs shall be made pursuant to the statutory provisions noted above.
+Digest Key
+Vote:
+MAJORITY
+Appropriation:
+NO
+Fiscal Committee:
+YES
+Local Program:
+YES
+Bill Text
+The people of the State of California do enact as follows:
+SECTION 1.
+Section 56362 of the Education Code is amended to read:
+56362.
+(a) The resource specialist program shall provide, but not be limited to, all of the following:
+(1) Provision for a resource specialist or specialists who shall provide instruction and services for those pupils whose needs have been identified in an individualized education program developed by the individualized education program team and who are assigned to regular classroom teachers for a majority of a schoolday.
+(2) Provision of information and assistance to individuals with exceptional needs and their parents.
+(3) Provision of consultation, resource information, and
+						material regarding individuals with exceptional needs to their parents and to regular staff members.
+(4) Coordination of special education services with the regular school programs for each individual with exceptional needs enrolled in the resource specialist program.
+(5) Monitoring of pupil progress on a regular basis, participation in the review and revision of individualized education programs, as appropriate, and referral of pupils who do not demonstrate appropriate progress to the individualized education program team.
+(6) Emphasis at the secondary school level on academic achievement, career and vocational development, and preparation for adult life.
+(b) The resource specialist program shall be under the direction of a resource specialist who is a credentialed special education teacher, or who has a clinical services credential with a special class authorization, who has had three or more years of teaching experience, including both regular and special education teaching experience, as defined by rules and regulations of the Commission on Teacher Credentialing, and who has demonstrated the competencies for a resource specialist, as established by the Commission on Teacher Credentialing.
+(c) Caseloads for resource specialists shall be stated in the local policies developed pursuant to Section 56195.8 and in accordance with regulations established by the board. A resource specialist shall not have a caseload that exceeds 28 pupils.
+(d) Resource specialists shall not simultaneously be assigned to serve as resource specialists and to teach regular classes.
+(e) Resource specialists shall not enroll a pupil for a majority of a schoolday without approval by the pupil’s individualized education program team.
+(f) At least 80 percent of the resource specialists within a local plan shall be provided with an instructional aide.
+(g) Local educational agencies shall take all reasonable steps to distribute the workload associated with initial assessments across all resource specialists employed by the local educational agency in an equal manner, unless otherwise collectively bargained.
+SEC. 2.
+Section 56364.3 is added to the Education Code, to read:
+56364.3.
+(a) On or before July 1, 2027, the Superintendent shall recommend a maximum adult-to-pupil staffing ratio for special classes authorized pursuant to Section 56364.2 for pupils 3 to 22 years of age, inclusive, and post the recommendation on the department’s internet website.
+(b) In
+						making the recommendation required pursuant to subdivision (a), the Superintendent shall do all of the following:
+(1) (A) Consult with all of the following individuals:
+(i) Current credentialed education specialists teaching in a special class setting. A majority of the individuals consulted pursuant to this paragraph shall meet this requirement.
+(ii) Administrators and chief business officials serving at schoolsites, school districts, county offices of education, and special education local plan areas.
+(iii) Paraprofessionals serving in special class settings.
+(iv) Parents of pupils with exceptional needs who are served in special class settings.
+(B) The individuals consulted pursuant to subparagraph (A) shall represent the state’s geographic diversity, including, but not limited to, rural, urban, and high-need regions.
+(2) Consult with researchers and representatives with expertise in inclusive practices and advocates focused on equity and disability rights.
+(3) Consider all of the following:
+(A) The varying needs of pupils, including pupils with mild to moderate support needs and pupils with extensive support needs.
+(B) The varying needs
+						of pupils by age.
+(C) The types of school settings, including preschools,
+						elementary schools, secondary schools, and nonpublic schools.
+(D) Existing practices among local educational agencies.
+(E) Other states’ adult-to-pupil ratios for special classes.
+(F) Other constraints, including, but not limited to, workforce and facility needs, and conditions in small and rural local educational agencies.
+(G) The effects on the education of pupils with disabilities in the least restrictive environment, as required by the federal Individuals with Disabilities Education Act (20 U.S.C. Sec. 1400 et seq.).
+(H) Determining appropriate staffing ratios to enhance pupil outcomes
+						in accordance with the principles of the federal Individuals with Disabilities Education Act (20 U.S.C. Sec. 1400 et seq.) and state law.
+(I) The supports needed for general education and special education educators to succeed in implementing inclusive models.
+(c) Notwithstanding Section 10231.5 of the Government Code, the Superintendent shall report their recommendations to the appropriate policy and fiscal committees of the Legislature and the state board on or before April 1, 2027, consistent with the requirements of Section 9795 of the Government
+						Code.
+SEC. 3.
+If the Commission on State Mandates determines that this act contains costs mandated by the state, reimbursement to local agencies and school districts for those costs shall be made pursuant to Part 7 (commencing with Section 17500) of Division 4 of Title 2 of the Government Code.

@@ -1,0 +1,381 @@
+Source: https://www.ed-data.org/district/San-Francisco/San-Francisco-Unified
+Saved: 2026-02-08 14:09
+================================================================================
+
+EdData - District Profile - San Francisco Unified
+Fiscal, Demographic, and Performance Data on California’s K-12 Schools
+X
+×
+Close
+Close
+Name
+Address
+City
+Zip Code
+Phone Number
+County
+Select a County
+Alameda
+Alpine
+Amador
+Butte
+Calaveras
+Colusa
+Contra Costa
+Del Norte
+El Dorado
+Fresno
+Glenn
+Humboldt
+Imperial
+Inyo
+Kern
+Kings
+Lake
+Lassen
+Los Angeles
+Madera
+Marin
+Mariposa
+Mendocino
+Merced
+Modoc
+Mono
+Monterey
+Napa
+Nevada
+Orange
+Placer
+Plumas
+Riverside
+Sacramento
+San Benito
+San Bernardino
+San Diego
+San Francisco
+San Joaquin
+San Luis Obispo
+San Mateo
+Santa Barbara
+Santa Clara
+Santa Cruz
+Shasta
+Sierra
+Siskiyou
+Solano
+Sonoma
+Stanislaus
+Sutter
+Tehama
+Trinity
+Tulare
+Tuolumne
+Ventura
+Yolo
+Yuba
+District
+Include merged/closed schools & districts
+School
+District
+Summary
+San Francisco Unified
+Information
+Address
+555 Franklin Street San Francisco CA 94102-5207
+Phone
+(415) 241-6000
+Superintendent
+Maria Su
+Related Websites
+San Francisco Unified Website
+San Francisco County Website
+Local Control and Accountability Plan
+Key Attributes
+CDS Code
+38-68478-0000000
+District Type
+Unified School District
+Grade Span
+K-12
+2024-25
+Enrollment
+55,840
+List of Schools
+×
+Close
+Maximum number of comparable
+s reached
+You cannot compare more than 4
+s at the same time.
+To add this
+to the comparison, the oldest pinned
+would have to be removed first.
+Do not pin this
+Unpin oldest and pin this
+Years Displayed
+Student
+Staff
+Local Revenue Elections
+Financial Data
+Demographics
+Performance
+College and Career Readiness
+Suspensions and Expulsions
+Chronic Absenteeism
+Demographics
+Teacher Salary
+Summary
+Detail
+Revenues and Expenditures
+Governmental Funds (01-60)
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Fund
+Description
+Adjusted July 1 Beginning Balance
+Total Revenues
+Total Expenditures
+Other Financing Sources/Uses
+June 30 Ending Balance
+Source
+Proprietary Funds (61-70)
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Fund
+Description
+Adjusted July 1 Beginning Balance
+Total Revenues
+Total Expenditures
+Other Financing Sources/Uses
+June 30 Ending Balance
+Source
+Fiduciary Funds (71-95)
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Fund
+Description
+Adjusted July 1 Beginning Balance
+Total Revenues
+Total Expenditures
+Other Financing Sources/Uses
+June 30 Ending Balance
+Source
+General Fund Revenues by Source
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Resource Codes
+Type of Revenues
+Total Revenues
+Dollar/Student (ADA)
+This District (ADA
+)
+% Avg
+School Districts
+Statewide Avg
+School Districts
+Statewide Avg All Districts
+Object Code
+Description
+Total Dollars
+Source
+Year-End Summary for General Fund
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Object Codes
+Description
+Unrestricted
+Restricted
+Total
+Source
+General Fund: Revenues
+General Fund Revenues by Object Code
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Graphs
+Object Codes
+Type of Revenue
+Revenues
+Dollar/Student (ADA)
+Unrestricted
+Restricted
+Total
+This District (ADA
+)
+% Avg
+School Districts
+Statewide Avg
+School Districts
+Statewide Avg All Districts
+Source
+General Fund: Expenditures
+General Fund Expenditures by Object Code
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Graphs
+Object Codes
+Type of Expenditure
+Expenditures
+Dollars/Student (ADA)
+Unrestricted
+Restricted
+Total
+This District (ADA
+)
+% Avg
+School Districts
+Statewide Avg
+School Districts
+Statewide Avg All Districts
+Source
+Current Expense of Education per ADA (per Education Code Section 41372)
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Graphs
+Total Dollars
+Average Daily Attendance
+Dollars/Student (ADA)
+This District
+Statewide Avg
+School Districts
+Statewide Avg All Districts
+Source
+General Fund Expenditures by Activity
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Graphs
+Function Code
+Type of Activity
+Expenditure
+Dollar/Student (ADA)
+% of Total Expenditure
+This District (ADA
+)
+All
+School Districts
+Statewide Average
+Object Code
+Type of Expenditure
+Unrestricted
+Restricted
+Total
+Source
+General Fund and Charter Schools Costs by Program, Reported by Goal Codes
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Goal Code
+Name of Program
+Instructional Costs
+Support Costs
+Central Administration Costs
+Other Costs
+Total Expenditures
+% of Total Expenditures
+Object Code
+Type of Expenditure
+Expenditure
+Source
+General Fund: Other Financing Sources/Uses and Contributions
+General Fund - Other Financing Sources/Uses and Contributions
+,
+San Francisco Unified
+×
+Close
+Close
+Data Table
+Object Codes
+Description
+Unrestricted
+Restricted
+Total
+Source
+{ CDS = 38-68478-0000000 }
+{ CDS = 38-68478-0000000 }
+Object Codes
+Function Codes
+Goal Codes
+0001-0999
+1000-1999
+2000-2999
+3000-3999
+4000-4999
+5000-5999
+6000-6999
+7000-7999
+8000-8999
+9000-9999
+About
+Ed-Data
+Ed-Data is a partnership of the California Department of Education, EdSource, and the Fiscal Crisis and Management Assistance Team/California School Information Services (FCMAT/CSIS) designed to offer educators, policy makers, the legislature, parents, and the public quick access to timely and comprehensive data about K-12 education in California.
+View the Ed-Data Terms of Service
+About Ed-Data
+Recently
+Viewed
+Subscribe
+Contact
+Copyright © 2026, Education Data Partnership. All rights reserved.
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z

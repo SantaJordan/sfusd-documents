@@ -1,0 +1,855 @@
+Source: https://www.cde.ca.gov/ds/fd/dv/
+Saved: 2026-02-08 14:10
+================================================================================
+
+SACS Data Viewer - Financial (CA Dept of Education)
+Skip to main content
+California Department of Education
+Search
+Navigation Menu
+California Department of Education
+CA Dept of Education
+Search Site
+Search
+Teaching & Learning
+Teaching & Learning Home
+Becoming an Educator
+Become a Teacher
+California Literacy
+Career Technical Education
+Business & Marketing
+Health Careers Education
+Industrial & Technology Education
+Perkins
+ROCP
+Standards & Framework
+Work Experience Education (WEE)
+Curriculum and Instruction Resources
+Common Core State Standards
+Curriculum Frameworks & Instructional Materials
+Distance Learning
+Driver Education
+Multi-Tiered System of Supports
+Recommended Literature
+School Libraries
+Service-Learning
+Specialized Media
+Grade Spans
+Early Education
+P-3 Alignment
+Elementary
+Middle Grades
+High School
+Postsecondary
+Adult Education
+Professional Learning
+Administrators
+Curriculum Areas
+Professional Standards
+Quality Schooling Framework
+Social and Emotional Learning
+Subject Areas
+Computer Science
+English Language Arts
+Health
+History-Social Science
+Mathematics
+Physical Education
+Science
+Visual & Performing Arts
+World Languages
+Testing & Accountability
+Testing & Accountability Home
+Accountability
+California School Dashboard and System of Support
+Dashboard Alternative School Status (DASS)
+Local Educational Agency Accountability Report Card
+School Accountability Report Card (SARC)
+State Accountability Report Card
+Compliance Monitoring
+District & School Interventions
+Awards and Recognition
+Academic Achievement Awards
+California Distinguished Schools Program
+California Teachers of the Year
+Classified School Employees of the Year
+California Gold Ribbon Schools
+Testing
+Assessment Information
+CA Assessment of Student Performance and Progress (CAASPP)
+CA Proficiency Program (CPP)
+English Language Proficiency Assessments for CA (ELPAC)
+Grade Two Diagnostic Assessment
+High School Equivalency (HSE) Tests
+National Assessment of Educational Progress (NAEP)
+Physical Fitness Testing (PFT)
+Smarter Balanced Assessment System
+Finance & Grants
+Finance & Grants Home
+Accounting
+Definitions, Instructions, & Procedures
+Indirect Cost Rates (ICR)
+Standardized Account Code Structure (SACS)
+Allocations & Apportionments
+Categorical Programs
+Early Education
+Consolidated Application
+Federal Cash Management
+Local Control Funding Formula
+Principal Apportionment
+Funding
+Available Funding
+Funding Results
+Projected Funding
+Search CDE Funding
+Funding Tools & Materials
+Finance & Grants Other Topics
+Auditing
+Fiscal Oversight
+Reports
+Software & Forms
+Data & Statistics
+Data & Statistics Home
+Accessing Educational Data
+About CDE's Education Data
+About DataQuest
+Data Reports by Topic
+Downloadable Data Files
+Data Collections
+California Basic Educational Data System (CBEDS)
+California Longitudinal Pupil Achievement Data System (CALPADS)
+Consolidated Application and Reporting System (CARS)
+Cradle-to-Career Data System
+Financial
+Annual Financial Data
+Certificated Salaries & Benefits
+Current Expense of Education & Per-pupil Spending
+Indirect Cost Rates (ICR)
+Data Strategy
+Data Privacy
+Student Health & Support
+Free and Reduced Price Meal Eligibility Data
+Food Programs
+Data Requests
+School & District Information
+California School Directory
+Charter School Locator
+County-District-School Administration
+Private School Data
+Public Schools and District Data Files
+Regional Occupational Centers & Programs
+School Performance
+California School Dashboard and System of Support
+Postsecondary Preparation
+Specialized Programs
+Specialized Programs Home
+Adult Education
+Directory of Schools
+Federal Grants Administration
+Charter Schools
+Early Education
+Contractor Information
+Laws, Regulations, & Requirements
+Program Overview
+Resources
+Educational Options
+Independent Study
+Open Enrollment
+Multilingual Learners
+Title III
+Special Education
+Administration & Support
+Announcements & Current Issues
+Data Collection & Reporting
+Family Involvement & Partnerships
+Laws, Regulations, & Requirements
+Quality Assurance Process
+Services & Resources
+Title I
+CA Equity Performance and Improvement Program
+Improving Academic Achievement
+Schoolwide Programs
+Statewide System of School Support (S4)
+Specialized Programs Other Topics
+American Indian
+Gifted & Talented Education
+Homeless Education
+Migrant/International
+Private Schools and Schooling at Home
+State Special Schools
+Learning Support
+Learning Support Home
+Attendance Improvement
+School Attendance Review Boards
+Truancy
+Expanded Learning
+21st Century Community Learning Centers
+After School Education & Safety Program
+Expanded Learning Opportunities Program
+Nutrition
+Child Nutrition Information & Payment System (CNIPS)
+Rates, Eligibility Scales, & Funding
+School Nutrition
+Parents/Family & Community
+Clearinghouse for Multilingual Documents
+School Disaster and Emergency Management
+Learning Support Other Topics
+Class Size Reduction
+Education Technology
+Educational Counseling
+Health
+Mental Health
+Safe Schools
+School Facilities
+Transportation
+Youth Development
+Home
+Data & Statistics
+Financial
+SACS Data Viewer
+SACS Data Viewer
+Financial reports of local educational agencies including budget and interim reports, unaudited actual financial data, and supplemental forms, available in multiple formats beginning with fiscal year 2022â23.
+SACS Data Viewer Access
+|
+Reporting Process
+|
+Using SACS Data Viewer Files
+|
+Consolidated Data
+|
+Fund Forms
+|
+Supplemental Forms and Reports
+|
+Charter School Financial Reports
+|
+Missing Data
+Local educational agencies (LEAs) in California spend approximately a hundred billion dollars to provide a high-quality education for almost six million students. To record and account for these expenditures, the LEAs utilize the standardized account code structure (SACS) and prepare financial reports for adoption by the LEAs’ governing boards and review by oversight entities. LEAs use the
+SACS Web Financial Reporting System (SACS Web System)
+to prepare and review financial reports.
+SACS Data Viewer Access
+Once the LEAs’ reports are finalized in the SACS Web System, the reports are published to the SACS Data Viewer site where interested parties may obtain copies of the reports for fiscal year 2022–23 and after. Finalized reports are those reports that have been approved by the LEA’s governing board and reviewed by the oversight entity.
+SACS Data Viewer Application
+Users are encouraged to review the following information and available resources prior to using the SACS Data Viewer to facilitate understanding of information contained in the reports and effective use of the data provided. The resources are grouped as follows:
+Overview of the Reporting Process
+provides an overview of the preparation and approval of financial reports.
+Using SACS Data Viewer Files
+provides helpful tips for users accessing information from the SACS Data Viewer. Beginning with the Fiscal Year and Reporting Period section, detailed information is provided for users, by topic in order of appearance on the SACS Data Viewer page, to help navigate the website.
+Fund Forms and Supplemental Forms
+provide general information on various files available through SACS Data Viewer, followed by information specific to charter schools and possible missing data scenarios.
+Overview of the Reporting Process
+The process to report data in the California Department of Education (CDE) SACS Web System begins with the LEA recording its financial transactions in their local financial system. The LEA transfers the information from their financial system to the CDE SACS Web System and enters other information manually. The LEA reviews the data for accuracy and completeness according to the technical review specifications established by the CDE. Financial reports are submitted to the LEA’s governing board, and then to the LEA's reviewing/oversight agency.
+Since budget development is an interactive and complex process, an LEA may have multiple draft dataset versions. However, only one is selected as a final version to be approved by the LEA’s governing board, submitted to the oversight entity for review and approval, and, eventually published in SACS Data Viewer.
+California Education Code
+(
+EC
+) prescribes specific oversight duties for the reviewing agencies, such as approval of budgets (or conditional approval, or disapproval) and concurrence with interim report certifications as either positive, qualified or negative. Therefore, the published budget datasets could be approved, conditionally approved or disapproved by the oversight entity; the published interim reports could be certified as positive, negative, or qualified.
+The reviewing agency's process of resolving exceptions varies by agency, but the process generally involves an interactive dialogue between the LEA and the reviewing agency. The following entities perform review and oversight functions:
+The CDE is the reviewing and oversight entity for the 58 county offices of education (COEs) and the seven school districts in single-district counties (Alpine, Amador, Del Norte, Mariposa, Plumas, San Francisco, and Sierra);
+Each COE serves as the reviewing and oversight entity for all school districts and Joint Powers Agencies in the county, plus the charter schools authorized by the COE or authorized by the State Board of Education (SBE) with oversight authority delegated to the COE;
+Each school district serves as the reviewing and oversight entity for charter schools authorized by the district, plus the charter schools authorized by the SBE with oversight authority delegated to the district; and
+The SBE serves as the reviewing and oversight entity for charter schools authorized by the SBE.
+The specific process and due dates for preparation and review of financial reports is outlined in the
+Financial Reporting and Fiscal Oversight Calendars
+.
+Using SACS Data Viewer Files
+Forms  and reports stored in SACS Data Viewer can assist interested parties in various  ways.
+The forms that comprise the LEA’s dataset can provide information on the overall financial position of the LEA, including current and projected revenues, expenditures and fund balances. To facilitate review of the LEA’s financial position, a user may start with Fund 01, Form MYP, and criteria and standards review, and continue with other documents. This data is best viewed in the PDF format. Additionally, each LEA’s website may provide information on the activities and priorities that form the LEA’s budget.
+Current year budget status information is available at the
+Fiscal Status
+web page to supplement the review of budget and interim reports available in SACS Data Viewer.
+CDE’s publication of the
+Annual Financial Data
+will continue. SACS Data Viewer provides the same unaudited actual data in a different format. The two resources may be used together for research and analysis.
+Data extract files provide fiscal data in a consistent format to allow research and analysis of data across LEAs, or across time periods. Data extract files are available for a specific LEA or as a consolidated file with data for multiple LEAs as explained in the
+Consolidated Data
+below.
+Fiscal Year and Reporting Period
+The fiscal year for California LEAs begins on July 1 and ends on June 30 of the next calendar year. For example, fiscal year 2023–24 refers to the time period of July 1, 2023, through June 30, 2024. California’s fiscal year is different than the federal fiscal year which begins on October 1 and ends on September 30 of the next calendar year.
+LEAs report financial data for the same fiscal year (July 1 – June 30) at multiple points in time based on designated reporting periods, as shown in the table below; each subsequent period after the initial budget adoption reflects adjustments as revenues and expenditures change from estimated (budgeted) to actual during the fiscal year.
+Reporting Period Details and Estimated Availability in SACS Data Viewer
+Reporting Period Name
+File Name Designation
+Reporting Basis
+Due to Oversight Entity
+Available in SACS Data Viewer
+Budget, July 1
+BS1
+Estimates as of July 1
+July 1
+October
+December
+First Interim
+I1
+Actuals as of July 1 – October 31 and year-end estimates
+December 15
+February
+Second Interim
+I2
+Actuals as of July 1 – January 31 and year-end estimates
+March 15
+May
+Unaudited Actuals (UAs)
+A
+Actual unaudited revenues and expenditures for the entire fiscal year
+October 15 of subsequent fiscal year
+February
+For the Budget, July 1 reporting period, the datasets will be published twice. First, all the available Budget, July 1 datasets are published in October. Then, any revised datasets will be published in December.
+Under certain circumstances, some LEAs may be required to prepare an additional report, known as Third Interim or End of Year Projections, covering the reporting period from July 1 through April 30. These reports are not published in SACS Data Viewer. Any requests for Third Interim reports, if applicable to a particular LEA, should be referred to the individual LEA or the COE with jurisdiction over the LEA’s county.
+Although the above calendar applies to all LEAs, some charter schools do not use SACS forms. Therefore, their budget or interim period reports are not available in SACS Data Viewer. Their UAs are available in SACS Data Viewer in a report known as Charter School Unaudited Actuals Financial Report—Alternative Form.
+CDE publishes all available datasets based on the schedule listed above. Once publishing is completed, CDE notifies all LEA users in SACS Web System that datasets for an applicable reporting period have been published. If datasets for an LEA appear to be missing from SACS Data Viewer, see
+Missing Data
+below for some possible reasons.
+Entity Type and Entity Name
+The following public educational agencies use the SACS Web System for reporting financial information:
+county offices of education, also known as COEs;
+school districts;
+joint powers agencies, also known as JPAs; and,
+charter schools.
+All  of the above are referred to as LEAs for purposes of SACS, SACS Web System, and  SACS Data Viewer. The
+California School Directory
+provides information on each  of the LEAs and its schools.
+Entity Names are listed in alphabetical order. Users may type in all or a portion of the name in the Entity Name field to see matching records available.
+In addition to financial data for individual LEAs, SACS Data Viewer provides consolidated files for each of the 58 counties, plus charter schools under the oversight of the State Board of Education, and all LEAs in the state. For detailed information, see
+Consolidated Data
+below.
+Available Records
+If  there is an eligible dataset in the SACS Web System at the time statewide data  are published for a specific fiscal year and reporting period, the SACS Data  Viewer will generate a table of multiple files under the heading Available  Records that contain LEA-specific data. Financial reports for a given LEA and a  given reporting period consist of multiple components, available in multiple  formats.
+Form Name
+LEA financial data are presented in a series of forms, comprised of
+Fund Forms
+and
+Supplemental Forms
+. Form Name column lists each form name, with exception of Data Extract (Excel File) and Single Export (Dat File) because these file formats contain data from multiple forms. Some forms are made of multiple files, thus, such form names appear multiple times in Form Name column in Available Records table.
+File Name
+All  file names contain the following:
+CDS Code
+– The 14-digit CDS code is the official, unique identification of a school within California. The first two digits identify the county, the next five digits identify the LEA, and the last seven digits identify the school. For additional information refer to the
+County-District-School Administration
+web page.
+Reporting Period
+– The reporting period refers to either budget, first interim, second interim or UA, as detailed in the
+Fiscal Year and Reporting Period
+section above.
+Fiscal Year
+– The fiscal year refers to the California fiscal year, which coincides with a school year.
+Dataset Number
+– The unique number identifies the entire financial dataset for a given reporting period. This number is used for all the files, fund forms and supplemental forms that make up the financial dataset.
+Form
+– The abbreviated name of a fund form or supplemental form. In most cases, the format of the forms differ between budget and UA reporting period and the interim reporting periods. The system adds an “I” at the end of the form abbreviation to indicate interim reporting period.
+Additional details for
+Fund Forms
+and
+Supplemental Forms
+as shown in the sections below.
+Type
+SACS  Data Viewer allows users to access the same information in multiple formats,  which are displayed in the Type column.
+Data Extract (Excel File)
+Data  Extract (Excel File) produces a Microsoft Excel file with six tabs containing the  LEA’s general ledger data and supplemental forms data.
+UserElement
+provides all the data that was entered in the supplemental forms and reports by the LEA in the SACS Web System.
+UserGL
+provides general ledger data using SACS account string shown in the Account column. For additional information on the SACS account code structure, see the
+California School Accounting Manual
+(
+CSAM
+) available on the
+Definitions, Instructions, & Procedures
+web page. See
+Fund Forms
+below for additional information on the periods captured in each reporting period.
+TRCLog
+provides status on all technical review checks (TRC) applied to the dataset. The TRCs check the LEA data against state-defined specifications and ensure that entries exist, agree, and are consistent across all funds and forms. Additional information is available in the SACS Web System User Guide on the
+Financial Reporting
+web page.
+TRCExplanation
+provides a list of non-fatal TRCs that were flagged for a completed dataset and required an explanation by the LEA. Non-fatal TRCs provide a warning to the user to verify data; if user verified that data is correct, prior to proceeding with the submission, a user must enter an explanation into the system as the data varies from what is expected. If the data is incorrect, the user has the option to correct it. In contrast, fatal TRCs require the user to correct the data and clear the TRC before proceeding with a data submission.
+Entities
+tab lists all LEAs in the
+SACS Web System
+and their corresponding CDS codes.
+Legend
+tab provides a description for each column heading and explains acronyms and flags used in the data file.
+Form (PDF)
+These documents represent fund forms and supplemental forms and reports, in a format similar to LEA board approved financial statements. See
+Fund Forms
+and
+Supplemental Forms
+below for additional information.
+Single Export (Dat File)
+Single Export (Dat File) produces a data file that can be imported into the
+SACS Web System
+, or an applicable local database. File specifications and information are available in the SACS Web System User Guide, Attachment B, on the
+Financial Reporting
+web page.
+Published Date
+Published Date refers to the date that the LEA marked the dataset as complete, including oversight review which made it available for publishing to the SACS Data Viewer site. The actual posting to the site is done in accordance with published timelines in
+Fiscal Year and Reporting Period
+section above.
+Downloads
+The download button saves the file to the user’s device for  the Single Export (Dat File) and Data Extract (Excel File) types. For the Form  (PDF) type, the download button will open a new browser window for the user to  Save or Print the selected form.
+The Download All button,  which is available above the Downloads column, saves all files listed in the  Available Records table to one zipped folder on the user’s device.
+Consolidated Data
+The  table below lists the LEAs that are included in consolidated data files based  on the entity type selected.
+Entity Type Selected
+LEAs Included
+County Office of Education
+By selecting a specific COE, SACS Data Viewer will generate    files that include all LEAs in the county, including:
+the    COE,
+each    school district in the county,
+each    charter school in the county with exception of charter schools under the    oversight of the SBE,
+each    JPA in the county.
+In addition, the system will also generate files for    just the COE as its own LEA.
+School District
+No consolidated data available.
+Joint Powers Agency
+No consolidated data available.
+Charter School
+No consolidated data available.
+State Board of Education Charters
+By selecting State Board of Education Charters, SACS    Data Viewer will generate files that include all charter schools under the    oversight of the SBE.
+All
+By selecting All, SACS Data Viewer will generate files with the data    for all LEAs in the State. The file generation may take a several minutes.
+Once  the user selects Apply filters, if the data is available, the SACS Data Viewer  will consolidate the data files available for download into two data zip files:  the Single Export (Dat File) and the Data Extract (Excel File).
+All available records for the Entity Type selected in the Data Extract (Excel File)
+The  downloadable zipped file for Data Extract (Excel File) contains six files that  consolidate the LEAs’ general ledger data and supplemental forms data for the  Entity Type selected.
+UserElements.csv
+provides all the data that was entered into the forms by the LEAs in SACS Web System for the Entity Type selected.
+UserGLs.csv
+provides general ledger data using SACS account string shown in the Account column for the Entity Type selected. For additional information on the SACS account code structure, see the
+CSAM
+available on the
+Definitions, Instructions, & Procedures
+web page. See
+Fund Forms
+below for additional information on the periods captured in each reporting period.
+TRCLogs.csv
+provides status on all technical review checks (TRC) applied to the datasets in the
+SACS Web System
+at the time of preparation and submittal of the financial reports by the LEAs in the Entity Type selected. The TRCs check the LEA data against state-defined specifications and ensure that entries exist, agree, and are consistent across all funds and forms. Additional information is available in the SACS Web System User Guide on the
+Financial Reporting
+web page.
+TRCExplanations.csv
+provides a list of non-fatal TRCs that were flagged for a completed dataset and required an explanation by the LEAs for the Entity Type Selected.
+Entities.csv
+lists all LEAs in the
+SACS Web System
+and their corresponding CDS codes.
+Legend.xlsx
+file provides a description for each column heading and explains acronyms and flags used in the data files.
+The  UserGLs.csv and UserElements.csv files could be too large to fully import into most  spreadsheet programs. Users can import the data extract file into a database application  because of the high record count.
+All available records  for the Entity Type selected in the Single Export (Dat File)
+The downloadable zipped file for Single Export (Dat File) contains all of the data files available for the Entity Type selected. The data files can be imported into
+SACS Web System
+, or an applicable local database. File specifications and information are available in the SACS Web System User Guide, Attachment B, on the
+Financial Reporting
+web page.
+Fund Forms
+Fund forms are used by the LEAs to record activities in the  various funds. A fund is a fiscal and accounting entity with a self-balancing  set of accounts recording financial resources and liabilities.
+Every LEA has Fund 01, also known as general  fund (except certain charter schools reporting separately from authorizer using  Fund 62), plus a number of additional funds established pursuant to the
+CSAM.
+Fund forms provide information separately for  unrestricted and restricted funds, and in a combined format. Unrestricted funds  refer to money that is not subject to legal or donor limitations regarding its  use and can generally be used for any educational or operational purpose. Restricted  funds refer to money which use is controlled by law or donor or designated for  specific purposes by the LEA or its governing board.
+For more information on fund accounting, see
+CSAM
+Procedure 105. For more information on fund classification, see
+CSAM
+Procedure 305 available on the
+Definitions, Instructions, & Procedures
+web page.
+Budget and Unaudited Actual Fund Forms
+Budget and unaudited  actuals fund forms provide three different displays:
+Expenditures by  Object
+—Displays summarized and detailed revenues, expenditures, and other  financing sources and uses by major object in the operating statements and  includes year end balances in the fund reconciliation. Object is a four-digit  code in the SACS account string used to classify revenues, expenditures, and  balance sheet accounts. For additional information, refer to
+CSAM,
+Procedure  330.
+Expenditures by  Function
+—Contains the same data as expenditures by object; however, the  expenditures section is displayed by major function rather than object and is  only summarized. Function is a four-digit code in the SACS account string used  to identify activities or services performed to support or accomplish one or  more goals or objectives. For additional information, refer to
+CSAM,
+Procedure  325.
+Restricted Detail
+—Displays detail  of restricted balances by resource.
+Fund forms display  both budget data for the budget year (labeled “BB” in data files) and actual  data for the completed fiscal year (labeled “BE” or “BA”), as in the following  examples:
+A 2023–24 Budget reporting period fund form will  provide 2022–23 estimated actual data and 2023–24 budget data.
+A 2023–24 Unaudited Actuals reporting period fund  form will provide 2023–24 unaudited actual financial data and 2024–25 budget.
+Interim Fund Forms
+The interim fund  forms contain four different versions of financial data designed to track the  financial operations of the LEA over the course of the fiscal year, as follows:
+Original Budget
+(labeled “IO”) is  the current year budget adopted on or before July 1, or the revised budget of  an LEA whose original July 1 budget was disapproved by its oversight agency.
+Board Approved Operating Budget
+(labeled “IB”) is the latest approved operating budget. If the governing  board has not approved any amendments to the budget, the Board Approved  Operating Budget will be the same as the Original Budget.
+Actuals to Date
+(labeled “IA”) represents  the actual revenue received and expenditures paid as of the close of the  interim reporting period.
+Projected Year Totals
+(labeled “IP”) represents the total projected revenue, expenditures, and  other activities for the entire year. It includes all required year-end  accruals of revenues and expenditures.
+Fund Forms List
+Fund  accounting is a system used by government entities to track spending and  allocate taxpayer money for various programs, services, and projects. Fund  accounting allows governments to demonstrate fiscal responsibility and  compliance with legal mandates by separating funds based on their intended use.  California’s standardized account code structure provides the following fund  forms for LEA use:
+File Reference
+Fund Name
+Description
+Fund-A_01
+Fund-Ai_01I
+General Fund
+For COEs only: County School Service Fund
+This is the chief operating fund for all LEAs. It is used to account    for the ordinary operations of an LEA. All transactions except those    accounted for in another fund are accounted for in this fund.
+Fund-F_08
+Fund-Fi_08I
+Student Activity Special Revenue Fund
+This fund may be used to account for associated    student body (ASB) activities that do not meet the fiduciary activity    criteria, thus are governmental activities.
+Fund-B_09
+Fund-Bi_09I
+Charter Schools Special Revenue Fund
+This fund may be used by authorizing LEAs to account    separately for the operating activities of LEA-operated charter schools that    would otherwise be reported in the authorizing LEA’s general fund.
+Fund-B_10
+Fund-Bi_10I
+Special Education Pass-Through Fund
+This fund is used by the Administrative Unit (AU) of a    multi-LEA Special Education Local Plan Area (SELPA) to account for special    education revenue passed through to other member LEAs.
+Fund-B_11
+Fund-Bi_11I
+Adult Education Fund
+This fund is used to account separately for federal,    state, and local revenues that are restricted or committed for adult    education programs.
+Fund-B_12
+Fund-Bi_12I
+Child Development Fund
+This fund is used to account separately for federal,    state, and local revenues to operate child development programs.
+Fund-B_13
+Fund-Bi_13I
+Cafeteria Special Revenue Fund
+This fund is used to account separately for  federal, state, and local resources to operate the food service program.
+Fund-B_14
+Fund-Bi_14I
+Deferred Maintenance Fund
+This fund is used to account separately for revenues    that are restricted or committed for deferred maintenance purposes.
+Fund-B_15
+Fund-Bi_15I
+Pupil Transportation Equipment Fund
+This fund is used to account separately for state and    local revenues specifically for the acquisition, rehabilitation, or    replacement of equipment used to transport students.
+Fund-B_16
+Fund-Bi_16I
+Forest Reserve Fund
+This fund exists to account separately for federal    forest reserve funds received by COEs for distribution to school districts    and community college districts.
+Fund-B_17
+Fund-Bi_17I
+Special Reserve Fund for Other Than Capital Outlay    Projects
+This fund is used primarily to provide for the    accumulation of general fund moneys for general operating purposes other than    for capital outlay.
+Fund-B_18
+Fund-Bi_18I
+School Bus Emissions Reduction Fund
+This fund may be used to accumulate money for the    purchase or lease of new low- or zero-emission school buses or for the    retrofitting of existing school buses.
+Fund-B_19
+Fund-Bi_19I
+Foundation Special Revenue Fund
+This fund is used to account for resources received    from gifts or bequests pursuant to
+EC
+Section 41031 under which both    earnings and principal may be used for purposes that support the LEA’s own    programs and where there is a formal trust agreement with the donor.
+Fund-B_20
+Fund-Bi_20I
+Special Reserve Fund for Postemployment Benefits
+This fund may be used to account for amounts LEAs have    earmarked for retiree benefits but have not contributed irrevocably to a    retiree benefit plan.
+Fund-D_21
+Fund-Di_21I
+Building Fund
+This fund exists primarily to account separately for    proceeds from the sale of bonds and may not be used for any purposes other    than those for which the bonds were issued. Other authorized revenues are    proceeds from the sale or lease-with-option-to-purchase of real property and    revenue from rentals and leases of real property specifically authorized for    deposit into the fund by the governing board.
+Fund-D_25
+Fund-Di_25I
+Capital Facilities Fund
+This fund is used primarily to account separately for    moneys received from fees levied on development projects as a condition of    approval.
+Fund-D_30
+Fund-Di_30I
+State School Building Lease–Purchase Fund
+This fund is used to account separately for state    apportionments for the reconstruction, remodeling, or replacement of existing    school buildings or the acquisition of new school sites and buildings, as    provided in the Leroy F. Greene State School Building Lease–Purchase Law of    1976.
+Fund-D_35
+Fund-Di_35I
+County School Facilities Fund
+This fund is used to report revenue and expenditures    for School Facility Program projects.
+Fund-D_40
+Fund-Di_40I
+Special Reserve Fund for Capital Outlay Projects
+This fund exists primarily to provide for the    accumulation of general fund moneys for capital outlay purposes.
+Fund-D_49
+Fund-Di_49I
+Capital Projects Fund for Blended Component Units
+This fund is used for the collection of data from    Mello-Roos Community Facilities Districts and similar entities that are    considered blended component units of the LEA to ensure that statewide costs    for educational facilities are accurately reflected in statewide reports,    eliminate the need of LEAs to exclude Mello-Roos data before reporting to    CDE, and also expedite LEAs conversion for government-wide reporting under    GASB Statement 34.
+Fund-D_51
+Fund-Di_51I
+Bond Interest and Redemption Fund
+This fund is used for the repayment of bonds issued    for an LEA.
+Fund-D_52
+Fund-Di_52I
+Debt Service Fund for Blended Component Units
+In conjunction with Fund 49, Capital Project Fund for    Blended Component Units, this debt service fund is used to account for the    collection of money for current debt service for community facility districts    and other similar entities.
+Fund-D_53
+Fund-Di_53I
+Tax Override Fund
+This fund is used for the repayment of voted    indebtedness (other than Bond Interest and Redemption Fund repayments) to be    financed from ad valorem tax levies. An example is a public school building    loan repayment.
+Fund-D_56
+Fund-Di_56I
+Debt Service Fund
+This fund is used for the accumulation of resources    for and the retirement of principal and interest on general long-term debt.
+Fund-D_57
+Fund-Di_57I
+Foundation Permanent Fund
+This fund is used to account for resources received    from gifts or bequests that are restricted to the extent that earnings, but    not principal, may be used for purposes that support the LEA’s own programs    and where there is a formal trust agreement with the donor.
+Fund-D_61
+Fund-Di_61I
+Cafeteria Enterprise Fund
+The cafeteria program may be accounted for using an    enterprise fund rather than a special revenue fund (Fund 13) even though its    primary source of financing comes from federal and state child nutrition    program revenues rather than through the price paid for meals by the students.
+Fund-B_62
+Fund-Bi_62I
+Charter Schools Enterprise Fund
+The Charter Schools Enterprise Fund, Fund 62, may be    used to account for the activities of LEA-operated not-for-profit public    benefit charter schools that use the accrual basis of accounting. It may also    be used to account for the activities of separately operated not-for-profit    public benefit charter schools that report separately from their authorizing    LEAs.
+Fund-E_63
+Fund-Ei_63I
+Other Enterprise Fund
+This fund may be used to account for other business    activities.
+Fund-E_66
+Fund-Ei_66I
+Warehouse Revolving Fund
+This fund is used primarily to maintain budget control    and stock accounting of merchandise for an LEA’s use. The Warehouse Revolving    Fund (Fund 66) is reimbursed from various funds of the LEA for amounts    consumed by these user funds.
+Fund-E_67
+Fund-Ei_67I
+Self-Insurance Fund
+Self-insurance funds are used to separate moneys    received for self-insurance activities from other operating funds of an LEA.    Separate funds may be established for each type of self-insurance activity,    such as workers’ compensation, health and welfare, and deductible property    loss
+Fund-E_71
+Fund-Ei_71I
+Retiree Benefit Fund
+This fund exists to account separately for amounts    held in trust from salary reduction agreements, other irrevocable    contributions for employees’ retirement benefit payments, or both.
+Fund-E_73
+Fund-Ei_73I
+Foundation Private-Purpose Trust Fund
+This fund is used to account separately for gifts or    bequests per
+EC
+Section 41031 that benefit individuals, private    organizations, or other governments and under which neither principal nor    income may be used for purposes that support the LEA’s own programs.
+Fund-C_76
+Fund-Ci_76I
+Warrant/Pass-Through Fund
+This fund exists primarily to account separately for    amounts collected from employees for federal taxes, state taxes, transfers to    credit unions, and other contributions. It is also used to account for those    receipts for transfer to agencies for which the LEA is acting simply as a    “cash conduit.”
+Fund-C_95
+Fund-Ci_95I
+Student Body Fund
+This fund accounts for the transactions of a student    body organization.
+For  detailed information on fund classifications and descriptions, see
+CSAM
+,  Procedure 305.
+Supplemental Forms and Reports
+The supplemental data forms and reports are designed to provide required  certifications, permit entry of specific information relating to certain  programs, and demonstrate compliance with particular requirements.
+The following table provides  a comprehensive list of all supplemental forms and reports that exist in the
+SACS Web System
+. Note that  supplemental forms requirements are specific to an LEA type and reporting  period. Additionally, while most forms are mandatory, some are optional. Optional  forms that were generated by the system but not completed by the LEA may appear  blank or only partially completed. Details are available in the SACS Web System  User Guide on the
+Financial Reporting
+web page.
+Supplemental Forms and Reports List
+File Reference(s)
+Full Name
+Description
+01CS
+01CSI
+Criteria and Standards Review
+Required for use by most LEAs in reviewing their    budget revenues, expenditures and student counts as well as status of    collective bargaining and other topics. The Criteria and Standards are approved by the SBE and are used to    monitor fiscal stability of LEAs.
+A
+AI
+Average Daily Attendance
+Used to provide actual or estimated attendance for the    Second and Annual attendance reporting periods as well as funded ADA, as one    of the main factors determining the Local Control Funding Formula    entitlement.
+ALT
+Charter School Unaudited Actuals Financial Report Alternative Form
+An alternative format for a charter school    reporting separately from its authorizing agency designed to include complete    information for all funds of the charter school.
+ASSET
+Schedule of Capital Assets
+Used to report changes in the balances of    capital assets and accumulated depreciation for the fiscal year.
+CA
+Unaudited Actuals Certification
+Contains a summary of the critical data elements    contained in the unaudited actual data and LEA’s certification of filing.
+CASH
+Cashflow Worksheet
+Provides monthly detail by    major object category of the receipt and disbursement transactions for the    General Fund / County School Service Fund.
+CAT
+Schedule for Categoricals
+Optional form designed to assist in the determination    of the correct amount of unused grant award (carryover), accounts payable,    accounts receivable, unearned revenue, and/or restricted ending balance at    the end of the fiscal year for all federal, state, and local categorical    programs for which the LEA is responsible.
+CB
+Budget Certification
+Contains LEA’s certification of budget adoption and filing, and    criteria and standards review summary.
+CC
+Workers' Compensation Certification
+Provides information about workers' compensation    claims for self-insured school districts and COEs.
+CEA
+CEB
+Current Expense Formula/Minimum Classroom Compensation    – Actuals / Budget
+Used for the following purposes:
+To    allow COEs to determine whether the school district complies with
+EC
+Section 41372, Apportionments for the Payment of Salaries of Classroom    Teachers, which requires that elementary, unified, and high school districts    expend at least 60, 55, and 50 percent respectively, of their current cost of    education for classroom teacher and aide salaries, plus associated benefits.
+To report the current expense of education.
+CEFB
+Components of Ending Fund Balance/Net Position
+For governmental funds (funds 01–57), CEFB provides    for nonspendable, restricted, committed, assigned, and unassigned components    of the ending fund balance to be changed or added, and for multiple    commitments and assignments within a resource to be individually defined.
+For proprietary and applicable fiduciary funds (funds    61–95), the CEFB provides for net investments in capital assets and    restricted net position to be changed.
+CI
+Interim Certification
+Provides summary of criteria and standards review and    certification of the LEA’s financial condition.
+CNVRT
+Government-wide Conversion
+Includes the conversion entries and worksheets necessary to convert    from individual governmental funds to government‑wide activities, and to    prepare the Statement of Activities and Statement of Net Position required by    Governmental Accounting Standards Board (GASB) statements 34 and 63.
+DEBT
+Schedule of Long‑Term Liabilities
+Used to report changes in the balances of long-term    liabilities for the fiscal year.
+DTERM
+Determination of Major Funds
+Identifies    those funds that must be reported as major funds in the audited financial    statements by comparing the assets, deferred outflows of resources,    liabilities, deferred inflows of resources, revenues, and expenditures for    governmental and enterprise funds to determine which funds meet the ten    percent and five percent criteria defined in GASB Statement 34.
+ENTRY
+Conversion Entries
+Includes the conversion entries and worksheets necessary to convert    from individual governmental funds to government‑wide activities, and to    prepare the Statement of Activities and Statement of Net Position required by    GASB statements 34 and 63.
+ESMOE
+Every Student Succeeds Act Maintenance of Effort
+Compiles the expenditures to be used in determining    when an LEA met the maintenance of effort requirement under the Elementary    and Secondary Education Act (ESEA), as reauthorized by the Every Student    Succeeds Act (ESSA).
+GANN
+Appropriations Limit Calculations
+Form GANN was implemented to assist LEAs in meeting    their constitutional and statutory obligations under the Gann Initiative,    which added
+Article XIII B
+to the
+California Constitution
+, to    calculate appropriation limits and appropriations subject to limitation.
+GSA
+Government-wide Statement of Activities and    Reconciliation of Fund Statements
+Includes the conversion entries and worksheets necessary to convert    from individual governmental funds to government‑wide activities, and to    prepare the Statement of Activities and Statement of Net Position required by    GASB statements 34 and 63.
+GSNP
+Government-wide Statement of Net Position and    Reconciliation of Fund Statements
+Includes the conversion entries and worksheets necessary to convert    from individual governmental funds to government‑wide activities, and to    prepare the Statement of Activities and Statement of Net Position required by    GASB statements 34 and 63.
+ICR
+Indirect Cost Rate Worksheet
+Calculates a proposed restricted, fixed with carry forward type of indirect    cost rate for LEAs to use in recovering indirect costs from federal and state    programs.
+L
+Lottery Report
+Provides data for annual report to the Governor and the Legislature    regarding expenditures of lottery funds.
+MYP
+MYPI
+Multiyear Projections – General Fund
+Provides LEA’s    projections for the General Fund / County    School Service Fund (Fund 01) and the resulting ending fund balances for the    current and two future years with separate projections for the    unrestricted and restricted components as well as a combined total, and the    percent change between the budget year and first subsequent fiscal year, and    the percent change between the first and second subsequent fiscal years.
+MYPIO
+Multiyear Projections – Other Funds
+Provides LEA’s multiyear projections for funds other    than General    Fund / County School Service Fund    (Fund 01).
+PCR
+Program Cost Report
+Calculates, in a standardized manner, total costs by program for funds    01, 09, and 62.
+PCRAF
+Program Cost Report – Allocation Factors
+Used to distribute expenditures in funds 01, 09, and 62 charged to a    support function and an "Undistributed" goal (0000 and 9000) to    specific program goals for program cost reporting purposes. LEAs use goals    0000 and 9000 (with the goal being part of the SACS account string) to track    expenditures in activities (functions) that are not directly assignable to a    specific goal at the time expenditures are made.
+PGM
+Program by Resource
+Provides financial data, for the program resource(s)    selected by the user, available in four different versions that detail the    amount available for expenditure, the expenditures, the difference between    the amount available and the expenditures, and the percentage of eligible    expenditures spent on indirect costs.
+SEA
+Special Education Revenue Allocations
+Optional form for reporting and    budgeting special education revenues of a SELPA and the allocations to the    SELPA members.
+SEAS
+Special Education Revenue Allocations Setup (SELPA    Selection)
+Used as a tool for SELPA Administrative Units in    selecting which SELPA to work on for the Special Education maintenance of    effort (MOE) reports.
+SEMA
+Special Education MOE—Actual vs. Actual Comparison
+Determines compliance with the federal special education MOE    requirement at the time of the unaudited actuals; allowed to be completed    after the financial reporting deadline and may not represent the final    version of the report.
+SEMAI
+Special Education MOE—Projected vs. Actual Comparison
+Determines compliance with the federal special education MOE    requirement at the time of the original budget; allowed to be completed after    the financial reporting deadline and may not represent the final version of    the report.
+SEMB
+Special Education MOE— Budget vs. Actual Comparison
+Determines compliance with the federal special education MOE    requirement at the interim reporting period; allowed to be completed after    the financial reporting deadline and may not represent the final version of    the report.
+SIAA
+Summary of Interfund Activities – Actuals
+Used for reconciling the interfund activities (Actuals)    of the LEA.
+SIAB
+Summary of Interfund Activities – Budget
+Used for reconciling the interfund activities    (Budgeted) of the LEA.
+SIAI
+Summary of Interfund Activities – Projected Year    Totals
+Used for reconciling the interfund activities of the    LEA at interim reporting.
+TC
+TCI
+Table of Contents
+Lists all the forms completed by the LEA as part of a    particular dataset.
+Charter School Financial Reports
+A  charter school is a public school that may provide instruction in any  combination of grades (transitional kindergarten through grade twelve).  Financial reporting by charter schools can be done in multiple ways, and the  charter school can change a reporting method from one fiscal year to the next.  Charter school unaudited  actuals financial data may be  reported either:
+With the data from their authorizing agency (school district or COE) in the authorizing agency's General Fund [County School Service Fund] (Fund 01), Charter Schools Special Revenue Fund (Fund 09), or Charter Schools Enterprise Fund (Fund 62); or,
+Separately from the authorizing agency, by using either the Charter School Unaudited Actuals Financial Report Alternative Form or the traditional SACS reporting forms. If using the traditional SACS forms, charters should use one of the following as their main operating fund: General Fund (Fund 01) or Charter Schools Enterprise Fund (Fund 62) which allows accrual accounting for not-for-profit charter schools. Charter schools using Fund 01 as their main operating fund may also report data in other funds, as appropriate.
+To  determine the charter school authorizing agency refer to the five-digit code in  the CDS code of the charter school and locate the school district or the COE in  the
+California School Directory
+.
+General  charter school resources are available on the CDE website as follows:
+Charter schools
+CalEdFacts
+provides general information on charter schools in California.
+The
+Charter Schools
+web page provides detailed information on charter schools.
+Missing Data
+LEA Missing  from Entity Name List
+There are some instances where an LEA name is  not available in the Entity Name list.
+Individual schools (non-charter) are not  listed in the Entity Name because LEAs do not report financial data in SACS at  the school level. California LEAs produce reports to fulfill federal  requirements that provide some information at the school level, such as the
+Every  Student Succeeds Act (ESSA) school-level per-pupil expenditures (PPE)
+.
+If the LEA is a charter school and the  charter school is not operational in the selected fiscal year, and the charter  school is not expected to submit financial data, the SACS Web system removes  the charter school from a list of LEAs eligible to file financial reports.  Information on closed charter schools is available in the
+California School  Directory
+and
+Charter School Locator
+.
+Records Missing for an LEA
+Possible Reasons for Missing Records
+Users may encounter situations when SACS Data  Viewer does not produce a set of files for a specific LEA. This may occur due  to any of the following:
+The  LEA is a charter school reporting data with its authorizer LEA (see
+Charter School  Financial Reports
+).
+The  LEA is a charter school reporting separately for budget or interim period using  an alternative form that is not part of the SACS Web System.
+The  LEA prepared financial reports using SACS Web System but the reports were not  promoted through the electronic routing to the applicable stage in time for publishing in SACS Data  Viewer.
+The  LEA did not prepare financial reports using SACS Web System.
+Common Administration Districts
+These districts, paired  as elementary and high school districts, have the same administration, school  board, and teachers' organization. A common district files a joint financial  report but separate demographic and attendance reports. There are currently  five of these districts in California:
+Arena  Union Elementary/Point Arena Joint Union High (Mendocino County);
+Modesto  City Schools (Stanislaus County);
+Petaluma  City Elementary/Joint Union High (Sonoma County);
+Santa  Cruz City Elementary/High (Santa Cruz County); and,
+Santa  Rosa Elementary-High (Sonoma County).
+For example, a user  looking for Santa Rosa Elementary district will not find data under this  district name because Santa Rosa Elementary does not report financial data.  Instead, Santa Rosa City Schools reports financial data for both Santa Rosa  Elementary and Santa Rosa High school districts.
+All Charter Districts
+As of fiscal year 2022–23, there are seven all-charter  districts operating in California, which are defined as school districts in  which all schools have been converted to charter schools. Their financial data  is presented under the school district Entity Type rather than charter school.
+Alvina Elementary school district with Alvina  Elementary Charter school (Fresno County);
+Kingsburg Elementary Charter school district  with the following schools (Fresno County):
+Ronald W. Reagan Elementary
+Island Community Day
+Lincoln Elementary
+Roosevelt Elementary
+Washington Elementary
+Rafer Johnson Junior High
+Central Valley Home
+Island Union Elementary school district with Island  Elementary school (Kings County)
+Kings River-Hardwick Union Elementary school  district with Kings River-Hardwick Elementary school (Kings County)
+Pioneer Union Elementary school district with  the following schools (Kings County)
+Frontier Elementary
+Pioneer Elementary
+Pioneer Middle
+Ackerman Charter school district with Bowman  Charter school (Placer County)
+Hickman Community Charter school district with  the following schools (Stanislaus County)
+Hickman Elementary
+Hickman Charter
+Hickman Middle
+Questions
+The  CDE’s Financial Accountability and Information Services section is available to  provide general information and answer questions about financial accountability  and school accounting. Questions about the specific data available in SACS Data  Viewer are best answered by the individual LEA or its oversight entity. Contact  information for each LEA can be found in the
+California School Directory
+web page.
+Questions:
+Financial Accountability & Information Services |
+sacsinfo@cde.ca.gov
+| 916-322-1770
+Last Reviewed: Thursday, October 23, 2025
+Trending in Financial
+Certificated Salaries & Benefits J-90
+Current Expense of Education & Per-pupil Spending
+SACS Data Viewer
+(this page)
+Current Expense of Education
+Annual Financial Data
+Financial
+Comparison of Per Pupil Spending Calculations
+More Trending Items
+Recently Posted in Financial
+SACS Readme File 2024â25
+(added 04-Feb-2026)
+This is a readme for the 2024â25 Standardized Account Code Structure (SACS) Unaudited Actual Financial Data.
+Alternative Form Data Readme File 2024â25
+(added 04-Feb-2026)
+This is a readme file for the 2024â25 Charter School Unaudited Actuals FinancialâAlternative Form Data.

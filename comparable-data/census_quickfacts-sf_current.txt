@@ -1,0 +1,304 @@
+Source: https://www.census.gov/quickfacts/sanfranciscocitycalifornia
+Saved: 2026-02-08 14:09
+================================================================================
+
+U.S. Census Bureau QuickFacts: San Francisco city, California
+Official websites use .gov
+A
+.gov
+website belongs to an official government
+organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock
+(
+Lock
+A locked padlock
+) or
+https://
+means you’ve safely connected to
+the .gov website. Share sensitive information only on official,
+secure websites.
+What's New & FAQs
+QuickFacts
+San Francisco city, California
+QuickFacts provides statistics for all states and counties. Also for cities and towns with a
+population of 5,000 or more
+.
+Table
+All Topics
+Population
+Age and Sex
+Race and Hispanic Origin
+Population Characteristics
+Housing
+Families & Living Arrangements
+Computer and Internet Use
+Education
+Health
+Economy
+Transportation
+Income & Poverty
+Businesses
+Geography
+San Francisco city, California
+Population estimates, July 1, 2025, (V2025)
+
+
+NA
+People
+Population
+Population estimates, July 1, 2025, (V2025)
+
+
+NA
+Population estimates, July 1, 2024, (V2024)
+
+
+827,526
+Population estimates base, April 1, 2020, (V2025)
+
+
+NA
+Population estimates base, April 1, 2020, (V2024)
+
+
+878,392
+Population, percent change - April 1, 2020 (estimates base) to July 1, 2025, (V2025)
+
+
+NA
+Population, percent change - April 1, 2020 (estimates base) to July 1, 2024, (V2024)
+
+
+-5.8%
+Population, Census, April 1, 2020
+873,965
+Population, Census, April 1, 2010
+805,235
+Age and Sex
+Persons under 5 years, percent
+
+
+4.1%
+Persons under 18 years, percent
+
+
+13.7%
+Persons 65 years and over, percent
+
+
+17.6%
+Female persons, percent
+
+
+48.7%
+Race and Hispanic Origin
+White alone, percent
+
+
+39.1%
+Black alone, percent
+(a)
+
+
+5.0%
+American Indian and Alaska Native alone, percent
+(a)
+
+
+0.7%
+Asian alone, percent
+(a)
+
+
+35.2%
+Native Hawaiian and Other Pacific Islander alone, percent
+(a)
+
+
+0.4%
+Two or More Races, percent
+
+
+11.9%
+Hispanic or Latino, percent
+(b)
+
+
+16.2%
+White alone, not Hispanic or Latino, percent
+
+
+36.8%
+Population Characteristics
+Veterans, 2020-2024
+18,046
+Foreign born persons, percent, 2020-2024
+34.0%
+Housing
+Housing Units, July 1, 2024, (V2024)
+X
+Owner-occupied housing unit rate, 2020-2024
+38.2%
+Median value of owner-occupied housing units, 2020-2024
+$1,394,500
+Median selected monthly owner costs - with a mortgage, 2020-2024
+$4,000+
+Median selected monthly owner costs - without a mortage, 2020-2024
+$1,020
+Median gross rent, 2020-2024
+$2,476
+Building Permits, 2024
+X
+Families & Living Arrangements
+Households, 2020-2024
+363,970
+Persons per household, 2020-2024
+2.21
+Living in the same house 1 year ago, percent of persons age 1 year+ , 2020-2024
+84.3%
+Language other than English spoken at home, percent of persons age 5 years+, 2020-2024
+43.6%
+Computer and Internet Use
+Households with a computer, percent, 2020-2024
+96.6%
+Households with a broadband Internet subscription, percent, 2020-2024
+93.0%
+Education
+High school graduate or higher, percent of persons age 25 years+, 2020-2024
+89.0%
+Bachelor's degree or higher, percent of persons age 25 years+, 2020-2024
+60.3%
+Health
+With a disability, under age 65 years, percent, 2020-2024
+7.0%
+Persons without health insurance, under age 65 years, percent
+
+
+3.8%
+Economy
+In civilian labor force, total, percent of population age 16 years+, 2020-2024
+69.6%
+In civilian labor force, female, percent of population age 16 years+, 2020-2024
+66.2%
+Total accommodation and food services sales, 2022 ($1,000)
+(c)
+8,135,982
+Total health care and social assistance receipts/revenue, 2022 ($1,000)
+(c)
+19,957,626
+Total transportation and warehousing receipts/revenue, 2022 ($1,000)
+(c)
+13,512,030
+Total retail sales, 2022 ($1,000)
+(c)
+29,527,659
+Total retail sales per capita, 2022
+(c)
+$36,554
+Transportation
+Mean travel time to work (minutes), workers age 16 years+, 2020-2024
+30.4
+Income & Poverty
+Median households income (in 2024 dollars), 2020-2024
+$140,970
+Per capita income in past 12 months (in 2024 dollars), 2020-2024
+$92,289
+Persons in poverty, percent
+
+
+11.2%
+Businesses
+Businesses
+Total employer establishments, 2023
+X
+Total employment, 2023
+X
+Total annual payroll, 2023 ($1,000)
+X
+Total employment, percent change, 2022-2023
+X
+Total nonemployer establishments, 2023
+X
+All employer firms, Reference year 2022
+27,859
+Men-owned employer firms, Reference year 2022
+6,387
+Women-owned employer firms, Reference year 2022
+16,253
+Minority-owned employer firms, Reference year 2022
+9,420
+Nonminority-owned employer firms, Reference year 2022
+15,256
+Veteran-owned employer firms, Reference year 2022
+S
+Nonveteran-owned employer firms, Reference year 2022
+24,392
+Geography
+Geography
+Population per square mile, 2020
+18,629.1
+Population per square mile, 2010
+17,179.2
+Land area in square miles, 2020
+46.91
+Land area in square miles, 2010
+46.87
+FIPS Code
+0667000
+About datasets used in this table
+Value Notes
+
+
+Methodology differences may exist between data sources, and so estimates from different sources are not comparable.
+Some estimates presented here come from sample data, and thus have sampling errors that may render some apparent differences between geographies statistically
+indistinguishable. Click the Quick Info
+
+icon to the left of each row in TABLE view to learn about sampling error.
+The vintage year (e.g., V2025) refers to the final year of the series (2020 thru 2025). Different vintage years of estimates are not comparable.
+Users should exercise caution when comparing 2020-2024 ACS 5-year estimates to other ACS estimates. For more information, please visit
+the
+2024 5-year ACS Comparison Guidance
+page.
+Fact Notes
+(a)
+Includes persons reporting only one race
+(b)
+Hispanics may be of any race, so also are included in applicable race categories
+(c)
+Economic Census - Puerto Rico data are not comparable to U.S. Economic Census data
+Value Flags
+D
+Suppressed to avoid disclosure of confidential information
+F
+Fewer than 25 firms
+FN
+Footnote on this item in place of data
+NA
+Not available
+S
+Suppressed; does not meet publication standards
+X
+Not applicable
+Z
+Value greater than zero but less than half unit of measure shown
+-
+Either no or too few sample observations were available to compute an estimate, or a ratio of medians cannot be calculated because one or both of the median estimates falls in the lowest or upper interval of an open ended distribution.
+N
+Data for this geographic area cannot be displayed because the number of sample cases is too small.
+QuickFacts data are derived from: Population Estimates, American Community Survey, Census of Population and Housing, Current Population Survey, Small Area Health Insurance Estimates, Small Area Income and Poverty Estimates, State and County Housing Unit Estimates, County Business Patterns, Nonemployer Statistics, Economic Census, Survey of Business Owners, Building Permits.
+✕
+Is this page helpful?
+Yes
+No
+
+Thank you for your feedback.
+Comments or suggestions?
+
+Comments or suggestions?
+255 characters maximum
+⚠
+255 characters maximum reached
+NO THANKS
+SUBMIT

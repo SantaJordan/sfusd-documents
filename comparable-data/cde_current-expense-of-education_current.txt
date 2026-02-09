@@ -1,0 +1,316 @@
+Source: https://www.cde.ca.gov/ds/fd/ec/currentexpense.asp
+Saved: 2026-02-08 14:10
+================================================================================
+
+Current Expense of Education - Current Expense of Education & Per-pupil Spending (CA Dept of Education)
+Skip to main content
+California Department of Education
+Search
+Navigation Menu
+California Department of Education
+CA Dept of Education
+Search Site
+Search
+Teaching & Learning
+Teaching & Learning Home
+Becoming an Educator
+Become a Teacher
+California Literacy
+Career Technical Education
+Business & Marketing
+Health Careers Education
+Industrial & Technology Education
+Perkins
+ROCP
+Standards & Framework
+Work Experience Education (WEE)
+Curriculum and Instruction Resources
+Common Core State Standards
+Curriculum Frameworks & Instructional Materials
+Distance Learning
+Driver Education
+Multi-Tiered System of Supports
+Recommended Literature
+School Libraries
+Service-Learning
+Specialized Media
+Grade Spans
+Early Education
+P-3 Alignment
+Elementary
+Middle Grades
+High School
+Postsecondary
+Adult Education
+Professional Learning
+Administrators
+Curriculum Areas
+Professional Standards
+Quality Schooling Framework
+Social and Emotional Learning
+Subject Areas
+Computer Science
+English Language Arts
+Health
+History-Social Science
+Mathematics
+Physical Education
+Science
+Visual & Performing Arts
+World Languages
+Testing & Accountability
+Testing & Accountability Home
+Accountability
+California School Dashboard and System of Support
+Dashboard Alternative School Status (DASS)
+Local Educational Agency Accountability Report Card
+School Accountability Report Card (SARC)
+State Accountability Report Card
+Compliance Monitoring
+District & School Interventions
+Awards and Recognition
+Academic Achievement Awards
+California Distinguished Schools Program
+California Teachers of the Year
+Classified School Employees of the Year
+California Gold Ribbon Schools
+Testing
+Assessment Information
+CA Assessment of Student Performance and Progress (CAASPP)
+CA Proficiency Program (CPP)
+English Language Proficiency Assessments for CA (ELPAC)
+Grade Two Diagnostic Assessment
+High School Equivalency (HSE) Tests
+National Assessment of Educational Progress (NAEP)
+Physical Fitness Testing (PFT)
+Smarter Balanced Assessment System
+Finance & Grants
+Finance & Grants Home
+Accounting
+Definitions, Instructions, & Procedures
+Indirect Cost Rates (ICR)
+Standardized Account Code Structure (SACS)
+Allocations & Apportionments
+Categorical Programs
+Early Education
+Consolidated Application
+Federal Cash Management
+Local Control Funding Formula
+Principal Apportionment
+Funding
+Available Funding
+Funding Results
+Projected Funding
+Search CDE Funding
+Funding Tools & Materials
+Finance & Grants Other Topics
+Auditing
+Fiscal Oversight
+Reports
+Software & Forms
+Data & Statistics
+Data & Statistics Home
+Accessing Educational Data
+About CDE's Education Data
+About DataQuest
+Data Reports by Topic
+Downloadable Data Files
+Data Collections
+California Basic Educational Data System (CBEDS)
+California Longitudinal Pupil Achievement Data System (CALPADS)
+Consolidated Application and Reporting System (CARS)
+Cradle-to-Career Data System
+Financial
+Annual Financial Data
+Certificated Salaries & Benefits
+Current Expense of Education & Per-pupil Spending
+Indirect Cost Rates (ICR)
+Data Strategy
+Data Privacy
+Student Health & Support
+Free and Reduced Price Meal Eligibility Data
+Food Programs
+Data Requests
+School & District Information
+California School Directory
+Charter School Locator
+County-District-School Administration
+Private School Data
+Public Schools and District Data Files
+Regional Occupational Centers & Programs
+School Performance
+California School Dashboard and System of Support
+Postsecondary Preparation
+Specialized Programs
+Specialized Programs Home
+Adult Education
+Directory of Schools
+Federal Grants Administration
+Charter Schools
+Early Education
+Contractor Information
+Laws, Regulations, & Requirements
+Program Overview
+Resources
+Educational Options
+Independent Study
+Open Enrollment
+Multilingual Learners
+Title III
+Special Education
+Administration & Support
+Announcements & Current Issues
+Data Collection & Reporting
+Family Involvement & Partnerships
+Laws, Regulations, & Requirements
+Quality Assurance Process
+Services & Resources
+Title I
+CA Equity Performance and Improvement Program
+Improving Academic Achievement
+Schoolwide Programs
+Statewide System of School Support (S4)
+Specialized Programs Other Topics
+American Indian
+Gifted & Talented Education
+Homeless Education
+Migrant/International
+Private Schools and Schooling at Home
+State Special Schools
+Learning Support
+Learning Support Home
+Attendance Improvement
+School Attendance Review Boards
+Truancy
+Expanded Learning
+21st Century Community Learning Centers
+After School Education & Safety Program
+Expanded Learning Opportunities Program
+Nutrition
+Child Nutrition Information & Payment System (CNIPS)
+Rates, Eligibility Scales, & Funding
+School Nutrition
+Parents/Family & Community
+Clearinghouse for Multilingual Documents
+School Disaster and Emergency Management
+Learning Support Other Topics
+Class Size Reduction
+Education Technology
+Educational Counseling
+Health
+Mental Health
+Safe Schools
+School Facilities
+Transportation
+Youth Development
+Home
+Data & Statistics
+Financial
+Current Expense of Education & Per-pupil Spending
+Current Expense of Education
+Calculation of current expense (cost) of education per average daily attendance (ADA) pursuant to
+Education Code
+Section 41372.
+Outlined below are the components of the Current Expense of Education per average daily attendance (ADA) calculation. Form number references are from unaudited actual expenditure reports and annual attendance reports submitted by school districts to the California Department of Education (CDE), definitions are from the
+California School Accounting Manual
+. Questions about the calculation should be directed to CDE's Office of Financial Accountability and Information Services by phone at 916-322-1770, or by email to
+sacsinfo@cde.ca.gov
+.
+Expenditures for Current Expense of Education
+The Standardized Account Code Structure (SACS) Form CEA, "Current Expense Formula/Minimum Classroom Compensation," includes the following General Fund items:
+Account Code
+Description
+1000
+Certificated Salaries
+2000
+Classified Salaries
+3000
+Employee Benefits*
+4000
+Books and Supplies
+6500
+Equipment Replacement
+5000 & 7300
+Services and Indirect Costs
+*Beginning in 2014–15, state payments to retirement systems on behalf of districts are included.
+From the total expenditures reported in the above accounts, costs for the following categories are deducted: (1) Non-agency activities; (2) Community Services; (3) Food Services; (4) Fringe Benefits for Retired Persons; and (5) Facilities Acquisition and Construction.
+The result is the total dollars for the Current Expense of Education (this equals EDP 365 on SACS Form CEA).
+Average Daily Attendance (ADA)
+Total ADA is  defined as the total days of student attendance divided by the total days of  instruction. The type of ADA used is annual district ADA (for the same year as  the expenditures) from CDE's "Attendance School District" and  "Attendance Charter School" reports and  includes ADA from  special education programs and applicable charter schools (i.e., those charter  schools with data in the district's Current Expense of Education calculation).  ADA credited to districts for the attendance  of pupils in county-operated programs is not included.
+Cost Per ADA
+By district, the adjusted expenditures are divided by the total ADA to arrive at the Current Expense (or Cost) of Education per ADA.
+2023–24 Current Cost of Education
+(XLSX)
+2022–23 Current Cost of Education
+(XLSX)
+2021–22 Current Cost of Education
+(XLSX)
+2020–21 Current Cost of Education
+(XLSX)
+2019–20 Current Cost of Education
+(XLSX)
+2018–19 Current Cost of Education
+(XLSX;
+Updated
+21-Aug-2020)
+2017–18 Current Cost of Education
+(XLSX)
+2016–17 Current Cost of Education
+(XLSX)
+2015–16 Current Cost of Education
+(XLS)
+2014–15 Current Cost of Education
+(XLS)
+2013–14 Current Cost of Education
+(XLS)
+2012–13 Current Cost of Education
+(XLS)
+2011–12 Current Cost of Education
+(XLS)
+2010–11 Current Cost of Education
+(XLS)
+2009–10 Current Cost of Education
+(XLS)
+2008–09 Current Cost of Education
+(XLS)
+2007–08 Current Cost of Education
+(XLS)
+2006–07 Current Cost of Education
+(XLS)
+2005–06 Current Cost of Education
+(XLS)
+2004–05 Current Cost of Education
+(XLS)
+2003–04 Current Cost of Education
+(XLS)
+2002–03 Current Cost of Education
+(XLS)
+2001–02 Current Cost of Education
+(XLS)
+2000–01 Current Cost of Education
+(XLS)
+1999–00 Current Cost of Education
+(XLS)
+1998–99 Current Cost of Education
+(XLS)
+Questions:
+Financial Accountability & Information Services |
+sacsinfo@cde.ca.gov
+Last Reviewed: Thursday, February 27, 2025
+Trending in Financial
+Certificated Salaries & Benefits J-90
+Current Expense of Education & Per-pupil Spending
+SACS Data Viewer
+Current Expense of Education
+(this page)
+Annual Financial Data
+Financial
+Comparison of Per Pupil Spending Calculations
+More Trending Items
+Recently Posted in Financial
+SACS Readme File 2024â25
+(added 04-Feb-2026)
+This is a readme for the 2024â25 Standardized Account Code Structure (SACS) Unaudited Actual Financial Data.
+Alternative Form Data Readme File 2024â25
+(added 04-Feb-2026)
+This is a readme file for the 2024â25 Charter School Unaudited Actuals FinancialâAlternative Form Data.

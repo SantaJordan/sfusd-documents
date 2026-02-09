@@ -1,0 +1,198 @@
+Source: https://growsf.org/news/2026-02-06-sfusd-strike-looms/
+Saved: 2026-02-08 13:39
+Description: GrowSF - Strike cost analysis ($7-10M/day)
+================================================================================
+
+back to all News
+Special Report: School Strike Facts
+February 06, 2026
+Featured
+A neutral third-party fact-finding report recommends 3% raises in each of the next two years and a temporary, parcel-tax-funded path to cover dependent health care—while warning that SFUSD’s finances are still precarious and that some union proposals don’t belong in a labor contract. The question now: can SFUSD and UESF compromise quickly enough to avoid a strike and keep schools open?
+The Facts
+“There is no dispute, the District is still in a precarious financial position.”
+That's the key finding in
+a new report
+from a neutral fact-finding panel. This report is the latest, legally-mandated step, in contract negotiations between the district and the union, and it's the first time a neutral third party has weighed in on the core economic issues at the heart of the dispute. We prepared an easy to read,
+plain-english explainer of the fact-finding report here
+.
+The report largely agrees with the district’s argument that it cannot afford the raises UESF asked for, and agreed with the District's proposals on a Special Education workload pilot, dependent health coverage, class size guidelines, and sanctuary city/housing legal protections. The report also explicitly calls out the union for voting to strike before the fact-finding process was even complete.
+In response, the United Educators of San Francisco teacher's union (UESF) announced that they are
+striking effective Monday, February 9th
+.
+UESF and SFUSD will keep negotiating over the weekend, and we hope they can reach a compromise that keeps schools open and stable for students and educators. But if they can't, then the strike will go forward as planned, and SFUSD will have to close schools and switch to remote learning for the duration of the strike.
+Each day of the strike will cost the district $7–$10 million in lost funding and extra pay for non-teaching staff (the District won't be paid for days when kids aren't learning and the non-union employees still get paid for the strike days and need to be paid for the
+extra
+days added on to the end of the school year), and it will throw students back into pandemic-style learning loss. According to the neutral fact-finding panel, the cost of a 1% raise for all educators is about $10 million per year, so each day of the strike picks away at the already slim margin for a deal that can be approved by the state and that avoids deficit spending.
+Here's what
+Cheryl A. Stevens
+, the neutral chair of the fact-finding commission, recommended and what it means for the looming strike threat:
+On the core economic issues:
+Wages:
+A 6% raise over two years: 3% raises effective July 1, 2025 and July 1, 2026.
+What UESF wants: 9% to 14% raises over three years
+What SFUSD offered:
+6% over three years
+(2% each year)
+Dependent health coverage:
+A temporary solution using existing parcel tax revenues to cover dependent health care costs, with a recommendation to revisit permanent coverage later.
+What UESF wants: Permanent district-paid dependent health coverage at Kaiser rates
+What SFUSD offered: District-paid dependent health coverage during the contract term only (contracts are good for two years)
+On non-wage issues, the panel recommends (or strongly signals):
+Special education workload:
+A pilot program instead of an immediate district-wide shift to a new workload model.
+What UESF wants: Immediate implementation of a new special education workload model
+What SFUSD offered: A pilot program to test the new workload model
+Class size:
+Maintain current contract language, as UESF provided insufficient evidence to justify changes.
+What UESF wants: Shift from class size
+goals
+to
+limits
+What SFUSD offered: Maintain current contract language
+Sanctuary/housing legal protections:
+Not appropriate for the collective bargaining agreement; recommend a joint resolution instead.
+What UESF wants: Sanctuary and housing protections in the contract
+What SFUSD offered: Joint policies (e.g. a resolution) on sanctuary and housing protection
+The neutral fact-finding panel found that the
+the union “has not met its burden of proof”
+that SFUSD has enough non-restricted resources to fund the union’s full proposal. The panel also states the union’s wage+benefits demand
+“far exceeds the statutory COLA
+[Cost of Living Adjustment]
+… and is simply not an option,”
+and that
+“a conservative approach would be in the best interest of the community.”
+The report concludes that "UESF has already voted in favor of striking
+[...]
+instead of working with the District on alternative approaches to securing the best possible contract within the limits of the District’s financial position." This echoes what we said last week: that
+UESF wasn't negotiating in good faith
+and had intended to strike all along due to influence from the statewide CTA which is
+coordinating strikes across 32 other school districts
+. This is further backed up by UESF breaking from norms and announcing their strike the morning after this report came out, with no time given to further negotiations with the district. The typical "cooling-off period" after a fact-finding report is 10
+days
+, not
+hours
+.
+Meanwhile SFUSD is preparing operationally: Superintendent Maria Su has warned that if schools close, SFUSD could lose
+$7–$10 million per day
+in funding, per SFUSD’s
+Feb. 3 negotiation update
+.
+How much money does SFUSD have in reserve?
+A key contention in this dispute is how much money SFUSD has available to fund raises and benefits. UESF argues that SFUSD has hundreds of millions of dollars in reserves, while SFUSD says it has about $100 million in reserves but that state oversight rules prevent the district from using one-time reserves to fund ongoing expenses like salaries and benefits.
+In short, SFUSD has fully allocated all of its existing money to cover ongoing expenses and projected deficits, and it cannot afford the union’s demands without creating new deficits that would be unsustainable under state oversight. The fact-finding panel agrees with this assessment.
+Here's the full story, using the
+FY25-26 budget
+and the
+1st Interim Report
+presentation from December 2025 as our source:
+At the Beginning of the 2024-25 school year, SFUSD had about $473M:
+$244M in restricted funds (not for ongoing expenses)
+$229M in unrestricted funds (available for ongoing expenses)
+But, of that $229M in unrestricted funds, some was already committed to specific purposes, including:
+$69M to "stabilization arrangements"
+$40M in their "Rainy Day Reserve"
+$28M in their "Reserve for Economic Uncertainty"
+After drawing down reserves to cover the 2024-25 deficit, and adding some one-time grants, SFUSD started the 2025-26 school year with about $428M:
+$207M in restricted funds
+$221M in unrestricted funds
+To bring clarity to what is available for ongoing obligations and what isn't, the District created a separate fund (called "Reserve Fund 17"). This fund holds about $111M, composed of:
+$40M in Rainy Day Reserve
+$22M in Budget Stabilization Reserve
+$49M from the unrestricted General Fund that is being held in reserve to meet the state-recommended two-months-of-payroll safety net target
+NOTE: The $28M in the "Reserve for Economic Uncertainty" is not included in Fund 17, but it is also not available for ongoing expenses. It's essentially a one-time reserve that can only be used in a fiscal emergency, and it would not be sustainable to use it to fund ongoing raises and benefits.
+So, subtracting
+~
+$111M in Fund 17 from the
+~
+$221M in unrestricted funds leaves
+just $109M in the unrestricted general fund
+.
+BUT:
+The projected budget for
+2025-26 shows a $51M deficit
+, 26-27 shows a $32M deficit, and 27-28 shows a $19.5M deficit.
+That would fully deplete the unrestricted general funds by 2027-28
+. To ensure the fund doesn't hit $0, SFUSD will draw down about $23M from Fund 17. This leaves the district just
+barely
+meeting the state-recommended two-months-of-payroll safety net target.
+So, in short: Some claim that SFUSD has $400+M in reserves to pay educators, but the reality is that only half is legally available for ongoing expenses, and all of that is already committed to bridging the projected budget deficits and providing an emergency safety net.
+We encourage you to read through
+SFUSD's "1st Interim Report" presentation from December 2025
+, which includes detailed financial information and projections. The key takeaway is that while SFUSD has some reserves, they are not sufficient to fund the union's demands without creating ongoing deficits, which would be unsustainable under state oversight.
+The Context
+Fact-finding isn’t “binding,” but it’s a big signal
+Fact-finding is a formal step in California’s public-school bargaining impasse process. The panel’s report is advisory—but it’s a reality check built around statutory criteria including the public interest, district finances, and compensation comparisons, laid out in
+Gov. Code 3548.2
+. Once issued, a fact-finding report must be made public within 10 days under
+Gov. Code 3548.3
+.
+For families, the key point is that the neutral chair is explicitly trying to propose a package that is both (1) politically acceptable enough to end a strike threat and (2) fiscally conservative enough to survive state scrutiny.
+Why “state scrutiny” dominates this dispute
+The fact-finding chair leans heavily on the district’s financial status and ongoing state oversight. SFUSD has been trying to climb out of fiscal distress and touts progress toward restoring local control in its
+Dec. 2025 milestone update
+. But the panel’s core practical warning is: even if SFUSD’s certification improves, the district can’t simply sign a deal that creates structural deficits and assume it’ll be fine.
+This is why the report repeatedly distinguishes between:
+One-time
+dollars vs.
+ongoing
+obligations (like permanent raises and permanent benefit guarantees), and
+Money that exists on paper vs. money that is
+restricted
+for specific programs.
+SFUSD’s internal financial materials show the same tension. Its
+FY 2025–26 interim report and multi-year projections
+show large starting balances that decline sharply, alongside separate reserves.
+Why a “temporary health care bridge” keeps coming up
+The chair’s dependent-health recommendation is essentially: get the benefit in place quickly, but don’t hardwire it into the base contract until there’s a stable, repeatable revenue stream to fund it.
+This isn't a satisfying approach for anyone (educators want permanent change, the district wants to avoid huge new costs), but the chair is trying to thread a needle: she’s trying to find a way to give educators some relief on a key issue without creating a deal that’s so expensive it can’t be approved by the state or that forces immediate deficit spending.
+The district’s proposal for dependent healthcare would largely be paid for by existing one-time funds, namely the QTEA parcel tax which expires in 2028. The district plans to seek renewal/expansion of that 20-year parcel tax from the voters in 2028, so dependent healthcare could continue uninterrupted. But because the funding for dependent healthcare is not guaranteed beyond 2028, the district can’t contract beyond then until the new tax is adopted
+The GrowSF Take
+The report is blunt about two truths San Francisco needs to hold at the same time:
+Educators need a better deal to keep schools staffed and stable.
+The chair explicitly recognizes the pressure of cost-of-living and says the district is entitled to raises that keep pace with COLA/CPI.
+A contract that can’t survive state scrutiny—or that forces immediate deficit spending—will backfire.
+The chair’s refrain is essentially: if the district signs something it can’t fund, everyone loses (students first).
+Our view:
+Stick with the 2% raise per year
+The chair's recommendation on wages is using some fuzzy math. They suggest turning the 6% over three years into 6% over two years by “front-loading” the raises. But they also (reasonably) predict that educators will seek a raise in that third year, but once state oversight is lifted SFUSD will have more flexibility to pay ongoing costs and presumably absorb future cost increases. We feel this is a set up for another round of contentious bargaining.
+Temporarily fund dependent health insurance, find a path to permanence
+Fully employer-paid dependent health insurance is quite a benefit, and we understand why UESF would want it. If there were a way to pay for it, we'd fully support it. But since the district can't currently afford it, then funding it temporarily via existing parcel tax revenue is reasonable, and both UESF and SFUSD should come back after the dust is settled to see how a permanent funding plan could be established. Whether that's via repurposing existing parcel taxes, new taxes, or something more creative.
+It's also worth mentioning that SFUSD is one of just a handful of districts that offer
+lifetime
+health benefits to retirees, even when those retirees qualify for medicare, and that’s a huge cost driver. SFUSD currently pays about $38 million per year in retiree health benefits, and that's expected to continue growing (the total projected cost of these lifetime benefits is a staggering $744 million (See
+FY25-26 Budget, page 123
+)).
+Commit to reducing reliance on outside consultants
+The fact-finding chair explicitly pushes SFUSD to reduce reliance on outside consultants and redirect dollars toward employees. We agree. Expertise should be developed in-house for any long-running commitments. We'd like to see this transition become measurable: publish baseline spend, publish quarterly progress, and tie it to staffing outcomes.
+Separate “values statements” from “negotiable contract obligations”
+Demands for legal protection do not belong in a labor contract. Legal benefits are typically provided as a
+benefit
+, and not as a
+right
+enforceable through the labor grievance procedures. What the union wants will put SFUSD in a difficult position of potentially being liable for legal risks that are outside its control. For example, if a UESF member is not able to access legal assistance in a timely manner, or if the legal assistance provided is inadequate, SFUSD could be on the hook for any resulting harm to the employee.
+This is a risk that SFUSD should not take on, and it’s not something that can be easily mitigated through contract language. This should be offered as a benefit that employees may buy in to, in the same way many major employers offer legal insurance as a voluntary benefit.
+The panel suggests that if SFUSD and UESF share values on protecting immigrant families, they put it in a joint resolution and operational policy—but not into their labor contract with obligations that create large, ambiguous liability.
+The real long-term fix is bigger than this contract
+SFUSD cannot bargain its way out of a structural mismatch between:
+enrollment decline
+too many under-enrolled campuses
+high fixed costs
+the Bay Area’s cost-of-living reality for educators
+A sustainable “teacher stability” strategy requires: (a) disciplined district budgeting, (b) fewer empty buildings draining resources (we're still waiting on a plan to close or repurpose under-enrolled buildings), and (c) more housing in San Francisco so educators can actually live here.
+The panel’s final point is the right one: it argues for
+“a compromise that can actually be fulfilled financially”
+and says that’s what’s best for everyone involved.
+Email SFUSD about the strike
+Your Name
+Years in SF
+Your Address
+Additional Context
+I am...
+My top priorities are...
+Generate Email
+To:
+Sign up for the GrowSF Report
+Our weekly roundup of news & Insights
+Our weekly newsletter is a roundup of news and insights from GrowSF. Sign up to stay informed about the latest developments in San Francisco politics and policy.
+Your email address
+Sign up

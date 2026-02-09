@@ -1,0 +1,184 @@
+Source: https://nces.ed.gov/ccd/districtsearch/district_detail.asp?ID2=0634410
+Saved: 2026-02-08 14:09
+================================================================================
+
+Search for Public School Districts - District Detail for
+Search
+for
+Public School Districts
+District Directory Information (2024-2025 School Year)
+Modify Search
+Data Notes/Grant IDs
+Help
+District Name:
+San Francisco Unified
+(Schools in this District)
+NCES District ID:
+0634410
+State District ID:
+CA-3868478
+Mailing Address:
+555 Franklin ST.
+San Francisco CA, 94102 –5207
+Physical Address:
+555 Franklin ST.
+San Francisco CA, 94102 –5207
+Phone:
+(415)241-6000
+Type:
+Regular local school district
+Status:
+Open
+Total Schools:
+113
+Supervisory Union #:
+N/A
+Grade Span:
+KG - 12
+KG
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+Website:
+http://www.sfusd.edu
+District Demographics:
+School District Demographic Dashboard
+District Details (2024-2025 school year; Fiscal data from 2021-2022)
+Characteristics
+Show Less
+County:
+San Francisco County
+County ID:
+06075
+Locale:
+City, Large (11)
+CSA/CBSA:
+41860
+Total Students:
+48,902
+Classroom Teachers (FTE):
+2,326.96
+Student/Teacher Ratio:
+21.02
+District Details (2024-2025 school year; Fiscal data from 2021-2022)
+Staff
+San Francisco Unified district has a staff count of
+4,392.28.
+Average Staff Comparison
+Teacher (FTE) Distribution
+Total:
+2,326.96
+Prekindergarten:
+†
+Kindergarten:
+213.75
+Elementary:
+1,334.21
+Secondary:
+779.00
+Ungraded:
+†
+Other Staff (FTE) Distribution
+Total:
+2,065.32
+Instructional Aides:
+866.01
+Instruc. Coordinators & Supervisors:
+40.19
+Total Guidance Counselors:
+85.16
+Elementary Guidance Counselors:
+24.49
+Secondary Guidance Counselors:
+48.21
+School Psychologists:
+38.55
+Librarians/Media Specialists:
+36.10
+Library/Media Support:
+0.00
+District Administrators:
+44.99
+District Administrative Support:
+0.00
+School Administrators:
+106.33
+School Administrative Support:
+159.15
+Student Support Services (w/o Psychology):
+165.27
+Other Support Services:
+523.57
+District Details (2024-2025 school year; Fiscal data from 2021-2022)
+Fiscal
+Amount
+Amount
+per Student
+Percent
+Total Revenue:
+$1,532,567,000
+$31,147
+Revenue by Source
+Federal:
+$183,203,000
+$3,723
+12%
+Local:
+$871,073,000
+$17,703
+57%
+State:
+$478,291,000
+$9,721
+31%
+Total Expenditures:
+$1,332,155,000
+$27,074
+Total Current Expenditures:
+$1,163,890,000
+$23,654
+Instructional Expenditures:
+$696,943,000
+$14,164
+60%
+Student and Staff Support:
+$197,653,000
+$4,017
+17%
+Administration:
+$139,471,000
+$2,835
+12%
+Operations, Food Service, other:
+$129,823,000
+$2,638
+11%
+Total Capital Outlay:
+$116,341,000
+$2,364
+Construction:
+$114,216,000
+$2,321
+Total Non El-Sec Education & Other:
+$334,000
+$7
+Interest on Debt:
+$40,959,000
+$832
+Note: Details do not add to totals due to rounding.
+Note: Fiscal data (including per pupil count used in this table) from 2021-2022.
+Source:
+CCD public school district data for the 2024-2025 school year
+Notes:
+[ † ] indicates that the data are not applicable.
+[ – ] indicates that the data are missing.
+[ ‡ ] indicates that the data do not meet NCES data quality standards.

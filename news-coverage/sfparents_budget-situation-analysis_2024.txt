@@ -1,0 +1,47 @@
+Source: https://sfparents.org/updates-on-the-current-sfusd-budget-situation/
+Saved: 2026-02-08 13:40
+Description: SF Parents - Budget situation analysis
+================================================================================
+
+There has been a lot of information, analysis, and commentary circulating about SFUSD’s budget. Given how complex district finances are, and how many moving pieces are involved, it is not surprising that different conclusions are being drawn. Below is another way of looking at the same budget history, grounded in standard school finance definitions and what has actually occurred over the past five fiscal years, with the goal of clearing up some of the confusion out there about SFUSD’s budget.
+1) Does SFUSD have a structural deficit or not?
+Recent conversations have raised question to whether SFUSD really has a structural deficit because it reports a fund balance, or reserve, of $429 million. Part of the blame for this mischaracterization rests on SFUSD itself, for putting up an inaccurate definition of “Structural Deficit” on its budget definitions page (
+link
+):
+“Structural Deficit: When a school district repeatedly spends more than it receives each year.
+A structural deficit in a school district budget occurs when recurring long-term operating expenses (like salaries, benefits, contractual obligations like retiree compensation, and special education program costs) consistently exceed expected recurring operating revenues (like LCFF revenue).
+A structural deficit reflects a fundamental, ongoing imbalance rather than a temporary, one-time funding gap triggered due to a recession or other economic shock. A structural deficit persists even during times of economic growth.
+A structural deficit is seen when a district relies on one-time revenues or savings to pay for regular operating costs, which is not financially sustainable.
+By this definition, SFUSD
+does
+have a structural deficit. To correct a structural deficit, SFUSD must eventually reduce recurring ongoing operating costs or find new, permanent revenue sources, because savings and one-time funds will eventually run out.
+But let’s also look more closely at the $429 million fund balance identified.
+This amount summarizes multiple budget components, the majority of which are non-spendable, restricted, committed, or assigned. Of the fund balance, less than a quarter of it, $102 million is unassigned.
+Source: FY 2024-25 Audit Report (
+https://drive.google.com/file/d/1g4tfoa_aZiegDqk8tZorfDq6Nh7p4ik8/view
+)
+2) Since past SFUSD budget projections have not matched year-end outcomes, shouldn’t we just ignore their projections entirely?
+Another question we hear from the community is about SFUSD’s history of unreliable budget projections, and how we should take that into account when considering how reliable their current budgeting might be.
+To this we say, two things can be true at the same time: The district can be bad at budget projections, while still facing a seriously troublesome financial condition.
+Some recent budget history
+: FY 2020–21 through FY 2024–25 were exceptionally volatile years. The COVID pandemic, enrollment declines, worsening student mental health, and increased chronic absenteeism created uncertainty across nearly all California school districts. Budget projections during this period were made with incomplete information and shifting assumptions.
+Second, budget projections are not static predictions of what will inevitably happen. They are early indicators of risk that are meant to prompt corrective action. When projected deficits appear, districts are expected to take steps to reduce spending, secure additional funding, or both, in order to maintain fiscal solvency.
+In SFUSD’s case, projected deficits were followed by actions that materially changed outcomes:
+The projected FY 2020–21 deficit led to $22 million in central office reductions, reallocations to PEEF-SLAM, cost avoidances, and one-time City funding. CDE fiscal experts were placed on-site.
+The projected FY 2021–22 deficit was addressed through $140 million in federal ESSER funds and a $40 million state AB 86 grant.
+The projected FY 2022–23 deficit was addressed through higher-than-expected LCFF funding under a hold-harmless approach, a $90 million reduction in central services, zero-based budgeting, and a hiring freeze.
+The projected FY 2023–24 deficit did not account for later salary increases of $9,000 per teacher and an additional 5 percent raise in 2024–25. Positions were eliminated, remaining ESSER funds were used, the Resource Alignment Initiative began, and CDE downgraded SFUSD’s fiscal certification to Negative, granting fiscal advisors stay-and-rescind authority.
+The projected FY 2024–25 deficit was addressed through an early retirement program and cuts required under the Financial Stabilization Plan.
+In these examples, the swings between projected deficits and year-end results mostly came from short-term fixes, such as delayed spending, outside intervention, or one-time funds, rather than because SFUSD suddenly had more ongoing revenue than ongoing costs. In other words, the district has been relying on temporary solutions to manage the same underlying budget problem. When those fixes run out, the problem returns and schools face another round of disruption. That is why past budget “misses” do not mean current deficit warnings should be ignored. They underscore the importance of better forecasting, clearer transparency, and earlier action to protect students and schools.
+What we can all agree on
+Across the many questions and concerns we see coming up about SFUSD’s budget, there are important areas of agreement that are widely recognized:
+First, SFUSD has struggled with position control and core financial systems.
+The failure of EMPowerSF and ongoing issues with RedRover and Frontline have undermined budgeting accuracy, financial projections, timely reconciliation of budgeted versus actual staffing, and OPEB calculations. With new leadership in the business operations department, there is both an opportunity and an expectation for meaningful improvement in these foundational systems.
+Second, oversight of financial operations has been insufficient.
+Weak internal controls and limited board-level financial oversight have contributed to instability and reactive decision-making. The arrival of a new CFO presents a critical opportunity to strengthen financial governance, improve transparency, and restore confidence in the district’s fiscal management.
+It is critical for SFUSD to address these challenges. Improving systems, controls, and oversight is the clearest path to more reliable budgeting, fewer disruptive midyear changes. Increased trust, respect, and transparency with the community will need to be strengthen so we can believe that SFUSD is properly managing its resources.
+Author: Debby Lu, Education Policy Consultant for SF Parents
+Tags:
+budget
+0
+Likes

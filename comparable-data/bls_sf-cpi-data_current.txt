@@ -1,0 +1,658 @@
+Source: https://www.bls.gov/regions/west/news-release/consumerpriceindex_sanfrancisco.htm
+Saved: 2026-02-08 13:38
+Description: BLS SF CPI Data
+================================================================================
+
+Western Information Office
+SHARE ON:
+Search Western Region
+Bureau of Labor Statistics
+>
+Geographic Information
+>
+Western
+>
+News Release
+News Release Information
+26-79-SAN
+Tuesday, January 13, 2026
+Contacts
+Technical information:
+(415) 625-2270
+BLSinfoSF@bls.gov
+www.bls.gov/regions/west
+Media contact:
+(415) 625-2270
+Related Links
+CPI historical databases
+Consumer Price Index, San Francisco Area â December 2025
+Area prices were up 3.0 percent over the year in December
+The Consumer Price Index for All Urban Consumers (CPI-U) for San Francisco-Oakland-Hayward increased 3.0 percent  for the 12 months ending in December, the U.S. Bureau of Labor Statistics (BLS) reported today. Regional Commissioner Chris Rosenlund noted that the index for all items less food and energy rose 3.0 percent over the year. The food index increased 4.3 percent, while the energy index decreased 0.2 percent.
+BLS did not collect survey data for October 2025 due to a lapse in appropriations. BLS is unable to retroactively collect these data. For a few indexes, BLS uses nonsurvey data sources instead of survey data to make the index calculations. BLS was able to retroactively acquire most of the nonsurvey data for October. Accordingly, all analysis in this release is over the year and not seasonally adjusted.
+View Chart Data
+Chart 1. Over-the-year percent change in CPI-U, San Francisco-Oakland-Hayward, CA, December 2022–December 2025
+Month
+All items
+All items less food and energy
+Dec 2022
+4.9
+4.0
+Feb 2023
+5.3
+4.6
+Apr 2023
+4.2
+4.7
+Jun 2023
+2.9
+3.9
+Aug 2023
+3.4
+3.6
+Oct 2023
+2.8
+3.1
+Dec 2023
+2.6
+2.5
+Feb 2024
+2.4
+2.2
+Apr 2024
+3.8
+3.1
+Jun 2024
+3.2
+2.9
+Aug 2024
+2.7
+2.9
+Oct 2024
+2.4
+2.7
+Dec 2024
+2.4
+2.5
+Feb 2025
+2.7
+3.1
+Apr 2025
+1.3
+1.6
+Jun 2025
+1.5
+1.6
+Aug 2025
+2.5
+2.4
+Oct 2025
+-
+-
+Dec 2025
+3.0
+3.0
+Food
+Food prices advanced 4.3 percent over the year. Prices for food at home (grocery store purchases) increased 5.7 percent, and prices for food away from home (restaurant, cafeteria, and vending purchases) rose 2.9 percent for same period.
+Energy
+The energy index declined 0.2 percent from December 2024 to December 2025. Gasoline prices decreased 1.0 percent.
+All items less food and energy
+The index for all items less food and energy advanced 3.0 percent over the year. Among the index’s components, prices were higher for household furnishings and operations (+6.3 percent) and shelter (+1.7 percent).
+Table A. San Francisco-Oakland-Hayward, CA, CPI-U 2-month and 12-month percent changes, all items index, not seasonally adjusted
+Month
+2021
+2022
+2023
+2024
+2025
+2-month
+12-month
+2-month
+12-month
+2-month
+12-month
+2-month
+12-month
+2-month
+12-month
+February
+0.5
+1.6
+1.4
+5.2
+1.8
+5.3
+1.5
+2.4
+1.8
+2.7
+April
+1.7
+3.8
+1.5
+5.0
+0.4
+4.2
+1.8
+3.8
+0.4
+1.3
+June
+0.0
+3.2
+1.7
+6.8
+0.5
+2.9
+-0.1
+3.2
+0.2
+1.5
+August
+0.5
+3.7
+-0.5
+5.7
+0.0
+3.4
+-0.5
+2.7
+0.4
+2.5
+October
+0.7
+3.8
+1.0
+6.0
+0.3
+2.8
+0.0
+2.4
+-
+-
+December
+0.8
+4.2
+-0.3
+4.9
+-0.4
+2.6
+-0.4
+2.4
+-
+3.0
+Note: The October 2025 data values are not available due to the 2025 lapse in appropriations.
+Federal Government Shutdown
+BLS did not collect survey data for October 2025 due to a lapse in appropriations. BLS was unable to retroactively collect these data. For a few indexes, BLS uses nonsurvey data sources instead of survey data to make the index calculations. BLS was able to retroactively acquire most of the nonsurvey data for October. CPI data collection resumed on November 14, 2025.
+Additional information about the
+impact of the shutdown on CPI data
+is available online.
+Changes to health insurance index
+With the release of November 2025 data on December 18, 2025, the Bureau of Labor Statistics (BLS) removed long-term care (LTC) insurance from the health insurance index. There have been changes in the market for LTC insurance that now make it out of scope and ineligible for pricing in the CPI market basket.
+The February 2026 Consumer Price Index for the San Francisco area is scheduled to be released on March 11, 2026.
+Technical Note
+The
+Consumer Price Index
+(CPI) is a measure of the average change in prices over time in a fixed market basket of goods and services. The Consumer Price Index for San Francisco is published bi-monthly. The set of components and sub-aggregates published for regional and metropolitan indexes is more limited than at the U.S. city average level; these indexes are byproducts of the national CPI program. Each local index has a much smaller sample size than the national or regional indexes and is, therefore, subject to substantially more sampling and other measurement error. As a result, local-area indexes are more volatile than the national or regional indexes. In addition, local indexes are not adjusted for seasonal influences.
+NOTE: Area indexes do not measure differences in the level of prices between cities; they only measure the average change in prices for each area since the base period.
+A full all-items data series history for the original index value and for 1-month, 2-month, 3-month, 6-month, and 12-month percent changes can be accessed via BLS data query tools. A direct link to the all-items series is provided in Table 1 of this release under historical data.
+The San Francisco-Oakland-Hayward, CA. metropolitan area covered in this release is comprised of Alameda, Contra Costa, Marin, San Francisco, San Mateo Counties in the State of California.
+Refer to the national
+CPI news release technical note
+or the
+Handbook of Methods
+for more information.
+Information in this release will be made available to individuals with sensory impairments upon request. Voice phone: (202) 691-5200; Telecommunications Relay Service: 7-1-1.
+Table 1. San Francisco-Oakland-Hayward, CA, CPI-U by expenditure category for December 2025, not seasonally adjusted (1982-84=100 unless otherwise noted)
+Expenditure category
+Indexes
+Percent change from -
+Historical
+data
+Oct.
+2025
+Nov.
+2025
+Dec.
+2025
+Dec.
+2024
+Oct.
+2025
+Nov.
+2025
+All Items
+-
+-
+358.568
+3.0
+-
+-
+All items (1967=100)
+-
+-
+1,102.336
+Food and beverages
+-
+-
+387.302
+4.3
+-
+-
+Food
+-
+-
+390.239
+4.3
+-
+-
+Food at home
+-
+335.863
+348.464
+5.7
+-
+3.8
+Cereals and bakery products
+-
+336.183
+341.405
+1.5
+-
+1.6
+Meats, poultry, fish, and eggs
+-
+352.718
+348.208
+-5.1
+-
+-1.3
+Dairy and related products
+-
+333.803
+332.475
+2.0
+-
+-0.4
+Fruits and vegetables
+-
+430.266
+431.707
+2.0
+-
+0.3
+Nonalcoholic beverages and beverage materials
+(
+1
+)
+-
+239.352
+233.625
+1.2
+-
+-2.4
+Other food at home
+-
+305.669
+345.463
+20.3
+-
+13.0
+Food away from home
+-
+-
+444.093
+2.9
+-
+-
+Alcoholic beverages
+-
+-
+352.815
+2.6
+-
+-
+Housing
+-
+-
+414.107
+2.2
+-
+-
+Shelter
+-
+456.670
+458.100
+1.7
+-
+0.3
+Rent of primary residence
+-
+522.026
+524.777
+1.7
+-
+0.5
+Owners' equiv. rent of residences
+(
+2
+)
+-
+493.794
+495.633
+1.9
+-
+0.4
+Owners' equiv. rent of primary residence
+(
+2
+)
+-
+493.794
+495.633
+1.9
+-
+0.4
+Household furnishings and operations
+-
+-
+182.004
+6.3
+-
+-
+Apparel
+-
+-
+121.374
+-0.1
+-
+-
+Transportation
+-
+-
+265.573
+4.5
+-
+-
+Private transportation
+-
+-
+262.821
+3.0
+-
+-
+New and used motor vehicles
+(
+3
+)
+-
+-
+119.066
+-0.3
+-
+-
+New vehicles
+(
+1
+)
+192.761
+-
+192.164
+0.4
+-0.3
+-
+Used cars and trucks
+(
+1
+)
+338.554
+-
+331.608
+1.2
+-2.1
+-
+Motor fuel
+-
+329.945
+313.472
+-0.7
+-
+-5.0
+Gasoline (all types)
+333.991
+327.267
+310.712
+-1.0
+-7.0
+-5.1
+Unleaded regular
+(
+4
+)
+333.141
+326.247
+309.351
+-1.0
+-7.1
+-5.2
+Unleaded midgrade
+(
+4
+)(
+5
+)
+312.623
+306.432
+291.889
+-0.9
+-6.6
+-4.7
+Unleaded premium
+(
+4
+)
+319.756
+313.972
+299.406
+-0.7
+-6.4
+-4.6
+Medical Care
+-
+-
+608.020
+2.5
+-
+-
+Recreation
+(
+3
+)
+-
+-
+155.962
+4.9
+-
+-
+Education and communication
+(
+3
+)
+-
+-
+168.375
+3.1
+-
+-
+Tuition, other school fees, and child care
+(
+1
+)
+-
+-
+2,120.215
+4.3
+-
+-
+Other goods and services
+-
+-
+653.067
+5.4
+-
+-
+Footnotes
+(1) Index is on a December 1977=100 base.
+(2) Index is on a December 1982=100 base.
+(3) Indexes on a December 1997=100 base.
+(4) Special index based on a substantially smaller sample.
+(5) Indexes on a December 1993=100 base.
+- Data not available.
+Note: Index applies to a month as a whole, not to any specific date. Data not seasonally adjusted.
+Note: October 2025 data values are not available due to the 2025 lapse in appropriations.
+Table 2. San Francisco-Oakland-Hayward, CA, CPI-U by special aggregate index for December 2025, not seasonally adjusted (1982-84=100 unless otherwise noted)
+Special aggregate index
+Indexes
+Percent change from -
+Historical
+data
+Oct.
+2025
+Nov.
+2025
+Dec.
+2025
+Dec.
+2024
+Oct.
+2025
+Nov.
+2025
+All items
+-
+-
+358.568
+3.0
+-
+-
+Food
+-
+-
+390.239
+4.3
+-
+-
+Energy
+-
+435.812
+428.035
+-0.2
+-
+-1.8
+All items less food and energy
+-
+-
+355.664
+3.0
+-
+-
+All items less energy
+-
+-
+359.459
+3.2
+-
+-
+All items less medical care
+-
+-
+348.212
+3.1
+-
+-
+All items less shelter
+-
+-
+320.125
+4.0
+-
+-
+Commodities
+-
+-
+237.857
+3.0
+-
+-
+Commodities less food
+-
+-
+171.061
+2.0
+-
+-
+Commodities less food & beverages
+-
+-
+163.208
+2.0
+-
+-
+Durables
+-
+-
+115.145
+2.5
+-
+-
+Nondurables
+-
+-
+301.519
+3.2
+-
+-
+Nondurables less food & beverages
+-
+-
+213.063
+1.4
+-
+-
+Nondurables less food
+-
+-
+223.471
+1.5
+-
+-
+Services
+-
+-
+460.528
+3.1
+-
+-
+Services less rent of shelter
+(
+1
+)
+-
+-
+492.789
+5.0
+-
+-
+Services less medical care services
+-
+-
+449.325
+3.1
+-
+-
+Footnotes
+(1) Indexes on a December 1982=100 base.
+- Data not available.
+Note: Index applies to a month as a whole, not to any specific date.
+Note: October 2025 data values are not available due to the 2025 lapse in appropriations.
+Last Modified Date:
+Tuesday, January 13, 2026

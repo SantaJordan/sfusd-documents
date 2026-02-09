@@ -1,0 +1,2359 @@
+﻿Ccode,Dcode,Scode,EntityName
+99,00000,0000000,California Department of Education
+00,00000,0000000,State Board of Education
+01,10017,0000000,Alameda County Office of Education
+02,10025,0000000,Alpine County Office of Education
+03,10033,0000000,Amador County Office of Education
+04,10041,0000000,Butte County Office of Education
+05,10058,0000000,Calaveras County Office of Education
+06,10066,0000000,Colusa County Office of Education
+07,10074,0000000,Contra Costa County Office of Education
+08,10082,0000000,Del Norte County Office of Education
+09,10090,0000000,El Dorado County Office of Education
+10,10108,0000000,Fresno County Office of Education
+11,10116,0000000,Glenn County Office of Education
+12,10124,0000000,Humboldt County Office of Education
+13,10132,0000000,Imperial County Office of Education
+14,10140,0000000,Inyo County Office of Education
+15,10157,0000000,Kern County Office of Education
+16,10165,0000000,Kings County Office of Education
+17,10173,0000000,Lake County Office of Education
+18,10181,0000000,Lassen County Office of Education
+19,10199,0000000,Los Angeles County Office of Education
+20,10207,0000000,Madera County Superintendent of Schools
+21,10215,0000000,Marin County Office of Education
+22,10223,0000000,Mariposa County Office of Education
+23,10231,0000000,Mendocino County Office of Education
+24,10249,0000000,Merced County Office of Education
+25,10256,0000000,Modoc County Office of Education
+26,10264,0000000,Mono County Office of Education
+27,10272,0000000,Monterey County Office of Education
+28,10280,0000000,Napa County Office of Education
+29,10298,0000000,Nevada County Office of Education
+30,10306,0000000,Orange County Department of Education
+31,10314,0000000,Placer County Office of Education
+32,10322,0000000,Plumas County Office of Education
+33,10330,0000000,Riverside County Office of Education
+34,10348,0000000,Sacramento County Office of Education
+35,10355,0000000,San Benito County Office of Education
+36,10363,0000000,San Bernardino County Office of Education
+37,10371,0000000,San Diego County Office of Education
+38,10389,0000000,San Francisco County Office of Education
+39,10397,0000000,San Joaquin County Office of Education
+40,10405,0000000,San Luis Obispo County Office of Education
+41,10413,0000000,San Mateo County Office of Education
+42,10421,0000000,Santa Barbara County Office of Education
+43,10439,0000000,Santa Clara County Office of Education
+44,10447,0000000,Santa Cruz County Office of Education
+45,10454,0000000,Shasta County Office of Education
+46,10462,0000000,Sierra County Office of Education
+47,10470,0000000,Siskiyou County Office of Education
+48,10488,0000000,Solano County Office of Education
+49,10496,0000000,Sonoma County Office of Education
+50,10504,0000000,Stanislaus County Office of Education
+51,10512,0000000,Sutter County Office of Education
+52,10520,0000000,Tehama County Department of Education
+53,10538,0000000,Trinity County Office of Education
+54,10546,0000000,Tulare County Office of Education
+55,10553,0000000,Tuolumne County Superintendent of Schools
+56,10561,0000000,Ventura County Office of Education
+57,10579,0000000,Yolo County Office of Education
+58,10587,0000000,Yuba County Office of Education
+01,61119,0000000,Alameda Unified
+01,61127,0000000,Albany City Unified
+01,61143,0000000,Berkeley Unified
+01,61150,0000000,Castro Valley Unified
+01,61168,0000000,Emery Unified
+01,61176,0000000,Fremont Unified
+01,61192,0000000,Hayward Unified
+01,61200,0000000,Livermore Valley Joint Unified
+01,61218,0000000,Mountain House Elementary
+01,61234,0000000,Newark Unified
+01,61242,0000000,New Haven Unified
+01,61259,0000000,Oakland Unified
+01,61275,0000000,Piedmont City Unified
+01,61291,0000000,San Leandro Unified
+01,61309,0000000,San Lorenzo Unified
+01,75093,0000000,Dublin Unified
+01,75101,0000000,Pleasanton Unified
+01,75119,0000000,Sunol Glen Unified
+01,77180,0000000,SBE - Latitude 37.8 High
+02,61333,0000000,Alpine County Unified
+03,73981,0000000,Amador County Unified
+04,61382,0000000,Bangor Union Elementary
+04,61408,0000000,Biggs Unified
+04,61424,0000000,Chico Unified
+04,61432,0000000,Durham Unified
+04,61457,0000000,Golden Feather Union Elementary
+04,61499,0000000,Manzanita Elementary
+04,61507,0000000,Oroville City Elementary
+04,61515,0000000,Oroville Union High
+04,61523,0000000,Palermo Union Elementary
+04,61531,0000000,Paradise Unified
+04,61549,0000000,Thermalito Union Elementary
+04,73379,0000000,Pioneer Union Elementary
+04,75507,0000000,Gridley Unified
+05,61556,0000000,Bret Harte Union High
+05,61564,0000000,Calaveras Unified
+05,61572,0000000,Mark Twain Union Elementary
+05,61580,0000000,Vallecito Union Elementary
+06,61598,0000000,Colusa Unified
+06,61606,0000000,Maxwell Unified
+06,61614,0000000,Pierce Joint Unified
+06,61622,0000000,Williams Unified
+07,61630,0000000,Acalanes Union High
+07,61648,0000000,Antioch Unified
+07,61655,0000000,Brentwood Union Elementary
+07,61663,0000000,Byron Union Elementary
+07,61671,0000000,Canyon Elementary
+07,61697,0000000,John Swett Unified
+07,61705,0000000,Knightsen Elementary
+07,61713,0000000,Lafayette Elementary
+07,61721,0000000,Liberty Union High
+07,61739,0000000,Martinez Unified
+07,61747,0000000,Moraga Elementary
+07,61754,0000000,Mt. Diablo Unified
+07,61762,0000000,Oakley Union Elementary
+07,61770,0000000,Orinda Union Elementary
+07,61788,0000000,Pittsburg Unified
+07,61796,0000000,West Contra Costa Unified
+07,61804,0000000,San Ramon Valley Unified
+07,61812,0000000,Walnut Creek Elementary
+07,77354,0000000,SBE - John Henry High
+08,61820,0000000,Del Norte County Unified
+09,61838,0000000,Buckeye Union Elementary
+09,61846,0000000,Camino Union Elementary
+09,61853,0000000,El Dorado Union High
+09,61879,0000000,Gold Oak Union Elementary
+09,61887,0000000,Gold Trail Union Elementary
+09,61895,0000000,Indian Diggings Elementary
+09,61903,0000000,Lake Tahoe Unified
+09,61911,0000000,Latrobe Elementary
+09,61929,0000000,Mother Lode Union Elementary
+09,61945,0000000,Pioneer Union Elementary
+09,61952,0000000,Placerville Union Elementary
+09,61960,0000000,Pollock Pines Elementary
+09,61978,0000000,Rescue Union Elementary
+09,61986,0000000,Silver Fork Elementary
+09,73783,0000000,Black Oak Mine Unified
+10,61994,0000000,Alvina Elementary
+10,62026,0000000,Big Creek Elementary
+10,62042,0000000,Burrel Union Elementary
+10,62109,0000000,Clay Joint Elementary
+10,62117,0000000,Clovis Unified
+10,62125,0000000,Coalinga-Huron Unified
+10,62158,0000000,Fowler Unified
+10,62166,0000000,Fresno Unified
+10,62240,0000000,Kingsburg Elementary Charter
+10,62257,0000000,Kingsburg Joint Union High
+10,62265,0000000,Kings Canyon Joint Unified
+10,62281,0000000,Laton Joint Unified
+10,62323,0000000,Monroe Elementary (Lapsed 7/1/2024)
+10,62331,0000000,Orange Center Elementary
+10,62356,0000000,Pacific Union Elementary
+10,62364,0000000,Parlier Unified
+10,62372,0000000,Pine Ridge Elementary
+10,62380,0000000,Raisin City Elementary
+10,62414,0000000,Sanger Unified
+10,62430,0000000,Selma Unified
+10,62513,0000000,Washington Colony Elementary
+10,62539,0000000,West Park Elementary
+10,62547,0000000,Westside Elementary
+10,73809,0000000,Firebaugh-Las Deltas Unified
+10,73965,0000000,Central Unified
+10,73999,0000000,Kerman Unified
+10,75127,0000000,Mendota Unified
+10,75234,0000000,Golden Plains Unified
+10,75275,0000000,Sierra Unified
+10,75408,0000000,Riverdale Joint Unified
+10,75598,0000000,Caruthers Unified
+10,76778,0000000,Washington Unified
+11,62554,0000000,Capay Joint Union Elementary
+11,62596,0000000,Lake Elementary
+11,62638,0000000,Plaza Elementary
+11,62646,0000000,Princeton Joint Unified
+11,62653,0000000,Stony Creek Joint Unified
+11,62661,0000000,Willows Unified
+11,75481,0000000,Orland Joint Unified
+11,76562,0000000,Hamilton Unified
+12,62679,0000000,Arcata Elementary
+12,62687,0000000,Northern Humboldt Union High
+12,62695,0000000,Big Lagoon Union Elementary
+12,62703,0000000,Blue Lake Union Elementary
+12,62729,0000000,Bridgeville Elementary
+12,62737,0000000,Cuddeback Union Elementary
+12,62745,0000000,Cutten Elementary
+12,62794,0000000,Fieldbrook Elementary
+12,62810,0000000,Fortuna Union High
+12,62828,0000000,Freshwater Elementary
+12,62836,0000000,Garfield Elementary
+12,62851,0000000,Green Point Elementary
+12,62885,0000000,Hydesville Elementary
+12,62893,0000000,Jacoby Creek Elementary
+12,62901,0000000,Klamath-Trinity Joint Unified
+12,62919,0000000,Kneeland Elementary
+12,62927,0000000,Loleta Union Elementary
+12,62935,0000000,Maple Creek Elementary
+12,62950,0000000,Mckinleyville Union Elementary
+12,62968,0000000,Orick Elementary
+12,62976,0000000,Pacific Union Elementary
+12,62984,0000000,Peninsula Union Elementary
+12,63008,0000000,Rio Dell Elementary
+12,63024,0000000,Scotia Union Elementary
+12,63032,0000000,South Bay Union Elementary
+12,63040,0000000,Southern Humboldt Joint Unified
+12,63057,0000000,Trinidad Union Elementary
+12,75374,0000000,Ferndale Unified
+12,75382,0000000,Mattole Unified
+12,75515,0000000,Eureka City Unified
+12,76802,0000000,Fortuna Elementary
+13,63073,0000000,Brawley Elementary
+13,63081,0000000,Brawley Union High
+13,63099,0000000,Calexico Unified
+13,63107,0000000,Calipatria Unified
+13,63115,0000000,Central Union High
+13,63123,0000000,El Centro Elementary
+13,63131,0000000,Heber Elementary
+13,63149,0000000,Holtville Unified
+13,63164,0000000,Imperial Unified
+13,63172,0000000,Magnolia Union Elementary
+13,63180,0000000,Mccabe Union Elementary
+13,63198,0000000,Meadows Union Elementary
+13,63206,0000000,Mulberry Elementary
+13,63214,0000000,San Pasqual Valley Unified
+13,63222,0000000,Seeley Union Elementary
+13,63230,0000000,Westmorland Union Elementary
+14,63248,0000000,Big Pine Unified
+14,63271,0000000,Death Valley Unified
+14,63289,0000000,Lone Pine Unified
+14,63297,0000000,Owens Valley Unified
+14,63305,0000000,Round Valley Joint Elementary
+14,76687,0000000,Bishop Unified
+15,63313,0000000,Arvin Union Elementary
+15,63321,0000000,Bakersfield City Elementary
+15,63339,0000000,Beardsley Elementary
+15,63354,0000000,Blake Elementary
+15,63362,0000000,Panama-Buena Vista Union Elementary
+15,63370,0000000,Buttonwillow Union Elementary
+15,63388,0000000,Caliente Union Elementary
+15,63404,0000000,Delano Union Elementary
+15,63412,0000000,Delano Joint Union High
+15,63420,0000000,Di Giorgio Elementary
+15,63438,0000000,Edison Elementary
+15,63446,0000000,Elk Hills Elementary
+15,63461,0000000,Fairfax Elementary
+15,63479,0000000,Fruitvale Elementary
+15,63487,0000000,General Shafter Elementary
+15,63503,0000000,Greenfield Union
+15,63529,0000000,Kern High
+15,63545,0000000,Kernville Union Elementary
+15,63552,0000000,Lakeside Union Elementary
+15,63560,0000000,Lamont Elementary
+15,63578,0000000,Richland Union Elementary
+15,63586,0000000,Linns Valley-Poso Flat Union
+15,63594,0000000,Lost Hills Union Elementary
+15,63610,0000000,Maple Elementary
+15,63628,0000000,Maricopa Unified
+15,63651,0000000,Mckittrick Elementary
+15,63669,0000000,Midway Elementary
+15,63677,0000000,Mojave Unified
+15,63685,0000000,Muroc Joint Unified
+15,63693,0000000,Norris Elementary
+15,63719,0000000,Pond Union Elementary
+15,63750,0000000,Rosedale Union Elementary
+15,63768,0000000,Semitropic Elementary
+15,63776,0000000,Southern Kern Unified
+15,63784,0000000,South Fork Union Elementary
+15,63792,0000000,Standard Elementary
+15,63800,0000000,Taft City Elementary
+15,63818,0000000,Taft Union High
+15,63826,0000000,Tehachapi Unified
+15,63834,0000000,Vineland Elementary
+15,63842,0000000,Wasco Union Elementary
+15,63859,0000000,Wasco Union High
+15,73544,0000000,Rio Bravo-Greeley Union Elementary
+15,73742,0000000,Sierra Sands Unified
+15,73908,0000000,Mcfarland Unified
+15,75168,0000000,El Tejon Unified
+16,63875,0000000,Armona Union Elementary
+16,63883,0000000,Central Union Elementary
+16,63891,0000000,Corcoran Joint Unified
+16,63917,0000000,Hanford Elementary
+16,63925,0000000,Hanford Joint Union High
+16,63933,0000000,Island Union Elementary
+16,63941,0000000,Kings River-Hardwick Union Elementary
+16,63958,0000000,Kit Carson Union Elementary
+16,63966,0000000,Lakeside Union Elementary
+16,63974,0000000,Lemoore Union Elementary
+16,63982,0000000,Lemoore Union High
+16,63990,0000000,Pioneer Union Elementary
+16,73932,0000000,Reef-Sunset Unified
+17,64014,0000000,Kelseyville Unified
+17,64022,0000000,Konocti Unified
+17,64030,0000000,Lakeport Unified
+17,64048,0000000,Lucerne Elementary
+17,64055,0000000,Middletown Unified
+17,76976,0000000,Upper Lake Unified
+18,64089,0000000,Big Valley Joint Unified
+18,64105,0000000,Janesville Union Elementary
+18,64113,0000000,Johnstonville Elementary
+18,64139,0000000,Lassen Union High
+18,64162,0000000,Ravendale-Termo Elementary
+18,64170,0000000,Richmond Elementary
+18,64188,0000000,Shaffer Union Elementary
+18,64196,0000000,Susanville Elementary
+18,64204,0000000,Westwood Unified
+18,75036,0000000,Fort Sage Unified
+19,64212,0000000,ABC Unified
+19,64246,0000000,Antelope Valley Union High
+19,64261,0000000,Arcadia Unified
+19,64279,0000000,Azusa Unified
+19,64287,0000000,Baldwin Park Unified
+19,64295,0000000,Bassett Unified
+19,64303,0000000,Bellflower Unified
+19,64311,0000000,Beverly Hills Unified
+19,64329,0000000,Bonita Unified
+19,64337,0000000,Burbank Unified
+19,64345,0000000,Castaic Union Elementary
+19,64352,0000000,Centinela Valley Union High
+19,64378,0000000,Charter Oak Unified
+19,64394,0000000,Claremont Unified
+19,64436,0000000,Covina-Valley Unified
+19,64444,0000000,Culver City Unified
+19,64451,0000000,Downey Unified
+19,64469,0000000,Duarte Unified
+19,64477,0000000,Eastside Union Elementary
+19,64485,0000000,East Whittier City Elementary
+19,64501,0000000,El Monte City Elementary
+19,64519,0000000,El Monte Union High
+19,64527,0000000,El Rancho Unified
+19,64535,0000000,El Segundo Unified
+19,64550,0000000,Garvey Elementary
+19,64568,0000000,Glendale Unified
+19,64576,0000000,Glendora Unified
+19,64584,0000000,Gorman Joint
+19,64592,0000000,Hawthorne Elementary
+19,64600,0000000,Hermosa Beach City Elementary
+19,64626,0000000,Hughes-Elizabeth Lakes Union Elementary
+19,64634,0000000,Inglewood Unified
+19,64642,0000000,Keppel Union Elementary
+19,64659,0000000,La Canada Unified
+19,64667,0000000,Lancaster Elementary
+19,64683,0000000,Las Virgenes Unified
+19,64691,0000000,Lawndale Elementary
+19,64709,0000000,Lennox Elementary
+19,64717,0000000,Little Lake City Elementary
+19,64725,0000000,Long Beach Unified
+19,64733,0000000,Los Angeles Unified
+19,64758,0000000,Los Nietos Elementary
+19,64774,0000000,Lynwood Unified
+19,64790,0000000,Monrovia Unified
+19,64808,0000000,Montebello Unified
+19,64816,0000000,Mountain View Elementary
+19,64832,0000000,Newhall Elementary
+19,64840,0000000,Norwalk-La Mirada Unified
+19,64857,0000000,Palmdale Elementary
+19,64865,0000000,Palos Verdes Peninsula Unified
+19,64873,0000000,Paramount Unified
+19,64881,0000000,Pasadena Unified
+19,64907,0000000,Pomona Unified
+19,64931,0000000,Rosemead Elementary
+19,64964,0000000,San Marino Unified
+19,64980,0000000,Santa Monica-Malibu Unified
+19,64998,0000000,Saugus Union Elementary
+19,65029,0000000,South Pasadena Unified
+19,65037,0000000,South Whittier Elementary
+19,65045,0000000,Sulphur Springs Union Elementary
+19,65052,0000000,Temple City Unified
+19,65060,0000000,Torrance Unified
+19,65078,0000000,Valle Lindo Elementary
+19,65094,0000000,West Covina Unified
+19,65102,0000000,Westside Union Elementary
+19,65110,0000000,Whittier City Elementary
+19,65128,0000000,Whittier Union High
+19,65136,0000000,William S. Hart Union High
+19,65151,0000000,Wilsona Elementary
+19,73437,0000000,Compton Unified
+19,73445,0000000,Hacienda La Puente Unified
+19,73452,0000000,Rowland Unified
+19,73460,0000000,Walnut Valley Unified
+19,75291,0000000,San Gabriel Unified
+19,75309,0000000,Acton-Agua Dulce Unified
+19,75333,0000000,Manhattan Beach Unified
+19,75341,0000000,Redondo Beach Unified
+19,75663,0000000,SBE - New West Charter
+19,75713,0000000,Alhambra Unified
+19,76869,0000000,Wiseburn Unified
+19,76968,0000000,SBE - Academia Avance Charter
+20,65177,0000000,Alview-Dairyland Union Elementary
+20,65185,0000000,Bass Lake Joint Union Elementary
+20,65193,0000000,Chowchilla Elementary
+20,65201,0000000,Chowchilla Union High
+20,65243,0000000,Madera Unified
+20,65276,0000000,Raymond-Knowles Union Elementary
+20,75580,0000000,Golden Valley Unified
+20,75606,0000000,Chawanakee Unified
+20,76414,0000000,Yosemite Unified
+21,65300,0000000,Bolinas-Stinson Union Elementary
+21,65318,0000000,Miller Creek Elementary
+21,65334,0000000,Kentfield Elementary
+21,65342,0000000,Laguna Joint Elementary
+21,65359,0000000,Lagunitas Elementary
+21,65367,0000000,Larkspur-Corte Madera
+21,65391,0000000,Mill Valley Elementary
+21,65409,0000000,Nicasio Elementary
+21,65417,0000000,Novato Unified
+21,65425,0000000,Reed Union Elementary
+21,65433,0000000,Ross Elementary
+21,65458,0000000,San Rafael City Elementary
+21,65466,0000000,San Rafael City High
+21,65474,0000000,Sausalito Marin City Elementary
+21,65482,0000000,Tamalpais Union High
+21,73361,0000000,Shoreline Unified
+21,75002,0000000,Ross Valley Elementary
+22,65532,0000000,Mariposa County Unified
+23,65540,0000000,Anderson Valley Unified
+23,65557,0000000,Arena Union Elementary
+23,65565,0000000,Fort Bragg Unified
+23,65573,0000000,Manchester Union Elementary
+23,65581,0000000,Mendocino Unified
+23,65599,0000000,Point Arena Joint Union High
+23,65607,0000000,Round Valley Unified
+23,65615,0000000,Ukiah Unified
+23,65623,0000000,Willits Unified
+23,73866,0000000,Potter Valley Community Unified
+23,73916,0000000,Laytonville Unified
+23,75218,0000000,Leggett Valley Unified
+23,76349,0000000,"Arena Union Elementary/Point Arena Joint Union High "
+24,65631,0000000,Atwater Elementary
+24,65649,0000000,Ballico-Cressey Elementary
+24,65680,0000000,El Nido Elementary
+24,65698,0000000,Hilmar Unified
+24,65722,0000000,Le Grand Union Elementary
+24,65730,0000000,Le Grand Union High
+24,65748,0000000,Livingston Union Elementary
+24,65755,0000000,Los Banos Unified
+24,65763,0000000,McSwain Union Elementary
+24,65771,0000000,Merced City Elementary
+24,65789,0000000,Merced Union High
+24,65813,0000000,Plainsburg Union Elementary
+24,65821,0000000,Planada Elementary
+24,65839,0000000,Snelling-Merced Falls Union Elementary
+24,65862,0000000,Weaver Union Elementary
+24,65870,0000000,Winton Elementary
+24,73619,0000000,Gustine Unified
+24,73726,0000000,Merced River Union Elementary
+24,75317,0000000,Dos Palos Oro Loma Joint Unified
+24,75366,0000000,Delhi Unified
+25,65896,0000000,Surprise Valley Joint Unified
+25,73585,0000000,Modoc Joint Unified
+25,73593,0000000,Tulelake Basin Joint Unified
+26,73668,0000000,Eastern Sierra Unified
+26,73692,0000000,Mammoth Unified
+27,65961,0000000,Alisal Union Elementary
+27,65979,0000000,Bradley Union Elementary
+27,65987,0000000,Carmel Unified
+27,65995,0000000,Chualar Union Elementary
+27,66027,0000000,Graves Elementary
+27,66035,0000000,Greenfield Union Elementary
+27,66050,0000000,King City Union Elementary
+27,66068,0000000,South Monterey County Joint Union High
+27,66076,0000000,Lagunita Elementary
+27,66084,0000000,Mission Union Elementary
+27,66092,0000000,Monterey Peninsula Unified
+27,66134,0000000,Pacific Grove Unified
+27,66142,0000000,Salinas City Elementary
+27,66159,0000000,Salinas Union High
+27,66167,0000000,San Antonio Union Elementary
+27,66175,0000000,San Ardo Union Elementary
+27,66183,0000000,San Lucas Union Elementary
+27,66191,0000000,Santa Rita Union Elementary
+27,66225,0000000,Spreckels Union Elementary
+27,66233,0000000,Washington Union Elementary
+27,73825,0000000,North Monterey County Unified
+27,75150,0000000,Big Sur Unified
+27,75440,0000000,Soledad Unified
+27,75473,0000000,Gonzales Unified
+28,66241,0000000,Calistoga Joint Unified
+28,66258,0000000,Howell Mountain Elementary
+28,66266,0000000,Napa Valley Unified
+28,66282,0000000,Pope Valley Union Elementary
+28,66290,0000000,Saint Helena Unified
+29,66316,0000000,Chicago Park Elementary
+29,66324,0000000,Clear Creek Elementary
+29,66332,0000000,Grass Valley Elementary
+29,66340,0000000,Nevada City Elementary
+29,66357,0000000,Nevada Joint Union High
+29,66373,0000000,Pleasant Ridge Union Elementary
+29,66407,0000000,Union Hill Elementary
+29,66415,0000000,Twin Ridges Elementary
+29,76877,0000000,Penn Valley Union Elementary
+30,64766,0000000,Lowell Joint Elementary
+30,66423,0000000,Anaheim Elementary
+30,66431,0000000,Anaheim Union High
+30,66449,0000000,Brea-Olinda Unified
+30,66456,0000000,Buena Park Elementary
+30,66464,0000000,Capistrano Unified
+30,66472,0000000,Centralia Elementary
+30,66480,0000000,Cypress Elementary
+30,66498,0000000,Fountain Valley Elementary
+30,66506,0000000,Fullerton Elementary
+30,66514,0000000,Fullerton Joint Union High
+30,66522,0000000,Garden Grove Unified
+30,66530,0000000,Huntington Beach City Elementary
+30,66548,0000000,Huntington Beach Union High
+30,66555,0000000,Laguna Beach Unified
+30,66563,0000000,La Habra City Elementary
+30,66589,0000000,Magnolia Elementary
+30,66597,0000000,Newport-Mesa Unified
+30,66613,0000000,Ocean View Elementary
+30,66621,0000000,Orange Unified
+30,66647,0000000,Placentia-Yorba Linda Unified
+30,66670,0000000,Santa Ana Unified
+30,66696,0000000,Savanna Elementary
+30,66746,0000000,Westminster Elementary
+30,73635,0000000,Saddleback Valley Unified
+30,73643,0000000,Tustin Unified
+30,73650,0000000,Irvine Unified
+30,73924,0000000,Los Alamitos Unified
+30,76893,0000000,SBE - Magnolia Science Academy Santa Ana
+31,66761,0000000,Ackerman Charter
+31,66779,0000000,Alta-Dutch Flat Union Elementary
+31,66787,0000000,Auburn Union Elementary
+31,66795,0000000,Colfax Elementary
+31,66803,0000000,Dry Creek Joint Elementary
+31,66829,0000000,Eureka Union Elementary
+31,66837,0000000,Foresthill Union Elementary
+31,66845,0000000,Loomis Union Elementary
+31,66852,0000000,Newcastle Elementary
+31,66886,0000000,Placer Hills Union Elementary
+31,66894,0000000,Placer Union High
+31,66910,0000000,Roseville City Elementary
+31,66928,0000000,Roseville Joint Union High
+31,66944,0000000,Tahoe-Truckee Unified
+31,66951,0000000,Western Placer Unified
+31,75085,0000000,Rocklin Unified
+32,66969,0000000,Plumas Unified
+33,66977,0000000,Alvord Unified
+33,66985,0000000,Banning Unified
+33,66993,0000000,Beaumont Unified
+33,67033,0000000,Corona-Norco Unified
+33,67041,0000000,Desert Center Unified
+33,67058,0000000,Desert Sands Unified
+33,67082,0000000,Hemet Unified
+33,67090,0000000,Jurupa Unified
+33,67116,0000000,Menifee Union Elementary
+33,67124,0000000,Moreno Valley Unified
+33,67157,0000000,Nuview Union Elementary
+33,67173,0000000,Palm Springs Unified
+33,67181,0000000,Palo Verde Unified
+33,67199,0000000,Perris Elementary
+33,67207,0000000,Perris Union High
+33,67215,0000000,Riverside Unified
+33,67231,0000000,Romoland Elementary
+33,67249,0000000,San Jacinto Unified
+33,73676,0000000,Coachella Valley Unified
+33,75176,0000000,Lake Elsinore Unified
+33,75192,0000000,Temecula Valley Unified
+33,75200,0000000,Murrieta Valley Unified
+33,75242,0000000,Val Verde Unified
+34,67280,0000000,Arcohe Union Elementary
+34,67314,0000000,Elk Grove Unified
+34,67322,0000000,Elverta Joint Elementary
+34,67330,0000000,Folsom-Cordova Unified
+34,67348,0000000,Galt Joint Union Elementary
+34,67355,0000000,Galt Joint Union High
+34,67413,0000000,River Delta Joint Unified
+34,67421,0000000,Robla Elementary
+34,67439,0000000,Sacramento City Unified
+34,67447,0000000,San Juan Unified
+34,73973,0000000,Center Joint Unified
+34,75283,0000000,Natomas Unified
+34,76505,0000000,Twin Rivers Unified
+35,67454,0000000,Bitterwater-Tully Elementary
+35,67462,0000000,Cienega Union Elementary
+35,67470,0000000,Hollister Elementary
+35,67488,0000000,Jefferson Elementary
+35,67504,0000000,North County Joint Union Elementary
+35,67520,0000000,Panoche Elementary
+35,67538,0000000,San Benito High
+35,67553,0000000,Southside Elementary
+35,67561,0000000,Tres Pinos Union Elementary
+35,67579,0000000,Willow Grove Union Elementary
+35,75259,0000000,Aromas - San Juan Unified
+36,67587,0000000,Adelanto Elementary
+36,67595,0000000,Alta Loma Elementary
+36,67611,0000000,Barstow Unified
+36,67637,0000000,Bear Valley Unified
+36,67645,0000000,Central Elementary
+36,67652,0000000,Chaffey Joint Union High
+36,67678,0000000,Chino Valley Unified
+36,67686,0000000,Colton Joint Unified
+36,67694,0000000,Cucamonga Elementary
+36,67702,0000000,Etiwanda Elementary
+36,67710,0000000,Fontana Unified
+36,67736,0000000,Helendale Elementary
+36,67777,0000000,Morongo Unified
+36,67785,0000000,Mountain View Elementary
+36,67793,0000000,Mt. Baldy Joint Elementary
+36,67801,0000000,Needles Unified
+36,67819,0000000,Ontario-Montclair Elementary
+36,67827,0000000,Oro Grande Elementary
+36,67843,0000000,Redlands Unified
+36,67850,0000000,Rialto Unified
+36,67868,0000000,Rim of The World Unified
+36,67876,0000000,San Bernardino City Unified
+36,67892,0000000,Trona Joint Unified
+36,67918,0000000,Victor Elementary
+36,67934,0000000,Victor Valley Union High
+36,67959,0000000,Yucaipa-Calimesa Joint Unified
+36,73858,0000000,Baker Valley Unified
+36,73890,0000000,Silver Valley Unified
+36,73957,0000000,Snowline Joint Unified
+36,75044,0000000,Hesperia Unified
+36,75051,0000000,Lucerne Valley Unified
+36,75069,0000000,Upland Unified
+36,75077,0000000,Apple Valley Unified
+37,67967,0000000,Alpine Union Elementary
+37,67983,0000000,Borrego Springs Unified
+37,67991,0000000,Cajon Valley Union Elementary
+37,68007,0000000,Cardiff Elementary
+37,68023,0000000,Chula Vista Elementary
+37,68031,0000000,Coronado Unified
+37,68049,0000000,Dehesa Elementary
+37,68056,0000000,Del Mar Union Elementary
+37,68080,0000000,Encinitas Union Elementary
+37,68098,0000000,Escondido Union Elementary
+37,68106,0000000,Escondido Union High
+37,68114,0000000,Fallbrook Union Elementary
+37,68122,0000000,Fallbrook Union High
+37,68130,0000000,Grossmont Union High
+37,68155,0000000,Jamul-Dulzura Union Elementary
+37,68163,0000000,Julian Union Elementary
+37,68171,0000000,Julian Union High
+37,68189,0000000,Lakeside Union Elementary
+37,68197,0000000,La Mesa-Spring Valley
+37,68205,0000000,Lemon Grove Elementary
+37,68213,0000000,Mountain Empire Unified
+37,68221,0000000,National Elementary
+37,68296,0000000,Poway Unified
+37,68304,0000000,Ramona City Unified
+37,68312,0000000,Rancho Santa Fe Elementary
+37,68338,0000000,San Diego Unified
+37,68346,0000000,San Dieguito Union High
+37,68353,0000000,San Pasqual Union Elementary
+37,68361,0000000,Santee Elementary
+37,68379,0000000,San Ysidro Elementary
+37,68387,0000000,Solana Beach Elementary
+37,68395,0000000,South Bay Union Elementary
+37,68403,0000000,Spencer Valley Elementary
+37,68411,0000000,Sweetwater Union High
+37,68437,0000000,Vallecitos Elementary
+37,68452,0000000,Vista Unified
+37,73551,0000000,Carlsbad Unified
+37,73569,0000000,Oceanside Unified
+37,73791,0000000,San Marcos Unified
+37,75416,0000000,Warner Unified
+37,75614,0000000,Valley Center-Pauma Unified
+37,76471,0000000,SBC - High Tech High
+37,76851,0000000,Bonsall Unified
+37,77099,0000000,SBE - Altus Schools East County
+37,77107,0000000,SBE - Altus Schools South Bay
+37,77156,0000000,SBE - Vista Springs Charter
+37,77164,0000000,SBE - College Preparatory Middle
+37,77172,0000000,SBE - Baypoint Preparatory Academy San Diego
+38,68478,0000000,San Francisco Unified
+38,76927,0000000,SBE - The New School of San Francisco
+38,77131,0000000,SBE - KIPP Bayview Elementary
+39,68502,0000000,Escalon Unified
+39,68544,0000000,Jefferson Elementary
+39,68569,0000000,Lincoln Unified
+39,68577,0000000,Linden Unified
+39,68585,0000000,Lodi Unified
+39,68593,0000000,Manteca Unified
+39,68619,0000000,New Hope Elementary
+39,68627,0000000,New Jerusalem Elementary
+39,68635,0000000,Oak View Union Elementary
+39,68650,0000000,Ripon Unified
+39,68676,0000000,Stockton Unified
+39,75499,0000000,Tracy Joint Unified
+39,76760,0000000,Lammersville Joint Unified
+39,77388,0000000,Banta Unified
+40,68700,0000000,Atascadero Unified
+40,68726,0000000,Cayucos Elementary
+40,68759,0000000,Lucia Mar Unified
+40,68791,0000000,Pleasant Valley Joint Union Elementary
+40,68809,0000000,San Luis Coastal Unified
+40,68825,0000000,San Miguel Joint Union Elementary
+40,68833,0000000,Shandon Joint Unified
+40,68841,0000000,Templeton Unified
+40,75457,0000000,Paso Robles Joint Unified
+40,75465,0000000,Coast Unified
+41,68858,0000000,Bayshore Elementary
+41,68866,0000000,Belmont-Redwood Shores Elementary
+41,68874,0000000,Brisbane Elementary
+41,68882,0000000,Burlingame Elementary
+41,68890,0000000,Cabrillo Unified
+41,68908,0000000,Hillsborough City Elementary
+41,68916,0000000,Jefferson Elementary
+41,68924,0000000,Jefferson Union High
+41,68932,0000000,Pacifica Elementary
+41,68940,0000000,La Honda-Pescadero Unified
+41,68957,0000000,Las Lomitas Elementary
+41,68965,0000000,Menlo Park City Elementary
+41,68973,0000000,Millbrae Elementary
+41,68981,0000000,Portola Valley Elementary
+41,68999,0000000,Ravenswood City Elementary
+41,69005,0000000,Redwood City Elementary
+41,69013,0000000,San Bruno Park Elementary
+41,69021,0000000,San Carlos Elementary
+41,69039,0000000,San Mateo-Foster City Elementary
+41,69047,0000000,San Mateo Union High
+41,69062,0000000,Sequoia Union High
+41,69070,0000000,South San Francisco Unified
+41,69088,0000000,Woodside Elementary
+42,69104,0000000,Ballard Elementary
+42,69112,0000000,Blochman Union Elementary
+42,69120,0000000,Santa Maria-Bonita Elementary
+42,69138,0000000,Buellton Union Elementary
+42,69146,0000000,Carpinteria Unified
+42,69161,0000000,Cold Spring Elementary
+42,69179,0000000,College Elementary
+42,69195,0000000,Goleta Union Elementary
+42,69203,0000000,Guadalupe Union Elementary
+42,69211,0000000,Hope Elementary
+42,69229,0000000,Lompoc Unified
+42,69245,0000000,Los Olivos Elementary
+42,69252,0000000,Montecito Union Elementary
+42,69260,0000000,Orcutt Union Elementary
+42,69310,0000000,Santa Maria Joint Union High
+42,69328,0000000,Santa Ynez Valley Union High
+42,69336,0000000,Solvang Elementary
+42,69344,0000000,Vista Del Mar Union Elementary
+42,75010,0000000,Cuyama Joint Unified
+42,76786,0000000,Santa Barbara Unified
+42,77198,0000000,SBE - Olive Grove Charter - Orcutt/Santa Maria
+42,77206,0000000,SBE - Olive Grove Charter - Lompoc
+42,77214,0000000,SBE - Olive Grove Charter - Buellton
+42,77222,0000000,SBE - Olive Grove Charter - Santa Barbara
+43,69369,0000000,Alum Rock Union Elementary
+43,69377,0000000,Berryessa Union Elementary
+43,69385,0000000,Cambrian Elementary
+43,69393,0000000,Campbell Union Elementary
+43,69401,0000000,Campbell Union High
+43,69419,0000000,Cupertino Union Elementary
+43,69427,0000000,East Side Union High
+43,69435,0000000,Evergreen Elementary
+43,69450,0000000,Franklin-McKinley Elementary
+43,69468,0000000,Fremont Union High
+43,69484,0000000,Gilroy Unified
+43,69492,0000000,Lakeside Joint Elementary
+43,69500,0000000,Loma Prieta Joint Union Elementary
+43,69518,0000000,Los Altos Elementary
+43,69526,0000000,Los Gatos Union Elementary
+43,69534,0000000,Los Gatos-Saratoga Union High
+43,69542,0000000,Luther Burbank Elementary
+43,69575,0000000,Moreland Elementary
+43,69583,0000000,Morgan Hill Unified
+43,69591,0000000,Mountain View Whisman Elementary
+43,69609,0000000,Mountain View-Los Altos Union High
+43,69617,0000000,Mount Pleasant Elementary
+43,69625,0000000,Oak Grove Elementary
+43,69633,0000000,Orchard Elementary
+43,69641,0000000,Palo Alto Unified
+43,69666,0000000,San Jose Unified
+43,69674,0000000,Santa Clara Unified
+43,69682,0000000,Saratoga Union Elementary
+43,69690,0000000,Sunnyvale Elementary
+43,69708,0000000,Union Elementary
+43,73387,0000000,Milpitas Unified
+43,77149,0000000,SBE - KIPP Navigate College Prep
+44,40261,0000000,Santa Cruz City Elementary/High
+44,69732,0000000,Bonny Doon Union Elementary
+44,69757,0000000,Happy Valley Elementary
+44,69765,0000000,Live Oak Elementary
+44,69773,0000000,Mountain Elementary
+44,69781,0000000,Pacific Elementary
+44,69799,0000000,Pajaro Valley Unified
+44,69807,0000000,San Lorenzo Valley Unified
+44,69815,0000000,Santa Cruz City Elementary
+44,69823,0000000,Santa Cruz City High
+44,69849,0000000,Soquel Union Elementary
+44,75432,0000000,Scotts Valley Unified
+44,77248,0000000,SBE - Watsonville Prep
+45,69856,0000000,Anderson Union High
+45,69872,0000000,Bella Vista Elementary
+45,69880,0000000,Black Butte Union Elementary
+45,69914,0000000,Cascade Union Elementary
+45,69922,0000000,Castle Rock Union Elementary
+45,69948,0000000,Columbia Elementary
+45,69955,0000000,Cottonwood Union Elementary
+45,69971,0000000,Enterprise Elementary
+45,69989,0000000,Fall River Joint Unified
+45,69997,0000000,French Gulch-Whiskeytown Elementary
+45,70003,0000000,Grant Elementary
+45,70011,0000000,Happy Valley Union Elementary
+45,70029,0000000,"Igo, Ono, Platina Union Elementary"
+45,70045,0000000,Junction Elementary
+45,70052,0000000,Millville Elementary
+45,70078,0000000,North Cow Creek Elementary
+45,70086,0000000,Oak Run Elementary
+45,70094,0000000,Pacheco Union Elementary
+45,70110,0000000,Redding Elementary
+45,70128,0000000,Shasta Union Elementary
+45,70136,0000000,Shasta Union High
+45,70169,0000000,Whitmore Union Elementary
+45,73700,0000000,Mountain Union Elementary
+45,75267,0000000,Gateway Unified
+46,70177,0000000,Sierra-Plumas Joint Unified
+47,70185,0000000,Big Springs Union Elementary
+47,70193,0000000,Bogus Elementary
+47,70201,0000000,Butteville Union Elementary
+47,70227,0000000,Delphic Elementary
+47,70243,0000000,Dunsmuir Elementary
+47,70250,0000000,Dunsmuir Joint Union High
+47,70318,0000000,Gazelle Union Elementary
+47,70326,0000000,Grenada Elementary
+47,70334,0000000,Happy Camp Union Elementary
+47,70359,0000000,Hornbrook Elementary
+47,70367,0000000,Junction Elementary
+47,70375,0000000,Klamath River Union Elementary
+47,70383,0000000,Little Shasta Elementary
+47,70409,0000000,McCloud Union Elementary
+47,70417,0000000,Montague Elementary
+47,70425,0000000,Mt. Shasta Union Elementary
+47,70458,0000000,Seiad Elementary
+47,70466,0000000,Siskiyou Union High
+47,70482,0000000,Weed Union Elementary
+47,70490,0000000,Willow Creek Elementary
+47,70508,0000000,Yreka Union Elementary
+47,70516,0000000,Yreka Union High
+47,73684,0000000,Butte Valley Unified
+47,76455,0000000,Scott Valley Unified
+48,70524,0000000,Benicia Unified
+48,70532,0000000,Dixon Unified
+48,70540,0000000,Fairfield-Suisun Unified
+48,70565,0000000,Travis Unified
+48,70573,0000000,Vacaville Unified
+48,70581,0000000,Vallejo City Unified
+49,40246,0000000,Petaluma City Elementary/Joint Union High
+49,40253,0000000,Santa Rosa City Schools
+49,70599,0000000,Alexander Valley Union Elementary
+49,70607,0000000,West Sonoma County Union High
+49,70615,0000000,Bellevue Union Elementary
+49,70623,0000000,Bennett Valley Union Elementary
+49,70649,0000000,Cinnabar Elementary
+49,70656,0000000,Cloverdale Unified
+49,70672,0000000,Dunham Elementary
+49,70680,0000000,Forestville Union Elementary
+49,70698,0000000,Fort Ross Elementary
+49,70706,0000000,Geyserville Unified
+49,70714,0000000,Gravenstein Union Elementary
+49,70722,0000000,Guerneville Elementary
+49,70730,0000000,Harmony Union Elementary
+49,70763,0000000,Horicon Elementary
+49,70789,0000000,Kenwood Elementary
+49,70797,0000000,Liberty Elementary
+49,70805,0000000,Mark West Union Elementary
+49,70813,0000000,Monte Rio Union Elementary
+49,70821,0000000,Montgomery Elementary
+49,70839,0000000,Oak Grove Union Elementary
+49,70847,0000000,Old Adobe Union Elementary
+49,70854,0000000,Petaluma City Elementary
+49,70862,0000000,Petaluma Joint Union High
+49,70870,0000000,Piner-Olivet Union Elementary
+49,70888,0000000,Kashia Elementary
+49,70896,0000000,Rincon Valley Union Elementary
+49,70904,0000000,Roseland Elementary
+49,70912,0000000,Santa Rosa Elementary
+49,70920,0000000,Santa Rosa High
+49,70938,0000000,Sebastopol Union Elementary
+49,70953,0000000,Sonoma Valley Unified
+49,70961,0000000,Twin Hills Union Elementary
+49,70979,0000000,Two Rock Union Elementary
+49,70995,0000000,Waugh Elementary
+49,71001,0000000,West Side Union Elementary
+49,71019,0000000,Wilmar Union Elementary
+49,71035,0000000,Wright Elementary
+49,73882,0000000,Cotati-Rohnert Park Unified
+49,75358,0000000,Windsor Unified
+49,75390,0000000,Healdsburg Unified
+50,40717,0000000,Modesto City Schools
+50,71043,0000000,Ceres Unified
+50,71050,0000000,Chatom Union Elementary
+50,71068,0000000,Denair Unified
+50,71076,0000000,Empire Union Elementary
+50,71084,0000000,Gratton Elementary
+50,71092,0000000,Hart-Ransom Union Elementary
+50,71100,0000000,Hickman Community Charter
+50,71134,0000000,Keyes Union Elementary
+50,71142,0000000,Knights Ferry Elementary
+50,71167,0000000,Modesto City Elementary
+50,71175,0000000,Modesto City High
+50,71209,0000000,Paradise Elementary
+50,71217,0000000,Patterson Joint Unified
+50,71233,0000000,Roberts Ferry Union Elementary
+50,71266,0000000,Salida Union Elementary
+50,71274,0000000,Shiloh Elementary
+50,71282,0000000,Stanislaus Union Elementary
+50,71290,0000000,Sylvan Union Elementary
+50,71324,0000000,Valley Home Joint Elementary
+50,73601,0000000,Newman-Crows Landing Unified
+50,75549,0000000,Hughson Unified
+50,75556,0000000,Riverbank Unified
+50,75564,0000000,Oakdale Joint Unified
+50,75572,0000000,Waterford Unified
+50,75739,0000000,Turlock Unified
+51,71357,0000000,Brittan Elementary
+51,71365,0000000,Browns Elementary
+51,71373,0000000,East Nicolaus Joint Union High
+51,71381,0000000,Franklin Elementary
+51,71399,0000000,Live Oak Unified
+51,71407,0000000,Marcum-Illinois Union Elementary
+51,71415,0000000,Meridian Elementary
+51,71423,0000000,Nuestro Elementary
+51,71431,0000000,Pleasant Grove Joint Union Elementary
+51,71449,0000000,Sutter Union High
+51,71456,0000000,Winship-Robbins Elementary
+51,71464,0000000,Yuba City Unified
+52,71472,0000000,Antelope Elementary
+52,71498,0000000,Corning Union Elementary
+52,71506,0000000,Corning Union High
+52,71522,0000000,Evergreen Union Elementary
+52,71530,0000000,Flournoy Union Elementary
+52,71548,0000000,Gerber Union Elementary
+52,71555,0000000,Kirkwood Elementary
+52,71563,0000000,Lassen View Union Elementary
+52,71571,0000000,Los Molinos Unified
+52,71621,0000000,Red Bluff Union Elementary
+52,71639,0000000,Red Bluff Joint Union High
+52,71647,0000000,Reeds Creek Elementary
+52,71654,0000000,Richfield Elementary
+53,71662,0000000,Burnt Ranch Elementary
+53,71670,0000000,Coffee Creek Elementary
+53,71696,0000000,Douglas City Elementary
+53,71738,0000000,Junction City Elementary
+53,71746,0000000,Lewiston Elementary
+53,71761,0000000,Trinity Center Elementary
+53,73833,0000000,Southern Trinity Joint Unified
+53,75028,0000000,Mountain Valley Unified
+53,76513,0000000,Trinity Alps Unified
+54,71795,0000000,Allensworth Elementary
+54,71803,0000000,Alpaugh Unified
+54,71811,0000000,Alta Vista Elementary
+54,71829,0000000,Buena Vista Elementary
+54,71837,0000000,Burton Elementary
+54,71852,0000000,Columbine Elementary
+54,71860,0000000,Cutler-Orosi Joint Unified
+54,71894,0000000,Ducor Union Elementary
+54,71902,0000000,Earlimart Elementary
+54,71944,0000000,Hope Elementary
+54,71951,0000000,Hot Springs Elementary
+54,71969,0000000,Kings River Union Elementary
+54,71985,0000000,Liberty Elementary
+54,71993,0000000,Lindsay Unified
+54,72009,0000000,Monson-Sultana Joint Union Elementary
+54,72017,0000000,Oak Valley Union Elementary
+54,72025,0000000,Outside Creek Elementary
+54,72033,0000000,Palo Verde Union Elementary
+54,72041,0000000,Pixley Union Elementary
+54,72058,0000000,Pleasant View Elementary
+54,72082,0000000,Richgrove Elementary
+54,72090,0000000,Rockford Elementary
+54,72108,0000000,Saucelito Elementary
+54,72116,0000000,Sequoia Union Elementary
+54,72132,0000000,Springville Union Elementary
+54,72140,0000000,Stone Corral Elementary
+54,72157,0000000,Strathmore Union Elementary
+54,72173,0000000,Sundale Union Elementary
+54,72181,0000000,Sunnyside Union Elementary
+54,72199,0000000,Terra Bella Union Elementary
+54,72207,0000000,Three Rivers Union Elementary
+54,72215,0000000,Tipton Elementary
+54,72223,0000000,Traver Joint Elementary
+54,72231,0000000,Tulare City Elementary
+54,72249,0000000,Tulare Joint Union High
+54,72256,0000000,Visalia Unified
+54,72264,0000000,Waukena Joint Union Elementary
+54,72298,0000000,Woodville Union Elementary
+54,75325,0000000,Farmersville Unified
+54,75523,0000000,Porterville Unified
+54,75531,0000000,Dinuba Unified
+54,76794,0000000,Woodlake Unified
+54,76836,0000000,Exeter Unified
+55,72306,0000000,Belleview Elementary
+55,72348,0000000,Columbia Union Elementary
+55,72355,0000000,Curtis Creek Elementary
+55,72363,0000000,Jamestown Elementary
+55,72371,0000000,Sonora Elementary
+55,72389,0000000,Sonora Union High
+55,72397,0000000,Soulsbyville Elementary
+55,72405,0000000,Summerville Elementary
+55,72413,0000000,Summerville Union High
+55,72421,0000000,Twain Harte Elementary
+55,75184,0000000,Big Oak Flat-Groveland Unified
+56,72447,0000000,Briggs Elementary
+56,72454,0000000,Fillmore Unified
+56,72462,0000000,Hueneme Elementary
+56,72470,0000000,Mesa Union Elementary
+56,72504,0000000,Mupu Elementary
+56,72512,0000000,Ocean View Elementary
+56,72520,0000000,Ojai Unified
+56,72538,0000000,Oxnard Elementary
+56,72546,0000000,Oxnard Union High
+56,72553,0000000,Pleasant Valley
+56,72561,0000000,Rio Elementary
+56,72579,0000000,Santa Clara Elementary
+56,72603,0000000,Simi Valley Unified
+56,72611,0000000,Somis Union Elementary
+56,72652,0000000,Ventura Unified
+56,73759,0000000,Conejo Valley Unified
+56,73874,0000000,Oak Park Unified
+56,73940,0000000,Moorpark Unified
+56,76828,0000000,Santa Paula Unified
+57,72678,0000000,Davis Joint Unified
+57,72686,0000000,Esparto Unified
+57,72694,0000000,Washington Unified
+57,72702,0000000,Winters Joint Unified
+57,72710,0000000,Woodland Joint Unified
+58,72728,0000000,Camptonville Elementary
+58,72736,0000000,Marysville Joint Unified
+58,72744,0000000,Plumas Lake Elementary
+58,72751,0000000,Wheatland Elementary
+58,72769,0000000,Wheatland Union High
+01,40402,0000000,Mission Valley ROC/P
+01,40410,0000000,Tri-Valley ROP JPA
+01,40428,0000000,Eden Area ROP JPA
+07,40782,0000000,Contra Costa SELPA
+09,40287,0000000,Central Sierra ROP JPA
+10,40535,0000000,Southwest Transportation Agency
+10,40543,0000000,Valley ROP JPA
+10,40816,0000000,Central Valley Pre-School JPA
+10,40972,0000000,South County Support Services Agency
+10,40980,0000000,Central Valley Support Services JPA
+10,76554,0000000,Center for Advanced Research & Technology (CART) Joint Powers Agency
+10,77255,0000000,Education Technology JPA
+13,40212,0000000,Imperial Valley ROP JPA
+14,76844,0000000,Inyo County Career Technical Education
+16,76364,0000000,Kings Schools Transportation Authority JPA
+19,40139,0000000,Pupil Transportation Co-Op JPA
+19,40147,0000000,Antelope Valley Schools Transportation Agency
+19,40154,0000000,San Gabriel Valley Regional Occupational Program
+19,40162,0000000,Tri-Cities ROP
+19,40196,0000000,Southern California ROP
+19,40683,0000000,Partners In Nutrition Cooperative
+19,40691,0000000,San Antonio ROP
+19,40709,0000000,Santa Clarita Vlly Sch Food Svs Agency JPA
+19,77008,0000000,California Advancing Pathways for Students in Los Angeles County JPA
+21,40873,0000000,Marin Pupil Transportation Agency JPA
+24,76448,0000000,East Merced County Public Facilities Financing Authority
+27,40105,0000000,Mission Trails ROP JPA
+29,40444,0000000,Nevada County Pupil Transportation
+29,76745,0000000,Nevada County Charter Services Authority (Joint Powers Agency)
+29,77404,0000000,Community Roots School Food Services Agency
+30,40063,0000000,North Orange County ROP JPA
+30,40071,0000000,Coastline ROP JPA
+30,40089,0000000,College and Career Advantage ROP JPA
+30,40097,0000000,Greater Anaheim Selpa JPA
+31,40279,0000000,Mid-Placer Transportation JPA
+36,40048,0000000,Baldy View ROP JPA
+36,40055,0000000,Colton-Redlands-Yucaipa ROP JPA
+39,40386,0000000,San Joaquin Data Processing JPA
+40,40774,0000000,Central California School Finance Authority JPA
+42,40378,0000000,Santa Barbara County SELPA JPA
+43,40360,0000000,Metropolitan Education
+43,40899,0000000,West Valley Schools Transportation Agency JPA
+43,40949,0000000,East Valley School Transportation JPA
+43,75689,0000000,Silicon Valley Joint Powers Transportation Agency
+43,76612,0000000,North County Regional Occupational Program Joint Powers Agency (Closed 7/1/2024)
+43,77396,0000000,West Side Education Authority JPA
+44,40832,0000000,North Santa Cruz County SELPA
+45,40329,0000000,Shasta-Trinity ROP JPA
+45,77339,0000000,Mountain Valley Special Education JPA
+49,40311,0000000,West County Transportation JPA
+50,40964,0000000,Central Calif Migrant Head Start JPA
+56,40295,0000000,Ventura County Schools Business Services JPA
+01,10017,0112607,Envision Academy for Arts & Technology
+01,10017,0123968,Community School for Creative Education
+01,10017,0124172,Yu Ming Charter
+01,10017,0125567,Urban Montessori Charter
+01,10017,0129403,Epic Charter
+01,10017,0130625,Alternatives in Action
+01,10017,0131581,Oakland Unity Middle
+01,10017,0136101,Connecting Waters Charter - East Bay
+01,10017,0136226,Opportunity Academy
+01,10017,0137448,Aurum Preparatory Academy
+01,10017,0138867,Hayward Collegiate Charter
+01,10017,6001788,Cox Academy
+01,10017,6002000,Lazear Charter Academy
+01,61119,0119222,Nea Community Learning Center
+01,61119,0122085,The Academy of Alameda
+01,61119,0130609,Alameda Community Learning Center
+01,61176,0130534,Circle of Independent Learning
+01,61192,0108670,Leadership Public Schools - Hayward
+01,61192,0127696,Knowledge Enlightens You (KEY) Academy
+01,61192,0127944,Hayward Twin Oaks Montessori
+01,61192,0137646,Impact Academy of Arts & Technology
+01,61259,0100065,Oakland Unity High
+01,61259,0106906,Bay Area Technology
+01,61259,0108944,Lighthouse Community Charter High
+01,61259,0109819,Aspire Berkley Maynard Academy
+01,61259,0111476,Achieve Academy
+01,61259,0111856,AIMS College Prep High
+01,61259,0114363,American Indian Public Charter School II
+01,61259,0114868,Oakland Charter High
+01,61259,0115014,KIPP Bridge Academy
+01,61259,0115238,ARISE High
+01,61259,0115592,Learning Without Limits
+01,61259,0118224,Aspire Golden State College Preparatory Academy
+01,61259,0126748,LPS Oakland R & D Campus
+01,61259,0128413,Aspire College Academy
+01,61259,0129635,Downtown Charter Academy
+01,61259,0129932,East Bay Innovation Academy
+01,61259,0130617,"Oakland Military Institute, College Preparatory Academy"
+01,61259,0130633,Lighthouse Community Charter
+01,61259,0130666,Aspire Lionel Wilson College Preparatory Academy
+01,61259,0130732,Aspire Triumph Technology Academy
+01,61259,0132514,Francophone Charter School of Oakland
+01,61259,0134015,Lodestar: A Lighthouse Community Charter Public
+01,61259,3030772,Oakland School For The Arts
+01,61259,6111660,Oakland Charter Academy
+01,61259,6113807,AIMS College Prep Middle
+01,61259,6117568,Aspire Monarch Academy
+01,61259,6118608,ASCEND
+01,61309,0101212,KIPP Summit Academy
+01,61309,0114421,KIPP King Collegiate High
+01,77180,0138289,Latitude 37.8 High
+04,10041,0114991,CORE Butte Charter
+04,10041,0134213,Come Back Butte Charter
+04,10041,0136820,Achieve Charter High
+04,10041,0430090,Hearthstone
+04,61424,0110551,Nord Country
+04,61424,0118042,Forest Ranch Charter
+04,61424,0120394,"Inspire School of Arts and Sciences "
+04,61424,0121475,Sherwood Montessori
+04,61424,0123810,Wildflower Open Classroom
+04,61424,0137828,Pivot Charter School North Valley II
+04,61424,0141085,Achieve Charter School of Chico
+04,61424,6113773,Chico Country Day
+04,61424,6119523,Blue Oak Charter
+04,61507,0121509,Ipakanni Early College Charter
+04,61507,0129577,STREAM Charter
+04,61531,0110338,Achieve Charter School of Paradise Inc.
+04,61531,6112585,Hometech Charter
+04,61531,6112999,Paradise Charter Middle
+04,61531,6113765,Children's Community Charter
+05,10058,0530154,Mountain Oaks
+07,10074,0114470,Making Waves Academy
+07,10074,0129528,Caliber: Beta Academy
+07,10074,0129684,Summit Public School K2
+07,10074,0134114,Contra Costa School of Performing Arts
+07,10074,0137026,Invictus Academy of Richmond
+07,10074,0730614,Golden Gate Community
+07,10074,0731380,Clayton Valley Charter High
+07,10074,6118368,Manzanita Middle
+07,61648,0115063,Antioch Charter Academy II
+07,61648,0137430,Rocketship Delta Prep
+07,61648,6115703,Antioch Charter Academy
+07,61663,0130930,Vista Oaks Charter
+07,61754,0134072,Rocketship Futuro Academy
+07,61754,6118087,Eagle Peak Montessori
+07,61796,0101477,Leadership Public Schools: Richmond
+07,61796,0110973,Richmond College Preparatory
+07,61796,0126805,Richmond Charter Academy
+07,61796,0129643,Richmond Charter Elementary-Benito Juarez
+07,61796,0132100,Aspire Richmond Ca. College Preparatory Academy
+07,61796,0132118,Aspire Richmond Technology Academy
+07,61796,0133637,Summit Public School: Tamalpais
+07,61796,0136903,Voices College-Bound Language Academy at West Contra Costa County
+07,77354,0132233,John Henry High
+08,10082,0830059,Castle Rock
+08,61820,0137729,Uncharted Shores Academy
+09,10090,0123521,Charter Home Study Academy
+09,10090,0136036,John Adams Academy - El Dorado Hills
+09,10090,0930123,Mountainside Middle College High
+09,10090,0930131,Rite of Passage
+09,61838,0107227,Charter Montessori Valley View Campus
+09,61838,0111724,California Montessori Project-Shingle Springs Campus
+09,61838,0129965,Rising Sun Montessori
+09,61838,0136200,Clarksville Charter
+09,61838,0137919,Buckeye Union Mandarin Immersion Charter
+09,61838,0139006,Cottonwood
+09,61846,0123125,Camino Polytechnic
+09,61853,0930214,Pacific Crest Academy
+09,73783,0121566,American River Charter
+10,10108,0109991,Crescent View West Public Charter
+10,10108,0111682,Hume Lake Charter
+10,10108,0119628,Big Picture Educational Academy
+10,10108,0127514,Kepler Neighborhood
+10,10108,0136291,Career Technical Education Charter
+10,10108,0140186,Clovis Global Academy
+10,10108,6085112,Edison-Bethune Charter Academy
+10,61994,6005730,Alvina Elementary Charter
+10,62117,0118018,Clovis Online Charter
+10,62166,0106740,Aspen Valley Prep Academy
+10,62166,0114355,Sierra Charter
+10,62166,0114553,University High
+10,62166,0121533,Morris E. Dailey Charter Elementary
+10,62166,0133942,Aspen Meadow Public
+10,62166,0140038,Endeavor Charter
+10,62166,0140764,Golden Charter Academy
+10,62166,0140806,Aspen Ridge Public
+10,62166,1030642,School of Unlimited Learning
+10,62166,1030840,Carter G. Woodson Public Charter
+10,62240,0113142,Ronald W. Reagan Elementary
+10,62240,0114587,Island Community Day
+10,62240,6006704,Lincoln Elementary
+10,62240,6006712,Roosevelt Elementary
+10,62240,6006720,Washington Elementary
+10,62240,6108328,Rafer Johnson Junior High
+10,62240,6114805,Central Valley Home
+10,62265,0116640,Kings Canyon Online
+10,62265,0126292,Reedley Middle College High
+10,62331,0137661,California Virtual Academy at Fresno
+10,62380,0136499,Ambassador Phillip V. Sanchez II Public Charter
+10,62414,6117865,Quail Lake Environmental Charter
+10,62414,6117873,Sanger Academy Charter
+10,62539,6112387,West Park Charter Academy
+10,62547,0135103,Yosemite Valley Charter
+10,62547,0136523,Crescent View South II
+10,76778,1030774,W.E.B. DuBois Public Charter
+11,10116,0124909,Walden Academy
+11,10116,0130724,Success One!
+11,10116,1130103,William Finch
+11,62596,0139550,Lake View Charter
+12,10124,0134163,Northcoast Preparatory and Performing Arts Academy
+12,10124,0137364,Northern United - Humboldt Charter
+12,10124,6008221,Agnes J. Johnson Charter
+12,62679,0109975,Fuente Nueva Charter
+12,62679,0111708,Union Street Charter
+12,62679,0137653,Redwood Coast Montessori
+12,62679,6120562,Coastal Grove Charter
+12,62687,0107110,Six Rivers Charter High
+12,62687,0124263,Laurel Tree Charter
+12,62828,6116289,Freshwater Charter Middle
+12,62976,0115154,Trillium Charter
+12,63032,0111203,Alder Grove Charter School 2
+12,63032,0124289,South Bay Charter
+12,75515,1230150,Pacific View Charter 2.0
+12,76802,0124164,Redwood Preparatory Charter
+13,10132,0134379,Imperial Pathways Charter
+13,63123,0118455,Ballington Academy for the Arts and Sciences
+13,63123,0122663,Imperial Valley Home School Academy
+14,10140,0117994,YouthBuild Charter School of California
+14,10140,0128447,The Education Corps
+14,10140,0128454,College Bridge Academy
+15,10157,0119669,Wonderful College Prep Academy
+15,10157,0124040,Grow Academy Arvin
+15,10157,0135467,Wonderful College Prep Academy - Lost Hills
+15,10157,0142505,Central Academy of Arts and Technology
+15,10157,0156364,Grow Public Schools
+15,10157,1530492,Valley Oaks Charter
+15,10157,1530500,"Ridgecrest Elementary Academy for Language, Music, and Science"
+15,63404,0120139,Nueva Vista Language Academy
+15,63404,6009351,Cecil Avenue Math and Science Academy
+15,63404,6009369,Del Vista Math and Science Academy
+15,63529,1530435,Kern Workforce 2000 Academy
+15,63578,0135186,Grow Academy Shafter
+15,63628,0127209,Insight School of California
+15,63628,0128504,Peak to Peak Mountain Charter
+15,63628,0134312,Blue Ridge Academy
+15,63628,0137687,California Virtual Academy at Maricopa
+15,63628,0138131,Heartland Charter
+16,63875,0101717,Crossroads Charter Academy
+16,63875,0112698,California Virtual Academy at Kings
+16,63925,0137901,Hanford Online Charter
+16,63933,6010466,Island Elementary
+16,63941,6010474,Kings River-Hardwick Elementary
+16,63958,0136556,Kings Valley Academy II
+16,63958,6113120,Mid Valley Alternative Charter
+16,63974,0100156,Lemoore University Elementary Charter
+16,63982,0110205,"Lemoore Middle College High "
+16,63982,0136234,Lemoore Online College Preparatory High
+16,63990,0116699,Frontier Elementary
+16,63990,6010557,Pioneer Elementary
+16,63990,6110233,Pioneer Middle
+17,64014,0141382,Shade Canyon
+17,64055,0108340,Lake County International Charter
+17,64055,0129601,California Online Public Schools North Bay
+18,64196,0135756,Thompson Peak Charter
+18,75036,0121657,Mt. Lassen Charter
+18,75036,6010763,"Long Valley "
+19,10199,0106880,Jardin de la Infancia
+19,10199,0109660,Aspire Antonio Maria Lugo Academy
+19,10199,0112128,Aspire Ollin University Preparatory Academy
+19,10199,0115030,Magnolia Science Academy 3
+19,10199,0115212,Magnolia Science Academy 2
+19,10199,0121772,Environmental Charter Middle - Gardena
+19,10199,0127498,Environmental Charter Middle - Inglewood
+19,10199,0128025,Lashon Academy
+19,10199,0134346,Intellectual Virtues Academy
+19,10199,0135368,Alma Fuerte Public
+19,10199,0135582,Westbrook Academy
+19,10199,0136119,Animo City of Champions Charter High
+19,10199,0137166,Soleil Academy Charter
+19,10199,0137679,Magnolia Science Academy 5
+19,10199,0138669,Da Vinci RISE High
+19,10199,0139170,Lashon Academy City
+19,10199,0140681,Environmental Charter High - Gardena
+19,10199,0140798,Bridges Preparatory Academy
+19,10199,0140962,The SEED School of Los Angeles County
+19,10199,6116883,Odyssey Charter
+19,10199,6119945,Magnolia Science Academy
+19,64246,0126003,Academies of the Antelope Valley
+19,64246,1996537,Desert Sands Charter
+19,64287,1996479,Opportunities for Learning - Baldwin Park
+19,64352,0128488,Family First Charter
+19,64352,0128496,New Opportunities Charter
+19,64469,0128736,Opportunities for Learning - Duarte
+19,64469,0134858,California School of the Arts - San Gabriel Valley
+19,64469,0139535,"Options For Youth - Duarte, Inc"
+19,64584,1996305,Gorman Learning Center
+19,64592,0100354,Hawthorne Math and Science Academy
+19,64634,0101667,Wilder's Preparatory Academy Charter
+19,64634,0116822,Wilder's Preparatory Academy Charter Middle
+19,64634,0120303,ICEF Inglewood Elementary Charter Academy
+19,64634,0128991,Grace Hopper STEM Academy
+19,64634,1996529,City Honors International Preparatory High
+19,64634,1996586,Animo Inglewood Charter High
+19,64634,6014518,La Tijera Academy of Excellence Charter
+19,64642,0136127,Sage Oak Charter School- Keppel
+19,64667,0123174,Life Source International Charter
+19,64667,0125559,iLEAD Lancaster Charter
+19,64691,1996438,Environmental Charter High - Lawndale
+19,64709,0100602,"Lennox Mathematics, Science and Technology Academy"
+19,64709,0107508,Century Community Charter
+19,64709,1996313,Animo Leadership High
+19,64725,0127506,Intellectual Virtues Academy of Long Beach
+19,64725,0131938,Clear Passage Educational Center
+19,64733,0100289,N.E.W. Academy of Science and Arts
+19,64733,0100669,Stella Middle Charter Academy
+19,64733,0100677,High Tech LA
+19,64733,0100743,Accelerated Charter Elementary
+19,64733,0100750,Wallis Annenberg High
+19,64733,0100800,Central City Value
+19,64733,0100867,KIPP Los Angeles College Preparatory
+19,64733,0101196,ICEF View Park Preparatory High
+19,64733,0101444,KIPP Academy of Opportunity
+19,64733,0101659,"CATCH Prep Charter High, Inc."
+19,64733,0101675,Oscar De La Hoya Animo Charter High
+19,64733,0101683,Renaissance Arts Academy
+19,64733,0102335,Ocean Charter
+19,64733,0102426,PUC Milagro Charter
+19,64733,0102434,Animo South Los Angeles Charter
+19,64733,0102442,PUC Lakeview Charter Academy
+19,64733,0102483,N.E.W. Academy Canoga Park
+19,64733,0102491,Dr. Theodore T. Alexander Jr. Science Center
+19,64733,0102541,New Designs Charter
+19,64733,0106351,Ivy Academia
+19,64733,0106427,Synergy Charter Academy
+19,64733,0106831,Animo Venice Charter High
+19,64733,0106849,Animo Pat Brown
+19,64733,0106864,Alliance Gertz-Ressler Richard Merkin 6-12 Complex
+19,64733,0106872,Bert Corona Charter
+19,64733,0107755,Port of Los Angeles High
+19,64733,0108878,CHAMPS - Charter HS of Arts-Multimedia & Performing
+19,64733,0108886,Gabriella Charter
+19,64733,0108894,Alliance Judy Ivie Burton Technology Academy High
+19,64733,0108910,ISANA Nascent Academy
+19,64733,0108928,Larchmont Charter
+19,64733,0108936,Alliance Collins Family College-Ready High
+19,64733,0109884,James Jordan Middle
+19,64733,0109934,Our Community Charter
+19,64733,0110304,Los Angeles Academy of Arts and Enterprise
+19,64733,0111211,New Heights Charter
+19,64733,0111484,New Village Girls Academy
+19,64733,0111492,Alliance Patti And Peter Neuwirth Leadership Academy
+19,64733,0111500,Alliance Dr. Olga Mohan High
+19,64733,0111518,Alliance Jack H. Skirball Middle
+19,64733,0111575,Animo Ralph Bunche Charter High
+19,64733,0111583,Animo Jackie Robinson High
+19,64733,0111625,Animo Watts College Preparatory Academy
+19,64733,0111641,Alliance Ouchi-O'Donovan 6-12 Complex
+19,64733,0111658,Alliance Marc & Eva Stern Math and Science
+19,64733,0112060,Hesby Oaks Leadership Charter
+19,64733,0112201,PUC Excel Charter Academy
+19,64733,0112235,California Creative Learning Academy
+19,64733,0112508,Stella High Charter Academy
+19,64733,0114884,Aspire Junior Collegiate Academy
+19,64733,0114959,Monsenor Oscar Romero Charter Middle
+19,64733,0114967,Global Education Academy
+19,64733,0115048,Fenton Primary Center
+19,64733,0115113,"Ivy Bound Academy of Math, Science, and Technology Charter Middle"
+19,64733,0115139,Center for Advanced Learning
+19,64733,0115253,Discovery Charter Preparatory #2
+19,64733,0115287,ICEF Vista Middle Academy
+19,64733,0116509,Alliance Morgan McKinzie High
+19,64733,0117036,Enadia Way Technology Charter
+19,64733,0117598,Alliance Piera Barbaglia Shaheen Health Services Academy
+19,64733,0117606,Alliance Leichtman-Levine Family Foundation Environmental Science High
+19,64733,0117614,New Los Angeles Charter
+19,64733,0117622,Magnolia Science Academy 4
+19,64733,0117648,Magnolia Science Academy 6
+19,64733,0117655,Magnolia Science Academy 7
+19,64733,0117846,Para Los Niños Middle
+19,64733,0117895,Synergy Kinetic Academy
+19,64733,0117903,KIPP Raices Academy
+19,64733,0117911,New Millennium Secondary
+19,64733,0117937,ICEF Vista Elementary Academy
+19,64733,0117952,ICEF Innovation Los Angeles Charter
+19,64733,0117978,Goethe International Charter
+19,64733,0118588,Alain Leroy Locke College Preparatory Academy
+19,64733,0119982,Equitas Academy Charter
+19,64733,0120014,KIPP Endeavor College Preparatory Charter
+19,64733,0120022,Valor Academy Middle
+19,64733,0120030,Alliance College-Ready Middle Academy 4
+19,64733,0120071,New Designs Charter School-Watts
+19,64733,0120097,Academia Moderna
+19,64733,0120477,Aspire Titan Academy
+19,64733,0120527,Watts Learning Center Charter Middle
+19,64733,0121079,Ararat Charter
+19,64733,0121137,Ingenium Charter
+19,64733,0121285,Alliance Cindy and Bill Simon Technology Academy High
+19,64733,0121293,Alliance Tennenbaum Family Technology High
+19,64733,0121699,KIPP Empower Academy
+19,64733,0121707,KIPP Comienza Community Prep
+19,64733,0121848,Crown Preparatory Academy
+19,64733,0122242,TEACH Academy of Technologies
+19,64733,0122481,Animo Jefferson Charter Middle
+19,64733,0122556,Citizens of the World Charter School Hollywood
+19,64733,0122564,Camino Nuevo Elementary #3
+19,64733,0122606,PUC Lakeview Charter High
+19,64733,0122614,Aspire Gateway Academy Charter
+19,64733,0122622,Aspire Firestone Academy Charter
+19,64733,0122655,ISANA Octavia Academy
+19,64733,0122721,Aspire Pacific Academy
+19,64733,0122739,Vista Charter Middle
+19,64733,0122747,Magnolia Science Academy Bell
+19,64733,0122754,Valley Charter Elementary
+19,64733,0122838,Valley Charter Middle
+19,64733,0122861,Camino Nuevo Charter Academy #2
+19,64733,0123133,Alliance Susan and Eric Smidt Technology High
+19,64733,0123141,Alliance Ted K. Tajima High
+19,64733,0123158,Arts In Action Community Charter
+19,64733,0123166,ISANA Palmati Academy
+19,64733,0123984,ISANA Cardinal Academy
+19,64733,0123992,Animo Ellen Ochoa Charter Middle
+19,64733,0124008,Animo James B. Taylor Charter Middle
+19,64733,0124016,Animo Legacy Charter Middle
+19,64733,0124198,Extera Public
+19,64733,0124222,Rise Kohyang Middle
+19,64733,0124560,Synergy Quantum Academy
+19,64733,0124784,Aspire Slauson Academy Charter
+19,64733,0124792,Aspire Juanita Tate Academy Charter
+19,64733,0124800,Aspire Inskeep Academy Charter
+19,64733,0124818,Los Angeles Leadership Primary Academy
+19,64733,0124826,Camino Nuevo Charter Academy #4
+19,64733,0124891,Alliance Renee and Meyer Luskin Academy High
+19,64733,0124933,PUC Early College Academy for Leaders and Scholars (ECALS)
+19,64733,0124941,Alliance Margaret M. Bloomfield Technology Academy High
+19,64733,0125609,KIPP Philosophers Academy
+19,64733,0125625,KIPP Scholar Academy
+19,64733,0125641,KIPP Sol Academy
+19,64733,0125864,Ednovate - USC Hybrid High College Prep
+19,64733,0126136,Math and Science College Preparatory
+19,64733,0126169,Equitas Academy #2
+19,64733,0126177,Citizens of the World Charter School Silver Lake
+19,64733,0126193,Citizens of the World Charter School Mar Vista
+19,64733,0126797,Aspire Centennial College Preparatory Academy
+19,64733,0127670,KIPP Iluminar Academy
+19,64733,0127886,City Language Immersion Charter
+19,64733,0127894,Valor Academy High
+19,64733,0127910,Camino Nuevo High #2
+19,64733,0127936,PREPA TEC - Los Angeles
+19,64733,0127985,Ingenium Charter Middle
+19,64733,0128009,Alliance Virgil Roberts Leadership Academy
+19,64733,0128033,Alliance College-Ready Middle Academy 8
+19,64733,0128041,Alliance Kory Hunter Middle
+19,64733,0128058,Alliance College-Ready Middle Academy 12
+19,64733,0128132,Extera Public School No. 2
+19,64733,0128371,New Horizons Charter Academy
+19,64733,0128512,KIPP Academy of Innovation
+19,64733,0129270,Animo Mae Jemison Charter Middle
+19,64733,0129460,KIPP Vida Preparatory Academy
+19,64733,0129593,PUC Inspire Charter Academy
+19,64733,0129619,PUC Community Charter Elementary
+19,64733,0129627,TEACH Tech Charter High
+19,64733,0129650,Equitas Academy #3 Charter
+19,64733,0129833,Global Education Academy 2
+19,64733,0129858,Everest Value
+19,64733,0129866,Village Charter Academy
+19,64733,0131466,Fenton STEM Academy: Elementary Center for Science Technology Engineering and Mathematics
+19,64733,0131722,Fenton Charter Leadership Academy
+19,64733,0131771,KIPP Ignite Academy
+19,64733,0131797,KIPP Promesa Prep
+19,64733,0131821,Collegiate Charter High School of Los Angeles
+19,64733,0131904,Libertas College Preparatory Charter
+19,64733,0132027,University Preparatory Value High
+19,64733,0132084,Alliance Marine - Innovation and Technology 6-12 Complex
+19,64733,0132126,Bert Corona Charter High
+19,64733,0132282,Ednovate - East College Prep
+19,64733,0132928,Anahuacalmecac International University Preparatory of North America
+19,64733,0133272,PUC Triumph Charter Academy and PUC Triumph Charter High
+19,64733,0133280,PUC Nueva Esperanza Charter Academy
+19,64733,0133298,PUC CALS Middle School and Early College High
+19,64733,0133686,Equitas Academy 4
+19,64733,0133694,Valor Academy Elementary
+19,64733,0133702,New Los Angeles Charter Elementary
+19,64733,0133710,Girls Athletic Leadership School Los Angeles
+19,64733,0133868,Rise Kohyang High
+19,64733,0134023,Animo Florence-Firestone Charter Middle
+19,64733,0134205,Arts in Action Community Middle
+19,64733,0135509,Gabriella Charter 2
+19,64733,0135517,KIPP Corazon Academy
+19,64733,0135616,Crete Academy
+19,64733,0135632,WISH Academy High
+19,64733,0135715,Ednovate - Esperanza College Prep
+19,64733,0135723,Ednovate - Brio College Prep
+19,64733,0135921,WISH Community
+19,64733,0135954,ISANA Himalia Academy
+19,64733,0136986,STEM Preparatory Elementary
+19,64733,0136994,Rise Kohyang Elementary
+19,64733,0137463,California Creative Learning Academy MS
+19,64733,0137471,High Tech LA Middle
+19,64733,0137513,Learning by Design Charter
+19,64733,0137521,Vox Collegiate of Los Angeles
+19,64733,0137562,Matrix for Success Academy
+19,64733,0137604,Stella Elementary Charter Academy
+19,64733,0137612,Valley International Preparatory High
+19,64733,0138305,TEACH Preparatory Mildred S. Cunningham & Edith H. Morris Elementary
+19,64733,0138883,Equitas Academy 6
+19,64733,0139089,Vista Horizon Global Academy
+19,64733,0139097,Scholarship Prep - South Bay
+19,64733,0139121,Equitas Academy 5
+19,64733,0139832,Citizens of the World Charter School West Valley
+19,64733,0140004,El Rio Community
+19,64733,0140111,Invictus Leadership Academy
+19,64733,0140129,Ednovate - South LA College Prep
+19,64733,0140749,Citizens of the World Charter School East Valley
+19,64733,0164780,Ednovate - Encore Arts and Media College Prep
+19,64733,1931047,Birmingham Community Charter High
+19,64733,1931708,Chatsworth Charter High
+19,64733,1931864,Grover Cleveland Charter High
+19,64733,1932623,El Camino Real Charter High
+19,64733,1933746,Granada Hills Charter
+19,64733,1937226,Reseda Charter High
+19,64733,1938554,Sylmar Charter High
+19,64733,1938612,Taft Charter High
+19,64733,1938885,University High School Charter
+19,64733,1995836,Palisades Charter High
+19,64733,1996610,Los Angeles Leadership Academy
+19,64733,6015986,Beckford Charter for Enriched Studies
+19,64733,6016240,Calabash Charter Academy
+19,64733,6016265,Calvert Charter for Enriched Studies
+19,64733,6016323,Canyon Charter Elementary
+19,64733,6016356,Carpenter Community Charter
+19,64733,6016562,Colfax Charter Elementary
+19,64733,6016729,Dearborn Elementary Charter Academy
+19,64733,6016778,Dixie Canyon Community Charter
+19,64733,6016869,El Oro Way Charter For Enriched Studies
+19,64733,6016935,Encino Charter Elementary
+19,64733,6017016,Fenton Avenue Charter
+19,64733,6017438,Hamlin Charter Academy
+19,64733,6017529,Haynes Charter For Enriched Studies
+19,64733,6017693,Justice Street Academy Charter
+19,64733,6017701,Kenter Canyon Elementary Charter
+19,64733,6017743,Knollwood Preparatory Academy
+19,64733,6017891,Lockhurst Drive Charter Elementary
+19,64733,6018063,Marquez Charter
+19,64733,6018204,Montague Charter Academy
+19,64733,6018287,Nestle Avenue Charter
+19,64733,6018634,Palisades Charter Elementary
+19,64733,6018642,Pacoima Charter Elementary
+19,64733,6018725,Plainview Academic Charter Academy
+19,64733,6018774,Pomelo Community Charter
+19,64733,6018923,Riverside Drive Charter
+19,64733,6019079,Santa Monica Boulevard Community Charter
+19,64733,6019111,Serrania Avenue Charter For Enriched Studies
+19,64733,6019186,Sherman Oaks Elementary Charter
+19,64733,6019392,Superior Street Elementary
+19,64733,6019525,Topanga Elementary Charter
+19,64733,6019533,Topeka Charter School For Advanced Studies
+19,64733,6019673,Van Gogh Charter
+19,64733,6019715,Vaughn Next Century Learning Center
+19,64733,6019855,Welby Way Charter Elementary School And Gifted-High Ability Magnet
+19,64733,6019939,Westwood Charter Elementary
+19,64733,6019954,Wilbur Charter For Enriched Academics
+19,64733,6020036,Woodlake Elementary Community Charter
+19,64733,6020044,Woodland Hills Elementary Charter For Enriched Studies
+19,64733,6057988,Emerson Community Charter
+19,64733,6058150,Louis Armstrong Middle
+19,64733,6058267,Paul Revere Charter Middle
+19,64733,6061477,George Ellery Hale Charter Academy
+19,64733,6061543,Alfred B. Nobel Charter Middle
+19,64733,6061584,Gaspar De Portola Charter Middle
+19,64733,6071435,Castlebay Lane Charter
+19,64733,6094726,Community Magnet Charter Elementary
+19,64733,6097927,Open Charter Magnet
+19,64733,6112536,Accelerated
+19,64733,6114912,Watts Learning Center
+19,64733,6116750,PUC Community Charter Middle and PUC Community Charter Early College High
+19,64733,6117048,ICEF View Park Preparatory Elementary
+19,64733,6117667,Camino Nuevo Charter Academy
+19,64733,6119044,Multicultural Learning Center
+19,64733,6119531,CHIME Institute's Schwarzenegger Community
+19,64733,6119903,Downtown Value
+19,64733,6120471,Puente Charter
+19,64733,6120489,Para Los Niños Charter
+19,64733,6121081,ICEF View Park Preparatory Middle
+19,64857,0112714,Antelope Valley Learning Academy
+19,64857,0125377,Palmdale Aerospace Academy
+19,64857,0140889,Palmdale Academy Charter
+19,64881,0113464,Aveson Global Leadership Academy
+19,64881,0113472,Aveson School of Leaders
+19,64881,0113894,Pasadena Rosebud Academy
+19,64881,0118075,Learning Works
+19,64881,0136945,OCS - South
+19,64907,0115170,School of Extended Educational Options
+19,64907,1996693,School of Arts and Enterprise
+19,64907,6021984,La Verne Science and Technology Charter
+19,65094,0112706,California Virtual Academy @ Los Angeles
+19,65094,6023527,San Jose Charter Academy
+19,65136,0114439,Mission View Public
+19,65136,0117234,Santa Clarita Valley International
+19,65136,1996263,Opportunities for Learning - William S. Hart
+19,73437,0115725,Lifeline Education Charter
+19,73437,0118760,Barack Obama Charter
+19,73437,0132845,Today's Fresh Start-Compton
+19,73437,0134338,ISANA Achernar Academy
+19,73437,0137893,KIPP Compton Community
+19,73437,0137984,Animo Compton Charter
+19,73452,0120600,iQ Academy California-Los Angeles
+19,75291,1996016,Options for Youth San Gabriel
+19,75309,0127100,Assurance Learning Academy
+19,75309,0131383,SIATech Academy South
+19,75309,0131987,iLEAD Hybrid
+19,75309,0132654,California Pacific Charter- Los Angeles
+19,75309,0134619,Empower Generations
+19,75309,0135145,Compass Charter Schools of Los Angeles
+19,75309,0136531,iLEAD Online Charter
+19,75309,0136648,Options for Youth-Acton
+19,75309,0137703,"Method Schools, LA"
+19,75309,0137786,Mission Academy
+19,75309,0138297,iLead Agua Dulce
+19,75663,6120158,New West Charter
+19,76869,0119016,Da Vinci Science
+19,76869,0119636,Da Vinci Design
+19,76869,0128728,Da Vinci Connect
+19,76869,0131128,Da Vinci Communications
+19,76968,0109926,Academia Avance Charter
+20,10207,0117184,Madera County Independent Academy
+20,10207,2030229,Pioneer Technical Center
+20,65185,0129015,Yosemite-Wawona Elementary Charter
+20,65243,0100016,Sherman Thomas Charter
+20,65243,0107938,Liberty Charter
+20,65243,0118950,Sherman Thomas Charter High
+20,65243,0134510,Sherman Thomas STEM Academy
+20,75606,0125021,Minarets Charter High
+20,75606,0132936,Chawanakee Academy Charter
+20,76414,2030237,Glacier High School Charter
+20,76414,6110076,Mountain Home Charter (Alternative)
+21,10215,0135350,Ross Valley Charter
+21,10215,2130102,Phoenix Academy
+21,65417,6113229,Novato Charter
+22,65532,0125823,Sierra Foothill Charter
+23,65557,6116669,Pacific Community Charter
+23,65565,0123737,Three Rivers Charter
+23,65607,2330272,Eel River Charter
+23,65615,0115055,River Oak Charter
+23,65615,0140814,Shanél Valley Academy
+23,65615,2330413,Redwood Collegiate Academy
+23,65615,2330454,Sequoia Career Academy
+23,65615,6117386,Tree of Life Charter
+23,65623,0112300,La Vida Charter
+23,65623,0125658,Willits Elementary Charter
+23,65623,2330363,Willits Charter
+24,10249,0106518,Merced Scholars Charter
+24,10249,0138032,Come Back Charter
+24,65649,6025381,Ballico-Cressey Community Charter
+26,10264,0124990,Urban Corps of San Diego County Charter
+27,10272,0112177,Monterey Bay Charter
+27,10272,0116491,Open Door Charter
+27,10272,0124297,Bay View Academy
+27,10272,2730232,Monterey County Home Charter
+27,10272,6119663,Oasis Charter Public
+27,66092,2730240,Learning for Life Charter
+27,66092,6118962,International School of Monterey
+27,75150,0118349,Big Sur Charter
+28,10280,0142034,Mayacamas Charter Middle
+28,10280,0148361,Mayacamas Countywide Middle
+28,66266,0108605,Stone Bridge
+29,10298,0114314,Bitney Prep High
+29,10298,0114322,Yuba River Charter
+29,10298,0114330,Nevada City School of the Arts
+29,10298,0126219,Forest Charter
+29,10298,0126227,Twin Ridges Home Study Charter
+29,10298,0130823,EPIC de Cesar Chavez
+29,10298,2930147,John Muir Charter
+29,66316,0125013,Chicago Park Community Charter
+29,66332,6111140,Grass Valley Charter
+29,66357,0124834,Sierra Academy of Expeditionary Learning
+29,66373,0136424,Arete Charter Academy
+29,66407,6027197,Union Hill Elementary
+29,76877,6111371,Vantage Point Charter
+30,10306,0126037,Samueli Academy
+30,10306,0132613,Vista Heritage Global Academy
+30,10306,0132910,College and Career Preparatory Academy
+30,10306,0133785,Oxford Preparatory Academy - Saddleback Valley
+30,10306,0133959,Unity Middle College High
+30,10306,0133983,Ednovate - Legacy College Prep.
+30,10306,0134056,Orange County Academy of Sciences and Arts
+30,10306,0134239,Epic California Academy
+30,10306,0134288,Scholarship Prep - Orange County
+30,10306,0134841,Orange County Workforce Innovation High
+30,10306,0134940,Citrus Springs Charter
+30,10306,0137000,Vista Condor Global Academy
+30,10306,0137976,Tomorrow's Leadership Collaborative (TLC) Charter
+30,10306,0138800,Suncoast Preparatory Academy
+30,10306,0139352,Sycamore Creek Community Charter
+30,10306,0139469,International School for Science and Culture
+30,10306,0139964,Orange County Classical Academy
+30,10306,0140822,Irvine International Academy
+30,10306,0141978,Vista Meridian Global Academy
+30,10306,0142000,Explore Academy
+30,10306,0142026,Oxford Preparatory Academy - Middle
+30,10306,0142224,California Republic Leadership Academy Capistrano
+30,10306,0142570,California Republic Leadership Academy Yorba Linda
+30,10306,3030723,OCSA
+30,66423,0131417,Vibrant Minds Charter
+30,66423,6027379,Palm Lane Global Academy
+30,66464,0106765,California Online Public Schools Southern California
+30,66464,0123729,Community Roots Academy
+30,66464,0124743,Oxford Preparatory Academy - South Orange County
+30,66464,0140061,OCASA College Prep
+30,66464,6117758,Journey
+30,66464,6120356,Opportunities for Learning - Capistrano
+30,66530,0134221,Kinetic Academy
+30,66621,6085328,Santiago Charter Middle
+30,66621,6094874,El Rancho Charter
+30,66647,6068621,Orange County School of Computer Science
+30,66670,0101626,Edward B. Cole Academy
+30,66670,0106567,Nova Academy Early College High
+30,66670,0109066,Orange County Educational Arts Academy
+30,66670,0135897,Advanced Learning Academy
+30,66670,6119127,El Sol Santa Ana Science and Arts Academy
+30,73650,0142232,Irvine Chinese Immersion Academy
+30,76893,0130765,Magnolia Science Academy Santa Ana
+31,10314,0126904,Placer County Pathways Charter
+31,66761,6031009,Bowman Charter
+31,66787,0126664,Alta Vista Community Charter
+31,66845,0117150,Loomis Basin Charter
+31,66852,0109827,Newcastle Charter
+31,66852,0120105,Creekside Charter
+31,66852,0121608,Harvest Ridge Cooperative Charter
+31,66852,0127928,Rocklin Academy Gateway
+31,66894,0138081,Maidu Virtual Charter Academy
+31,66928,0121418,John Adams Academy - Roseville
+31,66928,0141622,New Pacific Charter - Roseville
+31,66944,0121624,Sierra Expeditionary Learning
+31,66951,0135871,John Adams Academy - Lincoln
+31,66951,3130168,Horizon Charter
+31,75085,0117879,Maria Montessori Charter Academy
+31,75085,0119487,Western Sierra Collegiate Academy
+31,75085,6118392,Rocklin Academy
+32,66969,3230083,Plumas Charter
+33,10330,0110833,River Springs Charter
+33,10330,0125237,Leadership Military Academy
+33,10330,0125385,"Imagine Schools, Riverside County"
+33,10330,0128397,CBK Charter
+33,10330,0128777,Gateway College and Career Academy
+33,10330,0136168,Temecula International Academy
+33,10330,0137836,Pivot Charter School Riverside
+33,10330,0137851,Julia Lee Performing Arts Academy
+33,10330,0137869,Excelsior Charter School Corona-Norco
+33,10330,0138024,Journey
+33,10330,0138602,JCS - Pine Hills
+33,10330,0139428,Garvey/Allen Visual & Performing Arts Academy for STEM
+33,10330,0140780,Audeo Valley Charter
+33,66993,0127142,Highland Academy
+33,66993,0139360,Mission Vista Academy
+33,67058,6031959,George Washington Charter
+33,67058,6031991,Palm Desert Charter Middle
+33,67082,0120675,Western Center Academy
+33,67116,0109843,Santa Rosa Academy
+33,67157,3331014,Nuview Bridge Early College High
+33,67173,6032411,Cielo Vista Charter
+33,67181,0138610,Scale Leadership Academy - East
+33,67199,6105571,Innovative Horizons Charter
+33,67207,0101170,California Military Institute
+33,67215,0126128,REACH Leadership STEAM Academy
+33,67249,6114748,San Jacinto Valley Academy
+33,73676,0121673,NOVA Academy - Coachella
+33,75176,0120204,Sycamore Academy of Science and Cultural Arts
+33,75192,3330917,Temecula Preparatory
+33,75192,6112551,Temecula Valley Charter
+34,10348,0136275,Fortune
+34,10348,0140160,American River Collegiate Academy
+34,10348,0142091,Capital College & Career Academy
+34,67314,0111732,California Montessori Project - Elk Grove Campus
+34,67314,0137281,SAVA - Sacramento Academic and Vocational Academy - EGUSD
+34,67314,6112254,Elk Grove Charter
+34,67330,0106757,Folsom Cordova K-8 Community Charter
+34,67330,0142208,New Pacific Charter - Rancho Cordova
+34,67413,0114660,Delta Elementary Charter
+34,67421,0132019,Paseo Grande Charter
+34,67421,0137950,Marconi Learning Academy
+34,67421,0140178,New Hope Charter
+34,67439,0101048,St. HOPE Public School 7
+34,67439,0101295,Sol Aureus College Preparatory
+34,67439,0101881,Sacramento New Technology Early College High
+34,67439,0101899,George Washington Carver School of Arts and Science
+34,67439,0101907,The MET
+34,67439,0102038,Sacramento Charter High
+34,67439,0102343,Aspire Capitol Heights Academy
+34,67439,0106898,The Language Academy of Sacramento
+34,67439,0111757,California Montessori Project - Capitol Campus
+34,67439,0121665,Yav Pem Suab Academy - Preparing for the Future Charter
+34,67439,0123901,Capitol Collegiate Academy
+34,67439,0131136,New Joseph Bonnheim (NJB) Community Charter
+34,67439,0135343,Growth Public
+34,67439,0137406,SAVA - Sacramento Academic and Vocational Academy - SCUSD
+34,67439,6033799,Bowling Green Elementary
+34,67447,0112169,California Montessori Project-San Juan Campuses
+34,67447,0114983,Golden Valley River
+34,67447,0120469,Aspire Alexander Twilight College Preparatory Academy
+34,67447,0121467,Aspire Alexander Twilight Secondary Academy
+34,67447,0128124,Gateway International
+34,67447,0132399,Golden Valley Orchard
+34,67447,3430691,Options for Youth-San Juan
+34,67447,3430717,Visions In Education
+34,67447,3430758,San Juan Choices Charter
+34,75283,0108860,Westlake Charter
+34,75283,0112425,Natomas Pacific Pathways Prep
+34,75283,0120113,Natomas Pacific Pathways Prep Middle
+34,75283,0126060,Leroy Greene Academy
+34,75283,0134049,Natomas Pacific Pathways Prep Elementary
+34,75283,3430659,Natomas Charter
+34,76505,0101766,Community Outreach Academy
+34,76505,0101832,Futures High
+34,76505,0108415,Heritage Peak Charter
+34,76505,0108795,Creative Connections Arts Academy
+34,76505,0108837,Community Collaborative Charter
+34,76505,0113878,Higher Learning Academy
+34,76505,0114272,SAVA - Sacramento Academic and Vocational Academy
+34,76505,0130757,Highlands Community Charter
+34,76505,0139584,California Innovative Career Academy
+34,76505,6033336,Smythe Academy of Arts and Sciences
+34,76505,6112643,Westside Preparatory Charter
+35,10355,0142489,Polytechnic Academy
+35,67470,0127688,Hollister Prep
+36,10363,0115808,Norton Science and Language Academy
+36,10363,0139147,Sycamore Academy of Science and Cultural Arts - Chino Valley
+36,10363,0140012,Entrepreneur High Fontana
+36,10363,0142547,Inland Empire Springs Charter
+36,10363,3630761,Excelsior Charter
+36,10363,6111918,Desert Trails Preparatory Academy
+36,67587,0128462,Taylion High Desert Academy/Adelanto
+36,67678,0137547,Allegiance STEAM Academy - Thrive
+36,67710,0141952,"Allegiance STEAM Academy - Thrive, Fontana"
+36,67736,0116723,Academy of Careers and Exploration
+36,67736,0128439,Empire Springs Charter
+36,67736,0130948,Independence Charter Academy
+36,67736,0136069,Sage Oak Charter
+36,67736,0136937,Vista Norte Public Charter
+36,67736,0139576,Excel Academy Charter
+36,67827,0113928,Riverside Preparatory
+36,67827,0137174,Mojave River Academy - Gold Canyon
+36,67827,0137182,Mojave River Academy - National Trails
+36,67827,0137190,Mojave River Academy - Oro Grande
+36,67827,0137208,Mojave River Academy - Route 66
+36,67827,0137216,Mojave River Academy - Rockview Park
+36,67827,0137224,Mojave River Academy - Silver Mountain
+36,67827,0137232,Mojave River Academy - Marble City
+36,67843,3630928,Grove
+36,67876,0107730,ASA Charter
+36,67876,0109850,Public Safety Academy
+36,67876,0117192,SOAR Charter Academy
+36,67876,0120006,New Vision Middle
+36,67876,0120568,Options for Youth-San Bernardino
+36,67876,0121343,iEmpire Academy
+36,67876,0122317,Hardy Brown College Prep
+36,67876,0126714,Woodward Leadership Academy
+36,67876,0133892,Ballington Academy for the Arts and Sciences - San Bernardino
+36,67876,0136952,Entrepreneur High
+36,67876,0137935,Savant Preparatory Academy of Business
+36,67876,3630993,Provisional Accelerated Learning Academy
+36,67918,6101927,Sixth Street Prep
+36,67918,6118350,Mountain View Montessori Charter
+36,67934,3630670,Options for Youth-Victor Valley Charter
+36,67959,0114256,Inland Leaders Charter
+36,67959,0124032,Competitive Edge Charter Academy (CECA)
+36,75044,0107516,Summit Leadership Academy-High Desert
+36,75044,0112441,Pathways to College K8
+36,75044,0114389,Altus Schools Mirus Charter
+36,75044,0116707,Encore Jr./Sr. High School for the Performing and Visual Arts
+36,75044,0118059,LaVerne Elementary Preparatory Academy
+36,75051,0115089,Sky Mountain Charter
+36,75051,0136432,Alta Vista Innovation High
+36,75051,0136960,Elite Academic Academy - Lucerne
+36,75051,0137794,Gorman Learning Center San Bernardino/Santa Clarita
+36,75051,0138107,Southern California Flex Academy
+36,75051,0139188,Granite Mountain Charter
+36,75077,3631207,Academy for Academic Excellence
+37,10371,0108548,IFTIN Charter
+37,10371,0124321,Howard Gardner Community Charter
+37,10371,0134577,Audeo Charter II
+37,10371,0136085,Scholarship Prep - Oceanside
+37,10371,0137695,Community Montessori
+37,10371,0137752,Dimensions Collaborative
+37,10371,0138016,Pacific Springs Charter
+37,10371,0138404,Classical Academy Vista
+37,10371,0138594,Dual Language Immersion North County
+37,10371,0138792,JCS - Manzanita
+37,10371,6119119,Literacy First Charter
+37,67983,0134890,San Diego Workforce Innovation High
+37,67991,0108563,EJE Elementary Academy Charter
+37,67991,0119255,EJE Middle Academy
+37,67991,0139394,Kidinnu Academy
+37,67991,0140558,Bostonia Global
+37,68023,0119594,Leonardo da Vinci Health Sciences Charter
+37,68023,0138073,Learning Choice Academy - Chula Vista
+37,68023,6037956,Feaster (Mae L.) Charter
+37,68023,6037980,Mueller Charter (Robert L.)
+37,68023,6111322,Discovery Charter
+37,68023,6115778,Chula Vista Learning Community Charter
+37,68023,6116859,Arroyo Vista Charter
+37,68049,0127118,The Heights Charter
+37,68049,0129221,MethodSchools
+37,68049,0132506,Cabrillo Point Academy
+37,68049,0136416,Pacific Coast Academy
+37,68098,0101535,Heritage K-8 Charter
+37,68098,6116776,Classical Academy
+37,68106,0111195,Classical Academy High
+37,68106,0137034,Altus Schools North County
+37,68106,3731023,Escondido Charter High
+37,68130,0139063,The Learning Choice Academy - East County
+37,68130,3731262,Steele Canyon High
+37,68130,3732732,Helix High
+37,68155,6117303,Greater San Diego Academy
+37,68163,0128421,Harbor Springs Charter
+37,68163,0137109,Diego Valley East Public Charter
+37,68163,0138156,JCS - Mountain Oaks
+37,68163,0138628,JCS - Cedar Cove
+37,68163,0139402,Brookfield Engineering Science Technology Academy
+37,68163,3731239,Julian Charter
+37,68189,3731072,River Valley Charter
+37,68189,6120901,Barona Indian Charter
+37,68197,0136408,Sparrow Academy
+37,68213,0123224,San Diego Virtual
+37,68213,0127084,Compass Charter Schools of San Diego
+37,68213,0129668,Motivated Youth Academy
+37,68213,0136978,Elite Academic Academy - Mountain Empire
+37,68213,0138636,JCS - Pine Valley
+37,68221,0101360,Integrity Charter
+37,68338,0101204,High Tech Middle
+37,68338,0101345,KIPP Adelante Preparatory Academy
+37,68338,0106732,High Tech High International
+37,68338,0106799,Learning Choice Academy
+37,68338,0107573,"High Tech Middle Media Arts "
+37,68338,0108787,High Tech High Media Arts
+37,68338,0109033,King-Chavez Arts and Athletics Academy
+37,68338,0109157,Magnolia Science Academy San Diego
+37,68338,0111898,Albert Einstein Academies
+37,68338,0111906,King-Chavez Preparatory Academy
+37,68338,0114462,Health Sciences High and Middle College
+37,68338,0118083,Innovations Academy
+37,68338,0118851,King-Chavez Community High
+37,68338,0119610,Gompers Preparatory Academy
+37,68338,0121681,San Diego Global Vision Academy
+37,68338,0122788,School for Entrepreneurship and Technology
+37,68338,0123778,Old Town Academy K-8 Charter
+37,68338,0124347,City Heights Preparatory Charter
+37,68338,0126730,Kavod Charter
+37,68338,0127647,E3 Civic High
+37,68338,0129387,Empower Language Academy
+37,68338,0129395,Elevate
+37,68338,0131565,High Tech Elementary
+37,68338,0131979,Ingenuity Charter
+37,68338,0135913,Urban Discovery Academy Charter
+37,68338,0136663,America's Finest Charter
+37,68338,3730959,Altus Schools Charter School of San Diego
+37,68338,3731189,Preuss School UCSD
+37,68338,3731247,High Tech High
+37,68338,3731395,Altus Schools Audeo
+37,68338,6039457,Darnall Charter
+37,68338,6039812,Keiller Leadership Academy
+37,68338,6040018,Harriet Tubman Village Charter
+37,68338,6040190,King-Chavez Primary Academy
+37,68338,6061964,The O'Farrell Charter
+37,68338,6113211,McGill School of Success
+37,68338,6115570,Museum
+37,68338,6117279,Holly Drive Leadership Academy
+37,68338,6117683,High Tech Elementary Explorer
+37,68338,6119168,San Diego Cooperative Charter
+37,68338,6119598,King-Chavez Academy of Excellence
+37,68395,6040505,Imperial Beach Charter
+37,68395,6040513,Nestor Language Academy Charter
+37,68403,0125401,Insight @ San Diego
+37,68403,6120893,California Virtual Academy @ San Diego
+37,68411,0126086,Hawking S.T.E.A.M. Charter
+37,68411,3731304,MAAC Community Charter
+37,68452,0106120,SIATech
+37,68452,0114264,North County Trade Tech High
+37,68452,0124917,Guajome Learning Centers
+37,68452,0128223,Bella Mente Montessori Academy
+37,68452,3730942,Guajome Park Academy Charter
+37,73569,0136267,Coastal Academy Charter
+37,73569,3731221,Pacific View Charter
+37,73791,0138222,Pivot Charter School - San Diego II
+37,75416,0122796,All Tribes Elementary Charter
+37,75416,0132472,California Pacific Charter - San Diego
+37,75416,0138651,San Diego Mission Academy
+37,75416,0139378,Sage Oak Charter School - South
+37,75416,0139386,Excel Academy Charter
+37,75416,0139451,Pathways Academy Charter School - Adult Education
+37,75416,6119275,All Tribes Charter
+37,76471,0114678,High Tech High Chula Vista
+37,76471,0114694,High Tech High North County
+37,76471,0119271,High Tech Middle North County
+37,76471,0123042,High Tech Middle Chula Vista
+37,76471,0123059,High Tech Elementary Chula Vista
+37,76471,0127605,High Tech Elementary North County
+37,76471,0137067,High Tech High Mesa
+37,76471,0138768,High Tech Middle Mesa
+37,76471,0138776,High Tech Elementary Mesa
+37,76851,6113468,Vivian Banks Charter
+37,77099,0136077,Altus Schools East County
+37,77107,0136473,Altus Schools South Bay
+37,77156,0137323,Vista Springs Charter
+37,77164,0137356,College Preparatory Middle
+37,77172,0138099,Baypoint Preparatory Academy - San Diego
+38,68478,0101337,KIPP Bayview Academy
+38,68478,0101352,KIPP San Francisco Bay Academy
+38,68478,0101774,Five Keys Charter (SF Sheriff's)
+38,68478,0107300,City Arts & Leadership Academy
+38,68478,0118141,Five Keys Independence HS (SF Sheriff's)
+38,68478,0123265,Gateway Middle
+38,68478,0123505,Mission Preparatory
+38,68478,0127530,KIPP San Francisco College Preparatory
+38,68478,3830429,Life Learning Academy Charter
+38,68478,3830437,Gateway High
+38,68478,6040935,Thomas Edison Charter Academy
+38,68478,6112601,Creative Arts Charter
+38,76927,0132183,The New School of San Francisco
+38,77131,0137307,KIPP Bayview Elementary
+39,10397,0120717,"one.Charter "
+39,10397,0124958,TEAM Charter
+39,10397,0142539,Unbound Stockton Community
+39,10397,3930476,Venture Academy
+39,68502,0126011,Escalon Charter Academy
+39,68569,0132415,John McCandless Charter
+39,68585,0101956,Aspire Benjamin Holt College Preparatory Academy
+39,68585,0122580,Rio Valley Charter
+39,68585,0133678,Aspire Benjamin Holt Middle
+39,68585,6116594,Aspire Vincent Shalvey Academy
+39,68585,6117675,Joe Serna Jr. Charter
+39,68585,6118921,Aspire River Oaks Charter
+39,68627,0117796,New Jerusalem
+39,68627,0126755,ABLE Charter
+39,68627,0127191,California Virtual Academy @ San Joaquin
+39,68627,0129890,Delta Home Charter
+39,68627,0129916,Valley View Charter Prep
+39,68627,0132050,Astronaut Jose' M. Hernandez Academy
+39,68627,0133116,Insight @ San Joaquin
+39,68627,0136028,Delta Keys Charter
+39,68627,0136135,Delta Charter Online
+39,68627,6119309,Delta Charter
+39,68650,0125849,California Online Public Schools Northern California
+39,68676,0108647,Aspire Rosa Parks Academy
+39,68676,0111336,Pittman Charter
+39,68676,0114876,Aspire Port City Academy
+39,68676,0117853,Dr. Lewis Dolphin Stallworth Sr. Charter
+39,68676,0118497,Aspire Langston Hughes Academy
+39,68676,0119743,Stockton Early College Academy
+39,68676,0120725,Stockton Collegiate International Elementary
+39,68676,0120733,Stockton Collegiate International Secondary
+39,68676,0121541,Aspire APEX Academy
+39,68676,0123802,Health Careers Academy
+39,68676,0124248,Pacific Law Academy
+39,68676,0136283,Team Charter Academy
+39,68676,0139865,Aspire Stockton 6-12 Secondary Academy
+39,68676,0139907,Voices College Bound Language Academy at Stockton
+39,68676,0139923,Aspire Arts & Sciences Academy
+39,68676,0140616,KIPP Stockton
+39,68676,0141358,KIPP University Park
+39,68676,6042725,Nightingale Charter
+39,75499,0102384,Primary Charter
+39,75499,0102392,Millennium Charter
+39,75499,0139949,Tracy Independent Study Charter
+39,75499,6118665,Discovery Charter
+39,77388,0127134,River Islands Technology Academy II
+39,77388,0131789,NextGeneration STEAM Academy
+39,77388,0140392,Banta Charter
+39,77388,0141234,EPIC Academy
+39,77388,0141242,River Islands High
+40,10405,0101725,Grizzly ChalleNGe Charter
+40,10405,0125807,Almond Acres Charter Academy
+40,68809,6043194,Bellevue-Santa Fe Charter
+41,10413,0135269,Oxford Day Academy
+41,68916,0112284,California Virtual Academy San Mateo
+41,68924,0127548,Summit Public School: Shasta
+41,68999,0134197,Aspire East Palo Alto Charter
+41,68999,0135608,KIPP Valiant Community Prep
+41,69005,0127282,Connect Community Charter
+41,69005,0132068,KIPP Excelencia Community Preparatory
+41,69005,0132076,Rocketship Redwood City
+41,69021,6112213,San Carlos Charter Learning Center
+41,69047,0129759,Design Tech High
+41,69062,0112722,Summit Preparatory Charter High
+41,69062,0119503,Everest Public High
+41,69062,0126722,East Palo Alto Academy
+41,69062,0139915,KIPP Esperanza High
+42,69112,0111773,Family Partnership Charter
+42,69112,0124255,Trivium Charter
+42,69112,0137877,Trivium Charter School Adventure
+42,69112,0137885,Trivium Charter School Voyage
+42,69179,6118434,Santa Ynez Valley Charter
+42,69229,0116921,Manzanita Public Charter
+42,69260,0116434,Orcutt Academy Charter
+42,75010,0138891,California Online Public Schools Central Coast
+42,76786,6045918,Peabody Charter
+42,76786,6111603,Santa Barbara Charter
+42,76786,6118202,Adelante Charter
+42,77198,0138362,Olive Grove Charter - Orcutt/Santa Maria
+42,77206,0138370,Olive Grove Charter - Lompoc
+42,77214,0138388,Olive Grove Charter - Buellton
+42,77222,0138396,Olive Grove Charter - Santa Barbara
+43,10439,0106534,Bullis Charter
+43,10439,0111880,Discovery Charter
+43,10439,0113431,University Preparatory Academy Charter
+43,10439,0113704,Rocketship Mateo Sheedy Elementary
+43,10439,0116814,ACE Empower Academy
+43,10439,0119024,Rocketship Si Se Puede Academy
+43,10439,0120642,Rocketship Los Suenos Academy
+43,10439,0121483,Alpha: Cornerstone Academy Preparatory
+43,10439,0123257,Downtown College Prep - Alum Rock
+43,10439,0123281,Rocketship Discovery Prep
+43,10439,0123794,Summit Public School: Tahoma
+43,10439,0124065,Sunrise Middle
+43,10439,0125781,Rocketship Academy Brilliant Minds
+43,10439,0125799,Rocketship Alma Academy
+43,10439,0127969,Discovery Charter II
+43,10439,0129213,Alpha: Jose Hernandez
+43,10439,0131110,Rocketship Fuerza Community Prep
+43,10439,0131748,Voices College-Bound Language Academy at Morgan Hill
+43,10439,0132530,Voices College-Bound Language Academy at Mt. Pleasant
+43,10439,0133496,Rocketship Rising Stars
+43,10439,0135087,Opportunity Youth Academy
+43,69369,0106633,KIPP Heartwood Academy
+43,69369,0125526,Alpha: Blanca Alvarado
+43,69369,0129924,Kipp Prize Preparatory Academy
+43,69385,6046445,Fammatre Elementary
+43,69385,6046452,Farnham Charter
+43,69385,6046486,Price Charter Middle
+43,69385,6046494,Sartorette Charter
+43,69393,0106005,Village
+43,69393,0137273,Campbell School of Innovation
+43,69393,6046510,Blackford Elementary
+43,69393,6046536,Capri Elementary
+43,69393,6046544,Castlemont Elementary
+43,69393,6046577,Forest Hill Elementary
+43,69393,6046601,Lynhaven Elementary
+43,69393,6046619,Marshall Lane Elementary
+43,69393,6046627,Monroe Middle
+43,69393,6046668,Rolling Hills Middle
+43,69393,6046692,Sherman Oaks Elementary
+43,69427,0107151,"Escuela Popular/Center for Training and Careers, Family Learning"
+43,69427,0116889,KIPP San Jose Collegiate
+43,69427,0125617,ACE Charter High
+43,69427,0130856,Luis Valdez Leadership Academy
+43,69427,0131995,B. Roberto Cruz Leadership Academy
+43,69427,0132274,Alpha Cindy Avitia High
+43,69427,4330668,Latino College Preparatory Academy
+43,69427,4330676,San Jose Conservation Corps Charter
+43,69427,4330726,Escuela Popular Accelerated Family Learning
+43,69450,0113662,Voices College-Bound Language Academy
+43,69450,0123299,Rocketship Mosaic Elementary
+43,69450,0128108,Rocketship Spark Academy
+43,69450,0129205,KIPP Heritage Academy
+43,69450,0129247,ACE Esperanza Middle
+43,69484,0123760,Gilroy Prep (a Navigator School)
+43,69583,6118541,Charter School of Morgan Hill
+43,69617,6048045,Ida Jew Academies
+43,69666,0129718,Downtown College Preparatory Middle
+43,69666,0131656,ACE Inspire Academy
+43,69666,4330585,Downtown College Preparatory
+43,77149,0137315,KIPP Navigate College Prep
+44,10447,0136572,Santa Cruz County Career Advancement Charter
+44,10447,4430252,Pacific Collegiate Charter
+44,69765,0100388,Tierra Pacifica Charter
+44,69799,0117804,Ceiba College Preparatory Academy
+44,69799,4430229,Pacific Coast Charter
+44,69799,4430245,Diamond Technology Institute
+44,69799,6049720,Linscott Charter
+44,69799,6049829,Alianza Charter
+44,69799,6119077,Watsonville Charter School of the Arts
+44,69807,0110007,Ocean Grove Charter
+44,69807,4430179,SLVUSD Charter
+44,69823,4430187,Delta Charter
+44,75432,0139410,California Online Public Schools Monterey Bay
+44,77248,0138909,Watsonville Prep
+45,10454,0111674,Chrysalis Charter
+45,10454,0129957,Northern Summit Academy Shasta
+45,10454,0132944,Redding STEM Academy
+45,69856,4530333,Anderson New Technology High
+45,69914,0135624,Tree of Life International Charter
+45,69948,0134122,Redding School of the Arts
+45,69948,0139543,Shasta View Academy
+45,69948,0141580,Phoenix Charter Academy College View
+45,69955,0121640,Cottonwood Creek Charter
+45,69971,0135848,Redding Collegiate Academy
+45,70110,0135889,Stellar Charter
+45,70110,6117931,Monarch Learning Center
+45,70136,0106013,University Preparatory
+45,70136,4530267,Shasta Charter Academy
+45,75267,0113407,Rocky Point Charter
+47,10470,0117168,Golden Eagle Charter
+47,10470,0137372,Northern United - Siskiyou Charter
+48,10488,0139030,Elite Public
+48,70532,0122267,Dixon Montessori Charter
+48,70573,0129494,Kairos Public
+48,70573,0135095,Ernest Kimme Charter Academy
+48,70573,4830113,Buckingham Collegiate Charter Academy
+48,70573,6051338,Fairmont Charter Elementary
+48,70581,0115469,Vallejo Charter
+48,70581,0134262,Caliber: ChangeMakers Academy
+48,70581,0137380,MIT Griffin Academy Middle
+48,70581,0139816,Griffin Academy High
+48,70581,4830196,MIT Academy
+48,70581,6116255,Mare Island Technology Academy
+49,70649,6051635,Cinnabar Charter
+49,70672,0122440,Dunham Charter
+49,70680,0112987,Forestville Academy
+49,70714,6051742,Gravenstein Elementary
+49,70714,6051759,Hillcrest Middle
+49,70722,0139048,California Pacific Charter - Sonoma
+49,70722,6051767,Guerneville Elementary (Charter)
+49,70730,6110639,Salmon Creek School - A Charter
+49,70730,6120588,Pathways Charter
+49,70797,0107284,California Virtual Academy @ Sonoma
+49,70797,0139568,Heartwood Charter
+49,70797,0140228,Liberty Independent Study
+49,70797,6051833,Liberty Elementary
+49,70805,0105890,Mark West Charter
+49,70805,6051858,San Miguel Elementary
+49,70805,6111066,John B. Riebli Elementary
+49,70839,0138065,Pivot Charter School - North Bay
+49,70839,6051890,Oak Grove Elementary/Willowside Middle
+49,70847,0119750,River Montessori Elementary Charter
+49,70847,0127555,Loma Vista Immersion Academy
+49,70847,6051924,Old Adobe Elementary Charter
+49,70847,6072136,Miwok Valley Elementary Charter
+49,70847,6114755,Sonoma Mountain Elementary
+49,70854,6051981,Penngrove Elementary
+49,70854,6119036,Live Oak Charter
+49,70862,0131961,Petaluma Accelerated Charter
+49,70862,0142554,Dual Language Immersion Academy Charter
+49,70862,6051932,Mary Collins Charter School at Cherry Valley
+49,70870,0106344,Northwest Prep Charter
+49,70870,6066344,Olivet Elementary Charter
+49,70870,6109144,Morrice Schaefer Charter
+49,70870,6113492,Piner-Olivet Charter
+49,70896,0102525,Spring Lake Charter
+49,70896,6052039,Manzanita Elementary Charter
+49,70896,6052047,Whited Elementary Charter
+49,70896,6052070,Village Elementary Charter
+49,70896,6085229,Binkley Elementary Charter
+49,70904,0101923,Roseland Charter
+49,70912,0113530,Santa Rosa Charter School for the Arts
+49,70912,0125831,Santa Rosa French-American Charter (SRFACS)
+49,70912,0128074,Cesar Chavez Language Academy
+49,70912,6116958,Kid Street Charter
+49,70920,0102533,Santa Rosa Accelerated Charter
+49,70938,6113039,Sebastopol Independent Charter
+49,70953,0105866,Woodland Star Charter
+49,70953,6111678,Sonoma Charter
+49,70961,4930319,Orchard View
+49,70961,4930350,Sunridge Charter
+49,70961,6052302,Twin Hills Charter Middle
+49,71035,6052377,Wright Charter
+49,73882,0123786,Credo High
+49,75358,0114934,Village Charter
+49,75358,6052369,Cali Calmecac Language Academy
+50,10504,0117457,Great Valley Academy
+50,10504,0129023,Stanislaus Alternative Charter
+50,71043,0107128,Whitmore Charter School of Art & Technology
+50,71043,0107136,Whitmore Charter High
+50,71043,0112292,Aspire Summit Charter Academy
+50,71068,0132662,Denair Elementary Charter Academy
+50,71068,5030267,Denair Charter Academy
+50,71084,0120089,Gratton Charter
+50,71092,6112965,Hart-Ransom Charter
+50,71100,6052559,Hickman Elementary
+50,71100,6112627,Hickman Charter
+50,71100,6116388,Hickman Middle
+50,71134,6113286,Keyes to Learning Charter
+50,71167,0137265,Aspire University Charter
+50,71167,0138057,Connecting Waters Charter School - Central Valley
+50,71175,0120212,Aspire Vanguard College Preparatory Academy
+50,71209,0112383,Paradise Charter
+50,71233,0121525,Roberts Ferry Charter School Academy
+50,71266,0124768,Great Valley Academy - Salida
+50,71274,0121558,Shiloh Charter
+50,75556,0113852,Riverbank Language Academy
+50,75564,5030176,Oakdale Charter
+50,75572,5030317,Connecting Waters Charter
+50,75739,0124669,eCademy Charter at Crane
+50,75739,0131185,Fusion Charter
+51,10512,0138040,AeroSTEM Academy
+51,10512,0140152,Pathways Charter Academy
+51,71373,0141226,Spartan Academy
+51,71407,0109793,South Sutter Charter
+51,71415,0129007,California Virtual Academy at Sutter
+51,71423,0132977,Sutter Peak Charter Academy
+51,71456,0133934,Feather River Charter
+51,71464,0107318,Twin Rivers Charter
+51,71464,5130125,Yuba City Charter
+52,10520,6119606,Lincoln Street
+52,10520,6119671,Tehama eLearning Academy
+52,71472,0134403,Lassen-Antelope Volcanic Academy (LAVA)
+52,71522,0132597,Evergreen Institute of Excellence
+53,10538,0125633,California Heritage Youthbuild Academy II
+54,10546,0119602,University Preparatory High
+54,10546,0124057,"Valley Life Charter "
+54,10546,0125542,Sycamore Valley Academy
+54,10546,0135459,Blue Oak Academy
+54,10546,5430327,La Sierra High
+54,10546,6119291,Eleanor Roosevelt Community Learning Center
+54,71803,0112458,California Online Public Schools Central Valley
+54,71811,0139477,Monarch River Academy
+54,71837,0109009,Summit Charter Academy
+54,71993,0124776,Loma Vista Charter
+54,72116,6054340,Sequoia Elementary Charter
+54,72140,0136507,Crescent Valley Public Charter II
+54,72249,0130708,Sierra Vista Charter High
+54,72249,0133793,Accelerated Charter High
+54,72256,0109751,Visalia Charter Independent Study
+54,72256,0120659,Visalia Technical Early College
+54,72256,0135863,Global Learning Charter
+54,72256,6116909,Charter Home School Academy
+54,75523,0114348,Butterfield Charter
+54,75523,0116590,Harmony Magnet Academy
+54,75523,0137968,Porterville Military Academy
+55,72413,0112276,Gold Rush Home Study Charter
+55,72413,5530191,Connections Visual and Performing Arts Academy
+56,10561,0109900,Vista Real Charter High
+56,10561,0112417,Ventura Charter School of Arts and Global Education
+56,10561,0121756,BRIDGES Charter
+56,10561,0122713,River Oaks Academy
+56,10561,6055974,Meadows Arts and Technology Elementary
+56,72470,5630363,Golden Valley Charter
+56,72520,5630405,Valley Oak Charter
+56,72546,0115105,Camarillo Academy of Progressive Education
+56,72546,0120634,"Architecture, Construction & Engineering Charter High (ACE)"
+56,72553,0139592,Peak Prep Pleasant Valley
+56,72553,6120620,University Preparation Charter School at CSU Channel Islands
+56,73940,0121426,IvyTech Charter
+57,10579,0132464,Empowering Possibilities International Charter
+57,72678,0119578,Da Vinci Charter Academy
+57,72694,0124875,Sacramento Valley Charter
+57,72694,0131706,River Charter Schools Lighthouse Charter
+57,72694,0135939,Washington Middle College High
+57,72702,0139436,Compass Charter School of Yolo
+57,72710,0121749,Science & Technology Academy at Knights Landing
+58,10587,0117242,Yuba Environmental Science Charter Academy
+58,10587,5830112,Yuba County Career Preparatory Charter
+58,72728,6115935,CORE Charter
+58,72736,0121632,Paragon Collegiate Academy
+58,72736,5830138,Marysville Charter Academy for the Arts
+58,72751,6118806,Wheatland Charter Academy
