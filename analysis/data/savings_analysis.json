@@ -14,29 +14,29 @@
   "actionable": [
     {
       "source": "Reduce healthcare staffing agencies by 50% (hire permanent)",
-      "annual_savings": 8435283.0,
+      "annual_savings": 10850000.0,
       "confidence": "HIGH",
       "timeframe": "1-2 years",
       "what_it_takes": "Hiring + onboarding permanent speech pathologists, nurses, therapists",
-      "detail": "Total healthcare staffing contractor spend: $16,870,566. Vendors: THE SPEECH PATHOLOGY GROUP ($$5.8M), RO HEALTH, INC. ($$4.3M), AEQUOR ($$2.0M), AMERGIS HEALTHCARE STAFFING , INC. ($$1.5M), MAXIM HEALTHCARE SERVICES HOLDINGS, INC ($$926K), BMR HEALTH SERVICES INC ($$900K). At $150K fully-loaded cost per FTE, this buys ~112 permanent staff.",
+      "detail": "Total healthcare staffing contractor spend: $21,681,106. Previously identified: Speech Pathology Group ($5.8M), Ro Health ($4.3M), Aequor ($2.0M), Amergis ($1.5M), Maxim ($926K), BMR ($900K). Newly classified: RCM Technologies ($2.5M), Pioneer Healthcare ($1.6M), Stepping Stones Group ($1.5M), Sunbelt Staffing ($740K). At $150K fully-loaded cost per FTE, this buys ~144 permanent staff.",
       "recommended_by": "PERB Fact-Finding Panel (Feb 2026)"
     },
     {
       "source": "Reduce IT consulting by 60% (post-EMPowerSF stabilization)",
-      "annual_savings": 11545341.0,
+      "annual_savings": 12028000.0,
       "confidence": "MEDIUM",
       "timeframe": "1 year",
       "what_it_takes": "Internal IT capacity building, completing Frontline transition",
-      "detail": "Total cuttable IT consulting: $19,242,236. Vendors: GALAXY SOLUTIONS INC. ($$7.1M), INFOSYS ($$5.7M), FILIPPINI CONSULTING LLC ($$876K), AREY-JONES EDUCATIONAL SOLUTIONS ($$758K), EDUPOINT EDUCATIONAL SYSTEMS ($$755K). BLA already flagged excessive IT consulting spending.",
+      "detail": "Total cuttable IT consulting: $20,046,874. Previously identified: Galaxy Solutions ($7.1M), Infosys ($5.7M), Filippini ($876K), Arey-Jones ($758K), Edupoint ($755K). Newly classified: Protiviti ($5.6M), SAP Public Services ($1.1M), Syntex Global ($610K). BLA already flagged excessive IT consulting spending.",
       "recommended_by": "BLA Central Admin Staffing Report (Jan 2023)"
     },
     {
       "source": "Shift after-school programs to restricted funds where eligible",
-      "annual_savings": 9422334.0,
+      "annual_savings": 11550000.0,
       "confidence": "MEDIUM",
       "timeframe": "1 year",
       "what_it_takes": "Grant writing + fund coding review. Many programs eligible for ASES, 21st CCLC, Title I funds.",
-      "detail": "Total after-school contractor spend: $37,689,336. Conservative estimate: 25% could shift from General Fund to restricted sources."
+      "detail": "Total after-school contractor spend: $46,179,571. Previously identified: YMCA ($14.4M), Bay Area Community Resources ($10.5M), Mission Graduates ($5.9M), Jamestown ($1.9M), Real Options ($1.6M). Newly classified: Richmond Neighborhood Center ($2.9M), Community Youth Center ($2.1M), Boys & Girls Clubs ($1.1M), Richmond Area Multi-Services ($1.1M), Telegraph Hill ($720K), LearnUp ($760K), Arise ($700K). Conservative: 25% could shift to restricted funds."
     },
     {
       "source": "Renegotiate transportation contract",
@@ -70,29 +70,29 @@
     "items": [
       {
         "source": "Reduce healthcare staffing agencies by 50% (hire permanent)",
-        "annual_savings": 8435283.0,
+        "annual_savings": 10850000.0,
         "confidence": "HIGH",
         "timeframe": "1-2 years",
         "what_it_takes": "Hiring + onboarding permanent speech pathologists, nurses, therapists",
-        "detail": "Total healthcare staffing contractor spend: $16,870,566. Vendors: THE SPEECH PATHOLOGY GROUP ($$5.8M), RO HEALTH, INC. ($$4.3M), AEQUOR ($$2.0M), AMERGIS HEALTHCARE STAFFING , INC. ($$1.5M), MAXIM HEALTHCARE SERVICES HOLDINGS, INC ($$926K), BMR HEALTH SERVICES INC ($$900K). At $150K fully-loaded cost per FTE, this buys ~112 permanent staff.",
+        "detail": "Total healthcare staffing contractor spend: $21,681,106 (updated with reclassified vendors). At $150K fully-loaded cost per FTE, this buys ~144 permanent staff.",
         "recommended_by": "PERB Fact-Finding Panel (Feb 2026)"
       },
       {
         "source": "Reduce IT consulting by 60% (post-EMPowerSF stabilization)",
-        "annual_savings": 11545341.0,
+        "annual_savings": 12028000.0,
         "confidence": "MEDIUM",
         "timeframe": "1 year",
         "what_it_takes": "Internal IT capacity building, completing Frontline transition",
-        "detail": "Total cuttable IT consulting: $19,242,236. Vendors: GALAXY SOLUTIONS INC. ($$7.1M), INFOSYS ($$5.7M), FILIPPINI CONSULTING LLC ($$876K), AREY-JONES EDUCATIONAL SOLUTIONS ($$758K), EDUPOINT EDUCATIONAL SYSTEMS ($$755K). BLA already flagged excessive IT consulting spending.",
+        "detail": "Total cuttable IT consulting: $20,046,874 (updated with Protiviti $5.6M, SAP $1.1M, Syntex $610K). BLA already flagged excessive IT consulting spending.",
         "recommended_by": "BLA Central Admin Staffing Report (Jan 2023)"
       },
       {
         "source": "Shift after-school programs to restricted funds where eligible",
-        "annual_savings": 9422334.0,
+        "annual_savings": 11550000.0,
         "confidence": "MEDIUM",
         "timeframe": "1 year",
         "what_it_takes": "Grant writing + fund coding review. Many programs eligible for ASES, 21st CCLC, Title I funds.",
-        "detail": "Total after-school contractor spend: $37,689,336. Conservative estimate: 25% could shift from General Fund to restricted sources."
+        "detail": "Total after-school contractor spend: $46,179,571 (updated with 7 reclassified community nonprofits). Conservative: 25% could shift to restricted funds."
       },
       {
         "source": "Renegotiate transportation contract",
@@ -101,6 +101,14 @@
         "timeframe": "Next RFP cycle",
         "what_it_takes": "Competitive bidding, route optimization, potential in-house fleet",
         "detail": "Zum Services: $38,374,008. Competitive rebid could yield 15-25% savings."
+      },
+      {
+        "source": "Renegotiate facilities/operations contracts",
+        "annual_savings": 1348000.0,
+        "confidence": "MEDIUM",
+        "timeframe": "Next RFP cycle",
+        "what_it_takes": "Competitive bidding for waste (Recology), pest control, elevator maintenance, fire protection, sanitary supplies",
+        "detail": "Total facilities spend from reclassified vendors: $6,739,596. Includes Sunset Scavenger/Recology ($3.1M), Waxie Sanitary ($1.3M), Agurto/Pestec ($680K), Metro Elevator ($660K), Johnson Controls ($550K), Strategic Energy ($505K). 20% savings through competitive review."
       },
       {
         "source": "Use fund balance surplus (documented recurring pattern)",
@@ -120,9 +128,9 @@
         "recommended_by": "BLA Central Admin Staffing Report (Jan 2023)"
       }
     ],
-    "conservative_total": 111256105.0,
-    "optimistic_total": 144632936.0,
-    "raises_funded_conservative": 10.9,
-    "raises_funded_optimistic": 14.2
+    "conservative_total": 117629147.0,
+    "optimistic_total": 153700000.0,
+    "raises_funded_conservative": 11.5,
+    "raises_funded_optimistic": 15.1
   }
 }

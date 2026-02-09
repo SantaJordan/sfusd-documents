@@ -1,0 +1,76 @@
+{
+  "category_totals": {
+    "IT Consulting": {
+      "total": 7213638,
+      "count": 3
+    },
+    "Facilities": {
+      "total": 6739596,
+      "count": 6
+    },
+    "After-School Programs": {
+      "total": 9390235,
+      "count": 7
+    },
+    "Social Services": {
+      "total": 2567370,
+      "count": 1
+    },
+    "Healthcare Staffing": {
+      "total": 4810540,
+      "count": 3
+    },
+    "Special Education": {
+      "total": 6403456,
+      "count": 7
+    },
+    "Food Services": {
+      "total": 2155000,
+      "count": 2
+    },
+    "IT Equipment": {
+      "total": 3113615,
+      "count": 3
+    },
+    "Government": {
+      "total": 1100000,
+      "count": 1
+    },
+    "Claims Administration": {
+      "total": 949424,
+      "count": 1
+    },
+    "Security": {
+      "total": 900000,
+      "count": 1
+    },
+    "Ed-Tech": {
+      "total": 3822000,
+      "count": 6
+    },
+    "Translation Services": {
+      "total": 1180000,
+      "count": 2
+    },
+    "Education Consulting": {
+      "total": 580000,
+      "count": 1
+    },
+    "Arts Education": {
+      "total": 520000,
+      "count": 1
+    },
+    "Auditing": {
+      "total": 500000,
+      "count": 1
+    }
+  },
+  "savings_potential_totals": {
+    "Cuttable": 7718638,
+    "Reducible": 10111799,
+    "Renegotiable": 19434635,
+    "Fund-shiftable": 12477605,
+    "Essential": 2202197
+  },
+  "total_reclassified_spend": 51944874
+}

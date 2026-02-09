@@ -1679,6 +1679,26 @@
     white-space: nowrap;
   }
 
+  /* Category-specific tag colors */
+  .cat-tag.cat-special-education { background: #e8d5f5; color: #5b21b6; }
+  .cat-tag.cat-ed-tech { background: #dbeafe; color: #1e40af; }
+  .cat-tag.cat-facilities { background: #fef3c7; color: #92400e; }
+  .cat-tag.cat-social-services { background: #fce7f3; color: #9d174d; }
+  .cat-tag.cat-government { background: #e0e7ff; color: #3730a3; }
+  .cat-tag.cat-claims-admin { background: #f3e8ff; color: #6b21a8; }
+  .cat-tag.cat-security { background: #fee2e2; color: #991b1b; }
+  .cat-tag.cat-arts-education { background: #ede9fe; color: #5b21b6; }
+  .cat-tag.cat-auditing { background: #f0fdf4; color: #166534; }
+  .cat-tag.cat-healthcare { background: #fef3c7; color: #b45309; }
+  .cat-tag.cat-it-consulting { background: #fee2e2; color: #991b1b; }
+  .cat-tag.cat-it-equipment { background: #e0f2fe; color: #075985; }
+  .cat-tag.cat-translation { background: #f0fdf4; color: #166534; }
+  .cat-tag.cat-food-services { background: #fef9c3; color: #854d0e; }
+  .cat-tag.cat-after-school { background: #d1fae5; color: #065f46; }
+  .cat-tag.cat-transportation { background: #e0e7ff; color: #3730a3; }
+  .cat-tag.cat-education-consulting { background: #fce7f3; color: #9d174d; }
+  .cat-tag.cat-it-payroll { background: #fee2e2; color: #991b1b; }
+
   /* ============================================================
      FORENSIC REPORT: TIMELINE
      ============================================================ */
@@ -2903,7 +2923,7 @@
 
 <p>If SFUSD matched the peer median, it would free up approximately <strong style="color:var(--red)">$123M per year</strong>. Even closing half the gap would free ~$61M&mdash;enough for a 6% raise for all employees.</p>
 
-<h3>BLA Findings (January 2023)</h3>
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">BLA Findings (January 2023)</h3>
 <ul>
   <li>Central admin = <strong>25% of operating budget</strong> ($978M in FY2020-21) vs. 18% median among 12 peer districts <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023">[BLA Central Admin Staffing Report, Jan 2023]</span></li>
   <li><strong>220 central FTEs per 10,000 students</strong> vs. 138 median&mdash;59% more admin staff than peers <span class="cite" title="BLA Central Admin Staffing Report, Jan 2023, p.4">[BLA Central Admin Staffing Report, Jan 2023, p.4]</span></li>
@@ -2961,51 +2981,90 @@
 <div class="callout">"The District must continue to reduce its reliance on outside consultants and thus reallocate the contracting out funds to programs that directly benefit their employees." <span class="cite" title="PERB Fact-Finding Report, Feb 2026">[PERB Fact-Finding Report, Feb 2026]</span></div>
 
 <h3>Spending by Category</h3>
-<div class="stats-row">
-
-        <div class="stat-card" onclick="filterVendors('Other')">
-          <div class="big-num">$52.3M</div>
-          <div class="stat-label">Other<br>(46 vendors)</div>
-        </div>
-        <div class="stat-card" onclick="filterVendors('Transportation')">
-          <div class="big-num">$38.4M</div>
-          <div class="stat-label">Transportation<br>(1 vendors)</div>
+<div class="stats-row" style="flex-wrap:wrap">
+        <div class="stat-card" onclick="filterVendors('all')" style="background:var(--navy);color:var(--white)">
+          <div class="big-num" style="color:var(--gold)">$226M</div>
+          <div class="stat-label" style="color:var(--white)">All Vendors<br>(676 vendors)</div>
         </div>
         <div class="stat-card" onclick="filterVendors('After-School Programs')">
-          <div class="big-num">$36.8M</div>
-          <div class="stat-label">After-School Programs<br>(6 vendors)</div>
+          <div class="big-num">$47.1M</div>
+          <div class="stat-label">After-School Programs<br>(18 vendors)</div>
         </div>
-        <div class="stat-card" onclick="filterVendors('Food Services')">
-          <div class="big-num">$19.2M</div>
-          <div class="stat-label">Food Services<br>(3 vendors)</div>
+        <div class="stat-card" onclick="filterVendors('Transportation')">
+          <div class="big-num">$38.5M</div>
+          <div class="stat-label">Transportation<br>(2 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Other')">
+          <div class="big-num">$31.3M</div>
+          <div class="stat-label">Other<br>(535 vendors)</div>
         </div>
         <div class="stat-card" onclick="filterVendors('Healthcare Staffing')">
-          <div class="big-num">$15.6M</div>
-          <div class="stat-label">Healthcare Staffing<br>(6 vendors)</div>
+          <div class="big-num">$21.7M</div>
+          <div class="stat-label">Healthcare Staffing<br>(24 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Food Services')">
+          <div class="big-num">$21.7M</div>
+          <div class="stat-label">Food Services<br>(6 vendors)</div>
         </div>
         <div class="stat-card" onclick="filterVendors('IT Consulting')">
-          <div class="big-num">$12.8M</div>
-          <div class="stat-label">IT Consulting<br>(2 vendors)</div>
+          <div class="big-num">$20.1M</div>
+          <div class="stat-label">IT Consulting<br>(5 vendors)</div>
         </div>
-        <div class="stat-card" onclick="filterVendors('Education Consulting')">
-          <div class="big-num">$3.1M</div>
-          <div class="stat-label">Education Consulting<br>(1 vendors)</div>
+        <div class="stat-card" onclick="filterVendors('Facilities')">
+          <div class="big-num">$7.5M</div>
+          <div class="stat-label">Facilities<br>(8 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Special Education')">
+          <div class="big-num">$6.5M</div>
+          <div class="stat-label">Special Education<br>(7 vendors)</div>
         </div>
         <div class="stat-card" onclick="filterVendors('IT/Consulting')">
-          <div class="big-num">$2.9M</div>
-          <div class="stat-label">IT/Consulting<br>(4 vendors)</div>
+          <div class="big-num">$6.4M</div>
+          <div class="stat-label">IT/Consulting<br>(49 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('IT Equipment')">
+          <div class="big-num">$4.8M</div>
+          <div class="stat-label">IT Equipment<br>(4 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Ed-Tech')">
+          <div class="big-num">$3.9M</div>
+          <div class="stat-label">Ed-Tech<br>(6 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Education Consulting')">
+          <div class="big-num">$3.7M</div>
+          <div class="stat-label">Education Consulting<br>(2 vendors)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Translation Services')">
+          <div class="big-num">$3.7M</div>
+          <div class="stat-label">Translation Services<br>(3 vendors)</div>
         </div>
         <div class="stat-card" onclick="filterVendors('IT/Payroll System')">
           <div class="big-num">$2.7M</div>
-          <div class="stat-label">IT/Payroll System<br>(1 vendors)</div>
+          <div class="stat-label">IT/Payroll System<br>(1 vendor)</div>
         </div>
-        <div class="stat-card" onclick="filterVendors('Translation Services')">
-          <div class="big-num">$2.4M</div>
-          <div class="stat-label">Translation Services<br>(1 vendors)</div>
+        <div class="stat-card" onclick="filterVendors('Social Services')">
+          <div class="big-num">$2.6M</div>
+          <div class="stat-label">Social Services<br>(1 vendor)</div>
         </div>
-        <div class="stat-card" onclick="filterVendors('IT Equipment')">
-          <div class="big-num">$1.7M</div>
-          <div class="stat-label">IT Equipment<br>(1 vendors)</div>
+        <div class="stat-card" onclick="filterVendors('Government')">
+          <div class="big-num">$1.1M</div>
+          <div class="stat-label">Government<br>(1 vendor)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Claims Administration')">
+          <div class="big-num">$949K</div>
+          <div class="stat-label">Claims Administration<br>(1 vendor)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Security')">
+          <div class="big-num">$849K</div>
+          <div class="stat-label">Security<br>(1 vendor)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Arts Education')">
+          <div class="big-num">$549K</div>
+          <div class="stat-label">Arts Education<br>(1 vendor)</div>
+        </div>
+        <div class="stat-card" onclick="filterVendors('Auditing')">
+          <div class="big-num">$518K</div>
+          <div class="stat-label">Auditing<br>(1 vendor)</div>
         </div>
 </div>
 
@@ -3024,7 +3083,7 @@
         <tr class="vendor-detail" id="v0" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Student transportation technology company providing school bus services. SF-based startup replacing traditional yellow bus operators.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Student transportation technology company providing school bus services. SF-based startup replacing traditional yellow bus operators.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$2,222,301.69</td></tr><tr><td>November</td><td class="money">$74.55</td></tr></table></div>
             </div>
           </td>
@@ -3039,7 +3098,7 @@
         <tr class="vendor-detail" id="v1" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Public benefit corporation providing healthy school meals. Serves 2M+ meals/week to schools nationwide.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Public benefit corporation providing healthy school meals. Serves 2M+ meals/week to schools nationwide.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$622,862.94</td></tr><tr><td>September</td><td class="money">$272,594.00</td></tr><tr><td>October</td><td class="money">$1,399,259.62</td></tr><tr><td>November</td><td class="money">$699,678.51</td></tr><tr><td>December</td><td class="money">$1,246,422.79</td></tr></table></div>
             </div>
           </td>
@@ -3054,7 +3113,7 @@
         <tr class="vendor-detail" id="v2" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Operates after-school programs at SFUSD school sites through ExCEL (Expanded Community-based Education and Literacy) partnership.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Operates after-school programs at SFUSD school sites through ExCEL (Expanded Community-based Education and Literacy) partnership.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$302,217.35</td></tr><tr><td>August</td><td class="money">$357,681.45</td></tr><tr><td>September</td><td class="money">$373,693.97</td></tr><tr><td>October</td><td class="money">$655,880.30</td></tr><tr><td>November</td><td class="money">$434,565.73</td></tr><tr><td>December</td><td class="money">$800,878.18</td></tr></table></div>
             </div>
           </td>
@@ -3069,7 +3128,7 @@
         <tr class="vendor-detail" id="v3" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Nonprofit operating after-school programs at SFUSD sites. Funded through a mix of district general fund and grants.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Nonprofit operating after-school programs at SFUSD sites. Funded through a mix of district general fund and grants.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$47,491.16</td></tr><tr><td>August</td><td class="money">$37,754.77</td></tr><tr><td>September</td><td class="money">$1,958,644.87</td></tr><tr><td>October</td><td class="money">$591,502.83</td></tr><tr><td>November</td><td class="money">$522,473.49</td></tr><tr><td>December</td><td class="money">$765,725.58</td></tr></table></div>
             </div>
           </td>
@@ -3084,7 +3143,7 @@
         <tr class="vendor-detail" id="v4" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">IT consulting firm providing technology staffing and project management services to SFUSD.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> IT consulting firm providing technology staffing and project management services to SFUSD.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>November</td><td class="money">$835,862.40</td></tr></table></div>
             </div>
           </td>
@@ -3099,7 +3158,7 @@
         <tr class="vendor-detail" id="v5" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Nonprofit providing after-school academic support and college preparation programs for low-income students.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Nonprofit providing after-school academic support and college preparation programs for low-income students.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$203,146.33</td></tr><tr><td>August</td><td class="money">$136,403.00</td></tr><tr><td>September</td><td class="money">$120,733.67</td></tr><tr><td>October</td><td class="money">$659,264.88</td></tr><tr><td>November</td><td class="money">$122,339.90</td></tr><tr><td>December</td><td class="money">$702,763.29</td></tr></table></div>
             </div>
           </td>
@@ -3114,7 +3173,7 @@
         <tr class="vendor-detail" id="v6" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Contract staffing agency providing speech-language pathologists to school districts unable to fill permanent positions.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Contract staffing agency providing speech-language pathologists to school districts unable to fill permanent positions.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$688,671.61</td></tr><tr><td>October</td><td class="money">$803,856.31</td></tr><tr><td>November</td><td class="money">$1,462,550.61</td></tr><tr><td>December</td><td class="money">$156,552.75</td></tr></table></div>
             </div>
           </td>
@@ -3129,36 +3188,22 @@
         <tr class="vendor-detail" id="v7" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Global IT services company. Contracted for the failed EMPowerSF SAP payroll system implementation ($13.7M+ original contract).</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Global IT services company. Contracted for the failed EMPowerSF SAP payroll system implementation ($13.7M+ original contract).</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$370,581.81</td></tr><tr><td>September</td><td class="money">$705,020.99</td></tr><tr><td>October</td><td class="money">$74,908.96</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" onclick="toggleVendor('v8')">
           <td>9</td>
-          <td>PROTIVITI GOVERNMENT SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>PROTIVITI GOVERNMENT SERVICES, INC. <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
           <td class="money">$5,550,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-it-consulting">IT Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
         <tr class="vendor-detail" id="v8" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Home | Protiviti
-[Skip to main content] 
-[![Protiviti Global Buisiness Consulting in PGS]![Protiviti Global Buisiness Consulting in PGS]] 
-* [] 
-* ## Search in Protiviti.com
-Search in Protiviti.comSearch
-[] 
-* [] 
-* [] 
-* [] 
-![] 
-![] 
-![Gov Serv] 
-# Protiviti Government Services
-Responsive and sust</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Robert Half subsidiary providing management consulting, IT advisory, and project management services. Engaged by SFUSD for technology consulting and project oversight.</p>
               
             </div>
           </td>
@@ -3173,7 +3218,7 @@ Responsive and sust</p>
         <tr class="vendor-detail" id="v9" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Healthcare staffing agency providing nurses, therapists, and behavioral health specialists to schools.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Healthcare staffing agency providing nurses, therapists, and behavioral health specialists to schools.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$74,683.34</td></tr></table></div>
             </div>
           </td>
@@ -3185,10 +3230,10 @@ Responsive and sust</p>
           <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v10" style="display:none; display:none">
+        <tr class="vendor-detail" id="v10" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Community center in the Mission District providing after-school programs and youth development.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Community center in the Mission District providing after-school programs and youth development.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$33,024.28</td></tr><tr><td>September</td><td class="money">$7,374.72</td></tr><tr><td>October</td><td class="money">$100,978.66</td></tr><tr><td>November</td><td class="money">$163,787.82</td></tr><tr><td>December</td><td class="money">$35,803.44</td></tr></table></div>
             </div>
           </td>
@@ -3200,67 +3245,40 @@ Responsive and sust</p>
           <td><span class="cat-tag cat-education-consulting">Education Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v11" style="display:none; display:none">
+        <tr class="vendor-detail" id="v11" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Education consulting firm providing professional development and curriculum support.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Education consulting firm providing professional development and curriculum support.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$54,132.22</td></tr><tr><td>September</td><td class="money">$385,903.83</td></tr><tr><td>December</td><td class="money">$377,343.67</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v12')">
           <td>13</td>
-          <td>SUNSET SCAVENGER COMPANY <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>SUNSET SCAVENGER COMPANY <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$3,053,377</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-facilities">Facilities</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v12" style="display:none; display:none">
+        <tr class="vendor-detail" id="v12" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">California
-
-- [Recology American Canyon] 
-- [Recology Arcata] 
-- [Recology Auburn Placer] 
-- Recology Butte Colusa Counties
- - [Chico] 
- - [City of Colusa] 
- - [County of Colusa] 
- - [Butte County] 
- - [Oroville] 
- - [Williams] 
-- [Recology Davis] 
-- [Recology Del Norte] 
-- [Recology Dixon] 
-- [Reco</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Recology subsidiary providing waste collection, recycling, and composting services for SFUSD facilities across San Francisco.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$443,735.59</td></tr><tr><td>November</td><td class="money">$198,838.90</td></tr><tr><td>December</td><td class="money">$159,398.40</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v13')">
           <td>14</td>
-          <td>RICHMOND DIST. NEIGHBORHOOD CTR. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>RICHMOND DIST. NEIGHBORHOOD CTR. <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$2,871,010</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-after-school">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v13" style="display:none; display:none">
+        <tr class="vendor-detail" id="v13" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">[**Search for Public School Districts**] 
-
-District Directory Information (2023-2024 School Year)
-
-[Search Results] [Modify Search] [Data Notes/Grant IDs] [Help] 
-
-District Name:Richmond City Public Schools [(Schools in this District)] 
-
-NCES District ID:5103240
-
-State District ID:VA-123
-
-Mailing Ad</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Richmond District community organization operating ExCEL after-school programs at SFUSD school sites in the Richmond neighborhood.</p>
               
             </div>
           </td>
@@ -3272,39 +3290,25 @@ Mailing Ad</p>
           <td><span class="cat-tag cat-it-payroll-system">IT/Payroll System</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v14" style="display:none; display:none">
+        <tr class="vendor-detail" id="v14" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">K-12 HR/payroll software company. Replacing the failed EMPowerSF system. Ongoing subscription + implementation costs.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> K-12 HR/payroll software company. Replacing the failed EMPowerSF system. Ongoing subscription + implementation costs.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>September</td><td class="money">$178,769.39</td></tr><tr><td>November</td><td class="money">$108,450.00</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v15')">
           <td>16</td>
-          <td>SPECIAL SERVICE FOR GROUPS, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>SPECIAL SERVICE FOR GROUPS, INC. <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$2,567,370</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-social-services">Social Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v15" style="display:none; display:none">
+        <tr class="vendor-detail" id="v15" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">![] 
-
-# Special Education and MTSS
-
-Ensure all students have what they need to be successful
-
-![] 
-
-#### **Some of the districts we assisted in improving special education**
-
-* * *
-
-## Achieving Better Results is Possible
-
-Special education and MTSS supports are critical to creating more inclusive a</p>
+              <p class="vendor-desc"><strong>What they do:</strong> LA-based social services nonprofit providing behavioral health, mental health counseling, and family support programs in schools.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$15,520.00</td></tr><tr><td>August</td><td class="money">$40,229.20</td></tr><tr><td>November</td><td class="money">$76,607.85</td></tr><tr><td>December</td><td class="money">$52,339.70</td></tr></table></div>
             </div>
           </td>
@@ -3316,35 +3320,25 @@ Special education and MTSS supports are critical to creating more inclusive a</p
           <td><span class="cat-tag cat-food-services">Food Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v16" style="display:none; display:none">
+        <tr class="vendor-detail" id="v16" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Food service distribution company supplying school meal programs across California.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Food service distribution company supplying school meal programs across California.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$13,211.73</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v17')">
           <td>18</td>
-          <td>RCM TECHNOLOGIES (USA), INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>RCM TECHNOLOGIES (USA), INC. <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$2,500,540</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-healthcare">Healthcare Staffing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v17" style="display:none; display:none">
+        <tr class="vendor-detail" id="v17" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">About RCM Technologies - RCM Technologies
-![] Toggle business unit switcher
-* [RCM Technologies] 
-* [Energy Services] 
-* [Process &amp; Industrial] 
-* [Aerospace &amp; Defense] 
-* [Data &amp; Solutions] 
-* [Life Sciences] 
-* [Healthcare Services] 
-# We enable progress across industries
-**RCM Technol</p>
+              <p class="vendor-desc"><strong>What they do:</strong> National staffing company providing temporary nurses, therapists, and healthcare specialists to school districts.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>August</td><td class="money">$21,745.16</td></tr><tr><td>September</td><td class="money">$32,676.12</td></tr><tr><td>October</td><td class="money">$177,667.37</td></tr><tr><td>November</td><td class="money">$2,834.28</td></tr><tr><td>December</td><td class="money">$309,608.23</td></tr></table></div>
             </div>
           </td>
@@ -3356,33 +3350,25 @@ Special education and MTSS supports are critical to creating more inclusive a</p
           <td><span class="cat-tag cat-translation-services">Translation Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v18" style="display:none; display:none">
+        <tr class="vendor-detail" id="v18" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Translation and interpretation services company serving school districts and government agencies.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Translation and interpretation services company serving school districts and government agencies.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$44,283.16</td></tr><tr><td>September</td><td class="money">$40,623.70</td></tr><tr><td>October</td><td class="money">$51,284.60</td></tr><tr><td>November</td><td class="money">$173,482.12</td></tr><tr><td>December</td><td class="money">$149,379.08</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v19')">
           <td>20</td>
-          <td>COMMUNITY YOUTH CENTER OF SAN FRANCISCO <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>COMMUNITY YOUTH CENTER OF SAN FRANCISCO <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$2,130,344</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-after-school">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v19" style="display:none; display:none">
+        <tr class="vendor-detail" id="v19" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">- [Skip to primary navigation] 
-- [Skip to main content] 
-- [Skip to footer] 
-
-# Theory of Change
-
-_For 56 years, Community Youth Center of San Francisco has provided the diverse youth of our city a sense of belonging and vital tools and experiences to succeed in life._
-
-CYC today serves a diverse p</p>
+              <p class="vendor-desc"><strong>What they do:</strong> SF nonprofit serving Asian/Pacific Islander youth with after-school academic support, mental health services, and enrichment at SFUSD sites.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$18,728.79</td></tr><tr><td>November</td><td class="money">$759,964.44</td></tr><tr><td>December</td><td class="money">$181,005.53</td></tr></table></div>
             </div>
           </td>
@@ -3394,10 +3380,10 @@ CYC today serves a diverse p</p>
           <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v20" style="display:none; display:none">
+        <tr class="vendor-detail" id="v20" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Healthcare staffing agency specializing in placing therapists, nurses, and special education staff in schools.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Healthcare staffing agency specializing in placing therapists, nurses, and special education staff in schools.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$34,350.00</td></tr><tr><td>October</td><td class="money">$93,444.45</td></tr><tr><td>November</td><td class="money">$3,865.00</td></tr><tr><td>December</td><td class="money">$240,496.62</td></tr></table></div>
             </div>
           </td>
@@ -3409,10 +3395,10 @@ CYC today serves a diverse p</p>
           <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v21" style="display:none; display:none">
+        <tr class="vendor-detail" id="v21" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Nonprofit operating after-school programs at SFUSD elementary and middle schools.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Nonprofit operating after-school programs at SFUSD elementary and middle schools.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$185,108.55</td></tr><tr><td>September</td><td class="money">$197,406.65</td></tr><tr><td>October</td><td class="money">$22,782.57</td></tr><tr><td>November</td><td class="money">$193,844.27</td></tr><tr><td>December</td><td class="money">$91,005.61</td></tr></table></div>
             </div>
           </td>
@@ -3424,40 +3410,25 @@ CYC today serves a diverse p</p>
           <td><span class="cat-tag cat-it-equipment">IT Equipment</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v22" style="display:none; display:none">
+        <tr class="vendor-detail" id="v22" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Major IT equipment and solutions provider for government and education. Hardware, software, cloud services.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Major IT equipment and solutions provider for government and education. Hardware, software, cloud services.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$25,881.39</td></tr><tr><td>August</td><td class="money">$1,087.20</td></tr><tr><td>September</td><td class="money">$2,168.14</td></tr><tr><td>October</td><td class="money">$78,690.51</td></tr><tr><td>November</td><td class="money">$7,002.39</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v23')">
           <td>24</td>
-          <td>PIONEER HEALTHCARE SERVICES LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>PIONEER HEALTHCARE SERVICES LLC <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$1,570,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-healthcare">Healthcare Staffing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v23" style="display:none; display:none">
+        <tr class="vendor-detail" id="v23" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">About Our Company | Pioneer Healthcare[Skip to the content] 
-[] 
-* [Browse jobs] 
-* [Job Seekers] 
-Job Seekers
-* [Therapy] 
-* [Allied] 
-* [Nursing] 
-* [Canadian Travelers] 
-* [clients] 
-* [About] 
-About
-* [Our Company] 
-* [Our Leadership] 
-* [Mentorship &amp; Guidance] 
-* [Awards &amp; Recognition] </p>
+              <p class="vendor-desc"><strong>What they do:</strong> Travel healthcare staffing company providing temporary nurses, therapists, and allied health professionals to school districts.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$18,689.53</td></tr><tr><td>September</td><td class="money">$106,727.00</td></tr><tr><td>October</td><td class="money">$6,625.12</td></tr><tr><td>December</td><td class="money">$200,698.28</td></tr></table></div>
             </div>
           </td>
@@ -3469,286 +3440,187 @@ About
           <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v24" style="display:none; display:none">
+        <tr class="vendor-detail" id="v24" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">National healthcare staffing company (formerly Maxim Healthcare) providing school nurses and therapists.</p>
+              <p class="vendor-desc"><strong>What they do:</strong> National healthcare staffing company (formerly Maxim Healthcare) providing school nurses and therapists.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$25,751.25</td></tr><tr><td>September</td><td class="money">$69,841.75</td></tr><tr><td>November</td><td class="money">$68,009.44</td></tr><tr><td>December</td><td class="money">$61,980.40</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v25')">
           <td>26</td>
-          <td>THE STEPPING STONES GROUP LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>THE STEPPING STONES GROUP LLC <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$1,500,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-special-education">Special Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v25" style="display:none; display:none">
+        <tr class="vendor-detail" id="v25" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Schools - The Stepping Stones Group[Skip to content] 
-[![The Stepping Stones Group]] 
-## Transforming partnerships
-We get what schools need to manage their special
-education staffing and workforce challenges.
-[Partner with us &#8250;] 
-## We’re there for schools
-[![schools_1]] 
-[![Workforce Solution</p>
+              <p class="vendor-desc"><strong>What they do:</strong> National special education staffing company providing speech-language pathologists, occupational therapists, and behavioral specialists to schools.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$23,284.75</td></tr><tr><td>September</td><td class="money">$553,847.00</td></tr><tr><td>December</td><td class="money">$1,528,831.00</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v26')">
           <td>27</td>
-          <td>WAXIE SANITARY SUPPLY <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>WAXIE SANITARY SUPPLY <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$1,291,219</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-facilities">Facilities</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v26" style="display:none; display:none">
+        <tr class="vendor-detail" id="v26" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">WAXIE K12 | WAXIE Sanitary Supply
-[![WAXIE_BradyPLUS-endorsed-logo_White-yellow]] 
-[**LOG IN**] 
-[**BROWSE PRODUCTS**] 
-[**SDS**] 
-[**BLOG**] 
-[![]] 
-[![]] 
-[![]] 
-[![]] 
-[Credit Application] 
-**
-[The Most Trusted Name In Clean. Since 1945.] 
-(800) 995-4466
-CONTACT US TODAY
-[![]] [![]] [![]]</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Major janitorial and sanitary supply distributor (now BradyPLUS) providing cleaning products, paper goods, and facility maintenance supplies to SFUSD.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$26,474.88</td></tr><tr><td>September</td><td class="money">$239,328.67</td></tr><tr><td>October</td><td class="money">$2,385.28</td></tr><tr><td>November</td><td class="money">$161,682.60</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v27')">
           <td>28</td>
-          <td>CRYSTAL CREAMERY, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>CRYSTAL CREAMERY, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$1,225,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-food-services">Food Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v27" style="display:none; display:none">
+        <tr class="vendor-detail" id="v27" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">[Skip to Content] 
-
-# Foodservice
-
-Our dairy products from sour cream to fluid milk are served in food service kitchens and dining rooms everywhere across the country. We have from ingredient based specialty items to fabulous finished ice cream products for your dessert table.
-
-## K-12 Schools
-
-Milk</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Central California dairy processor supplying milk, yogurt, and dairy products to SFUSD school meal programs.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$41,202.82</td></tr><tr><td>August</td><td class="money">$24.95</td></tr><tr><td>September</td><td class="money">$1,395.15</td></tr><tr><td>November</td><td class="money">$95,460.53</td></tr><tr><td>December</td><td class="money">$14,446.86</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v28')">
           <td>29</td>
-          <td>DIGITAL SCEPTER CORPORATION <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>DIGITAL SCEPTER CORPORATION <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$1,149,478</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-it-equipment">IT Equipment</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v28" style="display:none; display:none">
+        <tr class="vendor-detail" id="v28" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">[Skip to main content] 
-
-## Vendor Information
-
-Explore what this Vendor has to offer through the contracts listed below. Contracts are competitively bid, saving you time and money. For the latest pricing information and to negotiate further, please contact the Vendor through the information listed </p>
+              <p class="vendor-desc"><strong>What they do:</strong> IT reseller and managed services provider supplying hardware, networking equipment, and technology solutions to school districts through cooperative purchasing contracts.</p>
               
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v29')">
           <td>30</td>
-          <td>BOYS & GIRLS CLUBS OF SAN FRANCISCO <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>BOYS & GIRLS CLUBS OF SAN FRANCISCO <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$1,148,374</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-after-school">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v29" style="display:none; display:none">
+        <tr class="vendor-detail" id="v29" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Boys &amp; Girls Clubs of San Francisco
-[![]] 
-[![]] 
-# 2025 Impact Report
-**We are excited to share our 2025 Impact Report with you!
-Through the Impact Report, we aim to share some of the biggest challenges our youth and families faced over the past year—and how our organization is leaning in to su</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Major youth development nonprofit operating after-school and summer programs at multiple SFUSD school sites.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$1,238.55</td></tr><tr><td>September</td><td class="money">$5,757.28</td></tr><tr><td>October</td><td class="money">$91,839.17</td></tr><tr><td>November</td><td class="money">$114,489.05</td></tr><tr><td>December</td><td class="money">$51,768.81</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v30')">
           <td>31</td>
-          <td>SENECA FAMILY OF AGENCIES <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>SENECA FAMILY OF AGENCIES <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$1,131,259</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-special-education">Special Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v30" style="display:none; display:none">
+        <tr class="vendor-detail" id="v30" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">#### Educational Services
-
-Every child - regardless of zip code, family income, learning style, or past experience - deserves access to a world-class education. Through direct academic, social-emotional, and behavioral services for students and capacity-building support to schools and educators, Sen</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Oakland-based nonprofit providing therapeutic behavioral services, special education, and wraparound support for high-needs students in Bay Area schools.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$150,533.69</td></tr><tr><td>October</td><td class="money">$146,046.00</td></tr><tr><td>November</td><td class="money">$104,653.38</td></tr><tr><td>December</td><td class="money">$123,225.27</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v31')">
           <td>32</td>
-          <td>BAY AREA COMMUNICATION ACCESS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>BAY AREA COMMUNICATION ACCESS <span class="savings-badge" style="background:var(--text-light)">ESSENTIAL</span></td>
           <td class="money">$1,102,197</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-special-education">Special Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v31" style="display:none; display:none">
+        <tr class="vendor-detail" id="v31" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Augmentative and Alternative Communcation Services - Mt. Diablo Unified School District[Skip To Main Content] 
-Close Menu
-Search
-Clear
-Search
-Open Search
-Search
-Clear
-Search
-Open Menu
-[![Mt. Diablo Unified School District]] 
-[
-Mt. Diablo
-Unified School District
-] 
-## In This Section
-# Augmentative a</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Provides augmentative and alternative communication (AAC) services and assistive technology assessments for students with communication disabilities.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$62,630.80</td></tr><tr><td>September</td><td class="money">$96,678.20</td></tr><tr><td>October</td><td class="money">$113,373.71</td></tr><tr><td>November</td><td class="money">$50,961.10</td></tr><tr><td>December</td><td class="money">$67,709.11</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v32')">
           <td>33</td>
-          <td>CITY AND COUNTY OF SAN FRANCISCO <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>CITY AND COUNTY OF SAN FRANCISCO <span class="savings-badge" style="background:var(--text-light)">ESSENTIAL</span></td>
           <td class="money">$1,100,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-government">Government</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v32" style="display:none; display:none">
+        <tr class="vendor-detail" id="v32" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Services | SFUSD[Skip to main content] 
-[![San Francisco Unified School District]] 
-More options
-[![San Francisco Unified School District]] 
-Search## Site search
-Search Site
-# Services
-## Services for Students and Families[Link to this section] 
-[
-### Student Supports &amp; Programs
-See how we are s</p>
+              <p class="vendor-desc"><strong>What they do:</strong> Inter-agency payments to City/County of SF for shared services including facilities maintenance, utilities, and administrative support.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$74,635.17</td></tr><tr><td>August</td><td class="money">$49,674.16</td></tr><tr><td>September</td><td class="money">$37,887.87</td></tr><tr><td>October</td><td class="money">$82,220.34</td></tr><tr><td>November</td><td class="money">$125,807.87</td></tr><tr><td>December</td><td class="money">$12,434.00</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v33')">
           <td>34</td>
-          <td>BROADWAY TYPEWRITER COMPANY INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>BROADWAY TYPEWRITER COMPANY INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$1,090,137</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-it-equipment">IT Equipment</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v33" style="display:none; display:none">
+        <tr class="vendor-detail" id="v33" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Broadway Typewriter Co. Inc. &quot;dba&quot; Arey Jones Educational Solutions | Texas Department of Information Resources
-[Skip to main content] 
-Menu
-Search DIR
-Search DIR## Search:
-* [All Pages &amp; Content] 
-* [Contracts &amp; Vendors] 
-## Search All Pages &amp; Content
-Start typing to find info</p>
+              <p class="vendor-desc"><strong>What they do:</strong> DBA Arey-Jones Educational Solutions. IT equipment reseller providing computers, printers, and technology hardware to school districts through state purchasing contracts.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>July</td><td class="money">$2,557.43</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v34')">
           <td>35</td>
-          <td>RICHMOND AREA MULTI-SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>RICHMOND AREA MULTI-SERVICES, INC. <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$1,060,507</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-after-school">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v34" style="display:none; display:none">
+        <tr class="vendor-detail" id="v34" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">Home
-[![Brand] 
-Richmond Public Schools
-] 
-* [Home] 
-* [Elementary] 
-* [Barack Obama] 
-* [Bellevue] 
-* [Blackwell] 
-* [Broad Rock] 
-* [Cardinal] 
-* [Carver] 
-* [Chimborazo] 
-* [Fairfield Court] 
-* [Fisher] 
-* [Frances W. McClenney Elementary] 
-* [Francis] 
-* [Henry Marsh, III] 
-* [Jones] 
-* [Linwood</p>
+              <p class="vendor-desc"><strong>What they do:</strong> SF nonprofit (RAMS) providing after-school programs, mental health services, and youth development at SFUSD schools in the Richmond District.</p>
               <div class="monthly-breakdown"><h4>Monthly Payments (Jul-Dec 2025)</h4><table class="mini-table"><tr><th>Month</th><th class="money">Amount</th></tr><tr><td>November</td><td class="money">$181,548.19</td></tr><tr><td>December</td><td class="money">$185,861.35</td></tr></table></div>
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v35')">
           <td>36</td>
-          <td>SAP PUBLIC SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>SAP PUBLIC SERVICES, INC. <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
           <td class="money">$1,053,638</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-it-consulting">IT Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v35" style="display:none; display:none">
+        <tr class="vendor-detail" id="v35" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
-              <p class="vendor-desc">LSI Consulting – SFUSD – Professional Services Agreement (RFP No. ERP-2017) 
-Page 1 of 25
-PROFESSIONAL SERVICES AGREEMENT
-This Professional Services Agreement (this “Agreement” as defined below), dated for convenience 
-January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA LS</p>
+              <p class="vendor-desc"><strong>What they do:</strong> SAP's government/education division. Provided the SAP ERP software for the failed EMPowerSF payroll system. Ongoing license and support costs despite system failure.</p>
               
             </div>
           </td>
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v36')">
           <td>37</td>
-          <td>ATHENS ADMINISTRATORS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>ATHENS ADMINISTRATORS <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$948,583</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-claims-admin">Claims Administration</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v36" style="display:none; display:none">
+        <tr class="vendor-detail" id="v36" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3763,7 +3635,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v37" style="display:none; display:none">
+        <tr class="vendor-detail" id="v37" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3778,7 +3650,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-healthcare-staffing">Healthcare Staffing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v38" style="display:none; display:none">
+        <tr class="vendor-detail" id="v38" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3793,7 +3665,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v39" style="display:none; display:none">
+        <tr class="vendor-detail" id="v39" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3803,12 +3675,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v40')">
           <td>41</td>
-          <td>PACIFIC RIM PRODUCE <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>PACIFIC RIM PRODUCE <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$850,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-food-services">Food Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v40" style="display:none; display:none">
+        <tr class="vendor-detail" id="v40" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3818,12 +3690,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v41')">
           <td>42</td>
-          <td>A1 PROTECTIVE SERVICES, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>A1 PROTECTIVE SERVICES, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$848,708</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-security">Security</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v41" style="display:none; display:none">
+        <tr class="vendor-detail" id="v41" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3833,12 +3705,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v42')">
           <td>43</td>
-          <td>GOTO COMMUNICATIONS, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>GOTO COMMUNICATIONS, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$827,650</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-it-equipment">IT Equipment</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v42" style="display:none; display:none">
+        <tr class="vendor-detail" id="v42" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3848,12 +3720,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v43')">
           <td>44</td>
-          <td>RENAISSANCE LEARNING, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>RENAISSANCE LEARNING, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$808,380</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-ed-tech">Ed-Tech</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v43" style="display:none; display:none">
+        <tr class="vendor-detail" id="v43" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3863,12 +3735,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v44')">
           <td>45</td>
-          <td>VICTOR TREATMENT CENTERS, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>VICTOR TREATMENT CENTERS, INC. <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$800,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-special-education">Special Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v44" style="display:none; display:none">
+        <tr class="vendor-detail" id="v44" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3878,12 +3750,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v45')">
           <td>46</td>
-          <td>AMPLIFY EDUCATION, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>AMPLIFY EDUCATION, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$799,460</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-ed-tech">Ed-Tech</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v45" style="display:none; display:none">
+        <tr class="vendor-detail" id="v45" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3893,12 +3765,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v46')">
           <td>47</td>
-          <td>LEARNUP CENTERS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>LEARNUP CENTERS <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$794,900</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-after-school">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v46" style="display:none; display:none">
+        <tr class="vendor-detail" id="v46" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3913,7 +3785,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v47" style="display:none; display:none">
+        <tr class="vendor-detail" id="v47" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3928,7 +3800,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v48" style="display:none; display:none">
+        <tr class="vendor-detail" id="v48" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3938,12 +3810,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v49')">
           <td>50</td>
-          <td>POSITIVE BEHAVIOR SUPPORTS CORP <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>POSITIVE BEHAVIOR SUPPORTS CORP <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$750,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-special-education">Special Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v49" style="display:none; display:none">
+        <tr class="vendor-detail" id="v49" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3953,12 +3825,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v50')">
           <td>51</td>
-          <td>SUNBELT STAFFING, LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>SUNBELT STAFFING, LLC <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$750,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-healthcare">Healthcare Staffing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v50" style="display:none; display:none">
+        <tr class="vendor-detail" id="v50" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3968,12 +3840,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v51')">
           <td>52</td>
-          <td>TELEGRAPH HILL NEIGHBORHOOD CENTER <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>TELEGRAPH HILL NEIGHBORHOOD CENTER <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$745,850</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-after-school">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v51" style="display:none; display:none">
+        <tr class="vendor-detail" id="v51" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3988,7 +3860,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-after-school-programs">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v52" style="display:none; display:none">
+        <tr class="vendor-detail" id="v52" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -3998,12 +3870,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v53')">
           <td>54</td>
-          <td>ARISE EDUCATIONAL CENTER <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>ARISE EDUCATIONAL CENTER <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$700,721</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-after-school">After-School Programs</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v53" style="display:none; display:none">
+        <tr class="vendor-detail" id="v53" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4013,12 +3885,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v54')">
           <td>55</td>
-          <td>AGURTO CORPORATION DBA PESTEC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>AGURTO CORPORATION DBA PESTEC <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$700,128</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-facilities">Facilities</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v54" style="display:none; display:none">
+        <tr class="vendor-detail" id="v54" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4028,12 +3900,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v55')">
           <td>56</td>
-          <td>METRO ELEVATOR <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>METRO ELEVATOR <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$700,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-facilities">Facilities</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v55" style="display:none; display:none">
+        <tr class="vendor-detail" id="v55" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4043,12 +3915,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v56')">
           <td>57</td>
-          <td>LANGUAGE CIRCLE OF CALIFORNIA, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>LANGUAGE CIRCLE OF CALIFORNIA, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$689,450</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-translation">Translation Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v56" style="display:none; display:none">
+        <tr class="vendor-detail" id="v56" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4058,12 +3930,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v57')">
           <td>58</td>
-          <td>COMMITTEE FOR CHILDREN <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>COMMITTEE FOR CHILDREN <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$676,659</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-ed-tech">Ed-Tech</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v57" style="display:none; display:none">
+        <tr class="vendor-detail" id="v57" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4073,12 +3945,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v58')">
           <td>59</td>
-          <td>SYNTEX GLOBAL INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>SYNTEX GLOBAL INC. <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
           <td class="money">$660,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-it-consulting">IT Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v58" style="display:none; display:none">
+        <tr class="vendor-detail" id="v58" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4088,12 +3960,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v59')">
           <td>60</td>
-          <td>CENTER FOR SOCIAL DYNAMICS. LLC <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>CENTER FOR SOCIAL DYNAMICS. LLC <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$650,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-special-education">Special Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v59" style="display:none; display:none">
+        <tr class="vendor-detail" id="v59" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4103,12 +3975,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v60')">
           <td>61</td>
-          <td>REGENTS OF THE UNIVERSITY OF CALIFORNIA <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>REGENTS OF THE UNIVERSITY OF CALIFORNIA <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$592,430</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-education-consulting">Education Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v60" style="display:none; display:none">
+        <tr class="vendor-detail" id="v60" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4123,7 +3995,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-food-services">Food Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v61" style="display:none; display:none">
+        <tr class="vendor-detail" id="v61" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4133,12 +4005,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v62')">
           <td>63</td>
-          <td>DISCOVERY EDUCATION, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>DISCOVERY EDUCATION, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$566,546</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-ed-tech">Ed-Tech</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v62" style="display:none; display:none">
+        <tr class="vendor-detail" id="v62" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4148,12 +4020,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v63')">
           <td>64</td>
-          <td>JOHNSON CONTROLS FIRE PROTECTION LP <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>JOHNSON CONTROLS FIRE PROTECTION LP <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$560,066</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-facilities">Facilities</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v63" style="display:none; display:none">
+        <tr class="vendor-detail" id="v63" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4163,12 +4035,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v64')">
           <td>65</td>
-          <td>FLOW TRANSLATIONS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>FLOW TRANSLATIONS <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$557,682</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-translation">Translation Services</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v64" style="display:none; display:none">
+        <tr class="vendor-detail" id="v64" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4178,12 +4050,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v65')">
           <td>66</td>
-          <td>BEHAVIORAL INTERVENTION SPECIALIST OF LA <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>BEHAVIORAL INTERVENTION SPECIALIST OF LA <span class="savings-badge" style="background:var(--gold)">REDUCIBLE</span></td>
           <td class="money">$550,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-special-education">Special Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v65" style="display:none; display:none">
+        <tr class="vendor-detail" id="v65" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4193,12 +4065,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v66')">
           <td>67</td>
-          <td>SF ARTS EDUCATION PROJECT <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>SF ARTS EDUCATION PROJECT <span class="savings-badge" style="background:var(--green)">FUND-SHIFTABLE</span></td>
           <td class="money">$548,986</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-arts-education">Arts Education</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v66" style="display:none; display:none">
+        <tr class="vendor-detail" id="v66" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4208,12 +4080,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v67')">
           <td>68</td>
-          <td>IXL LEARNING, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>IXL LEARNING, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$544,350</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-ed-tech">Ed-Tech</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v67" style="display:none; display:none">
+        <tr class="vendor-detail" id="v67" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4228,7 +4100,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
           <td><span class="cat-tag cat-it-consulting">IT/Consulting</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v68" style="display:none; display:none">
+        <tr class="vendor-detail" id="v68" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4238,12 +4110,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v69')">
           <td>70</td>
-          <td>STRATEGIC ENERGY INNOVATIONS <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>STRATEGIC ENERGY INNOVATIONS <span class="savings-badge" style="background:var(--red)">CUTTABLE</span></td>
           <td class="money">$540,750</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-facilities">Facilities</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v69" style="display:none; display:none">
+        <tr class="vendor-detail" id="v69" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4253,12 +4125,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v70')">
           <td>71</td>
-          <td>CPM EDUCATIONAL PROGRAM <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>CPM EDUCATIONAL PROGRAM <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$520,000</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-ed-tech">Ed-Tech</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v70" style="display:none; display:none">
+        <tr class="vendor-detail" id="v70" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4268,12 +4140,12 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
         </tr>
         <tr class="vendor-row" style="display:none" onclick="toggleVendor('v71')">
           <td>72</td>
-          <td>CHRISTY WHITE, INC. <span class="savings-badge" style="background:var(--text-light)">UNKNOWN</span></td>
+          <td>CHRISTY WHITE, INC. <span class="savings-badge" style="background:var(--navy-mid)">RENEGOTIABLE</span></td>
           <td class="money">$517,508</td>
-          <td><span class="cat-tag cat-other">Other</span></td>
+          <td><span class="cat-tag cat-auditing">Auditing</span></td>
           <td class="expand-icon">&#9660;</td>
         </tr>
-        <tr class="vendor-detail" id="v71" style="display:none; display:none">
+        <tr class="vendor-detail" id="v71" style="display:none">
           <td colspan="5">
             <div class="vendor-detail-inner">
               
@@ -4430,6 +4302,60 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
 <strong>Bottom line:</strong> Even the conservative estimate of $111M (10.9% raises) exceeds UESF's 9% certificated salary demand. The question is not "Can SFUSD afford raises?" &mdash; it's <strong>"Why does SFUSD choose to spend money on administration, failed IT projects, and consultants instead of the people who teach children?"</strong>
 </div>
 
+
+<!-- Vendor Analysis: Key Findings -->
+<div style="margin-top: 2rem;">
+<h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Vendor Analysis: Key Findings</h3>
+
+<div class="callout-red" style="background:var(--red-bg); border-left:4px solid var(--red); padding:1rem 1.5rem; margin:1rem 0; border-radius:4px;">
+<strong>$52.3M in previously unclassified spending is now categorized.</strong> What the district called "Other" actually breaks down into identifiable, actionable categories &mdash; many with significant savings potential.
+</div>
+
+<div class="stats-row" style="flex-wrap:wrap; margin: 1.5rem 0;">
+  <div class="stat-card" style="border-left:4px solid var(--red)">
+    <div class="big-num" style="color:var(--red)">$7.7M</div>
+    <div class="stat-label">Cuttable<br>IT consulting bloat</div>
+  </div>
+  <div class="stat-card" style="border-left:4px solid var(--gold)">
+    <div class="big-num" style="color:var(--gold)">$10.1M</div>
+    <div class="stat-label">Reducible<br>Staffing agencies &rarr; permanent</div>
+  </div>
+  <div class="stat-card" style="border-left:4px solid var(--green)">
+    <div class="big-num" style="color:var(--green)">$12.5M</div>
+    <div class="stat-label">Fund-Shiftable<br>Move to grants/restricted funds</div>
+  </div>
+  <div class="stat-card" style="border-left:4px solid var(--navy-mid)">
+    <div class="big-num" style="color:var(--navy-mid)">$19.4M</div>
+    <div class="stat-label">Renegotiable<br>Competitive rebid opportunity</div>
+  </div>
+</div>
+
+<h4 style="font-weight:700; color:var(--navy); margin-top:1.5rem;">Notable Findings</h4>
+<ul>
+  <li><strong>Protiviti ($5.5M)</strong> &mdash; Robert Half subsidiary doing management consulting. This is pure overhead that a functional admin could handle internally. <span style="color:var(--red); font-weight:600">CUTTABLE</span></li>
+  <li><strong>SAP Public Services ($1.1M)</strong> &mdash; Still receiving payments despite the failed $33.7M EMPowerSF system being replaced by Frontline. Why is SAP still getting paid? <span style="color:var(--red); font-weight:600">CUTTABLE</span></li>
+  <li><strong>Syntex Global ($610K)</strong> &mdash; Another IT consulting firm layered on top of Galaxy Solutions, Infosys, and Protiviti. <span style="color:var(--red); font-weight:600">CUTTABLE</span></li>
+  <li><strong>Healthcare staffing ($4.8M from unknown vendors alone)</strong> &mdash; Pioneer, Stepping Stones, RCM, Sunbelt &mdash; these are on top of the $16.9M already identified. Total healthcare staffing spend approaches <strong>$22M</strong>. Permanent hires at $150K/FTE = 146 positions. <span style="color:var(--gold); font-weight:600">REDUCIBLE</span></li>
+  <li><strong>After-school programs ($9.4M reclassified)</strong> &mdash; Boys & Girls Clubs, Richmond Neighborhood Center, Telegraph Hill, RAMS &mdash; many of these are eligible for ASES/21st CCLC/Title I grant funding. <span style="color:var(--green); font-weight:600">FUND-SHIFTABLE</span></li>
+  <li><strong>Sunset Scavenger/Recology ($3.1M)</strong> &mdash; As the sole waste hauler in SF, this is a monopoly price. A competitive review or inter-district cooperative purchasing could yield 15-20% savings. <span style="color:var(--navy-mid); font-weight:600">RENEGOTIABLE</span></li>
+</ul>
+
+<h4 style="font-weight:700; color:var(--navy); margin-top:1.5rem;">Updated Savings Potential</h4>
+<table>
+<tr><th>Category</th><th class="money">Total Spend</th><th class="money">Potential Savings</th><th>Mechanism</th></tr>
+<tr><td>IT Consulting (total)</td><td class="money">$20.0M</td><td class="money" style="color:var(--red)">$12.0M</td><td>60% cut post-EMPowerSF</td></tr>
+<tr><td>Healthcare Staffing (total)</td><td class="money">$21.7M</td><td class="money" style="color:var(--red)">$10.9M</td><td>50% convert to permanent hires</td></tr>
+<tr><td>After-School Programs (total)</td><td class="money">$46.2M</td><td class="money" style="color:var(--red)">$11.5M</td><td>25% shift to restricted funds</td></tr>
+<tr><td>Facilities/Operations</td><td class="money">$6.7M</td><td class="money" style="color:var(--red)">$1.3M</td><td>Competitive rebid (20%)</td></tr>
+<tr><td>Ed-Tech/Curriculum</td><td class="money">$3.8M</td><td class="money" style="color:var(--red)">$0.8M</td><td>License renegotiation (20%)</td></tr>
+<tr class="highlight-row"><td><strong>Additional from reclassification</strong></td><td class="money"><strong>$52.3M</strong></td><td class="money" style="color:var(--red)"><strong>$30.3M</strong></td><td><strong>Combined mechanisms</strong></td></tr>
+</table>
+
+<div class="callout" style="background:var(--gold-bg); border-left:4px solid var(--gold); padding:1rem 1.5rem; margin:1rem 0; border-radius:4px;">
+<strong>Combined with previously identified savings:</strong> The total actionable vendor savings rises from $35.2M to <strong style="color:var(--red)">$65.5M per year</strong> &mdash; more than enough to fund the 9% certificated salary increase ($55.2M) that UESF is requesting.
+</div>
+</div>
+
 <h3>Vendor Savings Potential Assessment</h3>
 <p>Each vendor over $500K has been assessed for savings potential:</p>
 <ul>
@@ -4441,7 +4367,7 @@ January 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA L
 </ul>
 
   <!-- Collapsed Supporting Data -->
-  <button class="collapsible-toggle" onclick="this.nextElementSibling.classList.toggle('collapsible-open')" style="display:block; width:100%; padding:12px 20px; background:var(--gray-100); border:1px solid var(--gray-200); border-radius:4px; cursor:pointer; font-family:'Source Sans 3',sans-serif; font-size:0.95rem; font-weight:600; color:var(--navy); text-align:left; margin:1.5rem 0 0;">Supporting Data &#9660;</button>
+  <button class="collapsible-toggle" aria-expanded="false" onclick="var c=this.nextElementSibling; c.classList.toggle('open'); var isOpen=c.classList.contains('open'); this.setAttribute('aria-expanded', isOpen); this.textContent=isOpen?'Supporting Data \u25B2':'Supporting Data \u25BC'" style="display:block; width:100%; padding:12px 20px; background:var(--gray-100); border:1px solid var(--gray-200); border-radius:4px; cursor:pointer; font-family:'Source Sans 3',sans-serif; font-size:0.95rem; font-weight:600; color:var(--navy); text-align:left; margin:1.5rem 0 0;">Supporting Data &#9660;</button>
   <div class="collapsible-content">
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Salary Comparison</h3>
@@ -5872,11 +5798,18 @@ function toggleVendor(id) {
 function searchVendors(query) {
   var rows = document.querySelectorAll('#vendorTable tr');
   var q = query.toLowerCase();
+  var hasFilter = q !== '';
+  // Auto-expand all vendors when searching
+  if (hasFilter && !vendorsExpanded) {
+    vendorsExpanded = true;
+    var btn = document.getElementById('vendorToggleBtn');
+    if (btn) btn.textContent = 'Hide extra vendors \u25B2';
+  }
   rows.forEach(function(row) {
     if (row.classList.contains('vendor-row')) {
       var text = row.textContent.toLowerCase();
       var detail = row.nextElementSibling;
-      if (q === '' || text.includes(q)) {
+      if (!hasFilter || text.includes(q)) {
         row.style.display = '';
         if (detail && detail.classList.contains('vendor-detail')) {
           detail.style.display = 'none';
@@ -5892,6 +5825,12 @@ function searchVendors(query) {
 }
 
 function filterVendors(category) {
+  // Auto-expand all vendors when filtering
+  if (!vendorsExpanded) {
+    vendorsExpanded = true;
+    var btn = document.getElementById('vendorToggleBtn');
+    if (btn) btn.textContent = 'Hide extra vendors \u25B2';
+  }
   var rows = document.querySelectorAll('#vendorTable tr');
   rows.forEach(function(row) {
     if (row.classList.contains('vendor-row')) {

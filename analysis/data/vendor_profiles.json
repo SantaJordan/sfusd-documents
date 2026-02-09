@@ -48,7 +48,7 @@
     "savings_potential": "Cuttable"
   },
   "PROTIVITI GOVERNMENT SERVICES": {
-    "description": "Management and IT consulting firm (Robert Half subsidiary). Provides project management and technology consulting.",
+    "description": "Robert Half subsidiary providing management consulting, IT advisory, and project management services. Engaged by SFUSD for technology consulting and project oversight.",
     "category": "IT Consulting",
     "essential": false,
     "savings_potential": "Cuttable"
@@ -66,7 +66,7 @@
     "savings_potential": "Essential"
   },
   "RCM TECHNOLOGIES": {
-    "description": "Healthcare and IT staffing company providing temporary nurses, therapists, and specialists to school districts.",
+    "description": "National staffing company providing temporary nurses, therapists, and healthcare specialists to school districts.",
     "category": "Healthcare Staffing",
     "essential": true,
     "savings_potential": "Reducible"
@@ -78,7 +78,7 @@
     "savings_potential": "Reducible"
   },
   "PIONEER HEALTHCARE SERVICES": {
-    "description": "Travel healthcare staffing company providing temporary nurses and therapists to school districts.",
+    "description": "Travel healthcare staffing company providing temporary nurses, therapists, and allied health professionals to school districts.",
     "category": "Healthcare Staffing",
     "essential": true,
     "savings_potential": "Reducible"
@@ -102,19 +102,19 @@
     "savings_potential": "Cuttable"
   },
   "SUNSET SCAVENGER CO.": {
-    "description": "SF-based waste management company (Recology). Provides trash/recycling services to SFUSD facilities.",
+    "description": "Recology subsidiary providing waste collection, recycling, and composting services for SFUSD facilities across San Francisco.",
     "category": "Facilities",
     "essential": true,
-    "savings_potential": "Essential"
+    "savings_potential": "Renegotiable"
   },
   "RICHMOND DIST. NEIGHBORHOOD CTR": {
-    "description": "Community organization operating after-school and youth programs in the Richmond District.",
+    "description": "Richmond District community organization operating ExCEL after-school programs at SFUSD school sites in the Richmond neighborhood.",
     "category": "After-School Programs",
     "essential": false,
     "savings_potential": "Fund-shiftable"
   },
   "SPECIAL SERVICE FOR GROUPS": {
-    "description": "Social services nonprofit providing behavioral health, substance abuse, and family support programs.",
+    "description": "LA-based social services nonprofit providing behavioral health, mental health counseling, and family support programs in schools.",
     "category": "Social Services",
     "essential": false,
     "savings_potential": "Fund-shiftable"
@@ -132,7 +132,7 @@
     "savings_potential": "Renegotiable"
   },
   "COMMUNITY YOUTH CENTER OF SF": {
-    "description": "Nonprofit serving Asian/Pacific Islander youth with after-school, mental health, and academic programs.",
+    "description": "SF nonprofit serving Asian/Pacific Islander youth with after-school academic support, mental health services, and enrichment at SFUSD sites.",
     "category": "After-School Programs",
     "essential": false,
     "savings_potential": "Fund-shiftable"
@@ -150,118 +150,118 @@
     "savings_potential": "Fund-shiftable"
   },
   "PROTIVITI GOVERNMENT SERVICES, INC.": {
-    "description": "Home | Protiviti\n[Skip to main content] \n[![Protiviti Global Buisiness Consulting in PGS]![Protiviti Global Buisiness Consulting in PGS]] \n* [] \n* ## Search in Protiviti.com\nSearch in Protiviti.comSearch\n[] \n* [] \n* [] \n* [] \n![] \n![] \n![Gov Serv] \n# Protiviti Government Services\nResponsive and sust",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Robert Half subsidiary providing management consulting, IT advisory, and project management services. Engaged by SFUSD for technology consulting and project oversight.",
+    "category": "IT Consulting",
+    "essential": false,
+    "savings_potential": "Cuttable"
   },
   "SUNSET SCAVENGER COMPANY": {
-    "description": "California\n\n- [Recology American Canyon] \n- [Recology Arcata] \n- [Recology Auburn Placer] \n- Recology Butte Colusa Counties\n - [Chico] \n - [City of Colusa] \n - [County of Colusa] \n - [Butte County] \n - [Oroville] \n - [Williams] \n- [Recology Davis] \n- [Recology Del Norte] \n- [Recology Dixon] \n- [Reco",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Recology subsidiary providing waste collection, recycling, and composting services for SFUSD facilities across San Francisco.",
+    "category": "Facilities",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "RICHMOND DIST. NEIGHBORHOOD CTR.": {
-    "description": "[**Search for Public School Districts**] \n\nDistrict Directory Information (2023-2024 School Year)\n\n[Search Results] [Modify Search] [Data Notes/Grant IDs] [Help] \n\nDistrict Name:Richmond City Public Schools [(Schools in this District)] \n\nNCES District ID:5103240\n\nState District ID:VA-123\n\nMailing Ad",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Richmond District community organization operating ExCEL after-school programs at SFUSD school sites in the Richmond neighborhood.",
+    "category": "After-School Programs",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "SPECIAL SERVICE FOR GROUPS, INC.": {
-    "description": "![] \n\n# Special Education and MTSS\n\nEnsure all students have what they need to be successful\n\n![] \n\n#### **Some of the districts we assisted in improving special education**\n\n* * *\n\n## Achieving Better Results is Possible\n\nSpecial education and MTSS supports are critical to creating more inclusive a",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "LA-based social services nonprofit providing behavioral health, mental health counseling, and family support programs in schools.",
+    "category": "Social Services",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "RCM TECHNOLOGIES (USA), INC.": {
-    "description": "About RCM Technologies - RCM Technologies\n![] Toggle business unit switcher\n* [RCM Technologies] \n* [Energy Services] \n* [Process &amp; Industrial] \n* [Aerospace &amp; Defense] \n* [Data &amp; Solutions] \n* [Life Sciences] \n* [Healthcare Services] \n# We enable progress across industries\n**RCM Technol",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "National staffing company providing temporary nurses, therapists, and healthcare specialists to school districts.",
+    "category": "Healthcare Staffing",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "COMMUNITY YOUTH CENTER OF SAN FRANCISCO": {
-    "description": "- [Skip to primary navigation] \n- [Skip to main content] \n- [Skip to footer] \n\n# Theory of Change\n\n_For 56 years, Community Youth Center of San Francisco has provided the diverse youth of our city a sense of belonging and vital tools and experiences to succeed in life._\n\nCYC today serves a diverse p",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "SF nonprofit serving Asian/Pacific Islander youth with after-school academic support, mental health services, and enrichment at SFUSD sites.",
+    "category": "After-School Programs",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "PIONEER HEALTHCARE SERVICES LLC": {
-    "description": "About Our Company | Pioneer Healthcare[Skip to the content] \n[] \n* [Browse jobs] \n* [Job Seekers] \nJob Seekers\n* [Therapy] \n* [Allied] \n* [Nursing] \n* [Canadian Travelers] \n* [clients] \n* [About] \nAbout\n* [Our Company] \n* [Our Leadership] \n* [Mentorship &amp; Guidance] \n* [Awards &amp; Recognition] ",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Travel healthcare staffing company providing temporary nurses, therapists, and allied health professionals to school districts.",
+    "category": "Healthcare Staffing",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "THE STEPPING STONES GROUP LLC": {
-    "description": "Schools - The Stepping Stones Group[Skip to content] \n[![The Stepping Stones Group]] \n## Transforming partnerships\nWe get what schools need to manage their special\neducation staffing and workforce challenges.\n[Partner with us &#8250;] \n## We\u2019re there for schools\n[![schools_1]] \n[![Workforce Solution",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "National special education staffing company providing speech-language pathologists, occupational therapists, and behavioral specialists to schools.",
+    "category": "Special Education",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "WAXIE SANITARY SUPPLY": {
-    "description": "WAXIE K12 | WAXIE Sanitary Supply\n[![WAXIE_BradyPLUS-endorsed-logo_White-yellow]] \n[**LOG IN**] \n[**BROWSE PRODUCTS**] \n[**SDS**] \n[**BLOG**] \n[![]] \n[![]] \n[![]] \n[![]] \n[Credit Application] \n**\n[The Most Trusted Name In Clean. Since 1945.] \n(800) 995-4466\nCONTACT US TODAY\n[![]] [![]] [![]]",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Major janitorial and sanitary supply distributor (now BradyPLUS) providing cleaning products, paper goods, and facility maintenance supplies to SFUSD.",
+    "category": "Facilities",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "CRYSTAL CREAMERY, INC.": {
-    "description": "[Skip to Content] \n\n# Foodservice\n\nOur dairy products from sour cream to fluid milk are served in food service kitchens and dining rooms everywhere across the country. We have from ingredient based specialty items to fabulous finished ice cream products for your dessert table.\n\n## K-12 Schools\n\nMilk",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Central California dairy processor supplying milk, yogurt, and dairy products to SFUSD school meal programs.",
+    "category": "Food Services",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "DIGITAL SCEPTER CORPORATION": {
-    "description": "[Skip to main content] \n\n## Vendor Information\n\nExplore what this Vendor has to offer through the contracts listed below. Contracts are competitively bid, saving you time and money. For the latest pricing information and to negotiate further, please contact the Vendor through the information listed ",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "IT reseller and managed services provider supplying hardware, networking equipment, and technology solutions to school districts through cooperative purchasing contracts.",
+    "category": "IT Equipment",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "BOYS & GIRLS CLUBS OF SAN FRANCISCO": {
-    "description": "Boys &amp; Girls Clubs of San Francisco\n[![]] \n[![]] \n# 2025 Impact Report\n**We are excited to share our 2025 Impact Report with you!\nThrough the Impact Report, we aim to share some of the biggest challenges our youth and families faced over the past year\u2014and how our organization is leaning in to su",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Major youth development nonprofit operating after-school and summer programs at multiple SFUSD school sites.",
+    "category": "After-School Programs",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "SENECA FAMILY OF AGENCIES": {
-    "description": "#### Educational Services\n\nEvery child - regardless of zip code, family income, learning style, or past experience - deserves access to a world-class education. Through direct academic, social-emotional, and behavioral services for students and capacity-building support to schools and educators, Sen",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Oakland-based nonprofit providing therapeutic behavioral services, special education, and wraparound support for high-needs students in Bay Area schools.",
+    "category": "Special Education",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "BAY AREA COMMUNICATION ACCESS": {
-    "description": "Augmentative and Alternative Communcation Services - Mt. Diablo Unified School District[Skip To Main Content] \nClose Menu\nSearch\nClear\nSearch\nOpen Search\nSearch\nClear\nSearch\nOpen Menu\n[![Mt. Diablo Unified School District]] \n[\nMt. Diablo\nUnified School District\n] \n## In This Section\n# Augmentative a",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Provides augmentative and alternative communication (AAC) services and assistive technology assessments for students with communication disabilities.",
+    "category": "Special Education",
+    "essential": true,
+    "savings_potential": "Essential"
   },
   "CITY AND COUNTY OF SAN FRANCISCO": {
-    "description": "Services | SFUSD[Skip to main content] \n[![San Francisco Unified School District]] \nMore options\n[![San Francisco Unified School District]] \nSearch## Site search\nSearch Site\n# Services\n## Services for Students and Families[Link to this section] \n[\n### Student Supports &amp; Programs\nSee how we are s",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Inter-agency payments to City/County of SF for shared services including facilities maintenance, utilities, and administrative support.",
+    "category": "Government",
+    "essential": true,
+    "savings_potential": "Essential"
   },
   "BROADWAY TYPEWRITER COMPANY INC.": {
-    "description": "Broadway Typewriter Co. Inc. &quot;dba&quot; Arey Jones Educational Solutions | Texas Department of Information Resources\n[Skip to main content] \nMenu\nSearch DIR\nSearch DIR## Search:\n* [All Pages &amp; Content] \n* [Contracts &amp; Vendors] \n## Search All Pages &amp; Content\nStart typing to find info",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "DBA Arey-Jones Educational Solutions. IT equipment reseller providing computers, printers, and technology hardware to school districts through state purchasing contracts.",
+    "category": "IT Equipment",
+    "essential": false,
+    "savings_potential": "Renegotiable"
   },
   "RICHMOND AREA MULTI-SERVICES, INC.": {
-    "description": "Home\n[![Brand] \nRichmond Public Schools\n] \n* [Home] \n* [Elementary] \n* [Barack Obama] \n* [Bellevue] \n* [Blackwell] \n* [Broad Rock] \n* [Cardinal] \n* [Carver] \n* [Chimborazo] \n* [Fairfield Court] \n* [Fisher] \n* [Frances W. McClenney Elementary] \n* [Francis] \n* [Henry Marsh, III] \n* [Jones] \n* [Linwood",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "SF nonprofit (RAMS) providing after-school programs, mental health services, and youth development at SFUSD schools in the Richmond District.",
+    "category": "After-School Programs",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "SAP PUBLIC SERVICES, INC.": {
-    "description": "LSI Consulting \u2013 SFUSD \u2013 Professional Services Agreement (RFP No. ERP-2017) \nPage 1 of 25\nPROFESSIONAL SERVICES AGREEMENT\nThis Professional Services Agreement (this \u201cAgreement\u201d as defined below), dated for convenience \nJanuary 9, 2018, is entered into by and between Labyrinth Solutions, Inc., DBA LS",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "SAP's government/education division. Provided the SAP ERP software for the failed EMPowerSF payroll system. Ongoing license and support costs despite system failure.",
+    "category": "IT Consulting",
+    "essential": false,
+    "savings_potential": "Cuttable"
   },
   "ATHENS ADMINISTRATORS": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Third-party claims administrator handling workers' compensation and liability claims management for SFUSD.",
+    "category": "Claims Administration",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "MAXIM HEALTHCARE SERVICES HOLDINGS, INC": {
     "description": "",
@@ -282,46 +282,46 @@
     "savings_potential": "Cuttable"
   },
   "PACIFIC RIM PRODUCE": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Bay Area produce distributor supplying fresh fruits and vegetables to SFUSD school meal programs.",
+    "category": "Food Services",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "A1 PROTECTIVE SERVICES, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Security guard company providing campus security services at SFUSD school sites.",
+    "category": "Security",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "GOTO COMMUNICATIONS, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Telecommunications and VoIP provider supplying phone systems and communication infrastructure to SFUSD.",
+    "category": "IT Equipment",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "RENAISSANCE LEARNING, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Education technology company providing Star Assessments, Accelerated Reader, and myON digital reading platform used for student assessment and reading programs.",
+    "category": "Ed-Tech",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "VICTOR TREATMENT CENTERS, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Behavioral health organization providing therapeutic day treatment, residential services, and intensive behavioral support for students with severe emotional/behavioral needs.",
+    "category": "Special Education",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "AMPLIFY EDUCATION, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Curriculum and assessment company providing CKLA literacy curriculum, Amplify Science, and mCLASS reading assessment tools to K-12 districts.",
+    "category": "Ed-Tech",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "LEARNUP CENTERS": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Bay Area nonprofit providing after-school tutoring and academic enrichment programs at SFUSD school sites.",
+    "category": "After-School Programs",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "AREY-JONES EDUCATIONAL SOLUTIONS": {
     "description": "",
@@ -336,22 +336,22 @@
     "savings_potential": "Cuttable"
   },
   "POSITIVE BEHAVIOR SUPPORTS CORP": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Applied behavior analysis (ABA) provider offering behavioral intervention services for students with autism and developmental disabilities in schools.",
+    "category": "Special Education",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "SUNBELT STAFFING, LLC": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "National staffing agency specializing in placing speech-language pathologists, occupational therapists, and school psychologists in K-12 districts.",
+    "category": "Healthcare Staffing",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "TELEGRAPH HILL NEIGHBORHOOD CENTER": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "SF nonprofit operating after-school enrichment and youth development programs at SFUSD schools in North Beach and Chinatown neighborhoods.",
+    "category": "After-School Programs",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "AFTER SCHOOL ENRICHMENT PROGRAM": {
     "description": "",
@@ -360,52 +360,52 @@
     "savings_potential": "Fund-shiftable"
   },
   "ARISE EDUCATIONAL CENTER": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Community organization providing after-school programs, academic support, and youth leadership development at SFUSD sites.",
+    "category": "After-School Programs",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "AGURTO CORPORATION DBA PESTEC": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "San Francisco integrated pest management company providing non-toxic pest control services for SFUSD school buildings.",
+    "category": "Facilities",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "METRO ELEVATOR": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Elevator maintenance and repair company servicing elevators in SFUSD school buildings for ADA compliance.",
+    "category": "Facilities",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "LANGUAGE CIRCLE OF CALIFORNIA, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Translation and interpretation services company providing multilingual support for SFUSD parent communications and IEP meetings.",
+    "category": "Translation Services",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "COMMITTEE FOR CHILDREN": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Seattle-based nonprofit publisher of Second Step social-emotional learning curriculum used in SFUSD elementary schools.",
+    "category": "Ed-Tech",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "SYNTEX GLOBAL INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "IT staffing and consulting company providing technology project support and staff augmentation to school districts.",
+    "category": "IT Consulting",
+    "essential": false,
+    "savings_potential": "Cuttable"
   },
   "CENTER FOR SOCIAL DYNAMICS. LLC": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Applied behavior analysis (ABA) and social skills therapy provider serving students with autism in school settings.",
+    "category": "Special Education",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "REGENTS OF THE UNIVERSITY OF CALIFORNIA": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "UC system providing professional development, research partnerships, and teacher training programs for SFUSD staff.",
+    "category": "Education Consulting",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "SYSCO FOOD SERVICES NORTHERN CA REGION": {
     "description": "",
@@ -414,40 +414,40 @@
     "savings_potential": "Essential"
   },
   "DISCOVERY EDUCATION, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Digital learning platform providing science and social studies curriculum content, virtual field trips, and STEM resources for K-12 classrooms.",
+    "category": "Ed-Tech",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "JOHNSON CONTROLS FIRE PROTECTION LP": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Fire protection and life safety systems company providing fire alarm inspection, sprinkler maintenance, and fire code compliance for SFUSD buildings.",
+    "category": "Facilities",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "FLOW TRANSLATIONS": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Translation and interpretation services provider supporting SFUSD's multilingual family communications and document translation needs.",
+    "category": "Translation Services",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "BEHAVIORAL INTERVENTION SPECIALIST OF LA": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Los Angeles-based behavioral intervention company providing ABA therapy and behavioral support for students with autism and behavioral challenges.",
+    "category": "Special Education",
+    "essential": true,
+    "savings_potential": "Reducible"
   },
   "SF ARTS EDUCATION PROJECT": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "SF nonprofit coordinating arts education programs including visual arts, music, dance, and theater instruction at SFUSD schools.",
+    "category": "Arts Education",
+    "essential": false,
+    "savings_potential": "Fund-shiftable"
   },
   "IXL LEARNING, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "San Mateo-based ed-tech company providing adaptive K-12 learning platform covering math, ELA, science, and social studies with diagnostic assessments.",
+    "category": "Ed-Tech",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "CONVERGE TECHNOLOGY SOLUTIONS US, LLC": {
     "description": "",
@@ -456,22 +456,22 @@
     "savings_potential": "Cuttable"
   },
   "STRATEGIC ENERGY INNOVATIONS": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Bay Area nonprofit providing energy efficiency consulting, green building programs, and sustainability education for school districts.",
+    "category": "Facilities",
+    "essential": false,
+    "savings_potential": "Cuttable"
   },
   "CPM EDUCATIONAL PROGRAM": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "Nonprofit publisher of College Preparatory Mathematics curriculum used in SFUSD middle and high school math courses.",
+    "category": "Ed-Tech",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "CHRISTY WHITE, INC.": {
-    "description": "",
-    "category": "Other",
-    "essential": null,
-    "savings_potential": "Unknown"
+    "description": "CPA firm serving as SFUSD's external auditor, conducting annual financial audits and compliance reviews required by state law.",
+    "category": "Auditing",
+    "essential": true,
+    "savings_potential": "Renegotiable"
   },
   "CONSOLIDATED PRINTERS, INC": {
     "description": "",
