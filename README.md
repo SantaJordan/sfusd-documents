@@ -2,7 +2,12 @@
 
 Raw materials for analyzing San Francisco Unified School District spending, labor agreements, and the 2026 UESF strike. Built to power an AI agent that identifies misspending patterns and informs negotiation strategy.
 
-**2,950 files | 1.7 GB | Last updated: 2026-02-08**
+**3,980+ files | 5.0 GB | Last updated: 2026-02-09**
+
+### What We Found
+
+- **[SFUSD Strike Explainer](https://santajordan.github.io/sfusd-documents/sfusd-strike-explainer/)** — Interactive breakdown of the 2026 UESF strike: what teachers are asking for, what the district says it can't afford, and what the financial data actually shows.
+- **[Forensic Spending Report](https://santajordan.github.io/sfusd-documents/analysis/sfusd_forensic_report_v2.html)** — AI-assisted forensic analysis of SFUSD vendor payments, consultant contracts, and spending patterns across 5 fiscal years.
 
 ---
 
