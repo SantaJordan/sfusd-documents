@@ -6,8 +6,7 @@ Raw materials for analyzing San Francisco Unified School District spending, labo
 
 ### What We Found
 
-- **[SFUSD Strike Explainer](https://santajordan.github.io/sfusd-documents/sfusd-strike-explainer/)** — Interactive breakdown of the 2026 UESF strike: what teachers are asking for, what the district says it can't afford, and what the financial data actually shows.
-- **[Forensic Spending Report](https://santajordan.github.io/sfusd-documents/analysis/sfusd_forensic_report_v2.html)** — AI-assisted forensic analysis of SFUSD vendor payments, consultant contracts, and spending patterns across 5 fiscal years.
+**[Read the full analysis](https://santajordan.github.io/sfusd-documents/sfusd-strike-explainer/)** — Interactive breakdown of the 2026 UESF strike: what teachers are asking for, what the district says it can't afford, and what the financial data actually shows. Includes forensic analysis of vendor payments, consultant contracts, and $111M in actionable savings.
 
 ---
 
