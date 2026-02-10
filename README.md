@@ -2,11 +2,30 @@
 
 Raw materials for analyzing San Francisco Unified School District spending, labor agreements, and the 2026 UESF strike. Built to power an AI agent that identifies misspending patterns and informs negotiation strategy.
 
-**3,980+ files | 5.0 GB | Last updated: 2026-02-09**
+**2,977 files in this repo (1.7 GB) + 1,181 files in supplemental archive (3.0 GB) | Last updated: 2026-02-09**
 
 ### What We Found
 
 **[Read the full analysis](https://santajordan.github.io/sfusd-documents/sfusd-strike-explainer/)** — Interactive breakdown of the 2026 UESF strike: what teachers are asking for, what the district says it can't afford, and what the financial data actually shows. Includes forensic analysis of vendor payments, consultant contracts, and $111M in actionable savings.
+
+---
+
+## Repository vs. Supplemental Archive
+
+**This GitHub repo** contains all SFUSD financial data, labor agreements, legal documents, news coverage, and analysis scripts — everything listed in the Directory Structure below.
+
+**The supplemental archive** contains ~1,181 vendor contract PDFs (3.0 GB) used for cross-district vendor payment comparison. These cover 64 SFUSD contracts plus contracts from 180 peer California school districts. The archive is too large for GitHub and is hosted separately:
+
+> **Download:** [sfusd-contracts-archive.zip on Google Drive](https://drive.google.com/file/d/1fSnfhrYENywoUJ9dKh3x-BEutuC4s6pZ/view?usp=sharing)
+
+Extract to `analysis/contracts/` (this path is already in `.gitignore`):
+
+```bash
+pip install gdown
+gdown "https://drive.google.com/uc?id=1fSnfhrYENywoUJ9dKh3x-BEutuC4s6pZ" -O analysis/contracts.zip
+unzip analysis/contracts.zip -d analysis/contracts/
+rm analysis/contracts.zip
+```
 
 ---
 
@@ -329,6 +348,7 @@ These are the deliverables produced from the document library:
   - `sfusd_forensic_report_v2.html` — Standalone forensic report (superseded by the combined page)
   - `parse_check_register.py` / `reocr_check_register.py` — Warrant/check register parsing and OCR
   - `data/` — Extracted JSON datasets (vendor profiles, check register, claim verification, savings analysis)
+  - `contracts/` — *(git-ignored, 3.0 GB)* Vendor contract PDFs from SFUSD and 180 peer districts. See [Supplemental Archive](#repository-vs-supplemental-archive) for download.
 
 ---
 
