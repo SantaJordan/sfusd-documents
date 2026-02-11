@@ -340,7 +340,11 @@ If you're building an agent to find misspending, start here:
 
 These are the deliverables produced from the document library:
 
-- **[`sfusd-strike-explainer/index.html`](https://santajordan.github.io/sfusd-documents/sfusd-strike-explainer/)** — Combined strike guide and forensic financial analysis. Three parts: **THE DEAL** (contract proposals and what's missing), **THE MONEY** (admin spending vs peers, vendor payments, $111M in actionable savings), and **THE PLAYBOOK** (precedents, legal tools, leverage, media strategy, rebuttals). 101/101 financial claims verified against primary sources. Published via GitHub Pages.
+- **[`sfusd-strike-explainer/index.html`](https://santajordan.github.io/sfusd-documents/sfusd-strike-explainer/)** — Combined strike guide and forensic financial analysis. Three parts: **THE DEAL** (contract proposals and what's missing), **THE MONEY** (admin spending vs peers, vendor payments, $111M in actionable savings, AI & tech spending), and **THE PLAYBOOK** (precedents, legal tools, leverage, media strategy, rebuttals). Includes an AI spending section covering the redacted OpenAI contract and Google Workspace/Gemini costs. Published via GitHub Pages.
+
+- **`research/`** — Primary source research compiled for the strike explainer:
+  - `openai-contract-research.md` — SFUSD-OpenAI contract analysis: parsed order form, San Bernardino comparison, timeline, vendor payment search, board action records
+  - `google-workspace-research.md` — Google Workspace for Education Plus pricing, CDW Government spending breakdown, Gemini AI bundling analysis
 
 - **`analysis/`** — Scripts and data used to generate the financial analysis (now merged into the combined page above):
   - `sfusd_spending_analysis.py` — Initial spending analysis
