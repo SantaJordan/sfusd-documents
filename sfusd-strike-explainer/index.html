@@ -48,6 +48,7 @@
     color: var(--gray-900);
     background: var(--cream);
     line-height: 1.6;
+    overflow-x: hidden;
   }
 
   /* ============================================================
@@ -2436,7 +2437,7 @@
      ============================================================ */
   @media (max-width: 720px) {
     .masthead { padding: 2rem 1.25rem 1.5rem; }
-    .content { padding: 0 1.25rem 2rem; }
+    .content { padding: 0 1.25rem 2rem; overflow-x: hidden; }
     .deal-grid { grid-template-columns: 1fr; }
     .parcel-grid { grid-template-columns: 1fr; }
     .sources-grid { grid-template-columns: 1fr; }
@@ -3081,6 +3082,7 @@
   <p>Using FY2024-25 budget data from the California SACS statewide extract, SFUSD's administrative spending is the highest among comparable large urban districts, at <strong style="color:var(--red)">15.1%</strong> of total expenditures vs. a peer median of ~10.5%. <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></p>
 <p>Admin spending is defined as SACS Function codes 2100&ndash;2150 (Instructional Supervision &amp; Admin), 7100&ndash;7191 (Board &amp; Superintendent), 7200&ndash;7210 (Other General Admin), 7300&ndash;7390 (Fiscal Services), 7400&ndash;7490 (HR), 7500&ndash;7550 (Central Support), 7600 (Other Admin), and 7700 (Data Processing).</p>
 
+<div class="comparison-wrapper">
 <table>
 <tr><th>District</th><th class="money">Admin Spending</th><th class="money">Total Expenditures</th><th class="pct">Admin %</th></tr>
 
@@ -3133,6 +3135,7 @@
           <td class="pct">7.8%</td>
         </tr>
 </table>
+</div>
 
 <p>If SFUSD matched the peer median, it would free up approximately <strong style="color:var(--red)">$123M per year</strong>. Even closing half the gap would free ~$61M&mdash;enough for a 6% raise for all employees.</p>
 
@@ -3149,6 +3152,7 @@
   <p>SFUSD's 1st Interim Reports have <strong>systematically understated the General Fund ending balance by tens to hundreds of millions of dollars</strong>. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2024-06.pdf" target="_blank" rel="noopener">PDF</a></p>
 
 <h3>Projected vs. Actual: General Fund Ending Balance</h3>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Fiscal Year</th><th class="money">1st Interim Projected</th><th class="money">Actual Ending Balance</th><th class="money">Difference</th><th class="pct">Miss %</th></tr>
 <tr><td>FY2021-22</td><td class="money">$313.2M</td><td class="money">$274.7M</td><td class="money" style="color:var(--green)">-$38.5M</td><td class="pct" style="color:var(--green)">Over by 14%*</td></tr>
@@ -3156,24 +3160,29 @@
 <tr><td>FY2023-24</td><td class="money">$383.4M</td><td class="money">$467.9M</td><td class="money" style="color:var(--red);font-weight:700">+$84.5M</td><td class="pct" style="color:var(--red);font-weight:700">Under by 22%</td></tr>
 <tr><td>FY2024-25</td><td class="money">$286.4M</td><td class="money" style="color:var(--text-light)">TBD</td><td class="money">&mdash;</td><td class="pct">&mdash;</td></tr>
 </table>
+</div>
 <p style="font-size:0.85em;color:var(--text-light)">*FY2021-22 was inflated by one-time COVID relief (ESSER) funds. Sources: Projected figures from SACS Form MYPI; actuals from following year's beginning balance.</p>
 
 <h3>Out-Year Projections: Even More Wrong</h3>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Projected FY</th><th>From Which Report</th><th class="money">Projected Ending</th><th class="money">Actual Ending</th><th class="money">Miss</th></tr>
 <tr><td>FY2022-23</td><td>FY2021-22 1st Interim</td><td class="money">$325.9M</td><td class="money">$413.3M</td><td class="money" style="color:var(--red);font-weight:700">+$87.4M</td></tr>
 <tr><td>FY2023-24</td><td>FY2021-22 1st Interim</td><td class="money">$346.0M</td><td class="money">$467.9M</td><td class="money" style="color:var(--red);font-weight:700">+$121.9M</td></tr>
 <tr><td>FY2023-24</td><td>FY2022-23 1st Interim</td><td class="money">$300.8M</td><td class="money">$467.9M</td><td class="money" style="color:var(--red);font-weight:700">+$167.1M</td></tr>
 </table>
+</div>
 
 <div class="callout callout-red"><strong>The pattern is clear:</strong> The district projects fiscal catastrophe, then ends the year with tens to hundreds of millions more than projected. Given the track record ($106M miss in FY2022-23, $85M miss in FY2023-24, $167M miss on out-year projections), the current dire projections should be discounted accordingly. <span class="cite" title="SFUSD 1st Interim Reports">[SFUSD 1st Interim Reports]</span></div>
 
 <h3>Historical Surpluses (SACS Actuals)</h3>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Fiscal Year</th><th class="money">Revenue</th><th class="money">Expenditures</th><th class="money">Net Surplus</th><th>Note</th></tr>
 <tr><td>FY2020-21</td><td class="money">$988.8M</td><td class="money">$923.9M</td><td class="money" style="color:var(--green)">+$64.9M</td><td>From SACS unaudited actuals <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></td></tr>
 <tr><td>FY2021-22</td><td class="money">$1,310.6M</td><td class="money">$1,162.1M</td><td class="money" style="color:var(--green)">+$148.5M</td><td>Includes one-time federal COVID funds <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></td></tr>
 </table>
+</div>
 
   <!-- 3c: EMPowerSF -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">The EMPowerSF Debacle: $33.7 Million</h3>
@@ -3289,6 +3298,7 @@
 
 <input type="text" id="vendorSearch" placeholder="Search vendors..." onkeyup="searchVendors(this.value)">
 
+<div class="comparison-wrapper">
 <table id="vendorTable">
 <tr><th>#</th><th>Vendor</th><th class="money">Amount</th><th>Category</th><th></th></tr>
 
@@ -4373,6 +4383,7 @@
           </td>
         </tr>
 </table>
+</div>
   <button class="collapsible-toggle" onclick="toggleAllVendors()" id="vendorToggleBtn" style="display:block; width:100%; padding:12px 20px; background:var(--gray-100); border:1px solid var(--gray-200); border-radius:4px; cursor:pointer; font-family:'Source Sans 3',sans-serif; font-size:0.95rem; font-weight:600; color:var(--navy); text-align:left; margin:1rem 0 0;">Show all 72 vendors &#9660;</button>
 
   <!-- 3e: Parcel Tax -->
@@ -4401,11 +4412,13 @@
   </ol>
 
   <p>SFUSD receives approximately <strong>$104M/year</strong> from two voter-approved parcel taxes:</p>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Tax</th><th>Annual Revenue</th><th>Expires</th><th>Status</th></tr>
 <tr><td>QTEA (Prop A, 2008)</td><td class="money">~$50.6M/year</td><td>June 30, 2028</td><td style="color:var(--red);font-weight:700">FY22-23 audit 3 YEARS DELINQUENT <a class="source-link" href="https://www.sfusd.edu/about-sfusd/budget-and-lcap/quality-teacher-education-act-qtea" target="_blank" rel="noopener">SFUSD QTEA page</a></td></tr>
 <tr><td>PEEF/FWEA (Prop J, 2020)</td><td class="money">~$53.7M/year</td><td>2038</td><td style="color:var(--red)">FY24-25 report not published</td></tr>
 </table>
+</div>
 <div class="callout callout-red">
 <strong>QTEA compliance audit for FY 2022-23 is nearly 3 years delinquent</strong>&mdash;still listed as "Coming Soon" on the SFUSD website. Voters approved QTEA specifically to fund teacher compensation. <a class="source-link" href="https://www.sfusd.edu/about-sfusd/budget-and-lcap/quality-teacher-education-act-qtea" target="_blank" rel="noopener">SFUSD QTEA page (audit listed as "Coming Soon")</a>
 </div>
@@ -4414,12 +4427,14 @@
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Healthcare Cost Reality</h3>
   <h3>Kaiser Employee+2 Total Monthly Premium</h3>
 <p>From SFHSS rate cards filed with the district: <a class="source-link" href="https://santajordan.github.io/sfusd-documents/comparable-data/sfhss_sfusd-health-plan-rates_2024.pdf" target="_blank" rel="noopener">2024</a> <a class="source-link" href="https://santajordan.github.io/sfusd-documents/comparable-data/sfhss_sfusd-health-plan-rates_2025.pdf" target="_blank" rel="noopener">2025</a> <a class="source-link" href="https://santajordan.github.io/sfusd-documents/comparable-data/sfhss_sfusd-health-plan-rates_2026.pdf" target="_blank" rel="noopener">2026</a></p>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Plan Year</th><th class="money">Total Monthly Cost</th><th class="money">Employee Pays (Biweekly)</th><th class="money">SFUSD Pays (Biweekly)</th></tr>
 <tr><td>2024</td><td class="money">$2,349/mo</td><td class="money">$189.58</td><td class="money">$899.40</td></tr>
 <tr><td>2025</td><td class="money">$2,489/mo</td><td class="money">$185.26</td><td class="money">$962.59</td></tr>
 <tr><td>2026</td><td class="money">$2,733/mo</td><td class="money">$216.16</td><td class="money">$1,045.25</td></tr>
 </table>
+</div>
 <div class="stats-row">
 <div class="stat-card"><div class="big-num">$33.2M</div><div class="stat-label">Active Employee Healthcare/yr</div></div>
 <div class="stat-card"><div class="big-num">$34.4M</div><div class="stat-label">Retiree Healthcare (OPEB pay-as-you-go)/yr</div></div>
@@ -4445,6 +4460,7 @@
   <!-- Funding Calculator -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">The Maximum Salary Argument</h3>
   <p>Working from the PERB benchmark of <strong>$10.17M per 1% raise for all employees</strong>: <a class="source-link" href="https://santajordan.github.io/sfusd-documents/negotiations/perb_fact-finding-report_2026-02.pdf" target="_blank" rel="noopener">PDF</a></p>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Funding Source</th><th class="money">Annual $ Available</th><th class="pct">Raises Funded</th><th>Confidence</th></tr>
 <tr><td>Cut admin spending to peer median (50% of gap)</td><td class="money">$61M</td><td class="pct">6.0%</td><td><span style="color:var(--green);font-weight:700">HIGH</span></td></tr>
@@ -4457,6 +4473,7 @@
 <tr style="background:var(--gold-light);font-weight:700"><td>Conservative Total</td><td class="money">$123M</td><td class="pct">~12.1%</td><td></td></tr>
 <tr style="background:var(--gold-light);font-weight:700"><td>Optimistic Total</td><td class="money">$175M</td><td class="pct">~17.2%</td><td></td></tr>
 </table>
+</div>
 
   <!-- Actionable Savings $111M -->
   <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Actionable Savings: $111 Million</h3>
@@ -4474,6 +4491,7 @@
 <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/bla_sfusd-central-admin-staffing_2023-01.pdf" target="_blank" rel="noopener">BLA</a>
 <a class="source-link" href="https://santajordan.github.io/sfusd-documents/spending-analysis/warrants/" target="_blank" rel="noopener">Warrants</a></p>
 
+<div class="comparison-wrapper">
 <table>
 <tr><th>Source</th><th class="money">Annual Savings</th><th>Confidence</th><th>Timeframe</th><th>What It Takes</th></tr>
 
@@ -4525,6 +4543,7 @@
   <td colspan="3">= 10.9% raises for all employees</td>
 </tr>
 </table>
+</div>
 
 <div class="callout callout-green">
 <strong>Bottom line:</strong> Even the conservative estimate of $111M (10.9% raises) exceeds UESF's 9% certificated salary demand. The question is not "Can SFUSD afford raises?" &mdash; it's <strong>"Why does SFUSD choose to spend money on administration, failed IT projects, and consultants instead of the people who teach children?"</strong>
@@ -4569,6 +4588,7 @@
 </ul>
 
 <h4 style="font-weight:700; color:var(--navy); margin-top:1.5rem;">Updated Savings Potential</h4>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Category</th><th class="money">Total Spend</th><th class="money">Potential Savings</th><th>Mechanism</th></tr>
 <tr><td>IT Consulting (total)</td><td class="money">$20.0M</td><td class="money" style="color:var(--red)">$12.0M</td><td>60% cut post-EMPowerSF</td></tr>
@@ -4578,6 +4598,7 @@
 <tr><td>Ed-Tech/Curriculum</td><td class="money">$3.8M</td><td class="money" style="color:var(--red)">$0.8M</td><td>License renegotiation (20%)</td></tr>
 <tr class="highlight-row"><td><strong>Additional from reclassification</strong></td><td class="money"><strong>$52.3M</strong></td><td class="money" style="color:var(--red)"><strong>$30.3M</strong></td><td><strong>Combined mechanisms</strong></td></tr>
 </table>
+</div>
 
 <div class="callout" style="background:var(--gold-bg); border-left:4px solid var(--gold); padding:1rem 1.5rem; margin:1rem 0; border-radius:4px;">
 <strong>Combined with previously identified savings:</strong> The total actionable vendor savings rises from $35.2M to <strong style="color:var(--red)">$65.5M per year</strong> &mdash; more than enough to fund the 9% certificated salary increase ($55.2M) that UESF is requesting.
@@ -4600,6 +4621,7 @@
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Salary Comparison</h3>
     <p>Salary spending as a percentage of total expenditures (FY2024-25 SACS budget data): <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></p>
+<div class="comparison-wrapper">
 <table>
 <tr><th>District</th><th class="money">Cert. Salaries</th><th class="money">Class. Salaries</th><th class="money">Total Expend.</th><th class="pct">Salary %</th></tr>
 
@@ -4660,10 +4682,12 @@
           <td class="pct">45.1%</td>
         </tr>
 </table>
+</div>
 <p>SFUSD's salary percentage (53.3%) is above average&mdash;but the issue is <em>where non-salary money goes</em>. SFUSD sends a disproportionate share to admin overhead and outside consultants rather than direct student services.</p>
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">FY2025-26 Expenditure Breakdown</h3>
     <p>From the December 2025 Fiscal Stabilization Plan (~$1.3B total): <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2025-12.pdf" target="_blank" rel="noopener">PDF</a></p>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Category</th><th class="money">Amount</th><th class="pct">% of Total</th></tr>
 <tr><td>Instruction</td><td class="money">$751.8M</td><td class="pct">58%</td></tr>
@@ -4674,10 +4698,12 @@
 <tr><td>Ancillary</td><td class="money">$6.8M</td><td class="pct">1%</td></tr>
 <tr><td>Other Outgo</td><td class="money">$4.3M</td><td class="pct">&lt;1%</td></tr>
 </table>
+</div>
 <p>Note: The FSP "General Administration" ($72.2M / 6%) uses a narrower definition than SACS function-level data. When all admin-coded functions are counted, the total is $402.8M / 15.1%. <a class="source-link" href="https://santajordan.github.io/sfusd-documents/fiscal-oversight/sfusd_fiscal-stabilization-plan_2024-12.pdf" target="_blank" rel="noopener">Fiscal Stabilization Plan</a></p>
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Function-Level Breakdown</h3>
     <p>Top General Fund spending categories from the statewide SACS extract. Items marked <span style="color:var(--red);font-weight:700">[ADMIN]</span> are included in the administrative spending calculation. <a class="source-link" href="https://www.cde.ca.gov/ds/fd/dv/" target="_blank" rel="noopener">CDE SACS Data</a></p>
+<div class="comparison-wrapper">
 <table>
 <tr><th>Code</th><th>Function</th><th class="money">Amount</th><th></th></tr>
 <tr><td>1000</td><td>Instruction</td><td class="money">$1,202.4M</td><td></td></tr>
@@ -4702,8 +4728,10 @@
 <tr style="background:var(--red-light)"><td>7150</td><td>Superintendent</td><td class="money">$29.2M</td><td style="color:var(--red);font-weight:700">ADMIN</td></tr>
 
 </table>
+</div>
 
     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.2em; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 10px; margin: 30px 0 20px;">Governance &amp; Transparency Failures</h3>
+    <div class="comparison-wrapper">
     <table>
 <tr><th>Issue</th><th>Detail</th></tr>
 <tr><td>Late Audit (FY 2021-22)</td><td>Annual audit approved <strong>two years late</strong> (March 2024) <a class="source-link" href="https://santajordan.github.io/sfusd-documents/audits/sfusd_annual-audit_fy2021-22.pdf" target="_blank" rel="noopener">PDF</a></td></tr>
@@ -4713,6 +4741,7 @@
 <tr><td>QTEA FY22-23 Audit</td><td>Nearly <strong>3 years delinquent</strong>&mdash;"Coming Soon" on website <a class="source-link" href="https://www.sfusd.edu/about-sfusd/budget-and-lcap/quality-teacher-education-act-qtea" target="_blank" rel="noopener">SFUSD QTEA page</a></td></tr>
 <tr><td>PEEF FY24-25 Report</td><td>Not yet published (required by ballot measure)</td></tr>
 </table>
+    </div>
 <div class="callout">A district that can't account for 53% of its per-pupil spending, misses its own budget projections by $100M+, got a "lack of going concern" designation, and can't produce a required compliance audit for a $50M/year parcel tax <strong>doesn't have credibility on affordability claims</strong>.</div>
 
   </div>
@@ -4986,6 +5015,7 @@
     When class sizes are manageable, every child gets attention. When the contract protects sanctuary, vulnerable families are safer.
   </p>
 
+  <div class="comparison-wrapper">
   <table class="bcg-table">
     <thead>
       <tr>
@@ -5020,6 +5050,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 
   <p style="font-size: 0.82rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; font-family: 'JetBrains Mono', monospace; font-size: 0.68rem;">Talking points for picket lines, media &amp; parent conversations</p>
 
@@ -6251,6 +6282,7 @@ function injectPeerComparison(detailRow) {
 
   var html = '<div class="peer-comparison">';
   html += '<h4>Peer District Comparison (' + validPeers.length + ' district' + (validPeers.length > 1 ? 's' : '') + ')</h4>';
+  html += '<div class="comparison-wrapper">';
   html += '<table class="peer-table">';
   html += '<tr><th>District</th><th>Contract Amount</th><th>Per Student</th><th>Scope</th></tr>';
 
@@ -6303,6 +6335,7 @@ function injectPeerComparison(detailRow) {
   });
 
   html += '</table>';
+  html += '</div>';
 
   // Red flags
   if (data.red_flags && data.red_flags.length > 0) {
